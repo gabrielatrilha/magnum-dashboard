@@ -1847,6 +1847,10 @@ if(document.readyState==='loading'){
     var el=e.target.closest('[data-tooltip]');
     if(!el)return;
     tip.textContent=el.getAttribute('data-tooltip');
+    var x=e.clientX,y=e.clientY;
+    var vw=window.innerWidth;
+    tip.style.left=(x+14)+'px';
+    tip.style.top=(y-36)+'px';
     tip.style.opacity='1';
   });
   document.addEventListener('mousemove',function(e){
