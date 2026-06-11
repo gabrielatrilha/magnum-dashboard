@@ -2,6 +2,7 @@
   "coleta_em": "2026-06-11",
   "periodo": {"ini": "2026-06-01", "fim": "2026-06-11"},
   "faturamento": 834567.51,
+  "nf_count": 143,
   "faturamento_por_un": {
     "RS":       276672.95,
     "SP":       111684.0,
