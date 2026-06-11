@@ -137,6 +137,13 @@ if _bi.get("inadimplencia_total"):
     INAD_GRAND_TOTAL = round(_bi["inadimplencia_total"], 2)
     print(f"[AUTO] INAD_GRAND_TOTAL via bi_data.json: R${INAD_GRAND_TOTAL:,.2f}")
 
+# Ciclo financeiro — cirurgia → nota e cirurgia → recebimento
+_ciclo        = _bi.get("ciclo_financeiro", {})
+_ciclo_nota   = _ciclo.get("cir_nota",        {"mediana": 1,  "media": 19, "n": 355})
+_ciclo_receb  = _ciclo.get("cir_recebimento", {"mediana": 61, "media": 87, "n": 348})
+_ciclo_por_un = _ciclo.get("por_un", {})
+_ciclo_ref    = _ciclo.get("ref", "2026 Jan-Jun")
+
 # Reference despesas (proportional base)
 DESP_AD_REF = [
 {"ad":"COMPRAS REVENDA","val":681315.91,"top":[
@@ -1280,6 +1287,20 @@ body{{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--t
     <div class="kpi-label">Prazo Cirug./NF</div>
     <div class="kpi-value" id="kpiPrazo">{_def_prazo}</div>
     <div class="kpi-sub" id="kpiPrazoSub">{_def_prazo_sub}</div>
+  </div>
+</div>
+
+<!-- Ciclo Operacional — 2 cards calculados de cirurgia → nota e cirurgia → recebimento -->
+<div class="kpi-strip" style="margin-top:8px">
+  <div class="kpi-card blue has-tooltip" data-tooltip="Mediana 2026 ({_ciclo_ref}): tempo entre data da cirurgia e emissão da NF. Média: {_ciclo_nota['media']} dias em {_ciclo_nota['n']} títulos.">
+    <div class="kpi-label">Ciclo Cirurgia → NF</div>
+    <div class="kpi-value" id="kpiCicloNota">{_ciclo_nota['mediana']} dias</div>
+    <div class="kpi-sub">Mediana · {_ciclo_nota['media']} dias média · {_ciclo_nota['n']} títulos</div>
+  </div>
+  <div class="kpi-card teal has-tooltip" data-tooltip="Mediana 2026 ({_ciclo_ref}): tempo entre data da cirurgia e o recebimento efetivo. Média: {_ciclo_receb['media']} dias em {_ciclo_receb['n']} títulos.">
+    <div class="kpi-label">Ciclo Cirurgia → Recebimento</div>
+    <div class="kpi-value" id="kpiCicloReceb">{_ciclo_receb['mediana']} dias</div>
+    <div class="kpi-sub">Mediana · {_ciclo_receb['media']} dias média · {_ciclo_receb['n']} títulos</div>
   </div>
 </div>
 

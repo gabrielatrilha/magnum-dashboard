@@ -14,5 +14,19 @@
   },
   "despesas": 783343.97,
   "cirurgias": 60,
-  "inadimplencia_total": 1096784.72
+  "inadimplencia_total": 1096784.72,
+  "ciclo_financeiro": {
+    "ref": "2026 Jan-Jun",
+    "cir_recebimento": {"mediana": 61, "media": 87, "n": 348},
+    "cir_nota":        {"mediana": 1,  "media": 19, "n": 355},
+    "por_un": {
+      "RS":       {"receb_med": 33, "nota_med": 0},
+      "SC":       {"receb_med": 34, "nota_med": 2},
+      "BA":       {"receb_med": 68, "nota_med": 1},
+      "PR":       {"receb_med": 63, "nota_med": 3},
+      "SP":       {"receb_med": 90, "nota_med": 1},
+      "Traumato": {"receb_med": 97, "nota_med": 7},
+      "Holep":    {"receb_med": 192, "nota_med": 131}
+    }
+  }
 }
