@@ -111,11 +111,11 @@ INADIMPLENTES = [[r[0], u(r[1]), r[2], r[3], r[4]] for r in INADIMPLENTES_RAW]
 
 INAD_UNIDADE = {
     "Traumato": {"total": 761092.72, "count": 55},
-    "RS":       {"total": 152676.50,  "count": 10},
-    "SP":       {"total": 124527.00,  "count": 8},
+    "RS":       {"total": 118690.50, "count": 10},
+    "SP":       {"total": 124527.00, "count": 8},
     "SC":       {"total": 23540.00,  "count": 5},
-    "PR":       {"total": 87400,   "count": 3},
-    "BA":       {"total": 33900.00,   "count": 2},
+    "PR":       {"total": 43700.00,  "count": 3},
+    "BA":       {"total": 33900.00,  "count": 2},
     "Holep":    {"total": 7500.00,   "count": 1}
 }
 
@@ -646,13 +646,23 @@ FAT_PERIODS = {
         ]
     },
     "jun26": {
-        "label": "Jun/26", "ini": "2026-06-01", "fim": "2026-06-03",
-        "total": 842555.51, "nf_count": 19, "prazo": 30,
+        "label": "Jun/26", "ini": "2026-06-01", "fim": "2026-06-12",
+        "total": 890601.51, "nf_count": 153,
         "parcial": True,
-        "byUN": [["RS",30168],["Traumato",85100]],
+        "byUN": [["Traumato",335830.56],["RS",299256.95],["SP",131134.00],
+                 ["Holep",77500.00],["PR",23900.00],["SC",22000.00],["BA",980.00]],
         "byGrupo": [
-            {"g":"CRIOANALGESIA","val":28500,"cnt":1,"prods":[]},
-            {"g":"TRAUMATOLOGIA","val":85100,"cnt":8,"prods":[]},
+            {"g":"TRAUMATOLOGIA",    "val":307330.56, "cnt":0,"prods":[]},
+            {"g":"SAUDE DO HOMEM",   "val":131300.00, "cnt":0,"prods":[]},
+            {"g":"SPEEDICATH",       "val":96048.00,  "cnt":0,"prods":[]},
+            {"g":"ENDOUROLOGIA",     "val":94856.95,  "cnt":0,"prods":[]},
+            {"g":"SERVICO",          "val":80540.00,  "cnt":0,"prods":[]},
+            {"g":"UROLOGIA GERAL",   "val":73573.00,  "cnt":0,"prods":[]},
+            {"g":"MATRIZ DERMICA",   "val":39900.00,  "cnt":0,"prods":[]},
+            {"g":"CRIOANALGESIA",    "val":28500.00,  "cnt":0,"prods":[]},
+            {"g":"UROLIFT",          "val":16000.00,  "cnt":0,"prods":[]},
+            {"g":"FIBRAS LASER - CONSUMO","val":13375.00,"cnt":0,"prods":[]},
+            {"g":"RTU",              "val":9178.00,   "cnt":0,"prods":[]},
         ]
     },
     "1t26": {
