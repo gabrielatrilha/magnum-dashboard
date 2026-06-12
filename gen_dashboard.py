@@ -1309,11 +1309,7 @@ body{{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--t
     <div class="kpi-value">R$ {grand_fmt}</div>
     <div class="kpi-sub">95 titulos · 7 unidades</div>
   </div>
-  <div class="kpi-card blue has-tooltip" data-tooltip="Tempo médio entre a data da cirurgia e a emissão da nota fiscal">
-    <div class="kpi-label">Prazo Cirug./NF</div>
-    <div class="kpi-value" id="kpiPrazo">{_def_prazo}</div>
-    <div class="kpi-sub" id="kpiPrazoSub">{_def_prazo_sub}</div>
-  </div>
+
 </div>
 
 <!-- Ciclo Operacional — 2 cards calculados de cirurgia → nota e cirurgia → recebimento -->
