@@ -1,10 +1,10 @@
 {
   "coleta_em": "2026-06-12",
   "periodo": {"ini": "2026-06-01", "fim": "2026-06-12"},
-  "faturamento": 887790.51,
-  "nf_count": 152,
+  "faturamento": 890601.51,
+  "nf_count": 153,
   "faturamento_por_un": {
-    "RS": 296445.95,
+    "RS": 299256.95,
     "SP": 131134.0,
     "PR": 23900.0,
     "Holep": 77500.0,
@@ -12,9 +12,17 @@
     "SC": 22000.0,
     "BA": 980.0
   },
-  "despesas": 795140.89,
-  "cirurgias": 68,
-  "inadimplencia_total": 1146736.22,
+  "despesas": 815052.55,
+  "cirurgias": 70,
+  "inadimplencia_total": 1112950.22,
+  "a45_por_mes": {
+    "2026-01": {"rec": 2813770.39, "desp": 2058112.77},
+    "2026-02": {"rec": 1915843.28, "desp": 1882285.97},
+    "2026-03": {"rec": 2992980.59, "desp": 2025489.86},
+    "2026-04": {"rec": 2261912.91, "desp": 2395797.02},
+    "2026-05": {"rec": 2457910.74, "desp": 2096914.47},
+    "2026-06": {"rec": 1249699.09, "desp": 818251.08}
+  },
   "ciclo_financeiro": {
     "ref": "2026 (acumulado)",
     "cir_recebimento": {"media": 68.4, "n": 15840},
