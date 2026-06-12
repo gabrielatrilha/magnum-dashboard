@@ -111,8 +111,8 @@ INADIMPLENTES = [[r[0], u(r[1]), r[2], r[3], r[4]] for r in INADIMPLENTES_RAW]
 
 INAD_UNIDADE = {
     "Traumato": {"total": 761092.72, "count": 55},
-    "RS":       {"total": 116425.00,  "count": 10},
-    "SP":       {"total": 110627.00,  "count": 8},
+    "RS":       {"total": 152676.50,  "count": 10},
+    "SP":       {"total": 124527.00,  "count": 8},
     "SC":       {"total": 23540.00,  "count": 5},
     "PR":       {"total": 87400,   "count": 3},
     "BA":       {"total": 33900.00,   "count": 2},
@@ -642,7 +642,7 @@ FAT_PERIODS = {
     },
     "jun26": {
         "label": "Jun/26", "ini": "2026-06-01", "fim": "2026-06-03",
-        "total": 840885.51, "nf_count": 19, "prazo": 30,
+        "total": 842555.51, "nf_count": 19, "prazo": 30,
         "parcial": True,
         "byUN": [["RS",30168],["Traumato",85100]],
         "byGrupo": [
@@ -692,7 +692,7 @@ DESP_PERIODS_RAW = {
                  ["SP",62990],["PR",32524],["BA",16598],["SC",13011]]
     },
     "jun26": {
-        "label": "Jun/26", "total": 443191.80,
+        "label": "Jun/26", "total": 445691.80,
         "byUN": [["RS",143976],["Traumato",16371],["Holep",14552]]
     },
     "1t26": {
@@ -1080,6 +1080,15 @@ if _trim_sorted:
         _chips_parts.append(f'<button class="period-chip trim{_active}" data-key="{_k}" onclick="setActivePeriod(this.dataset.key)">{FAT_PERIODS[_k]["label"]}</button>')
 _period_chips_html = "".join(_chips_parts)
 # -------------------------------------------
+
+# Chart: Faturamento × Recebida × Despesas — gerado dinamicamente de FAT_PERIODS/DESP_PERIODS_RAW
+_chart_ks        = sorted([k for k in FAT_PERIODS if k[:3] in _MES and len(k)==5 and FAT_PERIODS[k].get("total",0)>0], key=_period_order)
+_chart_labels_js = json.dumps([FAT_PERIODS[k]["label"]                              for k in _chart_ks])
+_chart_fat_js    = json.dumps([round(FAT_PERIODS[k].get("total",0),2)               for k in _chart_ks])
+_chart_desp_js   = json.dumps([round(DESP_PERIODS_RAW.get(k,{}).get("total",0),2)   for k in _chart_ks])
+# recVals: receita RECEBIDA real por mês (dashboard/51 BI) — atualizar manualmente ao fechar mês
+_REC_DICT     = {"mar26":2967665,"abr26":2236852,"mai26":1716578,"jun26":0}
+_chart_rec_js = json.dumps([_REC_DICT.get(k,0)                                      for k in _chart_ks])
 
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -2405,12 +2414,12 @@ function buildEvol(){{
     if(charts['chFatEvol'])charts['chFatEvol'].resize();
   }},100);
 
-  // Receita × Despesa × Recebida — por mês
-  var fatVals=[2311749,2601247,2724225];
-  var recVals=[2967665, 2236852, 1716578];  // Receita recebida real (BI — dashboard/51)
-  var despVals=[2039221, 2404916, 1639300]; // Despesa paga real (BI — dashboard/51 DRE)
+  // Receita × Despesa × Recebida — por mês (valores de FAT_PERIODS/DESP_PERIODS_RAW)
+  var fatVals={_chart_fat_js};
+  var recVals={_chart_rec_js};  // Receita recebida real (BI — dashboard/51)
+  var despVals={_chart_desp_js}; // Despesa paga real (BI — analise/43)
   var saldoVals=recVals.map(function(r,i){{return r-despVals[i];}});
-  var cfg2={{type:'bar',data:{{labels:['Mar/26','Abr/26','Mai/26'],datasets:[
+  var cfg2={{type:'bar',data:{{labels:{_chart_labels_js},datasets:[
     {{label:'Faturamento (emitido)',data:fatVals,backgroundColor:'rgba(79,196,84,0.7)',borderColor:'#4FC454',borderWidth:1,borderRadius:4}},
     {{label:'Recebida (real BI)',data:recVals,backgroundColor:'rgba(0,204,204,0.7)',borderColor:'#00AAAA',borderWidth:1,borderRadius:4}},
     {{label:'Despesas',data:despVals,backgroundColor:'rgba(232,175,27,0.75)',borderColor:'#E8AF1B',borderWidth:1,borderRadius:4}}

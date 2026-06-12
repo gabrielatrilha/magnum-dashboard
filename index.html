@@ -1322,12 +1322,12 @@ function buildEvol(){
     if(charts['chFatEvol'])charts['chFatEvol'].resize();
   },100);
 
-  // Receita × Despesa × Recebida — por mês
-  var fatVals=[2311749,2601247,2724225];
-  var recVals=[2967665, 2236852, 1716578];  // Receita recebida real (BI — dashboard/51)
-  var despVals=[2039221, 2404916, 1639300]; // Despesa paga real (BI — dashboard/51 DRE)
+  // Receita × Despesa × Recebida — por mês (valores de FAT_PERIODS/DESP_PERIODS_RAW)
+  var fatVals=[2311749, 2601247, 3087631.28, 887790.51];
+  var recVals=[2967665, 2236852, 1716578, 0];  // Receita recebida real (BI — dashboard/51)
+  var despVals=[2039221, 2404916, 1135374.99, 445691.8]; // Despesa paga real (BI — analise/43)
   var saldoVals=recVals.map(function(r,i){return r-despVals[i];});
-  var cfg2={type:'bar',data:{labels:['Mar/26','Abr/26','Mai/26'],datasets:[
+  var cfg2={type:'bar',data:{labels:["Mar/26", "Abr/26", "Mai/26", "Jun/26"],datasets:[
     {label:'Faturamento (emitido)',data:fatVals,backgroundColor:'rgba(79,196,84,0.7)',borderColor:'#4FC454',borderWidth:1,borderRadius:4},
     {label:'Recebida (real BI)',data:recVals,backgroundColor:'rgba(0,204,204,0.7)',borderColor:'#00AAAA',borderWidth:1,borderRadius:4},
     {label:'Despesas',data:despVals,backgroundColor:'rgba(232,175,27,0.75)',borderColor:'#E8AF1B',borderWidth:1,borderRadius:4}
