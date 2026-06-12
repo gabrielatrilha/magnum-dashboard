@@ -143,6 +143,11 @@ _ciclo_nota   = _ciclo.get("cir_nota",        {"media": 24.5, "n": 15840})
 _ciclo_receb  = _ciclo.get("cir_recebimento", {"media": 68.4, "n": 15840})
 _ciclo_por_un = _ciclo.get("por_un", {})
 _ciclo_ref    = _ciclo.get("ref", "2026 Jan-Jun")
+# Último dia do mês anterior (corte do ciclo financeiro)
+import calendar as _cal
+_hoje_dt  = __import__("datetime").date.today()
+_mes_ant  = (_hoje_dt.replace(day=1) - __import__("datetime").timedelta(days=1))
+_ciclo_ate = _mes_ant.strftime("%d/%m/%Y")  # ex: "31/05/2026"
 
 # Reference despesas (proportional base)
 DESP_AD_REF = [
@@ -1316,12 +1321,12 @@ body{{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--t
   <div class="kpi-card blue has-tooltip" data-tooltip="Média {_ciclo_ref}: tempo entre data da cirurgia e emissão da NF. Base: {_ciclo_nota['n']:,} registros.">
     <div class="kpi-label">Ciclo Cirurgia → NF</div>
     <div class="kpi-value" id="kpiCicloNota">{_ciclo_nota['media']} dias</div>
-    <div class="kpi-sub">Média · {_ciclo_nota['n']:,} registros</div>
+    <div class="kpi-sub">Média · {_ciclo_nota['n']:,} registros · dados até {_ciclo_ate}</div>
   </div>
   <div class="kpi-card teal has-tooltip" data-tooltip="Média {_ciclo_ref}: tempo entre data da cirurgia e o recebimento efetivo. Base: {_ciclo_receb['n']:,} registros.">
     <div class="kpi-label">Ciclo Cirurgia → Recebimento</div>
     <div class="kpi-value" id="kpiCicloReceb">{_ciclo_receb['media']} dias</div>
-    <div class="kpi-sub">Média · {_ciclo_receb['n']:,} registros</div>
+    <div class="kpi-sub">Média · {_ciclo_receb['n']:,} registros · dados até {_ciclo_ate}</div>
   </div>
 </div>
 
