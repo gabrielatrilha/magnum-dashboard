@@ -1086,9 +1086,21 @@ _chart_ks        = sorted([k for k in FAT_PERIODS if k[:3] in _MES and len(k)==5
 _chart_labels_js = json.dumps([FAT_PERIODS[k]["label"]                              for k in _chart_ks])
 _chart_fat_js    = json.dumps([round(FAT_PERIODS[k].get("total",0),2)               for k in _chart_ks])
 _chart_desp_js   = json.dumps([round(DESP_PERIODS_RAW.get(k,{}).get("total",0),2)   for k in _chart_ks])
-# recVals: receita RECEBIDA real por mês (dashboard/51 BI) — atualizar manualmente ao fechar mês
-_REC_DICT     = {"mar26":2967665,"abr26":2236852,"mai26":1716578,"jun26":0}
-_chart_rec_js = json.dumps([_REC_DICT.get(k,0)                                      for k in _chart_ks])
+# Receita recebida e Despesa paga por mês — analise/45 (pagar_receber_agrupado)
+# Chave: "AAAA-MM" → valores em float
+_A45 = {
+    "2026-03": {"rec": 2992980.59, "desp": 2025489.86},
+    "2026-04": {"rec": 2261912.91, "desp": 2395797.02},
+    "2026-05": {"rec": 2457910.74, "desp": 2096914.47},
+    "2026-06": {"rec": 1249236.09, "desp":  810987.11},
+}
+def _a45key(k):
+    # converte "mar26" → "2026-03", "jun26" → "2026-06" etc
+    _mn = {"jan":"01","fev":"02","mar":"03","abr":"04","mai":"05","jun":"06",
+           "jul":"07","ago":"08","set":"09","out":"10","nov":"11","dez":"12"}
+    return "20" + k[3:] + "-" + _mn.get(k[:3],"00")
+_chart_rec_js  = json.dumps([_A45.get(_a45key(k),{}).get("rec",  0) for k in _chart_ks])
+_chart_desp_js = json.dumps([_A45.get(_a45key(k),{}).get("desp", 0) for k in _chart_ks])
 
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
