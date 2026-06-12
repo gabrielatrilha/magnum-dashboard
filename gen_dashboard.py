@@ -139,8 +139,8 @@ if _bi.get("inadimplencia_total"):
 
 # Ciclo financeiro — cirurgia → nota e cirurgia → recebimento
 _ciclo        = _bi.get("ciclo_financeiro", {})
-_ciclo_nota   = _ciclo.get("cir_nota",        {"mediana": 1,  "media": 19, "n": 355})
-_ciclo_receb  = _ciclo.get("cir_recebimento", {"mediana": 61, "media": 87, "n": 348})
+_ciclo_nota   = _ciclo.get("cir_nota",        {"media": 24.5, "n": 15840})
+_ciclo_receb  = _ciclo.get("cir_recebimento", {"media": 68.4, "n": 15840})
 _ciclo_por_un = _ciclo.get("por_un", {})
 _ciclo_ref    = _ciclo.get("ref", "2026 Jan-Jun")
 
@@ -838,7 +838,7 @@ FAT_EVOL = {
     "2023": [1011411, 715638, 1112228, 965169, 840928, 695651, 893185, 941595, 1165759, 785090, 1050677, 1103647],
     "2024": [950754, 844576, 1416027, 1504918, 889837, 1143892, 1410437, 1642347, 1316600, 1603626, 1583010, 1209414],
     "2025": [1614871, 1199783, 1558333, 2042439, 1940688, 2179188, 2013382, 2499096, 2466728, 2001449, 2144927, 2089765],
-    "2026": [2161944, 2109384, 2311749, 2601247, 3087631, 842556, 0, 0, 0, 0, 0, 0]
+    "2026": [2161944, 2109384, 2311749, 2601247, 3087631, 887791, 0, 0, 0, 0, 0, 0]
 }
 
 # ── Fluxo de Caixa (dashboard/95) ────────────────────────────────────────────
@@ -1313,15 +1313,15 @@ body{{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--t
 
 <!-- Ciclo Operacional — 2 cards calculados de cirurgia → nota e cirurgia → recebimento -->
 <div class="kpi-strip" style="margin-top:8px">
-  <div class="kpi-card blue has-tooltip" data-tooltip="Mediana 2026 ({_ciclo_ref}): tempo entre data da cirurgia e emissão da NF. Média: {_ciclo_nota['media']} dias em {_ciclo_nota['n']} títulos.">
+  <div class="kpi-card blue has-tooltip" data-tooltip="Média {_ciclo_ref}: tempo entre data da cirurgia e emissão da NF. Base: {_ciclo_nota['n']:,} registros.">
     <div class="kpi-label">Ciclo Cirurgia → NF</div>
-    <div class="kpi-value" id="kpiCicloNota">{_ciclo_nota['mediana']} dias</div>
-    <div class="kpi-sub">Mediana · {_ciclo_nota['media']} dias média · {_ciclo_nota['n']} títulos</div>
+    <div class="kpi-value" id="kpiCicloNota">{_ciclo_nota['media']} dias</div>
+    <div class="kpi-sub">Média · {_ciclo_nota['n']:,} registros</div>
   </div>
-  <div class="kpi-card teal has-tooltip" data-tooltip="Mediana 2026 ({_ciclo_ref}): tempo entre data da cirurgia e o recebimento efetivo. Média: {_ciclo_receb['media']} dias em {_ciclo_receb['n']} títulos.">
+  <div class="kpi-card teal has-tooltip" data-tooltip="Média {_ciclo_ref}: tempo entre data da cirurgia e o recebimento efetivo. Base: {_ciclo_receb['n']:,} registros.">
     <div class="kpi-label">Ciclo Cirurgia → Recebimento</div>
-    <div class="kpi-value" id="kpiCicloReceb">{_ciclo_receb['mediana']} dias</div>
-    <div class="kpi-sub">Mediana · {_ciclo_receb['media']} dias média · {_ciclo_receb['n']} títulos</div>
+    <div class="kpi-value" id="kpiCicloReceb">{_ciclo_receb['media']} dias</div>
+    <div class="kpi-sub">Média · {_ciclo_receb['n']:,} registros</div>
   </div>
 </div>
 

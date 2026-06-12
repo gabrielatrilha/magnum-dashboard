@@ -16,9 +16,9 @@
   "cirurgias": 68,
   "inadimplencia_total": 1146736.22,
   "ciclo_financeiro": {
-    "ref": "2026 Jan-Jun",
-    "cir_recebimento": {"mediana": 61, "media": 87, "n": 348},
-    "cir_nota":        {"mediana": 1,  "media": 19, "n": 355},
+    "ref": "2026 (acumulado)",
+    "cir_recebimento": {"media": 68.4, "n": 15840},
+    "cir_nota":        {"media": 24.5, "n": 15840},
     "por_un": {
       "RS":       {"receb_med": 33,  "nota_med": 0},
       "SC":       {"receb_med": 34,  "nota_med": 2},
