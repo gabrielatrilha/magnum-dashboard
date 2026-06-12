@@ -1685,10 +1685,9 @@ function buildMiniCharts(){if(typeof Chart==='undefined')return;
   mkChart('chMiniFat', miniBarCfg(fatLabels,fatVals,'#4FC454'));
 
   // — Mini Inadimplência por Unidade
-  var inadMap={};
-  INAD.forEach(function(r){inadMap[r[1]]=(inadMap[r[1]]||0)+parseVal(r[2]);});
-  var inadArr=Object.entries(inadMap).sort(function(a,b){return b[1]-a[1];}).slice(0,6);
-  mkChart('chMiniInad', miniBarCfg(inadArr.map(function(u){return u[0];}),inadArr.map(function(u){return u[1];}),'#D44444'));
+  // chMiniInad: usa INAD_UN (mesma fonte do gráfico principal e KPI)
+  var inadArr=Object.entries(INAD_UN).sort(function(a,b){return b[1].total-a[1].total;}).slice(0,6);
+  mkChart('chMiniInad', miniBarCfg(inadArr.map(function(u){return u[0];}),inadArr.map(function(u){return u[1].total;}),'#D44444'));
 
   // — Mini Despesas top categorias (horizontal)
   var adTop=dp.byAd.slice(0,6);
