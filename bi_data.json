@@ -1,31 +1,31 @@
 {
-  "coleta_em": "2026-06-11",
-  "periodo": {"ini": "2026-06-01", "fim": "2026-06-11"},
-  "faturamento": 834567.51,
-  "nf_count": 143,
+  "coleta_em": "2026-06-12",
+  "periodo": {"ini": "2026-06-01", "fim": "2026-06-12"},
+  "faturamento": 887790.51,
+  "nf_count": 152,
   "faturamento_por_un": {
-    "RS":       276672.95,
-    "SP":       111684.0,
-    "PR":       23900.0,
-    "Holep":    77500.0,
+    "RS": 296445.95,
+    "SP": 131134.0,
+    "PR": 23900.0,
+    "Holep": 77500.0,
     "Traumato": 335830.56,
-    "SC":       8000.0,
-    "BA":       980.0
+    "SC": 22000.0,
+    "BA": 980.0
   },
-  "despesas": 783343.97,
-  "cirurgias": 60,
-  "inadimplencia_total": 1096784.72,
+  "despesas": 795140.89,
+  "cirurgias": 68,
+  "inadimplencia_total": 1146736.22,
   "ciclo_financeiro": {
     "ref": "2026 Jan-Jun",
     "cir_recebimento": {"mediana": 61, "media": 87, "n": 348},
     "cir_nota":        {"mediana": 1,  "media": 19, "n": 355},
     "por_un": {
-      "RS":       {"receb_med": 33, "nota_med": 0},
-      "SC":       {"receb_med": 34, "nota_med": 2},
-      "BA":       {"receb_med": 68, "nota_med": 1},
-      "PR":       {"receb_med": 63, "nota_med": 3},
-      "SP":       {"receb_med": 90, "nota_med": 1},
-      "Traumato": {"receb_med": 97, "nota_med": 7},
+      "RS":       {"receb_med": 33,  "nota_med": 0},
+      "SC":       {"receb_med": 34,  "nota_med": 2},
+      "BA":       {"receb_med": 68,  "nota_med": 1},
+      "PR":       {"receb_med": 63,  "nota_med": 3},
+      "SP":       {"receb_med": 90,  "nota_med": 1},
+      "Traumato": {"receb_med": 97,  "nota_med": 7},
       "Holep":    {"receb_med": 192, "nota_med": 131}
     }
   }
