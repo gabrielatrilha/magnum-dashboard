@@ -1912,8 +1912,6 @@ function setActivePeriod(key){{
     document.getElementById('kpiFatSub').textContent=lbl+' · sem dados offline';
     document.getElementById('kpiDespValue').textContent='—';
     document.getElementById('kpiDespSub').textContent=lbl+' · sem dados offline';
-    document.getElementById('kpiPrazo').textContent='—';
-    document.getElementById('kpiPrazoSub').textContent=lbl;
     document.getElementById('fatSecSub').textContent=lbl+' — dados não carregados offline';
     document.getElementById('cirSecSub').textContent=lbl+' — dados não carregados offline';
     document.getElementById('dexpSecSub').textContent=lbl+' — dados não carregados offline';
@@ -1944,8 +1942,6 @@ function setPeriod(key){{
   document.getElementById('kpiFatSub').textContent=fp.nf_count+' NFs · '+fp.label;
   document.getElementById('kpiDespValue').textContent='R$ '+fmtN(dp.total);
   document.getElementById('kpiDespSub').textContent=dp.label+' · todas categorias';
-  document.getElementById('kpiPrazo').textContent=fp.prazo+' dias';
-  document.getElementById('kpiPrazoSub').textContent='Media '+fp.label;
   // Section headers
   document.getElementById('fatSecSub').textContent=fp.label+' — '+fp.nf_count+' notas fiscais emitidas';
   document.getElementById('cirSecSub').textContent=fp.label+' — por tipo, hospital, convenio e unidade';
