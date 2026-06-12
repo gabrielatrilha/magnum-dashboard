@@ -1087,15 +1087,15 @@ _chart_labels_js = json.dumps([FAT_PERIODS[k]["label"]                          
 _chart_fat_js    = json.dumps([round(FAT_PERIODS[k].get("total",0),2)               for k in _chart_ks])
 _chart_desp_js   = json.dumps([round(DESP_PERIODS_RAW.get(k,{}).get("total",0),2)   for k in _chart_ks])
 # Receita recebida e Despesa paga por mês — analise/45 (pagar_receber_agrupado)
-# Chave: "AAAA-MM" → valores em float
-_A45 = {
+# Lido de bi_data.json["a45_por_mes"] (chave "AAAA-MM"). Fallback hardcoded se ausente.
+_A45_FALLBACK = {
     "2026-03": {"rec": 2992980.59, "desp": 2025489.86},
     "2026-04": {"rec": 2261912.91, "desp": 2395797.02},
     "2026-05": {"rec": 2457910.74, "desp": 2096914.47},
     "2026-06": {"rec": 1249236.09, "desp":  810987.11},
 }
+_A45 = {**_A45_FALLBACK, **_bi.get("a45_por_mes", {})}
 def _a45key(k):
-    # converte "mar26" → "2026-03", "jun26" → "2026-06" etc
     _mn = {"jan":"01","fev":"02","mar":"03","abr":"04","mai":"05","jun":"06",
            "jul":"07","ago":"08","set":"09","out":"10","nov":"11","dez":"12"}
     return "20" + k[3:] + "-" + _mn.get(k[:3],"00")

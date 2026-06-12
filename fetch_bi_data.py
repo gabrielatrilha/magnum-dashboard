@@ -174,6 +174,34 @@ def get_cirurgias(s):
     log(f"Cirurgias: {cir}")
     return cir
 
+# ── 6b. Receita × Despesa por mês — /analise/45 (pagar_receber_agrupado) ────
+def get_a45_por_mes(s):
+    """
+    Retorna dict {'AAAA-MM': {'rec': float, 'desp': float}} via analise/45.
+    Filtro: UNIDADE_EMPRESA!=C62, DATA_PG entre 2025-06-01 e hoje.
+    Campos: REF_BAIXA, DESPESA, RECEITA
+    """
+    hoje = date.today().strftime("%Y-%m-%d")
+    f = f"UNIDADE_EMPRESA;!=;C62|DATA_PG;entre;2025-06-01;{hoje}"
+    url = f"{BI_URL}/analise/45?f={quote(f)}&campos=REF_BAIXA,DESPESA,RECEITA&sort=REF_BAIXA&dir=ASC"
+    log("  GET /analise/45 (receita×despesa por mês) ...")
+    resp = s.get(url, timeout=60)
+    soup = BeautifulSoup(resp.text, "html.parser")
+    result = {}
+    for row in soup.find_all("tr"):
+        cells = row.find_all("td")
+        if len(cells) >= 4:
+            ref  = cells[1].get_text(strip=True)   # ex: "2026-03"
+            desp = cells[2].get_text(strip=True)
+            rec  = cells[3].get_text(strip=True)
+            if ref and ref != "-" and len(ref) == 7:  # formato AAAA-MM
+                result[ref] = {
+                    "rec":  br_float(rec),
+                    "desp": br_float(desp),
+                }
+    log(f"  analise/45: {len(result)} meses coletados")
+    return result
+
 # ── 6. Inadimplência — /analise/44, campo VALOR (acumulado histórico) ─────────
 def get_inadimplencia(s):
     # Sem filtro de data: captura tudo vencido e não pago até hoje
@@ -187,7 +215,7 @@ def get_inadimplencia(s):
     return val
 
 # ── 7. Salvar bi_data.json ────────────────────────────────────────────────────
-def salvar_bi_data(fat, desp, cir, inad, nf_count=0, fat_por_un=None):
+def salvar_bi_data(fat, desp, cir, inad, nf_count=0, fat_por_un=None, a45=None):
     inicio, hoje = mes_atual()
     data = {
         "coleta_em":           datetime.now().strftime("%Y-%m-%d"),
@@ -198,6 +226,7 @@ def salvar_bi_data(fat, desp, cir, inad, nf_count=0, fat_por_un=None):
         "despesas":            round(desp, 2),
         "cirurgias":           cir,
         "inadimplencia_total": round(inad, 2),
+        "a45_por_mes":          a45 or {},
     }
     out = SCRIPT_DIR / "bi_data.json"
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -229,4 +258,54 @@ def publicar_github():
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/index.html"
     headers = {
         "Authorization":        f"Bearer {token}",
-        "Accept"
+        "Accept":               "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+    sha = ""
+    try:
+        req = urllib.request.Request(api_url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as r:
+            sha = json.loads(r.read())["sha"]
+    except Exception:
+        pass
+
+    payload = json.dumps({
+        "message": f"Auto-update {datetime.now().strftime('%d/%m/%Y %H:%M')}",
+        "content": content_b64,
+        "branch":  GITHUB_BRANCH,
+        **({"sha": sha} if sha else {}),
+    }).encode()
+
+    req = urllib.request.Request(
+        api_url, data=payload, method="PUT",
+        headers={**headers, "Content-Type": "application/json"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            log("GitHub: publicado OK")
+            return True
+    except urllib.error.HTTPError as e:
+        log(f"GitHub erro {e.code}: {e.read().decode()[:200]}")
+        return False
+
+# ── MAIN ──────────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    log("=== Coleta BI Magnum ===")
+    try:
+        sess       = make_session()
+        fat        = get_faturamento(sess)
+        nf_count   = get_nf_count(sess)
+        fat_por_un = get_faturamento_por_un(sess)
+        desp       = get_despesas(sess)
+        cir        = get_cirurgias(sess)
+        inad       = get_inadimplencia(sess)
+        a45        = get_a45_por_mes(sess)
+        salvar_bi_data(fat, desp, cir, inad, nf_count=nf_count, fat_por_un=fat_por_un, a45=a45)
+        gerar_dashboard()
+        publicar_github()
+        log("=== Concluído ===")
+    except Exception as e:
+        log(f"ERRO: {e}")
+        import traceback; traceback.print_exc()
+        sys.exit(1)
