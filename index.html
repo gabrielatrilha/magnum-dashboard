@@ -191,15 +191,15 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 .fluxo-kpi.teal-b{border-left:4px solid var(--teal)}.fluxo-kpi.yellow-b{border-left:4px solid var(--yellow)}
 .fluxo-kpi-icon{font-size:24px}.fluxo-kpi-val{font-size:18px;font-weight:900;color:var(--navy)}
 .fluxo-kpi-lbl{font-size:11px;color:var(--muted);font-weight:600}
-/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ 2-column grid layout ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+/* ââ 2-column grid layout ââ */
 .dash-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:start}
 .span2{grid-column:1/-1}
-/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ always-visible mini charts ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+/* ââ always-visible mini charts ââ */
 .mini-ch{background:var(--card);border-top:1px solid var(--border)}
 .mini-ch-inner{padding:10px 22px 16px}
 .mini-ch-inner h4{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
 .mini-chw{position:relative;height:145px}
-/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Compact headers for 2-col cards ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+/* ââ Compact headers for 2-col cards ââ */
 .dash-grid .section-card:not(.span2) .sec-head{padding:11px 14px}
 .dash-grid .section-card:not(.span2) .sec-h2{font-size:13px}
 .dash-grid .section-card:not(.span2) .sec-sub{font-size:10px;margin-top:1px}
@@ -215,7 +215,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 .dash-grid .section-card:not(.span2) .prev-badge{font-size:11px;padding:2px 8px}
 .dash-grid .section-card:not(.span2) .sec-body{padding:14px 16px}
 .mini-ch-inner{padding:10px 16px 14px}
-/* dash-grid 1-col mobile jÃÂÃÂ¡ no @media 900px acima */
+/* dash-grid 1-col mobile jÃ¡ no @media 900px acima */
 </style>
 </head>
 <body>
@@ -225,7 +225,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
     <img src="https://magnumimport.com.br/wp-content/uploads/2024/04/magnum-logo-white.png" alt="Magnum" onerror="this.style.display='none'">
     <div>
       <h1>Dashboard <span>Executivo</span></h1>
-      <div style="color:rgba(255,255,255,.6);font-size:11px;margin-top:2px">Painel de Gestao ÃÂ¢ÃÂÃÂ Diretoria</div>
+      <div style="color:rgba(255,255,255,.6);font-size:11px;margin-top:2px">Painel de Gestao â Diretoria</div>
     </div>
   </div>
   <div class="header-right">
@@ -235,8 +235,8 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 </div>
 
 <div class="period-bar">
-  <label>ÃÂ°ÃÂÃÂÃÂ Periodo:</label>
-  <div class="period-chips" id="period-chips-container"><select class="period-hist-select" onchange="if(this.value){setActivePeriod(this.value);this.value=&quot;&quot;}"><option value="">ÃÂ°ÃÂÃÂÃÂ HistÃÂÃÂ³rico (51 meses)</option><option value="mar26">Mar/26</option><option value="fev26" class="no-data">ÃÂ°ÃÂÃÂÃÂ Fev/26</option><option value="jan26" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jan/26</option><option value="dez25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Dez/25</option><option value="nov25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Nov/25</option><option value="out25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Out/25</option><option value="set25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Set/25</option><option value="ago25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Ago/25</option><option value="jul25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jul/25</option><option value="jun25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jun/25</option><option value="mai25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mai/25</option><option value="abr25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Abr/25</option><option value="mar25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mar/25</option><option value="fev25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Fev/25</option><option value="jan25" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jan/25</option><option value="dez24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Dez/24</option><option value="nov24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Nov/24</option><option value="out24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Out/24</option><option value="set24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Set/24</option><option value="ago24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Ago/24</option><option value="jul24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jul/24</option><option value="jun24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jun/24</option><option value="mai24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mai/24</option><option value="abr24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Abr/24</option><option value="mar24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mar/24</option><option value="fev24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Fev/24</option><option value="jan24" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jan/24</option><option value="dez23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Dez/23</option><option value="nov23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Nov/23</option><option value="out23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Out/23</option><option value="set23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Set/23</option><option value="ago23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Ago/23</option><option value="jul23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jul/23</option><option value="jun23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jun/23</option><option value="mai23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mai/23</option><option value="abr23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Abr/23</option><option value="mar23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mar/23</option><option value="fev23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Fev/23</option><option value="jan23" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jan/23</option><option value="dez22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Dez/22</option><option value="nov22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Nov/22</option><option value="out22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Out/22</option><option value="set22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Set/22</option><option value="ago22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Ago/22</option><option value="jul22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jul/22</option><option value="jun22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jun/22</option><option value="mai22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mai/22</option><option value="abr22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Abr/22</option><option value="mar22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Mar/22</option><option value="fev22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Fev/22</option><option value="jan22" class="no-data">ÃÂ°ÃÂÃÂÃÂ Jan/22</option></select><button class="period-chip" data-key="abr26" onclick="setActivePeriod(this.dataset.key)">Abr/26</button><button class="period-chip" data-key="mai26" onclick="setActivePeriod(this.dataset.key)">Mai/26</button><button class="period-chip active" data-key="jun26" onclick="setActivePeriod(this.dataset.key)">Jun/26 ÃÂ°ÃÂÃÂÃÂ</button><div style="width:1px;background:var(--border);margin:0 4px;align-self:stretch;"></div><button class="period-chip trim" data-key="1t26" onclick="setActivePeriod(this.dataset.key)">1T/26</button></div>
+  <label>ð Periodo:</label>
+  <div class="period-chips" id="period-chips-container"><select class="period-hist-select" onchange="if(this.value){setActivePeriod(this.value);this.value=&quot;&quot;}"><option value="">ð HistÃ³rico (51 meses)</option><option value="mar26">Mar/26</option><option value="fev26" class="no-data">ð Fev/26</option><option value="jan26" class="no-data">ð Jan/26</option><option value="dez25" class="no-data">ð Dez/25</option><option value="nov25" class="no-data">ð Nov/25</option><option value="out25" class="no-data">ð Out/25</option><option value="set25" class="no-data">ð Set/25</option><option value="ago25" class="no-data">ð Ago/25</option><option value="jul25" class="no-data">ð Jul/25</option><option value="jun25" class="no-data">ð Jun/25</option><option value="mai25" class="no-data">ð Mai/25</option><option value="abr25" class="no-data">ð Abr/25</option><option value="mar25" class="no-data">ð Mar/25</option><option value="fev25" class="no-data">ð Fev/25</option><option value="jan25" class="no-data">ð Jan/25</option><option value="dez24" class="no-data">ð Dez/24</option><option value="nov24" class="no-data">ð Nov/24</option><option value="out24" class="no-data">ð Out/24</option><option value="set24" class="no-data">ð Set/24</option><option value="ago24" class="no-data">ð Ago/24</option><option value="jul24" class="no-data">ð Jul/24</option><option value="jun24" class="no-data">ð Jun/24</option><option value="mai24" class="no-data">ð Mai/24</option><option value="abr24" class="no-data">ð Abr/24</option><option value="mar24" class="no-data">ð Mar/24</option><option value="fev24" class="no-data">ð Fev/24</option><option value="jan24" class="no-data">ð Jan/24</option><option value="dez23" class="no-data">ð Dez/23</option><option value="nov23" class="no-data">ð Nov/23</option><option value="out23" class="no-data">ð Out/23</option><option value="set23" class="no-data">ð Set/23</option><option value="ago23" class="no-data">ð Ago/23</option><option value="jul23" class="no-data">ð Jul/23</option><option value="jun23" class="no-data">ð Jun/23</option><option value="mai23" class="no-data">ð Mai/23</option><option value="abr23" class="no-data">ð Abr/23</option><option value="mar23" class="no-data">ð Mar/23</option><option value="fev23" class="no-data">ð Fev/23</option><option value="jan23" class="no-data">ð Jan/23</option><option value="dez22" class="no-data">ð Dez/22</option><option value="nov22" class="no-data">ð Nov/22</option><option value="out22" class="no-data">ð Out/22</option><option value="set22" class="no-data">ð Set/22</option><option value="ago22" class="no-data">ð Ago/22</option><option value="jul22" class="no-data">ð Jul/22</option><option value="jun22" class="no-data">ð Jun/22</option><option value="mai22" class="no-data">ð Mai/22</option><option value="abr22" class="no-data">ð Abr/22</option><option value="mar22" class="no-data">ð Mar/22</option><option value="fev22" class="no-data">ð Fev/22</option><option value="jan22" class="no-data">ð Jan/22</option></select><button class="period-chip" data-key="abr26" onclick="setActivePeriod(this.dataset.key)">Abr/26</button><button class="period-chip" data-key="mai26" onclick="setActivePeriod(this.dataset.key)">Mai/26</button><button class="period-chip active" data-key="jun26" onclick="setActivePeriod(this.dataset.key)">Jun/26 ð</button><div style="width:1px;background:var(--border);margin:0 4px;align-self:stretch;"></div><button class="period-chip trim" data-key="1t26" onclick="setActivePeriod(this.dataset.key)">1T/26</button></div>
   <span class="period-badge" id="periodLabel">Jun/26</span>
 </div>
 
@@ -244,32 +244,32 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
   <div class="kpi-card green">
     <div class="kpi-label">Faturamento</div>
     <div class="kpi-value" id="kpiFatValue">R$ 1.325.495</div>
-    <div class="kpi-sub" id="kpiFatSub">ÃÂ¢ÃÂÃÂ</div>
+    <div class="kpi-sub" id="kpiFatSub">â</div>
   </div>
   <div class="kpi-card yellow">
     <div class="kpi-label">Despesas</div>
     <div class="kpi-value" id="kpiDespValue">R$ 810.963</div>
-    <div class="kpi-sub" id="kpiDespSub">ÃÂ¢ÃÂÃÂ</div>
+    <div class="kpi-sub" id="kpiDespSub">â</div>
   </div>
   <div class="kpi-card red">
     <div class="kpi-label">Inadimplencia Total</div>
     <div class="kpi-value">R$ 1.190.453,52</div>
-    <div class="kpi-sub">95 titulos ÃÂÃÂ· 7 unidades</div>
+    <div class="kpi-sub">95 titulos Â· 7 unidades</div>
   </div>
 
 </div>
 
-<!-- Ciclo Operacional ÃÂ¢ÃÂÃÂ 2 cards calculados de cirurgia ÃÂ¢ÃÂÃÂ nota e cirurgia ÃÂ¢ÃÂÃÂ recebimento -->
+<!-- Ciclo Operacional â 2 cards calculados de cirurgia â nota e cirurgia â recebimento -->
 <div class="kpi-strip" style="margin-top:8px">
-  <div class="kpi-card blue has-tooltip" data-tooltip="MÃÂÃÂ©dia 2026 Jan-Jun: tempo entre data da cirurgia e emissÃÂÃÂ£o da NF. Base: 15,840 registros.">
-    <div class="kpi-label">Ciclo Cirurgia ÃÂ¢ÃÂÃÂ NF</div>
+  <div class="kpi-card blue has-tooltip" data-tooltip="MÃ©dia 2026 Jan-Jun: tempo entre data da cirurgia e emissÃ£o da NF. Base: 15,840 registros.">
+    <div class="kpi-label">Ciclo Cirurgia â NF</div>
     <div class="kpi-value" id="kpiCicloNota">24.5 dias</div>
-    <div class="kpi-sub">MÃÂÃÂ©dia ÃÂÃÂ· 15,840 registros ÃÂÃÂ· dados atÃÂÃÂ© 31/05/2026</div>
+    <div class="kpi-sub">MÃ©dia Â· 15,840 registros Â· dados atÃ© 31/05/2026</div>
   </div>
-  <div class="kpi-card teal has-tooltip" data-tooltip="MÃÂÃÂ©dia 2026 Jan-Jun: tempo entre data da cirurgia e o recebimento efetivo. Base: 15,840 registros.">
-    <div class="kpi-label">Ciclo Cirurgia ÃÂ¢ÃÂÃÂ Recebimento</div>
+  <div class="kpi-card teal has-tooltip" data-tooltip="MÃ©dia 2026 Jan-Jun: tempo entre data da cirurgia e o recebimento efetivo. Base: 15,840 registros.">
+    <div class="kpi-label">Ciclo Cirurgia â Recebimento</div>
     <div class="kpi-value" id="kpiCicloReceb">68.4 dias</div>
-    <div class="kpi-sub">MÃÂÃÂ©dia ÃÂÃÂ· 15,840 registros ÃÂÃÂ· dados atÃÂÃÂ© 31/05/2026</div>
+    <div class="kpi-sub">MÃ©dia Â· 15,840 registros Â· dados atÃ© 31/05/2026</div>
   </div>
 </div>
 
@@ -277,39 +277,39 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 
 <div class="main dash-grid">
 
-<!-- 1. ANALISES ÃÂ¢ÃÂÃÂ EvoluÃÂÃÂ§ÃÂÃÂ£o de Faturamento + Receita vs Despesa -->
+<!-- 1. ANALISES â EvoluÃ§Ã£o de Faturamento + Receita vs Despesa -->
 <div class="section-card span2">
   <div class="sec-head open" data-target="bodyAnalise">
     <div class="sec-title">
-      <div class="sec-icon b">ÃÂ°ÃÂÃÂÃÂ</div>
-      <div><div class="sec-h2">AnÃÂÃÂ¡lises & EvoluÃÂÃÂ§ÃÂÃÂ£o</div>
-           <div class="sec-sub">EvoluÃÂÃÂ§ÃÂÃÂ£o histÃÂÃÂ³rica de faturamento e comparativo Receita ÃÂÃÂ Despesa</div></div>
+      <div class="sec-icon b">ð</div>
+      <div><div class="sec-h2">AnÃ¡lises & EvoluÃ§Ã£o</div>
+           <div class="sec-sub">EvoluÃ§Ã£o histÃ³rica de faturamento e comparativo Receita Ã Despesa</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label" id="analFatYtdLbl">Faturamento 2026</div>
         <div class="sec-total-value b" id="analFatYtdVal">R$ 11.908.549</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevAnalise">
-    <div class="prev-item"><div class="prev-lbl">Faturamento 2026 (acumulado)</div><div class="prev-val" id="prevAnaliseFat2026">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">vs 2025 mesmo perÃÂÃÂ­odo</div><div class="prev-val"><span class="prev-badge badge-green" id="prevAnaliseCrescimento">ÃÂ¢ÃÂÃÂ</span></div></div>
-    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento ÃÂ¢ÃÂÃÂ Despesas) / Faturamento ÃÂÃÂ 100">Margem Operacional</div><div class="prev-val"><span class="prev-badge badge-teal" id="prevAnaliseMargem">ÃÂ¢ÃÂÃÂ</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">Faturamento 2026 (acumulado)</div><div class="prev-val" id="prevAnaliseFat2026">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">vs 2025 mesmo perÃ­odo</div><div class="prev-val"><span class="prev-badge badge-green" id="prevAnaliseCrescimento">â</span></div></div>
+    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento â Despesas) / Faturamento Ã 100">Margem Operacional</div><div class="prev-val"><span class="prev-badge badge-teal" id="prevAnaliseMargem">â</span></div></div>
   </div>
   <div class="sec-body open" id="bodyAnalise">
     <div class="chrow">
       <div class="chbox" style="flex:2;min-width:300px">
-        <h3>ÃÂ°ÃÂÃÂÃÂ EvoluÃÂÃÂ§ÃÂÃÂ£o de Faturamento por Ano (R$)</h3>
+        <h3>ð EvoluÃ§Ã£o de Faturamento por Ano (R$)</h3>
         <div class="chw" style="height:280px"><canvas id="chFatEvol"></canvas></div>
       </div>
     </div>
     <div class="chrow">
       <div class="chbox" style="flex:1;min-width:280px">
-        <h3>ÃÂ¢ÃÂÃÂÃÂ¯ÃÂ¸ÃÂ Faturamento ÃÂÃÂ Recebida ÃÂÃÂ Despesas ÃÂ¢ÃÂÃÂ Mensal 2026</h3>
+        <h3>âï¸ Faturamento Ã Recebida Ã Despesas â Mensal 2026</h3>
         <div class="chw" style="height:220px"><canvas id="chFatDesp"></canvas></div>
       </div>
       <div class="chbox" style="flex:1;min-width:240px">
-        <h3>ÃÂ°ÃÂÃÂÃÂ Top Grupos por PerÃÂÃÂ­odo</h3>
+        <h3>ð Top Grupos por PerÃ­odo</h3>
         <div style="overflow-y:auto;max-height:220px" id="analiseTopGrupos"></div>
       </div>
     </div>
@@ -320,9 +320,9 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 <div class="section-card">
   <div class="sec-head" data-target="bodyInad">
     <div class="sec-title">
-      <div class="sec-icon r">ÃÂ¢ÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ</div>
+      <div class="sec-icon r">â ï¸</div>
       <div><div class="sec-h2">Inadimplentes Atuais</div>
-           <div class="sec-sub" id="inadSecSub">Titulos vencidos ÃÂ¢ÃÂÃÂ ordenados por atraso decrescente</div></div>
+           <div class="sec-sub" id="inadSecSub">Titulos vencidos â ordenados por atraso decrescente</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Total em Aberto (BI)</div>
@@ -330,16 +330,16 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="sec-total-item"><div class="sec-total-label">Mais afetada</div>
         <div class="sec-total-value r">Traumato</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevInad">
-    <div class="prev-item"><div class="prev-lbl">Total InadimplÃÂÃÂªncia</div><div class="prev-val" id="prevInadTotal">ÃÂ¢ÃÂÃÂ</div></div>
+    <div class="prev-item"><div class="prev-lbl">Total InadimplÃªncia</div><div class="prev-val" id="prevInadTotal">â</div></div>
     <div class="prev-item"><div class="prev-lbl">Unidade mais afetada</div><div class="prev-val" id="prevInadTopUN">Traumato</div></div>
-    <div class="prev-item"><div class="prev-lbl">TÃÂÃÂ­tulos em aberto</div><div class="prev-val" id="prevInadCount">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">Taxa inadimplÃÂÃÂªncia</div><div class="prev-val"><span class="prev-badge badge-red" id="prevInadTaxa">ÃÂ¢ÃÂÃÂ</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">TÃ­tulos em aberto</div><div class="prev-val" id="prevInadCount">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">Taxa inadimplÃªncia</div><div class="prev-val"><span class="prev-badge badge-red" id="prevInadTaxa">â</span></div></div>
   </div>
   <div class="mini-ch"><div class="mini-ch-inner">
-    <h4>InadimplÃÂÃÂªncia por Unidade (R$)</h4>
+    <h4>InadimplÃªncia por Unidade (R$)</h4>
     <div class="mini-chw"><canvas id="chMiniInad"></canvas></div>
   </div></div>
   <div class="sec-body" id="bodyInad">
@@ -355,16 +355,16 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
         <div class="unid-grid" id="inadUnidGrid"></div>
       </div>
     </div>
-    <div class="det-toggle" data-panel="detInad">Ver clientes inadimplentes <span class="det-arrow">ÃÂ¢ÃÂÃÂ¼</span></div>
+    <div class="det-toggle" data-panel="detInad">Ver clientes inadimplentes <span class="det-arrow">â¼</span></div>
     <div id="detInad" class="det-panel">
       <div class="search-bar"><input type="text" id="srcInad" placeholder="Buscar cliente..."></div>
       <div class="tscroll"><table class="dtbl">
         <thead><tr><th>#</th><th>Cliente/Hospital</th><th class="c">UN</th>
-          <th class="r">Total (R$)</th><th class="c">Notas</th><th>Atraso MÃÂÃÂ¡x.</th></tr></thead>
+          <th class="r">Total (R$)</th><th class="c">Notas</th><th>Atraso MÃ¡x.</th></tr></thead>
         <tbody id="bodyTblInad"></tbody>
         <tfoot><tr style="background:#FFF0F0">
           <td colspan="3" style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL EXIBIDO</td>
-          <td class="val" style="color:var(--red);font-size:15px" id="inadTblTotal">ÃÂ¢ÃÂÃÂ</td>
+          <td class="val" style="color:var(--red);font-size:15px" id="inadTblTotal">â</td>
           <td colspan="2"></td>
         </tr></tfoot>
       </table></div>
@@ -376,9 +376,9 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 <div class="section-card">
   <div class="sec-head" data-target="bodyDesp">
     <div class="sec-title">
-      <div class="sec-icon t">ÃÂ°ÃÂÃÂÃÂ¸</div>
+      <div class="sec-icon t">ð¸</div>
       <div><div class="sec-h2">Despesas do Periodo</div>
-           <div class="sec-sub" id="dexpSecSub">ÃÂ¢ÃÂÃÂ</div></div>
+           <div class="sec-sub" id="dexpSecSub">â</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Total Despesas</div>
@@ -386,13 +386,13 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="sec-total-item"><div class="sec-total-label">Maior categoria</div>
         <div class="sec-total-value t">Compras Revenda</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevDesp">
-    <div class="prev-item"><div class="prev-lbl">Total Despesas</div><div class="prev-val" id="prevDespTotal">ÃÂ¢ÃÂÃÂ</div></div>
+    <div class="prev-item"><div class="prev-lbl">Total Despesas</div><div class="prev-val" id="prevDespTotal">â</div></div>
     <div class="prev-item"><div class="prev-lbl">Maior categoria</div><div class="prev-val" id="prevDespTopAd">Compras Revenda</div></div>
-    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento ÃÂ¢ÃÂÃÂ Despesas pagas) / Faturamento ÃÂÃÂ 100">Margem Fat ÃÂÃÂ Desp</div><div class="prev-val"><span class="prev-badge badge-yellow" id="prevDespMargem">ÃÂ¢ÃÂÃÂ</span></div></div>
-    <div class="prev-item"><div class="prev-lbl">Maior UN por custo</div><div class="prev-val" id="prevDespTopUN">ÃÂ¢ÃÂÃÂ</div></div>
+    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento â Despesas pagas) / Faturamento Ã 100">Margem Fat Ã Desp</div><div class="prev-val"><span class="prev-badge badge-yellow" id="prevDespMargem">â</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">Maior UN por custo</div><div class="prev-val" id="prevDespTopUN">â</div></div>
   </div>
   <div class="mini-ch"><div class="mini-ch-inner">
     <h4>Top Categorias de Despesa (R$)</h4>
@@ -406,7 +406,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="chbox"><h3>Por Unidade de Negocio</h3>
         <div class="chw"><canvas id="chDespUnid"></canvas></div></div>
     </div>
-    <div class="det-toggle" data-panel="detDesp">Ver dados detalhados de despesas <span class="det-arrow">ÃÂ¢ÃÂÃÂ¼</span></div>
+    <div class="det-toggle" data-panel="detDesp">Ver dados detalhados de despesas <span class="det-arrow">â¼</span></div>
     <div id="detDesp" class="det-panel">
       <div class="tabs">
         <button class="tab-btn active" data-pane="pDespHier">Hierarquia</button>
@@ -418,7 +418,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
           <tbody id="bodyTblDesp"></tbody>
           <tfoot><tr style="background:#FFFDE7">
             <td style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL GERAL</td>
-            <td class="val" id="dexpTblTotal" style="color:#B8860B;font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+            <td class="val" id="dexpTblTotal" style="color:#B8860B;font-size:15px">â</td>
             <td colspan="2"></td>
           </tr></tfoot>
         </table></div>
@@ -434,22 +434,22 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 <div class="section-card">
   <div class="sec-head" data-target="bodyFat">
     <div class="sec-title">
-      <div class="sec-icon g">ÃÂ°ÃÂÃÂÃÂ</div>
+      <div class="sec-icon g">ð</div>
       <div><div class="sec-h2">Faturamento</div>
-           <div class="sec-sub" id="fatSecSub">ÃÂ¢ÃÂÃÂ</div></div>
+           <div class="sec-sub" id="fatSecSub">â</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Total Faturado</div>
         <div class="sec-total-value g" id="fatTotalVal">R$ 1.325.495</div></div>
-      <div class="sec-total-item" style="text-align:right"><div class="sec-total-label">Prazo ÃÂÃÂ· NFs</div>
-        <div class="sec-total-value g" style="font-size:14px" id="fatPrazoVal">ÃÂ¢ÃÂÃÂ dias</div></div>
+      <div class="sec-total-item" style="text-align:right"><div class="sec-total-label">Prazo Â· NFs</div>
+        <div class="sec-total-value g" style="font-size:14px" id="fatPrazoVal">â dias</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevFat">
-    <div class="prev-item"><div class="prev-lbl">Top Unidade</div><div class="prev-val" id="prevFatTopUN">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">2ÃÂÃÂª Unidade</div><div class="prev-val" id="prevFatTop2">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento ÃÂ¢ÃÂÃÂ Despesas pagas) / Faturamento ÃÂÃÂ 100">Margem Fat ÃÂÃÂ Desp</div><div class="prev-val"><span class="prev-badge badge-green" id="prevFatMargem">ÃÂ¢ÃÂÃÂ</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">Top Unidade</div><div class="prev-val" id="prevFatTopUN">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">2Âª Unidade</div><div class="prev-val" id="prevFatTop2">â</div></div>
+    <div class="prev-item"><div class="prev-lbl has-tooltip" data-tooltip="(Faturamento â Despesas pagas) / Faturamento Ã 100">Margem Fat Ã Desp</div><div class="prev-val"><span class="prev-badge badge-green" id="prevFatMargem">â</span></div></div>
   </div>
   <div class="mini-ch"><div class="mini-ch-inner">
     <h4>Faturamento por Unidade (R$)</h4>
@@ -463,7 +463,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="chbox"><h3>Por Grupo de Produto</h3>
         <div class="chw" style="height:200px"><canvas id="chFatGrupo"></canvas></div></div>
     </div>
-    <div class="det-toggle" data-panel="detFat">Ver dados detalhados de faturamento <span class="det-arrow">ÃÂ¢ÃÂÃÂ¼</span></div>
+    <div class="det-toggle" data-panel="detFat">Ver dados detalhados de faturamento <span class="det-arrow">â¼</span></div>
     <div id="detFat" class="det-panel">
       <div class="tabs">
         <button class="tab-btn active" data-pane="pFatUnid">Por Unidade</button>
@@ -478,7 +478,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
           <tbody id="bodyTblFatUnid"></tbody>
           <tfoot><tr style="background:#F0FFF4">
             <td colspan="2" style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL</td>
-            <td class="val" id="fatUnidTotal" style="color:#2E9E38;font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+            <td class="val" id="fatUnidTotal" style="color:#2E9E38;font-size:15px">â</td>
             <td></td>
           </tr></tfoot>
         </table></div></div>
@@ -489,7 +489,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
           <tbody id="bodyTblFatGrupo"></tbody>
           <tfoot><tr style="background:#F0FFF4">
             <td style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL</td>
-            <td class="val" id="fatGrupoTotal" style="color:#2E9E38;font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+            <td class="val" id="fatGrupoTotal" style="color:#2E9E38;font-size:15px">â</td>
             <td colspan="3"></td>
           </tr></tfoot>
         </table></div>
@@ -502,7 +502,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
           <tbody id="bodyTblFatCli"></tbody>
           <tfoot><tr style="background:#F0FFF4">
             <td colspan="2" style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL</td>
-            <td class="val" id="fatCliTotal" style="color:#2E9E38;font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+            <td class="val" id="fatCliTotal" style="color:#2E9E38;font-size:15px">â</td>
             <td colspan="2"></td>
           </tr></tfoot>
         </table></div>
@@ -510,7 +510,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div id="pFatPrazo" class="tab-pane">
         <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap">
           <div class="days-box">
-            <div class="days-big" id="fatPrazoBig">ÃÂ¢ÃÂÃÂ</div>
+            <div class="days-big" id="fatPrazoBig">â</div>
             <div style="font-size:14px;color:var(--muted);margin-top:6px">dias em media</div>
             <div style="font-size:12px;color:var(--muted);margin-top:8px">Da cirurgia ate a<br>emissao da NF</div>
           </div>
@@ -525,21 +525,21 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 <div class="section-card">
   <div class="sec-head" data-target="bodyCir">
     <div class="sec-title">
-      <div class="sec-icon b">ÃÂ°ÃÂÃÂÃÂ¥</div>
+      <div class="sec-icon b">ð¥</div>
       <div><div class="sec-h2">Cirurgias</div>
-           <div class="sec-sub" id="cirSecSub">ÃÂ¢ÃÂÃÂ</div></div>
+           <div class="sec-sub" id="cirSecSub">â</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Faturamento</div>
-        <div class="sec-total-value b" id="cirTotalVal">ÃÂ¢ÃÂÃÂ</div></div>
+        <div class="sec-total-value b" id="cirTotalVal">â</div></div>
       <div class="sec-total-item"><div class="sec-total-label">Top Tipo</div>
         <div class="sec-total-value b">Protese Inflavel</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevCir">
-    <div class="prev-item"><div class="prev-lbl">NÃÂÃÂº Cirurgias</div><div class="prev-val" id="prevCirTotal">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">Top tipo</div><div class="prev-val" id="prevCirTopTipo">PrÃÂÃÂ³tese Peniana InflÃÂÃÂ¡vel</div></div>
+    <div class="prev-item"><div class="prev-lbl">NÂº Cirurgias</div><div class="prev-val" id="prevCirTotal">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">Top tipo</div><div class="prev-val" id="prevCirTopTipo">PrÃ³tese Peniana InflÃ¡vel</div></div>
     <div class="prev-item"><div class="prev-lbl">Top convenio</div><div class="prev-val" id="prevCirTopConv">PARTICULAR</div></div>
     <div class="prev-item"><div class="prev-lbl">Top unidade</div><div class="prev-val" id="prevCirTopUN">RS</div></div>
   </div>
@@ -555,14 +555,14 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="chbox"><h3>Por Convenio</h3>
         <div class="chw" style="height:240px"><canvas id="chCirConv"></canvas></div></div>
     </div>
-    <div class="det-toggle" data-panel="detCir">Ver dados detalhados de cirurgias <span class="det-arrow">ÃÂ¢ÃÂÃÂ¼</span></div>
+    <div class="det-toggle" data-panel="detCir">Ver dados detalhados de cirurgias <span class="det-arrow">â¼</span></div>
     <div id="detCir" class="det-panel">
       <div class="tabs">
         <button class="tab-btn active" data-pane="pCirUnid">Por Unidade</button>
         <button class="tab-btn" data-pane="pCirTipo">Por Tipo</button>
         <button class="tab-btn" data-pane="pCirHosp">Por Hospital</button>
         <button class="tab-btn" data-pane="pCirConv">Por Convenio</button>
-        <button class="tab-btn" data-pane="pCirVend">Por MÃÂÃÂ©dico / Vendedor</button>
+        <button class="tab-btn" data-pane="pCirVend">Por MÃ©dico / Vendedor</button>
       </div>
       <div id="pCirUnid" class="tab-pane active"><div id="cirUnidAccordion"></div></div>
       <div id="pCirTipo" class="tab-pane">
@@ -571,7 +571,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
           <tbody id="bodyTblCirTipo"></tbody>
           <tfoot><tr style="background:#EEF2FF">
             <td style="padding:8px 12px;font-weight:700;color:var(--navy)">TOTAL</td>
-            <td class="val" id="cirTipoTotal" style="color:var(--blue);font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+            <td class="val" id="cirTipoTotal" style="color:var(--blue);font-size:15px">â</td>
             <td colspan="2"></td>
           </tr></tfoot>
         </table></div>
@@ -590,7 +590,7 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
         </table></div>
       </div>
       <div id="pCirVend" class="tab-pane">
-        <div style="font-size:12px;color:var(--muted);margin-bottom:12px">ÃÂ°ÃÂÃÂÃÂ¨ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¯ÃÂ¸ÃÂ <strong>MÃÂÃÂ©dico/Vendedor responsÃÂÃÂ¡vel</strong> ÃÂ¢ÃÂÃÂ agrupado por nome, com produtos e clientes atendidos. Campo <em>Med</em> = nome do mÃÂÃÂ©dico ou representante comercial.</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:12px">ð¨ââï¸ <strong>MÃ©dico/Vendedor responsÃ¡vel</strong> â agrupado por nome, com produtos e clientes atendidos. Campo <em>Med</em> = nome do mÃ©dico ou representante comercial.</div>
         <div id="cirVendAccordion"></div>
       </div>
     </div>
@@ -601,42 +601,42 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
 <div class="section-card">
   <div class="sec-head" data-target="bodyFluxo">
     <div class="sec-title">
-      <div class="sec-icon t">ÃÂ°ÃÂÃÂÃÂ¸</div>
+      <div class="sec-icon t">ð¸</div>
       <div><div class="sec-h2">Fluxo de Caixa</div>
-           <div class="sec-sub" id="fluxoSecSub">Contas a pagar/receber e movimentos do perÃÂÃÂ­odo</div></div>
+           <div class="sec-sub" id="fluxoSecSub">Contas a pagar/receber e movimentos do perÃ­odo</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Saldo Liquido</div>
-        <div class="sec-total-value t" id="fluxoSaldoLiq">ÃÂ¢ÃÂÃÂ</div></div>
+        <div class="sec-total-value t" id="fluxoSaldoLiq">â</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevFluxo">
-    <div class="prev-item"><div class="prev-lbl">A Receber (pendente)</div><div class="prev-val" id="prevFluxoRec">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">A Pagar (pendente)</div><div class="prev-val" id="prevFluxoPag">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">Saldo LÃÂÃÂ­quido Fluxo</div><div class="prev-val"><span class="prev-badge badge-teal" id="prevFluxoSaldo">ÃÂ¢ÃÂÃÂ</span></div></div>
-    <div class="prev-item"><div class="prev-lbl">Entradas (Fat) vs SaÃÂÃÂ­das (Desp) Mai/26</div>
-      <div class="prev-val"><span id="prevFluxoEntSai">ÃÂ¢ÃÂÃÂ</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">A Receber (pendente)</div><div class="prev-val" id="prevFluxoRec">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">A Pagar (pendente)</div><div class="prev-val" id="prevFluxoPag">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">Saldo LÃ­quido Fluxo</div><div class="prev-val"><span class="prev-badge badge-teal" id="prevFluxoSaldo">â</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">Entradas (Fat) vs SaÃ­das (Desp) Mai/26</div>
+      <div class="prev-val"><span id="prevFluxoEntSai">â</span></div></div>
   </div>
   <div class="mini-ch"><div class="mini-ch-inner">
-    <h4>Faturamento ÃÂÃÂ Despesas ÃÂ¢ÃÂÃÂ Mensal 2026</h4>
+    <h4>Faturamento Ã Despesas â Mensal 2026</h4>
     <div class="mini-chw" style="height:160px"><canvas id="chMiniFluxo"></canvas></div>
   </div></div>
   <div class="sec-body" id="bodyFluxo">
     <div class="tabs">
-      <button class="tab-btn active" data-pane="pFluxoHist">ÃÂ¢ÃÂ¬ÃÂÃÂ¯ÃÂ¸ÃÂ HistÃÂÃÂ³rico (Entradas ÃÂÃÂ SaÃÂÃÂ­das)</button>
-      <button class="tab-btn" data-pane="pFluxoPend">ÃÂ¢ÃÂÃÂ¡ÃÂ¯ÃÂ¸ÃÂ Pendente / Futuro</button>
+      <button class="tab-btn active" data-pane="pFluxoHist">â¬ï¸ HistÃ³rico (Entradas Ã SaÃ­das)</button>
+      <button class="tab-btn" data-pane="pFluxoPend">â¡ï¸ Pendente / Futuro</button>
     </div>
-    <!-- HISTÃÂÃÂRICO -->
+    <!-- HISTÃRICO -->
     <div id="pFluxoHist" class="tab-pane active">
       <div class="insights-row" id="fluxoHistKpis"></div>
       <div class="chrow">
         <div class="chbox" style="flex:2;min-width:300px">
-          <h3>ÃÂ°ÃÂÃÂÃÂ Entradas (Faturamento) ÃÂÃÂ SaÃÂÃÂ­das (Despesas) ÃÂ¢ÃÂÃÂ Mensal 2026</h3>
+          <h3>ð Entradas (Faturamento) Ã SaÃ­das (Despesas) â Mensal 2026</h3>
           <div class="chw" style="height:260px"><canvas id="chFluxoHist"></canvas></div>
         </div>
         <div class="chbox" style="flex:1;min-width:220px">
-          <h3>ÃÂ°ÃÂÃÂÃÂ Margem por PerÃÂÃÂ­odo</h3>
+          <h3>ð Margem por PerÃ­odo</h3>
           <div id="fluxoMargemList" style="margin-top:8px"></div>
         </div>
       </div>
@@ -646,17 +646,17 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
       <div class="insights-row" id="fluxoKpis"></div>
       <div class="chrow">
         <div class="chbox" style="flex:1">
-          <h3>ÃÂ°ÃÂÃÂÃÂ¡ AnÃÂÃÂ¡lise de Liquidez</h3>
+          <h3>ð¡ AnÃ¡lise de Liquidez</h3>
           <div id="fluxoAnalise" style="font-size:13px;line-height:1.7;color:var(--text)"></div>
         </div>
         <div class="chbox" style="flex:1">
-          <h3>ÃÂ°ÃÂÃÂÃÂ Faturamento Pendente por Unidade</h3>
+          <h3>ð Faturamento Pendente por Unidade</h3>
           <div class="tscroll"><table class="dtbl">
             <thead><tr><th>Unidade</th><th class="r">Pendente (R$)</th><th class="c">N&#xBA; ID</th></tr></thead>
             <tbody id="bodyFatPendente"></tbody>
             <tfoot><tr style="background:#E6FFFF">
               <td style="padding:8px 12px;font-weight:700">TOTAL</td>
-              <td class="val" id="fatPendenteTotal" style="color:#009999;font-size:15px">ÃÂ¢ÃÂÃÂ</td>
+              <td class="val" id="fatPendenteTotal" style="color:#009999;font-size:15px">â</td>
               <td></td>
             </tr></tfoot>
           </table></div>
@@ -667,40 +667,40 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
   </div>
 </div>
 
-<!-- 7. SALDO BANCÃÂÃÂRIO -->
+<!-- 7. SALDO BANCÃRIO -->
 <div class="section-card">
   <div class="sec-head" data-target="bodySaldo">
     <div class="sec-title">
-      <div class="sec-icon b">ÃÂ°ÃÂÃÂÃÂ¦</div>
-      <div><div class="sec-h2">Saldo BancÃÂÃÂ¡rio</div>
-           <div class="sec-sub" id="saldoSecSub">PosiÃÂÃÂ§ÃÂÃÂ£o consolidada ÃÂ¢ÃÂÃÂ Conta Corrente + Investimentos</div></div>
+      <div class="sec-icon b">ð¦</div>
+      <div><div class="sec-h2">Saldo BancÃ¡rio</div>
+           <div class="sec-sub" id="saldoSecSub">PosiÃ§Ã£o consolidada â Conta Corrente + Investimentos</div></div>
     </div>
     <div class="sec-totals">
       <div class="sec-total-item"><div class="sec-total-label">Consolidado</div>
-        <div class="sec-total-value b" id="saldoTotalVal">ÃÂ¢ÃÂÃÂ</div></div>
+        <div class="sec-total-value b" id="saldoTotalVal">â</div></div>
       <div class="sec-total-item"><div class="sec-total-label">Conta Corrente</div>
-        <div class="sec-total-value g" id="saldoCCVal">ÃÂ¢ÃÂÃÂ</div></div>
+        <div class="sec-total-value g" id="saldoCCVal">â</div></div>
     </div>
-    <div class="expand-btn">ÃÂ¢ÃÂÃÂ¼</div>
+    <div class="expand-btn">â¼</div>
   </div>
   <div class="sec-preview" id="prevSaldo">
-    <div class="prev-item"><div class="prev-lbl">CC Total</div><div class="prev-val" id="prevSaldoCC">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">Investimentos</div><div class="prev-val" id="prevSaldoInvest">ÃÂ¢ÃÂÃÂ</div></div>
-    <div class="prev-item"><div class="prev-lbl">Total Consolidado</div><div class="prev-val"><span class="prev-badge badge-blue" id="prevSaldoTotal">ÃÂ¢ÃÂÃÂ</span></div></div>
-    <div class="prev-item"><div class="prev-lbl">ReferÃÂÃÂªncia</div><div class="prev-val" style="font-size:13px;font-weight:600;color:var(--muted)" id="prevSaldoRef">ÃÂ¢ÃÂÃÂ</div></div>
+    <div class="prev-item"><div class="prev-lbl">CC Total</div><div class="prev-val" id="prevSaldoCC">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">Investimentos</div><div class="prev-val" id="prevSaldoInvest">â</div></div>
+    <div class="prev-item"><div class="prev-lbl">Total Consolidado</div><div class="prev-val"><span class="prev-badge badge-blue" id="prevSaldoTotal">â</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">ReferÃªncia</div><div class="prev-val" style="font-size:13px;font-weight:600;color:var(--muted)" id="prevSaldoRef">â</div></div>
   </div>
   <div class="mini-ch"><div class="mini-ch-inner">
-    <h4>CC ÃÂÃÂ Investimentos por Banco</h4>
+    <h4>CC Ã Investimentos por Banco</h4>
     <div class="mini-chw" style="height:160px"><canvas id="chMiniSaldo"></canvas></div>
   </div></div>
   <div class="sec-body" id="bodySaldo">
     <div class="insights-row" id="saldoContaCards"></div>
-    <div class="det-toggle" data-panel="detSaldo">Ver detalhamento por conta (CC + Investimentos) <span class="det-arrow">ÃÂ¢ÃÂÃÂ¼</span></div>
+    <div class="det-toggle" data-panel="detSaldo">Ver detalhamento por conta (CC + Investimentos) <span class="det-arrow">â¼</span></div>
     <div id="detSaldo" class="det-panel">
       <div id="saldoAccordion"></div>
       <div style="margin-top:14px;padding:12px 16px;background:#FFFDE7;border-radius:8px;border-left:3px solid var(--yellow);font-size:12px">
-        ÃÂ¢ÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ <strong>Nota:</strong> Exclui conta PR (Santander 130071322 ÃÂ¢ÃÂÃÂ sem extrato disponÃÂÃÂ­vel) e saldo de fabricante em custÃÂÃÂ³dia na XP (R$&nbsp;139.627,25 ÃÂ¢ÃÂÃÂ nÃÂÃÂ£o pertence ÃÂÃÂ  empresa).
-        Ref: <strong id="saldoRefNote">ÃÂ¢ÃÂÃÂ</strong> &nbsp;|&nbsp;
+        â ï¸ <strong>Nota:</strong> Exclui conta PR (Santander 130071322 â sem extrato disponÃ­vel) e saldo de fabricante em custÃ³dia na XP (R$&nbsp;139.627,25 â nÃ£o pertence Ã  empresa).
+        Ref: <strong id="saldoRefNote">â</strong> &nbsp;|&nbsp;
         <a href="https://bi.emultec.com.br/dashboard/55" target="_blank" style="color:var(--blue)">dashboard/55</a>
       </div>
     </div>
@@ -728,14 +728,14 @@ const DESP_PER={
 
 "1t26":{"label":"1T/26","total":6508676.22,"byUN":[["RS",4069087.4],["Traumato",1430650.57],["Holep",373921.94],["SP",343303.49],["PR",118854.91],["BA",88403.1],["SC",84454.81]],"byAd":[{"ad":"COMPRAS REVENDA","val":2130251.15,"top":[["COLOPLAST",930990.98,"MATERIAL P/  REVENDA"],["COLOPLAST",393015.51,"MATERIAL P/ REVENDA"],["COLOPLAST NAVEGANTES",211286,"MATERIAL P/  REVENDA"],["COLOPLAST NAVEGANTES",106685.8,"MATERIAL P/ REVENDA"],["LEVMEDICAL",45946.34,"MATERIAL P/  REVENDA"],["VIPMEDIC",38242.15,"MATERIAL P/ REVENDA"],["NEXTIMPLANTES RIO DE JANEIRO",37658.54,"MATERIAL P/  REVENDA"],["NEXTIMPLANTES RIO DE JANEIRO",34998.37,"MATERIAL P/ REVENDA"],["RAZEK LTDA",30260.3,"MATERIAL P/  REVENDA"],["LABCOR",29640.21,"MATERIAL P/  REVENDA"],["SYMATESE",29249.11,"MATERIAL P/  REVENDA"],["CUSTOM SPINE",21990.48,"MATERIAL P/ REVENDA"],["MG OSTEO PHARMA (RIO DE JANEIRO)",17141.63,"MATERIAL P/  REVENDA"],["MSB BRASIL",16596.2,"MATERIAL P/ REVENDA"],["RAZEK LTDA",15083.48,"MATERIAL P/ REVENDA"],["LEVMEDICAL",14851.39,"MATERIAL P/ REVENDA"],["MAGNUM IMPORT",14750,"MATERIAL P/  REVENDA"],["SYMATESE",14563.35,"MATERIAL P/ REVENDA"],["STEEL SURGICAL",14487.83,"MATERIAL P/  REVENDA"],["LABCOR",11675.5,"MATERIAL P/ REVENDA"]]},{"ad":"OPERACIONAL","val":2000950.87,"top":[["LUCAS PRAETORIUS",666475,"CONTA HOSPITALAR"],["SYNAPSE MARKETING",123333,"CONTA HOSPITALAR"],["FINANCIAMENTO FINAME",104847.24,"FINANCIAMENTO"],["GOL LINHAS AEREAS S.A.",63881.59,"FRETE"],["INACIO MONCKS",42751.53,"EVENTO"],["SANDRO DE OLIVEIRA VIANA",42000,"PRESTADORES DE SERVIÃO"],["SQUADRA TRANSPORTE",39213.31,"PRESTADORES DE SERVIÃO"],["LUCAS PRAETORIUS",29392.43,"EVENTO"],["HR CONSULTORIA EMPRESARIAL LTDA",27230,"PRESTADORES DE SERVIÃO"],["SINERGYMED",25200,"PRESTADORES DE SERVIÃO"],["STELLANTIS FINANCIAMENTO SC",21042.42,"FINANCIAMENTO"],["ATM SERVICOS CONTABEIS S.S.",20449.35,"PRESTADORES DE SERVIÃO"],["SOCIEDADE BRASILEIRA DE UROLOGIA",17640,"EVENTO"],["AGENCIA HEFESTO",16200,"MKT"],["PALESTRA DR FABIO SANTANNA - UROSCALE",15500,"EVENTO"],["TIAGO CEZAR MIERZWA",15094.88,"PRECEPTORIA"],["MANOEL",15000,"PRESTADORES DE SERVIÃO"],["EMULTEC",14790,"PRESTADORES DE SERVIÃO"],["FRETE- SOLENNE ESTRATEGICA FINANCEIRA",14029.6,"FRETE"],["ENDO INDUSTRIA",12000,"ALUGUEL DE EQUIPAMEN"]]},{"ad":"SALARIO","val":636502.78,"top":[["BRADESCO SAUDE",51588.48,"PLANO DE SAUDE"],["FVEGA REPRESENTACOES",45393.41,"REPRESENTANTE (PJ)"],["RODOLPHO FALCIANO FILHO",40500,"REPRESENTANTE (PJ)"],["FLASH APP",38816.2,"ALIMENTAÃÃO"],["KAMILA DE CASTILHO",31099.96,"REPRESENTANTE (PJ)"],["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",24780,"REPRESENTANTE (PJ)"],["LUCAS PRAETORIUS",18428.81,"ALIMENTAÃÃO"],["IMPOSTOS - FGTS",18283.37,"FGTS"],["NADIA SANTANA TAROUCO",17353.19,"RECISÃO"],["JOSELI STELLA",16500,"REPRESENTANTE (PJ)"],["VERIDIANE BARCELOS MACHADO",13799.75,"SALARIO"],["WILSONEI PEREIRA DOS SANTOS",13736.78,"SALARIO"],["TANARA",13500,"SALARIO"],["BRADESCO SAUDE SA",13055.97,"PLANO DE SAUDE"],["EDUARDO MACHADO DA SILVEIRA",12888.32,"SALARIO"],["ALINE GAMA",12800,"REPRESENTANTE (PJ)"],["RAFAEL -  RFS FREITAS LTDA",12750,"REPRESENTANTE (PJ)"],["MARCOS ROGERIO VERDURA",12709.24,"REPRESENTANTE (PJ)"],["GABRIELA TRILHA",10740.53,"SALARIO"],["JEFERSON NEVES CANTO",9601.44,"SALARIO"]]},{"ad":"IMPOSTO","val":613075.62,"top":[["IMPOSTOS - IRPJ",212409.48,"IRPJ"],["IMPOSTOS - COFINS",170032.8,"COFINS"],["IMPOSTOS - CSLL",95817.88,"CSLL"],["IMPOSTOS - INSS",77291.91,"INSS"],["IMPOSTOS - PIS",33871.44,"PIS"],["RODOLPHO FALCIANO FILHO",8771.91,"IMPOSTO"],["PREFEITURA MUNICIPAL DE PORTO ALEGRE",7262.71,"IPTU"],["MIGUEL",5869.99,"IPVA"],["IMPOSTOS - ISS",1747.5,"ISSQN"]]},{"ad":"IMPORTACAO","val":337883.5,"top":[["TELEFLEX LLC",267372,"IMPORTAÃÃO"],["REDPINE - IMPORTAÃÃO BRAZA BANK",49960,"IMPORTAÃÃO"],["ACK ACCESS",20248.16,"IMPORTAÃÃO"],["BERKLEY INTERNATIONAL",303.34,"IMPORTAÃÃO"]]},{"ad":"PRO LABORE","val":296744.24,"top":[["LUCAS PRAETORIUS",90000,"RETIRADA PL"],["INACIO MONCKS",90000,"RETIRADA PL"],["RICARDO- MARIANNE MATHIAS DUARTE EMPRESARIA",60000,"RETIRADA"],["MIGUEL",52500,"RETIRADA"],["INACIO MONCKS",1703.21,"PRO LABORE"],["MIGUEL",1442.69,"PRO LABORE"],["LUCAS PRAETORIUS",1098.34,"PRO LABORE"]]},{"ad":"USO/CONSUMO","val":153206.29,"top":[["DEUTSCHLINE MEDICAL LTDA",63120,"COMPRA LASER"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",36217.21,"COMPRA EQUIPAMENTO"],["SET DE VIDEO - AA STORE",24567.07,"COMPRA EQUIPAMENTO"],["GIMED - MATERIAIS CIRURGICOS LTDA EPP",7500,"COMPRA EQUIPAMENTO"],["ENDOMASTER",6375.65,"COMPRA EQUIPAMENTO"],["ENDO INDUSTRIA",6078,"COMPRA EQUIPAMENTO"],["MEDHCIR",3666.3,"COMPRA EQUIPAMENTO"],["IMPORTEK",1751.1,"COMPRA EQUIPAMENTO"],["CABOS HOLEP- TIAGO HADAD DUARTE",1140,"COMPRA EQUIPAMENTO"],["EXACT 3D PRINT",1100,"COMPRA EQUIPAMENTO"],["DEUTSCHLINE MEDICAL LTDA",912.43,"COMPRA EQUIPAMENTO"],["HONLEY SERVICE",533.96,"COMPRA EQUIPAMENTO"],["WILSONEI PEREIRA DOS SANTOS",169.41,"COMPRA EQUIPAMENTO"],["CIRURGICA FLORIANOPOLIS",75.16,"COMPRA EQUIPAMENTO"]]},{"ad":"RETIRADA","val":150000,"top":[["LUCAS PRAETORIUS",100000,"DIVIDENDO"],["INACIO MONCKS",50000,"DIVIDENDO"]]},{"ad":"MANUTENÃÃO","val":112553.31,"top":[["ENDO REPAROS",40100,"MAN. EQUIP_RIG"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",37043.24,"MANUTENÃÃO LASER"],["KWTEC",13000,"MAN. EQUIP_FLEX"],["ENDO REPAROS",12500,"MAN. EQUIP_FLEX"],["ENDO AMERICAS PRODUTOS",6050,"MAN. EQUIP_FLEX"],["INSPEÃÃO LASER- LAURO JARDIM MACHADO",2500,"MANUTENÃÃO LASER"],["ENDOCOM MEDICAL COMERCIO E LOCACAO DE EQUIPAMENTOS LTDA",1360.07,"MAN. EQUIP_FLEX"]]},{"ad":"COMPRA DE INSTRUMENTAL","val":27474.71,"top":[["AMERICAN SCOLPS - TRANSF LUCAS",12974.62,"COMPRA DE INSTRUMENTAL"],["COLOPLAST",6750,"COMPRA DE INSTRUMENTAL"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",3628,"COMPRA DE INSTRUMENTAL"],["RAZEK LTDA",2325.68,"COMPRA DE INSTRUMENTAL"],["IMPLANFIX - MATERIAIS CIRURGICOS LTDA",945.01,"COMPRA DE INSTRUMENTAL"],["OCX - IMPLANTES",851.4,"COMPRA DE INSTRUMENTAL"]]},{"ad":"PREDIAL","val":21591.92,"top":[["CORTE REALIMOVEIS",12859.59,"CONDOMINIO"],["GARANTE BLU",7912.74,"CONDOMINIO"],["IMOVEIS CREDITO REAL",819.59,"CONDOMINIO"]]},{"ad":"COMPRAS ATIVO","val":17530.77,"top":[["GABRIELA TRILHA",16224.07,"COMPRA ATIVO"],["TANARA",737.7,"COMPRA ATIVO"],["NADIA SANTANA TAROUCO",569,"COMPRA ATIVO"]]},{"ad":"NAO INDICADO","val":8487.6,"top":[["CUSTOM SPINE",8487.6,""]]},{"ad":"SPEED ATIVA","val":2423.46,"top":[["LARISSA MACIEL MONKS",2170.46,"SPEED ATIVA"],["TATIANA NUNES ROSA",253,"SPEED ATIVA"]]}],"byUNDetail":{"RS":[{"ad":"COMPRAS REVENDA","val":1855808.45,"top":[["COLOPLAST",930990.98,"MATERIAL P/  REVENDA"],["COLOPLAST",393015.51,"MATERIAL P/ REVENDA"],["COLOPLAST NAVEGANTES",211286,"MATERIAL P/  REVENDA"],["COLOPLAST NAVEGANTES",106685.8,"MATERIAL P/ REVENDA"],["NEXTIMPLANTES RIO DE JANEIRO",37658.54,"MATERIAL P/  REVENDA"],["NEXTIMPLANTES RIO DE JANEIRO",34998.37,"MATERIAL P/ REVENDA"],["LABCOR",29640.21,"MATERIAL P/  REVENDA"],["SYMATESE",29249.11,"MATERIAL P/  REVENDA"],["MSB BRASIL",16596.2,"MATERIAL P/ REVENDA"],["SYMATESE",14563.35,"MATERIAL P/ REVENDA"],["LABCOR",11675.5,"MATERIAL P/ REVENDA"],["ENDOSURG",11600,"MATERIAL P/  REVENDA"],["ENDOSURG",8735,"MATERIAL P/ REVENDA"],["MSB BRASIL",6512.03,"MATERIAL P/  REVENDA"],["EIC BRASIL EXPORTADORA DE PRODUTOS",3425,"MATERIAL P/  REVENDA"]]},{"ad":"OPERACIONAL","val":655370.19,"top":[["SANDRO DE OLIVEIRA VIANA",42000,"PRESTADORES DE SERVIÃO"],["HR CONSULTORIA EMPRESARIAL LTDA",27230,"PRESTADORES DE SERVIÃO"],["GOL LINHAS AEREAS S.A.",25516.26,"FRETE"],["INACIO MONCKS",25214.02,"EVENTO"],["LUCAS PRAETORIUS",23864.76,"EVENTO"],["ATM SERVICOS CONTABEIS S.S.",20449.35,"PRESTADORES DE SERVIÃO"],["SOCIEDADE BRASILEIRA DE UROLOGIA",17640,"EVENTO"],["PALESTRA DR FABIO SANTANNA - UROSCALE",15500,"EVENTO"],["MANOEL",15000,"PRESTADORES DE SERVIÃO"],["EMULTEC",14790,"PRESTADORES DE SERVIÃO"],["FRETE- SOLENNE ESTRATEGICA FINANCEIRA",14029.6,"FRETE"],["ENDO INDUSTRIA",12000,"ALUGUEL DE EQUIPAMEN"],["DR VITA- RLVN - SERVICOS MEDICOS S/S",9201,"EVENTO"],["NB- CHURRASCARIA NA BRASA",8925.45,"EVENTO"],["G4 EDUCACAO E EBOOK",8316.74,"TREINAMENTO"]]},{"ad":"SALARIO","val":446063.56,"top":[["BRADESCO SAUDE",51588.48,"PLANO DE SAUDE"],["FLASH APP",38816.2,"ALIMENTAÃÃO"],["FVEGA REPRESENTACOES",36416.17,"REPRESENTANTE (PJ)"],["IMPOSTOS - FGTS",18283.37,"FGTS"],["NADIA SANTANA TAROUCO",17353.19,"RECISÃO"],["JOSELI STELLA",16500,"REPRESENTANTE (PJ)"],["LUCAS PRAETORIUS",14375.92,"ALIMENTAÃÃO"],["VERIDIANE BARCELOS MACHADO",13799.75,"SALARIO"],["WILSONEI PEREIRA DOS SANTOS",13736.78,"SALARIO"],["TANARA",13500,"SALARIO"],["EDUARDO MACHADO DA SILVEIRA",12888.32,"SALARIO"],["RAFAEL -  RFS FREITAS LTDA",12750,"REPRESENTANTE (PJ)"],["GABRIELA TRILHA",10740.53,"SALARIO"],["JEFERSON NEVES CANTO",9601.44,"SALARIO"],["FLASH APP",9483.9,"VALE TRANSPORTE"]]},{"ad":"IMPORTACAO","val":337883.5,"top":[["TELEFLEX LLC",267372,"IMPORTAÃÃO"],["REDPINE - IMPORTAÃÃO BRAZA BANK",49960,"IMPORTAÃÃO"],["ACK ACCESS",20248.16,"IMPORTAÃÃO"],["BERKLEY INTERNATIONAL",303.34,"IMPORTAÃÃO"]]},{"ad":"IMPOSTO","val":308866.9,"top":[["IMPOSTOS - IRPJ",100425.04,"IRPJ"],["IMPOSTOS - INSS",75155.36,"INSS"],["IMPOSTOS - COFINS",69659.01,"COFINS"],["IMPOSTOS - CSLL",42176.44,"CSLL"],["IMPOSTOS - PIS",12440.84,"PIS"],["PREFEITURA MUNICIPAL DE PORTO ALEGRE",7262.71,"IPTU"],["IMPOSTOS - ISS",1747.5,"ISSQN"]]},{"ad":"PRO LABORE","val":182801.55,"top":[["LUCAS PRAETORIUS",90000,"RETIRADA PL"],["INACIO MONCKS",90000,"RETIRADA PL"],["INACIO MONCKS",1703.21,"PRO LABORE"],["LUCAS PRAETORIUS",1098.34,"PRO LABORE"]]},{"ad":"USO/CONSUMO","val":111251.01,"top":[["DEUTSCHLINE MEDICAL LTDA",63120,"COMPRA LASER"],["SET DE VIDEO - AA STORE",24567.07,"COMPRA EQUIPAMENTO"],["GIMED - MATERIAIS CIRURGICOS LTDA EPP",7500,"COMPRA EQUIPAMENTO"],["ENDO INDUSTRIA",6078,"COMPRA EQUIPAMENTO"],["MEDHCIR",3666.3,"COMPRA EQUIPAMENTO"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",3603.84,"COMPRA EQUIPAMENTO"],["EXACT 3D PRINT",1100,"COMPRA EQUIPAMENTO"],["DEUTSCHLINE MEDICAL LTDA",912.43,"COMPRA EQUIPAMENTO"],["HONLEY SERVICE",533.96,"COMPRA EQUIPAMENTO"],["WILSONEI PEREIRA DOS SANTOS",169.41,"COMPRA EQUIPAMENTO"]]},{"ad":"MANUTENÃÃO","val":75510.07,"top":[["ENDO REPAROS",40100,"MAN. EQUIP_RIG"],["KWTEC",13000,"MAN. EQUIP_FLEX"],["ENDO REPAROS",12500,"MAN. EQUIP_FLEX"],["ENDO AMERICAS PRODUTOS",6050,"MAN. EQUIP_FLEX"],["INSPEÃÃO LASER- LAURO JARDIM MACHADO",2500,"MANUTENÃÃO LASER"],["ENDOCOM MEDICAL COMERCIO E LOCACAO DE EQUIPAMENTOS LTDA",1360.07,"MAN. EQUIP_FLEX"]]},{"ad":"RETIRADA","val":50000,"top":[["INACIO MONCKS",50000,"DIVIDENDO"]]},{"ad":"PREDIAL","val":20772.33,"top":[["CORTE REALIMOVEIS",12859.59,"CONDOMINIO"],["GARANTE BLU",7912.74,"CONDOMINIO"]]},{"ad":"COMPRAS ATIVO","val":15586.38,"top":[["GABRIELA TRILHA",14279.68,"COMPRA ATIVO"],["TANARA",737.7,"COMPRA ATIVO"],["NADIA SANTANA TAROUCO",569,"COMPRA ATIVO"]]},{"ad":"COMPRA DE INSTRUMENTAL","val":6750,"top":[["COLOPLAST",6750,"COMPRA DE INSTRUMENTAL"]]},{"ad":"SPEED ATIVA","val":2423.46,"top":[["LARISSA MACIEL MONKS",2170.46,"SPEED ATIVA"],["TATIANA NUNES ROSA",253,"SPEED ATIVA"]]}],"Traumato":[{"ad":"OPERACIONAL","val":983377.31,"top":[["LUCAS PRAETORIUS",666475,"CONTA HOSPITALAR"],["SYNAPSE MARKETING",123333,"CONTA HOSPITALAR"],["FINANCIAMENTO FINAME",104847.24,"FINANCIAMENTO"],["MIGUEL",9950,"CONTA HOSPITALAR"],["STRATEGICA EM TRANSPORTES",8917.79,"FRETE"],["MIGUEL",7886.14,"MKT"],["MIGUEL",7600,"FREELANCER CIRURGIA"],["GOL LINHAS AEREAS S.A.",7241.97,"FRETE"],["MONTEGGIA SOLUCOES PARA CENTROS CIRURGICOS",6277.5,"MANUTENÃÃO GERAL"],["NOVELTY COMERCVIO DE IMPORTAÃÃO DE PRODUTOS",6000,"ALUGUEL DE EQUIPAMEN"],["FREE - PRECISION SURGICAL",5800,"FREELANCER CIRURGIA"],["MIGUEL",4350.03,"TREINAMENTO"],["MIGUEL",4069.08,"COMBUSTIVEL"],["CRF",2623.08,"CONSELHO DE FARMACIA"],["MIGUEL",1995.72,"MANUTENÃÃO GERAL"]]},{"ad":"COMPRAS REVENDA","val":209345.55,"top":[["LEVMEDICAL",45946.34,"MATERIAL P/  REVENDA"],["RAZEK LTDA",30260.3,"MATERIAL P/  REVENDA"],["CUSTOM SPINE",21990.48,"MATERIAL P/ REVENDA"],["MG OSTEO PHARMA (RIO DE JANEIRO)",17141.63,"MATERIAL P/  REVENDA"],["RAZEK LTDA",15083.48,"MATERIAL P/ REVENDA"],["LEVMEDICAL",14851.39,"MATERIAL P/ REVENDA"],["STEEL SURGICAL",14487.83,"MATERIAL P/  REVENDA"],["NEXXMED EQUIPAMENTOS",9498.33,"MATERIAL P/  REVENDA"],["R3A MEDICAL",9353.47,"MATERIAL P/  REVENDA"],["VICTORIA PRODUTOS HOSPITALARES",7160,"MATERIAL P/  REVENDA"],["STEEL SURGICAL",4829.27,"MATERIAL P/ REVENDA"],["R3A MEDICAL",4675.4,"MATERIAL P/ REVENDA"],["NEXXMED EQUIPAMENTOS",4633.34,"MATERIAL P/ REVENDA"],["VICTORIA PRODUTOS HOSPITALARES",3580,"MATERIAL P/ REVENDA"],["BRAMSYS",3075.17,"MATERIAL P/  REVENDA"]]},{"ad":"IMPOSTO","val":133223.01,"top":[["IMPOSTOS - COFINS",57278.51,"COFINS"],["IMPOSTOS - IRPJ",34366.32,"IRPJ"],["IMPOSTOS - CSLL",21043.46,"CSLL"],["IMPOSTOS - PIS",12528.18,"PIS"],["MIGUEL",5869.99,"IPVA"],["IMPOSTOS - INSS",2136.55,"INSS"]]},{"ad":"PRO LABORE","val":53942.69,"top":[["MIGUEL",52500,"RETIRADA"],["MIGUEL",1442.69,"PRO LABORE"]]},{"ad":"SALARIO","val":33562.08,"top":[["ALINE GAMA",12800,"REPRESENTANTE (PJ)"],["MIGUEL",6102.35,"ALIMENTAÃÃO"],["MATHEUS VIALE",3317.81,"SALARIO"],["JS FARMA",3000,"REPRESENTANTE (PJ)"],["ELISSANDRA",2370.96,"REPRESENTANTE (PJ)"],["FABIANA FLECK",2370.96,"REPRESENTANTE (PJ)"],["NADIA SANTANA TAROUCO",600,"IAE"],["LUHEN",600,"IAE"],["SABRINA DA SILVA HIRT",300,"IAE"],["ALINE GAMA",300,"IAE"],["WILSON",300,"IAE"],["GUILHERME THEODORO CARVALHO DE ARAUJO",300,"IAE"],["ARAMIS DA SILVA NOGUEIRA",300,"IAE"],["CAROLINA BORBA",300,"IAE"],["MATHEUS VIALE",300,"IAE"]]},{"ad":"NAO INDICADO","val":8487.6,"top":[["CUSTOM SPINE",8487.6,""]]},{"ad":"COMPRA DE INSTRUMENTAL","val":4122.09,"top":[["RAZEK LTDA",2325.68,"COMPRA DE INSTRUMENTAL"],["IMPLANFIX - MATERIAIS CIRURGICOS LTDA",945.01,"COMPRA DE INSTRUMENTAL"],["OCX - IMPLANTES",851.4,"COMPRA DE INSTRUMENTAL"]]},{"ad":"COMPRAS ATIVO","val":1944.39,"top":[["GABRIELA TRILHA",1944.39,"COMPRA ATIVO"]]},{"ad":"USO/CONSUMO","val":1826.26,"top":[["IMPORTEK",1751.1,"COMPRA EQUIPAMENTO"],["CIRURGICA FLORIANOPOLIS",75.16,"COMPRA EQUIPAMENTO"]]},{"ad":"PREDIAL","val":819.59,"top":[["IMOVEIS CREDITO REAL",819.59,"CONDOMINIO"]]}],"Holep":[{"ad":"OPERACIONAL","val":110704.36,"top":[["SINERGYMED",25200,"PRESTADORES DE SERVIÃO"],["STELLANTIS FINANCIAMENTO SC",21042.42,"FINANCIAMENTO"],["LASERMED",9000,"ALUGUEL DE EQUIPAMEN"],["LUCAS GRACA ARANHA DE OLIVEIRA",8378.44,"PRECEPTORIA"],["ELLEVAR- PLATAFORMA FURGÃO",6412.5,"PRESTADORES DE SERVIÃO"],["FELIPE PIONER",3650,"EVENTO"],["BRADESCO SEGURO AUTO",3385.72,"SEGURO"],["MARCELO CIOATO COSTA",3250,"FREELANCER CIRURGIA"],["FELIPE PIONER",3000,"PRECEPTORIA"],["JEFERSON NEVES CANTO",2700,"FREELANCER CIRURGIA"],["JEFERSON NEVES CANTO",2697.73,"COMBUSTIVEL"],["AJP MASTER REPAROS",2022,"MANUTENÃÃO EQUIPAMEN"],["LUCAS GRACA ARANHA DE OLIVEIRA",1896.76,"PASSAGEM"],["DIRCE TERESINHA",1719,"PRESTADORES DE SERVIÃO"],["EDUARDO MACHADO DA SILVEIRA",1717.95,"KM RODADO"]]},{"ad":"IMPOSTO","val":72608.07,"top":[["IMPOSTOS - IRPJ",33447.92,"IRPJ"],["IMPOSTOS - COFINS",20640.59,"COFINS"],["IMPOSTOS - CSLL",14047.43,"CSLL"],["IMPOSTOS - PIS",4472.13,"PIS"]]},{"ad":"PRO LABORE","val":60000,"top":[["RICARDO- MARIANNE MATHIAS DUARTE EMPRESARIA",60000,"RETIRADA"]]},{"ad":"USO/CONSUMO","val":40129.02,"top":[["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",32613.37,"COMPRA EQUIPAMENTO"],["ENDOMASTER",6375.65,"COMPRA EQUIPAMENTO"],["CABOS HOLEP- TIAGO HADAD DUARTE",1140,"COMPRA EQUIPAMENTO"]]},{"ad":"MANUTENÃÃO","val":37043.24,"top":[["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",37043.24,"MANUTENÃÃO LASER"]]},{"ad":"COMPRAS REVENDA","val":26855,"top":[["MAGNUM IMPORT",14750,"MATERIAL P/  REVENDA"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",4080,"MATERIAL P/  REVENDA"],["MEDHCIR",2992.5,"MATERIAL P/ REVENDA"],["MEDHCIR",2992.5,"MATERIAL P/  REVENDA"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",2040,"MATERIAL P/ REVENDA"]]},{"ad":"COMPRA DE INSTRUMENTAL","val":16602.62,"top":[["AMERICAN SCOLPS - TRANSF LUCAS",12974.62,"COMPRA DE INSTRUMENTAL"],["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC",3628,"COMPRA DE INSTRUMENTAL"]]},{"ad":"SALARIO","val":9979.63,"top":[["FVEGA REPRESENTACOES",8977.24,"REPRESENTANTE (PJ)"],["LUCAS PRAETORIUS",568.39,"ALIMENTAÃÃO"],["RAFAEL- RFS FREITAS",350,"REPRESENTANTE (PJ)"],["JEFERSON NEVES CANTO",84,"ALIMENTAÃÃO"]]}],"SP":[{"ad":"OPERACIONAL","val":136486.87,"top":[["SQUADRA TRANSPORTE",39213.31,"PRESTADORES DE SERVIÃO"],["GOL LINHAS AEREAS S.A.",22384.56,"FRETE"],["AGENCIA HEFESTO",16200,"MKT"],["INACIO MONCKS",15822.51,"EVENTO"],["RLVN - SERVICOS MEDICOS S/S",12000,"EVENTO"],["RLVN - SERVICOS MEDICOS S/S",4000,"PRECEPTORIA"],["LUCAS PRAETORIUS",3375.15,"EVENTO"],["MRA UROLOGIA",3284.75,"PRECEPTORIA"],["RENATO",3000,"COMBUSTIVEL"],["RODOLPHO FALCIANO FILHO",2971.83,"COMBUSTIVEL"],["RODOLPHO FALCIANO FILHO",2514.3,"ESTACIONAMENTO"],["PASSAGEM DR JOAO VICTOR",1943.17,"PASSAGEM"],["DR SAULO - EVENTO COLOMBIA",1656.73,"EVENTO"],["B.I. INPART SERVICOS",1526.79,"PRESTADORES DE SERVIÃO"],["DR GUILHERME MARIOTTI COLÃMBIA",1480.02,"EVENTO"]]},{"ad":"RETIRADA","val":100000,"top":[["LUCAS PRAETORIUS",100000,"DIVIDENDO"]]},{"ad":"SALARIO","val":56144.22,"top":[["RODOLPHO FALCIANO FILHO",40500,"REPRESENTANTE (PJ)"],["BRADESCO SAUDE SA",10789.17,"PLANO DE SAUDE"],["RODOLPHO FALCIANO FILHO",1589.03,"ALIMENTAÃÃO"],["INACIO MONCKS",1126.24,"ALIMENTAÃÃO"],["LUCAS PRAETORIUS",676.43,"ALIMENTAÃÃO"],["NADIA SANTANA TAROUCO",200,"IAE"],["LUHEN",200,"IAE"],["BRADESCO ODONTO",108.9,"PLANO DE SAUDE"],["GABRIELA TRILHA",100,"IAE"],["ALINE GAMA",100,"IAE"],["ARAMIS DA SILVA NOGUEIRA",100,"IAE"],["MATHEUS VIALE",100,"IAE"],["CAROLINA BORBA",100,"IAE"],["SABRINA DA SILVA HIRT",100,"IAE"],["WILSON",100,"IAE"]]},{"ad":"IMPOSTO","val":50672.4,"top":[["IMPOSTOS - IRPJ",19993.43,"IRPJ"],["IMPOSTOS - COFINS",11460.47,"COFINS"],["RODOLPHO FALCIANO FILHO",8771.91,"IMPOSTO"],["IMPOSTOS - CSLL",8396.82,"CSLL"],["IMPOSTOS - PIS",2049.77,"PIS"]]}],"PR":[{"ad":"OPERACIONAL","val":57122.61,"top":[["TIAGO CEZAR MIERZWA",9676.8,"PRECEPTORIA"],["GOL LINHAS AEREAS S.A.",7153.16,"FRETE"],["TIAGO CEZAR MIERZWA",6340.82,"EVENTO"],["KAMILA DE CASTILHO",6005.62,"COMBUSTIVEL"],["KAMILA DE CASTILHO",4760.77,"HOSPEDAGEM"],["FREE FRETE- GUILHERME FERNANDES MICOS",3182.73,"FRETE"],["DR PEDRO VICTOR",2534.1,"EVENTO"],["ENDOLOG",2500,"PRESTADORES DE SERVIÃO"],["LARISSA MONCKS",2078.15,"FREE CIRURGIA"],["SANTANDER",1573.79,"TARIFA BANCARIAS"],["TIAGO CEZAR MIERZWA",1515.14,"PASSAGEM"],["MATHEUS VIALE",1425.22,"FRETE"],["KAMILA DE CASTILHO",1402.83,"EVENTO"],["CENTRAL STORAGE SELF STOR",1206.71,"PRESTADORES DE SERVIÃO"],["AZUL LINHAS AEREAS",922.45,"FRETE"]]},{"ad":"SALARIO","val":39393.38,"top":[["KAMILA DE CASTILHO",31099.96,"REPRESENTANTE (PJ)"],["LUCAS PRAETORIUS",2808.07,"ALIMENTAÃÃO"],["BRADESCO SAUDE SA",2266.8,"PLANO DE SAUDE"],["KAMILA DE CASTILHO",2253.45,"ALIMENTAÃÃO"],["GABRIEL PJ - ZAREON SURGICAL HEALTH",855,"REPRESENTANTE (PJ)"],["BRADESCO ODONTO- KAMILA",110.1,"PLANO DE SAUDE"]]},{"ad":"IMPOSTO","val":22338.92,"top":[["IMPOSTOS - IRPJ",12350.42,"IRPJ"],["IMPOSTOS - CSLL",5186.92,"CSLL"],["IMPOSTOS - COFINS",3946.5,"COFINS"],["IMPOSTOS - PIS",855.08,"PIS"]]}],"BA":[{"ad":"COMPRAS REVENDA","val":38242.15,"top":[["VIPMEDIC",38242.15,"MATERIAL P/ REVENDA"]]},{"ad":"SALARIO","val":28553.02,"top":[["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",24780,"REPRESENTANTE (PJ)"],["PLUXEE BENEFICIOS BRASIL S.A.",2356,"ALIMENTAÃÃO"],["INACIO MONCKS",991.07,"ALIMENTAÃÃO"],["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",425.95,"ALIMENTAÃÃO"]]},{"ad":"OPERACIONAL","val":20932.21,"top":[["LUCAS PRAETORIUS",6000,"PRESTADORES DE SERVIÃO"],["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",1917.46,"ESTACIONAMENTO"],["LUCAS PRAETORIUS",1737.64,"PASSAGEM"],["INACIO MONCKS",1715,"EVENTO"],["GOL LINHAS AEREAS S.A.",1585.64,"FRETE"],["DR MAURICIO",1363.65,"EVENTO"],["EVENTO - AUGEPAG",1250,"EVENTO"],["INACIO MONCKS",1053.28,"HOSPEDAGEM"],["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",963.6,"COMBUSTIVEL"],["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS",937.26,"HOSPEDAGEM"],["EDUARDO BERTERO",920.57,"PASSAGEM"],["OGUNJA SELF STORAGE",532.25,"PRESTADORES DE SERVIÃO"],["TANARA",490.32,"HOSPEDAGEM"],["INACIO MONCKS",159.9,"PASSAGEM"],["INACIO MONCKS",155,"ESTACIONAMENTO"]]},{"ad":"IMPOSTO","val":675.72,"top":[["IMPOSTOS - IRPJ",475.87,"IRPJ"],["IMPOSTOS - CSLL",199.85,"CSLL"]]}],"SC":[{"ad":"OPERACIONAL","val":36957.32,"top":[["RLVN - SERVICOS MEDICOS",8000,"PRECEPTORIA"],["EXPRESSO SAO MIGUEL LTDA",5781,"FRETE"],["TIAGO CEZAR MIERZWA",5418.08,"PRECEPTORIA"],["LUCAS PRAETORIUS",2152.52,"EVENTO"],["RAFAEL - RFS FREITAS LTDA",1956.71,"COMBUSTIVEL"],["AZUL LINHAS AEREAS",1727.58,"FRETE"],["FRETE- EMANUELI TOBE",1600,"FRETE"],["DR SANDER",1366.01,"EVENTO"],["DR PEDRO",1365.91,"EVENTO"],["MARCOS ROGERIO VERDURA",1132.25,"COMBUSTIVEL"],["DR GABRIEL HELUANY",997.41,"EVENTO"],["LARISSA MACIEL MONKS",900,"EVENTO"],["MARCOS ROGERIO VERDURA",849.5,"BRINDE"],["MARCOS ROGERIO VERDURA",816.54,"EVENTO"],["MARCOS ROGERIO VERDURA",527.88,"HOSPEDAGEM"]]},{"ad":"IMPOSTO","val":24690.6,"top":[["IMPOSTOS - IRPJ",11350.48,"IRPJ"],["IMPOSTOS - COFINS",7047.72,"COFINS"],["IMPOSTOS - CSLL",4766.96,"CSLL"],["IMPOSTOS - PIS",1525.44,"PIS"]]},{"ad":"SALARIO","val":22806.89,"top":[["MARCOS ROGERIO VERDURA",12709.24,"REPRESENTANTE (PJ)"],["EVANDRO- BIOVITAL OESTE LOGISTICA",8062.13,"REPRESENTANTE (PJ)"],["RAFAEL - RFS FREITAS LTDA",360.82,"ALIMENTAÃÃO"],["MARCOS ROGERIO VERDURA",226.32,"ALIMENTAÃÃO"],["NADIA SANTANA",200,"IAE"],["LUHEN MACIEL",200,"IAE"],["RAFAEL -  RFS FREITAS LTDA",134.38,"ALIMENTAÃÃO"],["GABRIELA CUNHA TRILHA",100,"IAE"],["CAROLINA BORBA",100,"IAE"],["ALINE GAMA",100,"IAE"],["ARAMIS NOGUEIRA",100,"IAE"],["PEDRO HENRIQUE BITENCOURT",100,"IAE"],["GUILHERME THEODORO",100,"IAE"],["MATHEUS VIALE",100,"IAE"],["SABRINA DA SILVA HIRT",100,"IAE"]]}]}}
 };
-const DESP_AD_UN={"jun26": {"RS": {"COMPRAS REVENDA": [["COLOPLAST", 160285.0, "MATERIAL P/ REVENDA"], ["COLOPLAST NAVEGANTES", 80178.2, "MATERIAL P/ REVENDA"], ["NEXTIMPLANTES RIO DE JANEIRO", 20473.41, "MATERIAL P/ REVENDA"], ["LABCOR", 9014.48, "MATERIAL P/ REVENDA"], ["ECOMED COMERCIO DE PRODUTOS MEDICOS LTDA", 7006.88, "MATERIAL P/ REVENDA"], ["ENDO INDUSTRIA", 4052.0, "MATERIAL P/ REVENDA"], ["MEDHCIR", 605.0, "MATERIAL P/ REVENDA"]], "OPERACIONAL": [["SANDRO DE OLIVEIRA VIANA", 14000.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["INACIO MONCKS", 11631.14, "EVENTO"], ["LANES- LANES LEVY", 6686.48, "PRESTADORES DE SERVIÃÂÃÂO"], ["SOCIEDADE BRASILEIRA DE UROLOGIA", 5880.0, "EVENTO"], ["MANOEL", 5000.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["LUCAS PRAETORIUS", 4643.79, "EVENTO"], ["G4 EDUCACAO E EBOOK", 4158.37, "TREINAMENTO"], ["FETT ADVOGADOS ASSOCIADOS", 4000.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["LARISSA DA MOTTA BROSE", 3970.32, "MKT"], ["V4 COMPANY - DIMER SILVA E ASSOCIADOS", 3900.0, "MKT"], ["PROGRAMA BOCA NO TRAMBONE - PAULO ANDRE", 3500.0, "EVENTO"], ["AJP MASTER", 3377.5, "MANUTENÃÂÃÂÃÂÃÂO GERAL"], ["MARCELO CIOATO COSTA", 3240.0, "FREELANCER CIRURGIA"], ["GLOBAL LASER", 3000.0, "ALUGUEL DE EQUIPAMEN"], ["LUCAS PRAETORIUS", 3000.0, "ALUGUEL"], ["LICITACOES- ML BIDDING", 2500.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["FULL EXPRESS TRANSPORTES LTDA.", 2395.52, "FRETE"], ["RAFAEL - RFS FREITAS LTDA", 2161.39, "COMBUSTIVEL"], ["ADILSON CORTINES LAXE JUNIOR - MEDLASER", 2000.0, "ALUGUEL DE EQUIPAMEN"], ["SND DISTRIBUIÃÂÃÂÃÂÃÂO DE PRODUTOS DE IMPORMATICA", 1809.9, "PRESTADORES DE SERVIÃÂÃÂO"], ["QUBO - KLEOS", 1735.49, "PRESTADORES DE SERVIÃÂÃÂO"], ["TRANSMED", 1728.98, "FRETE"], ["CHECK 4 DATA", 1595.37, "PRESTADORES DE SERVIÃÂÃÂO"], ["SUANE PEREIRA SILVEIRA", 1461.43, "UBER"], ["DOUGLAS DROZDOWSKI DE ALMEIDA", 1420.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["MARCELO CIOATO COSTA", 1373.0, "ESTACIONAMENTO"], ["EDUARDO PIMENTEL DA SILVEIRA", 1340.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["CHECKMOB DIGITAL TECHNOLOGIES S/A", 1139.9, "PRESTADORES DE SERVIÃÂÃÂO"], ["VERIDIANE BARCELOS MACHADO", 1077.9, "KM RODADO"], ["MATHEUS VIALE", 1001.47, "MATERIAL DE ESCRITOR"], ["MARCELO CIOATO COSTA", 1000.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["RAFAEL - RFS FREITAS LTDA", 847.0, "HOSPEDAGEM"], ["LUCAS PRAETORIUS", 815.29, "COMBUSTIVEL"], ["J. F. MARTINS DA SILVA", 800.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["SUANE PEREIRA SILVEIRA", 750.0, "FREELANCER CIRURGIA"], ["SANDRO DE OLIVEIRA VIANA", 718.88, "UBER"], ["OLIVIA LOPES", 700.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["A.R LOGISTICA", 700.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["LG COMERCIO DE MATERIAL ELETRICO E HIDRAULICO", 660.97, "MANUTENÃÂÃÂÃÂÃÂO GERAL"], ["MARIA FABIANE MARTINI", 650.0, "FREELANCER CIRURGIA"], ["CEEE", 648.52, "ENERGIA"], ["ESPRESSO APP CARTÃÂÃÂO", 624.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["LTZ PERFORMANCE - MANUTENCAO FURGAO", 604.0, "MANUTENÃÂÃÂÃÂÃÂO GERAL"], ["FAXINA- TERESINHA LIMA BRUTIS", 600.0, "FAXINA"], ["JEFERSON NEVES CANTO", 567.0, "ESTACIONAMENTO"], ["LUCAS PRAETORIUS", 517.0, "ESTACIONAMENTO"], ["FREE- GABRIEL ALVES SORREICAO", 450.0, "FREELANCER CIRURGIA"], ["RAFAEL - RFS FREITAS LTDA", 435.0, "ESTACIONAMENTO"], ["SUANE PEREIRA SILVEIRA", 432.75, "REEMBOLSO"], ["LUCAS PRAETORIUS", 404.7, "MATERIAL DE ESCRITOR"], ["EDUARDO MACHADO DA SILVEIRA", 398.7, "KM RODADO"], ["ITAU", 361.69, "TARIFA BANCARIAS"], ["ESTACIONAMENTO- TATA PARK MOINHOS", 350.0, "ESTACIONAMENTO"], ["CENTRO GAUCHO DE MEDICINA OCUPACIONAL", 313.12, "PRESTADORES DE SERVIÃÂÃÂO"], ["LARISSA MACIEL MONKS", 300.0, "FREELANCER CIRURGIA"], ["JEFERSON NEVES CANTO", 300.0, "FREELANCER CIRURGIA"], ["FREE- VITORIA BREMM BACK", 300.0, "FREELANCER CIRURGIA"], ["JEFERSON NEVES CANTO", 297.15, "KM RODADO"], ["PONTUAL TELECOM SISTEMAS DE CO", 289.0, "INTERNET"], ["SANDRO DE OLIVEIRA VIANA", 269.0, "REEMBOLSO"], ["ECO AMBIENTALIS TRANSPORTES", 250.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["PEDRO HENRIQUE BITENCOURT", 242.48, "COMBUSTIVEL"], ["TATIANA NUNES ROSA", 236.67, "PASSAGEM"], ["ARAMIS DA SILVA NOGUEIRA", 220.78, "COMBUSTIVEL"], ["AHGORA SISTEMAS", 216.3, "PRESTADORES DE SERVIÃÂÃÂO"], ["GABRIELA TRILHA", 213.33, "MATERIAL DE ESCRITOR"], ["APOLO BARUA", 210.96, "MATERIAL DE ESCRITOR"], ["EXPRESSO SAO MIGUEL LTDA", 203.0, "FRETE"], ["LUCAS PRAETORIUS", 201.61, "UBER"], ["EDUARDO MACHADO DA SILVEIRA", 200.9, "ESTACIONAMENTO"], ["APOLO BARUA", 154.65, "KM RODADO"], ["RAFAEL - RFS FREITAS LTDA", 150.0, "SEM PARAR"], ["EDUARDO MACHADO DA SILVEIRA", 150.0, "SEM PARAR"], ["SANDRO DE OLIVEIRA VIANA", 141.0, "PASSAGEM"], ["APOLO BARUA", 136.0, "ESTACIONAMENTO"], ["PEDRO HENRIQUE BITENCOURT", 126.0, "ESTACIONAMENTO"], ["RAFAEL - RFS FREITAS LTDA", 122.79, "BRINDE"], ["MATHEUS VIALE", 120.3, "KM RODADO"], ["GPS 77", 120.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["SAFE2PAY - ARMAZEM DA LIMPEZA", 119.5, "MATERIAL GERAL (LIMP"], ["SUANE PEREIRA SILVEIRA", 113.3, "BRINDE"], ["MARCELO CIOATO COSTA", 108.57, "BRINDE"], ["ARTUR HATZEN", 100.0, "FREELANCER CIRURGIA"], ["MATHEUS VIALE", 99.94, "COMBUSTIVEL"], ["ARAMIS DA SILVA NOGUEIRA", 95.0, "ESTACIONAMENTO"], ["PRO RAD C E R S S LTDA", 80.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["LUCAS PRAETORIUS", 78.0, "PASSAGEM"], ["CLARO - NET", 75.98, "TELEFONIA MOVEL"], ["ENDO REPAROS", 69.99, "FRETE"], ["MATHEUS VIALE", 58.0, "ESTACIONAMENTO"], ["WILSONEI PEREIRA DOS SANTOS", 55.65, "KM RODADO"], ["SANDRO DE OLIVEIRA VIANA", 46.0, "ESTACIONAMENTO"], ["WILSONEI PEREIRA DOS SANTOS", 39.9, "MATERIAL DE ESCRITOR"], ["MARCELO CIOATO COSTA", 32.99, "REEMBOLSO"], ["RAFAEL - RFS FREITAS LTDA", 17.0, "PASSAGEM"], ["EDUARDO MACHADO DA SILVEIRA", 14.9, "MATERIAL DE ESCRITOR"], ["PEDRO HENRIQUE BITENCOURT", 14.85, "KM RODADO"], ["GABRIELA TRILHA", 13.75, "UBER"], ["TATIANA NUNES ROSA", 10.96, "UBER"]], "SALARIO": [["FVEGA REPRESENTACOES", 9150.0, "REPRESENTANTE (PJ)"], ["APOLO BARUA", 6928.0, "REPRESENTANTE (PJ)"], ["RAFAEL - RFS FREITAS LTDA", 6500.0, "REPRESENTANTE (PJ)"], ["JOSELI STELLA", 5650.0, "REPRESENTANTE (PJ)"], ["LUCAS PRAETORIUS", 5206.76, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["TANARA", 4500.0, "SALARIO"], ["SUANE PEREIRA SILVEIRA", 3272.66, "FERIAS"], ["CTG PRESTADORES", 1500.0, "C.S"], ["SINERGYMED", 1122.5, "COMISSÃÂÃÂO"], ["RAFAEL - RFS FREITAS LTDA", 448.44, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["CIEE - APRENDIZ", 381.14, "SALARIO"], ["SANDRO DE OLIVEIRA VIANA", 372.59, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["SUANE PEREIRA SILVEIRA", 360.0, "COMISSÃÂÃÂO"], ["INACIO MONCKS", 321.5, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["JEFERSON NEVES CANTO", 240.0, "COMISSÃÂÃÂO"], ["TATIANA NUNES ROSA", 186.44, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["PEDRO HENRIQUE BITENCOURT", 150.0, "IAE"], ["WILSONEI PEREIRA DOS SANTOS", 150.0, "IAE"], ["EDUARDO MACHADO DA SILVEIRA", 150.0, "IAE"], ["SABRINA DA SILVA HIRT", 150.0, "IAE"], ["APOLO BARUA", 150.0, "IAE"], ["ARTUR HATZEN", 150.0, "IAE"], ["VERIDIANE BARCELOS MACHADO", 150.0, "IAE"], ["GABRIELA TRILHA", 150.0, "IAE"], ["SUANE PEREIRA SILVEIRA", 150.0, "IAE"], ["ALINE GAMA", 150.0, "IAE"], ["MATHEUS VIALE", 150.0, "IAE"], ["ARAMIS DA SILVA NOGUEIRA", 150.0, "IAE"], ["GUILHERME THEODORO CARVALHO DE ARAUJO", 150.0, "IAE"], ["JEFERSON NEVES CANTO", 150.0, "IAE"], ["LUHEN CUNHA MACIEL DA SILVA", 150.0, "IAE"], ["CAROLINA BORBA", 150.0, "IAE"], ["TANARA", 150.0, "IAE"], ["GABRIELA TRILHA", 61.9, "ALIMENTAÃÂÃÂÃÂÃÂO"]], "USO/CONSUMO": [["ENDO INDUSTRIA", 14857.33, "COMPRA EQUIPAMENTO"], ["EDUARDO MARTIN JASTRZEPSKI", 5200.0, "COMPRA EQUIPAMENTO"], ["APOLO BARUA", 324.23, "COMPRA EQUIPAMENTO"], ["EXACT 3D PRINT", 80.0, "COMPRA EQUIPAMENTO"], ["EDUARDO MACHADO DA SILVEIRA", 39.9, "COMPRA EQUIPAMENTO"]], "MANUTENÃÂÃÂÃÂÃÂO": [["ENDO REPAROS", 6150.0, "MAN. EQUIP_RIG"], ["ENDO REPAROS", 3750.0, "MAN. EQUIP_FLEX"], ["ENDO AMERICAS PRODUTOS", 1500.0, "MAN. EQUIP_FLEX"]], "COMPRAS ATIVO": [["GABRIELA TRILHA", 10036.01, "COMPRA ATIVO"], ["APOLO BARUA", 42.0, "COMPRA ATIVO"]], "PREDIAL": [["CORTE REALIMOVEIS", 4291.83, "CONDOMINIO"], ["GARANTE BLU", 2495.25, "CONDOMINIO"]], "COMPRA DE INSTRUMENTAL": [["MUZYMED", 3052.31, "COMPRA DE INSTRUMENTAL"]], "IMPOSTO": [["IMPOSTOS - ISS", 210.0, "ISSQN"]], "SPEED ATIVA": [["LARISSA MACIEL MONKS", 200.0, "SPEED ATIVA"]]}, "Traumato": {"OPERACIONAL": [["LUCAS PRAETORIUS", 308500.0, "CONTA HOSPITALAR"], ["SYNAPSE MARKETING", 47450.0, "CONTA HOSPITALAR"], ["ANVISA", 9928.24, "TAXAS E LICENÃÂÃÂAS"], ["WILLIAM DE OLIVEIRA DIAS", 4000.0, "CONTA HOSPITALAR"], ["AJP MASTER", 3377.5, "MANUTENÃÂÃÂÃÂÃÂO GERAL"], ["MIGUEL", 2600.0, "FREELANCER CIRURGIA"], ["MIGUEL", 1200.0, "TREINAMENTO"], ["MIGUEL", 1194.67, "COMBUSTIVEL"], ["CAPITAL CARGAS HOSPITALAR", 1193.21, "FRETE"], ["MIGUEL", 993.0, "ESTACIONAMENTO"], ["MIGUEL", 717.13, "MANUTENÃÂÃÂÃÂÃÂO GERAL"], ["STRATEGICA EM TRANSPORTES", 322.35, "FRETE"], ["PEDRO HENRIQUE BITENCOURT", 320.13, "COMBUSTIVEL"], ["VERIDIANE", 300.0, "FREELANCER CIRURGIA"], ["MIGUEL", 296.95, "UBER"], ["CONSULTORIA MIGUEL - FERNANDA BASSANI", 260.0, "TREINAMENTO"], ["ARAMIS DA SILVA NOGUEIRA", 248.46, "COMBUSTIVEL"], ["MATHEUS VIALE", 99.94, "COMBUSTIVEL"], ["MIGUEL", 99.9, "MATERIAL DE ESCRITOR"], ["ITAU", 84.72, "TARIFA BANCARIAS"], ["MATHEUS VIALE", 71.0, "ESTACIONAMENTO"], ["PEDRO HENRIQUE BITENCOURT", 56.0, "ESTACIONAMENTO"], ["MATHEUS VIALE", 51.9, "KM RODADO"], ["ARAMIS DA SILVA NOGUEIRA", 37.0, "ESTACIONAMENTO"]], "PRO LABORE": [["MIGUEL", 17500.0, "RETIRADA"]], "COMPRAS REVENDA": [["LEVMEDICAL", 7766.59, "MATERIAL P/ REVENDA"], ["RAZEK LTDA", 6749.7, "MATERIAL P/ REVENDA"]], "SALARIO": [["ALINE GAMA", 4500.0, "REPRESENTANTE (PJ)"], ["MIGUEL", 3606.29, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["JS FARMA", 1000.0, "REPRESENTANTE (PJ)"]], "NAO INDICADO": [["SETORMED", 1587.0, "NAO INDICADO"]]}, "Holep": {"OPERACIONAL": [["SINERGYMED", 12600.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["STELLANTIS FINANCIAMENTO SC", 7014.14, "FINANCIAMENTO"], ["LASERMED", 3000.0, "ALUGUEL DE EQUIPAMEN"], ["ELLEVAR- PLATAFORMA FURGÃÂÃÂO", 2137.5, "PRESTADORES DE SERVIÃÂÃÂO"], ["MARCELO CIOATO COSTA", 900.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 856.56, "COMBUSTIVEL"], ["JEFERSON NEVES CANTO", 700.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 521.85, "KM RODADO"], ["(TAXI) MARCELO TEIXEIRA", 500.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["EDUARDO MACHADO DA SILVEIRA", 500.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 463.97, "HOSPEDAGEM"], ["JEFERSON NEVES CANTO", 437.1, "KM RODADO"], ["EDUARDO MACHADO DA SILVEIRA", 222.0, "ESTACIONAMENTO"], ["ESTERILIZARE ESTERILIZACAO DE PRODUTOS", 206.48, "PRESTADORES DE SERVIÃÂÃÂO"], ["GPS 77", 120.0, "PRESTADORES DE SERVIÃÂÃÂO"], ["APOLO BARUA", 88.0, "ESTACIONAMENTO"], ["ITAU", 71.06, "TARIFA BANCARIAS"], ["JEFERSON NEVES CANTO", 48.0, "ESTACIONAMENTO"], ["ARAMIS DA SILVA NOGUEIRA", 26.0, "ESTACIONAMENTO"]], "MANUTENÃÂÃÂÃÂÃÂO": [["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 7537.08, "MANUTENÃÂÃÂÃÂÃÂO LASER"], ["ENDO REPAROS", 6150.0, "MAN. EQUIP_RIG"], ["ENDO REPAROS", 3750.0, "MAN. EQUIP_FLEX"]], "USO/CONSUMO": [["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 9061.29, "COMPRA EQUIPAMENTO"]], "COMPRA DE INSTRUMENTAL": [["AMERICAN SCOLPS - TRANSF LUCAS", 6487.31, "COMPRA DE INSTRUMENTAL"]], "COMPRAS REVENDA": [["MEDHCIR", 2992.5, "MATERIAL P/ REVENDA"], ["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 2040.0, "MATERIAL P/ REVENDA"]], "SALARIO": [["FVEGA REPRESENTACOES", 1941.6, "REPRESENTANTE (PJ)"], ["EDUARDO MACHADO DA SILVEIRA", 376.3, "ALIMENTAÃÂÃÂÃÂÃÂO"], ["JEFERSON NEVES CANTO", 43.0, "ALIMENTAÃÂÃÂÃÂÃÂO"]]}, "SP": {"OPERACIONAL": [["SQUADRA TRANSPORTE", 6348.13, "PRESTADORES DE SERVIÃÂÃÂO"], ["AGENCIA HEFESTO", 5000.0, "MKT"], ["LUCAS PRAETORIUS", 4254.34, "EVENTO"], ["PH LOGISTICA", 1795.48, "FRETE"], ["RODOLPHO FALCIANO FILHO", 1217.46, "COMBUSTIVEL"], ["RENATO", 1000.0, "COMBUSTIVEL"], ["RODOLPHO FALCIANO FILHO", 590.5, "ESTACIONAMENTO"], ["B.I. INPART SERVICOS", 508.93, "PRESTADORES DE SERVIÃÂÃÂO"], ["RENATO", 278.49, "FRETE"], ["RODOLPHO FALCIANO FILHO", 178.97, "UBER"], ["FREE- ADRIANA MARIA", 150.0, "FREELANCER CIRURGIA"], ["BB", 14.35, "TARIFA BANCARIAS"]], "SALARIO": [["RODOLPHO FALCIANO FILHO", 13150.0, "REPRESENTANTE (PJ)"], ["RODOLPHO FALCIANO FILHO", 563.72, "ALIMENTAÃÂÃÂÃÂÃÂO"]], "IMPOSTO": [["RODOLPHO FALCIANO FILHO", 3273.97, "IMPOSTO"]]}, "SC": {"OPERACIONAL": [["LUCAS PRAETORIUS", 9193.81, "EVENTO"], ["LUCAS PRAETORIUS", 1566.65, "HOSPEDAGEM"], ["AZUL LINHAS AEREAS", 1465.35, "FRETE"], ["EXPRESSO SAO MIGUEL LTDA", 1239.0, "FRETE"], ["MARCOS ROGERIO VERDURA", 356.0, "HOSPEDAGEM"], ["LUCAS PRAETORIUS", 291.18, "COMBUSTIVEL"], ["MARCOS ROGERIO VERDURA", 164.0, "ESTACIONAMENTO"], ["LUCAS PRAETORIUS", 65.0, "ESTACIONAMENTO"], ["ITAU", 41.18, "TARIFA BANCARIAS"]], "SALARIO": [["EVANDRO- BIOVITAL OESTE LOGISTICA", 4922.0, "REPRESENTANTE (PJ)"], ["MARCOS ROGERIO VERDURA", 4137.83, "REPRESENTANTE (PJ)"], ["LUCAS PRAETORIUS", 1651.36, "ALIMENTAÃÂÃÂÃÂÃÂO"]]}, "PR": {"SALARIO": [["KAMILA DE CASTILHO", 12448.17, "REPRESENTANTE (PJ)"], ["KAMILA DE CASTILHO", 332.9, "ALIMENTAÃÂÃÂÃÂÃÂO"]], "OPERACIONAL": [["LUCAS PRAETORIUS", 2807.39, "EVENTO"], ["AZUL LINHAS AEREAS", 2682.8, "FRETE"], ["KAMILA DE CASTILHO", 1313.82, "COMBUSTIVEL"], ["KAMILA DE CASTILHO", 1135.44, "HOSPEDAGEM"], ["FREE FRETE- GUILHERME FERNANDES MICOS", 644.0, "FRETE"], ["SANTANDER", 310.12, "TARIFA BANCARIAS"], ["KAMILA DE CASTILHO", 86.0, "ESTACIONAMENTO"]]}, "BA": {"SALARIO": [["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 8150.0, "REPRESENTANTE (PJ)"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 1622.35, "ALIMENTAÃÂÃÂÃÂÃÂO"]], "OPERACIONAL": [["LUCAS PRAETORIUS", 2807.39, "EVENTO"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 960.71, "ESTACIONAMENTO"], ["OGUNJA SELF STORAGE", 532.25, "PRESTADORES DE SERVIÃÂÃÂO"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 455.82, "COMBUSTIVEL"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 315.7, "HOSPEDAGEM"], ["DIEGO DE JESUS DOS SANTOS", 200.0, "FREELANCER CIRURGIA"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 8.5, "MATERIAL DE ESCRITOR"]], "COMPRAS ATIVO": [["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 647.5, "COMPRA ATIVO"]]}}};
+const DESP_AD_UN={"jun26": {"RS": {"COMPRAS REVENDA": [["COLOPLAST", 160285.0, "MATERIAL P/ REVENDA"], ["COLOPLAST NAVEGANTES", 80178.2, "MATERIAL P/ REVENDA"], ["NEXTIMPLANTES RIO DE JANEIRO", 20473.41, "MATERIAL P/ REVENDA"], ["LABCOR", 9014.48, "MATERIAL P/ REVENDA"], ["ECOMED COMERCIO DE PRODUTOS MEDICOS LTDA", 7006.88, "MATERIAL P/ REVENDA"], ["ENDO INDUSTRIA", 4052.0, "MATERIAL P/ REVENDA"], ["MEDHCIR", 605.0, "MATERIAL P/ REVENDA"]], "OPERACIONAL": [["SANDRO DE OLIVEIRA VIANA", 14000.0, "PRESTADORES DE SERVIÃO"], ["INACIO MONCKS", 11631.14, "EVENTO"], ["LANES- LANES LEVY", 6686.48, "PRESTADORES DE SERVIÃO"], ["SOCIEDADE BRASILEIRA DE UROLOGIA", 5880.0, "EVENTO"], ["MANOEL", 5000.0, "PRESTADORES DE SERVIÃO"], ["LUCAS PRAETORIUS", 4643.79, "EVENTO"], ["G4 EDUCACAO E EBOOK", 4158.37, "TREINAMENTO"], ["FETT ADVOGADOS ASSOCIADOS", 4000.0, "PRESTADORES DE SERVIÃO"], ["LARISSA DA MOTTA BROSE", 3970.32, "MKT"], ["V4 COMPANY - DIMER SILVA E ASSOCIADOS", 3900.0, "MKT"], ["PROGRAMA BOCA NO TRAMBONE - PAULO ANDRE", 3500.0, "EVENTO"], ["AJP MASTER", 3377.5, "MANUTENÃÃO GERAL"], ["MARCELO CIOATO COSTA", 3240.0, "FREELANCER CIRURGIA"], ["GLOBAL LASER", 3000.0, "ALUGUEL DE EQUIPAMEN"], ["LUCAS PRAETORIUS", 3000.0, "ALUGUEL"], ["LICITACOES- ML BIDDING", 2500.0, "PRESTADORES DE SERVIÃO"], ["FULL EXPRESS TRANSPORTES LTDA.", 2395.52, "FRETE"], ["RAFAEL - RFS FREITAS LTDA", 2161.39, "COMBUSTIVEL"], ["ADILSON CORTINES LAXE JUNIOR - MEDLASER", 2000.0, "ALUGUEL DE EQUIPAMEN"], ["SND DISTRIBUIÃÃO DE PRODUTOS DE IMPORMATICA", 1809.9, "PRESTADORES DE SERVIÃO"], ["QUBO - KLEOS", 1735.49, "PRESTADORES DE SERVIÃO"], ["TRANSMED", 1728.98, "FRETE"], ["CHECK 4 DATA", 1595.37, "PRESTADORES DE SERVIÃO"], ["SUANE PEREIRA SILVEIRA", 1461.43, "UBER"], ["DOUGLAS DROZDOWSKI DE ALMEIDA", 1420.0, "PRESTADORES DE SERVIÃO"], ["MARCELO CIOATO COSTA", 1373.0, "ESTACIONAMENTO"], ["EDUARDO PIMENTEL DA SILVEIRA", 1340.0, "PRESTADORES DE SERVIÃO"], ["CHECKMOB DIGITAL TECHNOLOGIES S/A", 1139.9, "PRESTADORES DE SERVIÃO"], ["VERIDIANE BARCELOS MACHADO", 1077.9, "KM RODADO"], ["MATHEUS VIALE", 1001.47, "MATERIAL DE ESCRITOR"], ["MARCELO CIOATO COSTA", 1000.0, "PRESTADORES DE SERVIÃO"], ["RAFAEL - RFS FREITAS LTDA", 847.0, "HOSPEDAGEM"], ["LUCAS PRAETORIUS", 815.29, "COMBUSTIVEL"], ["J. F. MARTINS DA SILVA", 800.0, "PRESTADORES DE SERVIÃO"], ["SUANE PEREIRA SILVEIRA", 750.0, "FREELANCER CIRURGIA"], ["SANDRO DE OLIVEIRA VIANA", 718.88, "UBER"], ["OLIVIA LOPES", 700.0, "PRESTADORES DE SERVIÃO"], ["A.R LOGISTICA", 700.0, "PRESTADORES DE SERVIÃO"], ["LG COMERCIO DE MATERIAL ELETRICO E HIDRAULICO", 660.97, "MANUTENÃÃO GERAL"], ["MARIA FABIANE MARTINI", 650.0, "FREELANCER CIRURGIA"], ["CEEE", 648.52, "ENERGIA"], ["ESPRESSO APP CARTÃO", 624.0, "PRESTADORES DE SERVIÃO"], ["LTZ PERFORMANCE - MANUTENCAO FURGAO", 604.0, "MANUTENÃÃO GERAL"], ["FAXINA- TERESINHA LIMA BRUTIS", 600.0, "FAXINA"], ["JEFERSON NEVES CANTO", 567.0, "ESTACIONAMENTO"], ["LUCAS PRAETORIUS", 517.0, "ESTACIONAMENTO"], ["FREE- GABRIEL ALVES SORREICAO", 450.0, "FREELANCER CIRURGIA"], ["RAFAEL - RFS FREITAS LTDA", 435.0, "ESTACIONAMENTO"], ["SUANE PEREIRA SILVEIRA", 432.75, "REEMBOLSO"], ["LUCAS PRAETORIUS", 404.7, "MATERIAL DE ESCRITOR"], ["EDUARDO MACHADO DA SILVEIRA", 398.7, "KM RODADO"], ["ITAU", 361.69, "TARIFA BANCARIAS"], ["ESTACIONAMENTO- TATA PARK MOINHOS", 350.0, "ESTACIONAMENTO"], ["CENTRO GAUCHO DE MEDICINA OCUPACIONAL", 313.12, "PRESTADORES DE SERVIÃO"], ["LARISSA MACIEL MONKS", 300.0, "FREELANCER CIRURGIA"], ["JEFERSON NEVES CANTO", 300.0, "FREELANCER CIRURGIA"], ["FREE- VITORIA BREMM BACK", 300.0, "FREELANCER CIRURGIA"], ["JEFERSON NEVES CANTO", 297.15, "KM RODADO"], ["PONTUAL TELECOM SISTEMAS DE CO", 289.0, "INTERNET"], ["SANDRO DE OLIVEIRA VIANA", 269.0, "REEMBOLSO"], ["ECO AMBIENTALIS TRANSPORTES", 250.0, "PRESTADORES DE SERVIÃO"], ["PEDRO HENRIQUE BITENCOURT", 242.48, "COMBUSTIVEL"], ["TATIANA NUNES ROSA", 236.67, "PASSAGEM"], ["ARAMIS DA SILVA NOGUEIRA", 220.78, "COMBUSTIVEL"], ["AHGORA SISTEMAS", 216.3, "PRESTADORES DE SERVIÃO"], ["GABRIELA TRILHA", 213.33, "MATERIAL DE ESCRITOR"], ["APOLO BARUA", 210.96, "MATERIAL DE ESCRITOR"], ["EXPRESSO SAO MIGUEL LTDA", 203.0, "FRETE"], ["LUCAS PRAETORIUS", 201.61, "UBER"], ["EDUARDO MACHADO DA SILVEIRA", 200.9, "ESTACIONAMENTO"], ["APOLO BARUA", 154.65, "KM RODADO"], ["RAFAEL - RFS FREITAS LTDA", 150.0, "SEM PARAR"], ["EDUARDO MACHADO DA SILVEIRA", 150.0, "SEM PARAR"], ["SANDRO DE OLIVEIRA VIANA", 141.0, "PASSAGEM"], ["APOLO BARUA", 136.0, "ESTACIONAMENTO"], ["PEDRO HENRIQUE BITENCOURT", 126.0, "ESTACIONAMENTO"], ["RAFAEL - RFS FREITAS LTDA", 122.79, "BRINDE"], ["MATHEUS VIALE", 120.3, "KM RODADO"], ["GPS 77", 120.0, "PRESTADORES DE SERVIÃO"], ["SAFE2PAY - ARMAZEM DA LIMPEZA", 119.5, "MATERIAL GERAL (LIMP"], ["SUANE PEREIRA SILVEIRA", 113.3, "BRINDE"], ["MARCELO CIOATO COSTA", 108.57, "BRINDE"], ["ARTUR HATZEN", 100.0, "FREELANCER CIRURGIA"], ["MATHEUS VIALE", 99.94, "COMBUSTIVEL"], ["ARAMIS DA SILVA NOGUEIRA", 95.0, "ESTACIONAMENTO"], ["PRO RAD C E R S S LTDA", 80.0, "PRESTADORES DE SERVIÃO"], ["LUCAS PRAETORIUS", 78.0, "PASSAGEM"], ["CLARO - NET", 75.98, "TELEFONIA MOVEL"], ["ENDO REPAROS", 69.99, "FRETE"], ["MATHEUS VIALE", 58.0, "ESTACIONAMENTO"], ["WILSONEI PEREIRA DOS SANTOS", 55.65, "KM RODADO"], ["SANDRO DE OLIVEIRA VIANA", 46.0, "ESTACIONAMENTO"], ["WILSONEI PEREIRA DOS SANTOS", 39.9, "MATERIAL DE ESCRITOR"], ["MARCELO CIOATO COSTA", 32.99, "REEMBOLSO"], ["RAFAEL - RFS FREITAS LTDA", 17.0, "PASSAGEM"], ["EDUARDO MACHADO DA SILVEIRA", 14.9, "MATERIAL DE ESCRITOR"], ["PEDRO HENRIQUE BITENCOURT", 14.85, "KM RODADO"], ["GABRIELA TRILHA", 13.75, "UBER"], ["TATIANA NUNES ROSA", 10.96, "UBER"]], "SALARIO": [["FVEGA REPRESENTACOES", 9150.0, "REPRESENTANTE (PJ)"], ["APOLO BARUA", 6928.0, "REPRESENTANTE (PJ)"], ["RAFAEL - RFS FREITAS LTDA", 6500.0, "REPRESENTANTE (PJ)"], ["JOSELI STELLA", 5650.0, "REPRESENTANTE (PJ)"], ["LUCAS PRAETORIUS", 5206.76, "ALIMENTAÃÃO"], ["TANARA", 4500.0, "SALARIO"], ["SUANE PEREIRA SILVEIRA", 3272.66, "FERIAS"], ["CTG PRESTADORES", 1500.0, "C.S"], ["SINERGYMED", 1122.5, "COMISSÃO"], ["RAFAEL - RFS FREITAS LTDA", 448.44, "ALIMENTAÃÃO"], ["CIEE - APRENDIZ", 381.14, "SALARIO"], ["SANDRO DE OLIVEIRA VIANA", 372.59, "ALIMENTAÃÃO"], ["SUANE PEREIRA SILVEIRA", 360.0, "COMISSÃO"], ["INACIO MONCKS", 321.5, "ALIMENTAÃÃO"], ["JEFERSON NEVES CANTO", 240.0, "COMISSÃO"], ["TATIANA NUNES ROSA", 186.44, "ALIMENTAÃÃO"], ["PEDRO HENRIQUE BITENCOURT", 150.0, "IAE"], ["WILSONEI PEREIRA DOS SANTOS", 150.0, "IAE"], ["EDUARDO MACHADO DA SILVEIRA", 150.0, "IAE"], ["SABRINA DA SILVA HIRT", 150.0, "IAE"], ["APOLO BARUA", 150.0, "IAE"], ["ARTUR HATZEN", 150.0, "IAE"], ["VERIDIANE BARCELOS MACHADO", 150.0, "IAE"], ["GABRIELA TRILHA", 150.0, "IAE"], ["SUANE PEREIRA SILVEIRA", 150.0, "IAE"], ["ALINE GAMA", 150.0, "IAE"], ["MATHEUS VIALE", 150.0, "IAE"], ["ARAMIS DA SILVA NOGUEIRA", 150.0, "IAE"], ["GUILHERME THEODORO CARVALHO DE ARAUJO", 150.0, "IAE"], ["JEFERSON NEVES CANTO", 150.0, "IAE"], ["LUHEN CUNHA MACIEL DA SILVA", 150.0, "IAE"], ["CAROLINA BORBA", 150.0, "IAE"], ["TANARA", 150.0, "IAE"], ["GABRIELA TRILHA", 61.9, "ALIMENTAÃÃO"]], "USO/CONSUMO": [["ENDO INDUSTRIA", 14857.33, "COMPRA EQUIPAMENTO"], ["EDUARDO MARTIN JASTRZEPSKI", 5200.0, "COMPRA EQUIPAMENTO"], ["APOLO BARUA", 324.23, "COMPRA EQUIPAMENTO"], ["EXACT 3D PRINT", 80.0, "COMPRA EQUIPAMENTO"], ["EDUARDO MACHADO DA SILVEIRA", 39.9, "COMPRA EQUIPAMENTO"]], "MANUTENÃÃO": [["ENDO REPAROS", 6150.0, "MAN. EQUIP_RIG"], ["ENDO REPAROS", 3750.0, "MAN. EQUIP_FLEX"], ["ENDO AMERICAS PRODUTOS", 1500.0, "MAN. EQUIP_FLEX"]], "COMPRAS ATIVO": [["GABRIELA TRILHA", 10036.01, "COMPRA ATIVO"], ["APOLO BARUA", 42.0, "COMPRA ATIVO"]], "PREDIAL": [["CORTE REALIMOVEIS", 4291.83, "CONDOMINIO"], ["GARANTE BLU", 2495.25, "CONDOMINIO"]], "COMPRA DE INSTRUMENTAL": [["MUZYMED", 3052.31, "COMPRA DE INSTRUMENTAL"]], "IMPOSTO": [["IMPOSTOS - ISS", 210.0, "ISSQN"]], "SPEED ATIVA": [["LARISSA MACIEL MONKS", 200.0, "SPEED ATIVA"]]}, "Traumato": {"OPERACIONAL": [["LUCAS PRAETORIUS", 308500.0, "CONTA HOSPITALAR"], ["SYNAPSE MARKETING", 47450.0, "CONTA HOSPITALAR"], ["ANVISA", 9928.24, "TAXAS E LICENÃAS"], ["WILLIAM DE OLIVEIRA DIAS", 4000.0, "CONTA HOSPITALAR"], ["AJP MASTER", 3377.5, "MANUTENÃÃO GERAL"], ["MIGUEL", 2600.0, "FREELANCER CIRURGIA"], ["MIGUEL", 1200.0, "TREINAMENTO"], ["MIGUEL", 1194.67, "COMBUSTIVEL"], ["CAPITAL CARGAS HOSPITALAR", 1193.21, "FRETE"], ["MIGUEL", 993.0, "ESTACIONAMENTO"], ["MIGUEL", 717.13, "MANUTENÃÃO GERAL"], ["STRATEGICA EM TRANSPORTES", 322.35, "FRETE"], ["PEDRO HENRIQUE BITENCOURT", 320.13, "COMBUSTIVEL"], ["VERIDIANE", 300.0, "FREELANCER CIRURGIA"], ["MIGUEL", 296.95, "UBER"], ["CONSULTORIA MIGUEL - FERNANDA BASSANI", 260.0, "TREINAMENTO"], ["ARAMIS DA SILVA NOGUEIRA", 248.46, "COMBUSTIVEL"], ["MATHEUS VIALE", 99.94, "COMBUSTIVEL"], ["MIGUEL", 99.9, "MATERIAL DE ESCRITOR"], ["ITAU", 84.72, "TARIFA BANCARIAS"], ["MATHEUS VIALE", 71.0, "ESTACIONAMENTO"], ["PEDRO HENRIQUE BITENCOURT", 56.0, "ESTACIONAMENTO"], ["MATHEUS VIALE", 51.9, "KM RODADO"], ["ARAMIS DA SILVA NOGUEIRA", 37.0, "ESTACIONAMENTO"]], "PRO LABORE": [["MIGUEL", 17500.0, "RETIRADA"]], "COMPRAS REVENDA": [["LEVMEDICAL", 7766.59, "MATERIAL P/ REVENDA"], ["RAZEK LTDA", 6749.7, "MATERIAL P/ REVENDA"]], "SALARIO": [["ALINE GAMA", 4500.0, "REPRESENTANTE (PJ)"], ["MIGUEL", 3606.29, "ALIMENTAÃÃO"], ["JS FARMA", 1000.0, "REPRESENTANTE (PJ)"]], "NAO INDICADO": [["SETORMED", 1587.0, "NAO INDICADO"]]}, "Holep": {"OPERACIONAL": [["SINERGYMED", 12600.0, "PRESTADORES DE SERVIÃO"], ["STELLANTIS FINANCIAMENTO SC", 7014.14, "FINANCIAMENTO"], ["LASERMED", 3000.0, "ALUGUEL DE EQUIPAMEN"], ["ELLEVAR- PLATAFORMA FURGÃO", 2137.5, "PRESTADORES DE SERVIÃO"], ["MARCELO CIOATO COSTA", 900.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 856.56, "COMBUSTIVEL"], ["JEFERSON NEVES CANTO", 700.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 521.85, "KM RODADO"], ["(TAXI) MARCELO TEIXEIRA", 500.0, "PRESTADORES DE SERVIÃO"], ["EDUARDO MACHADO DA SILVEIRA", 500.0, "FREELANCER CIRURGIA"], ["EDUARDO MACHADO DA SILVEIRA", 463.97, "HOSPEDAGEM"], ["JEFERSON NEVES CANTO", 437.1, "KM RODADO"], ["EDUARDO MACHADO DA SILVEIRA", 222.0, "ESTACIONAMENTO"], ["ESTERILIZARE ESTERILIZACAO DE PRODUTOS", 206.48, "PRESTADORES DE SERVIÃO"], ["GPS 77", 120.0, "PRESTADORES DE SERVIÃO"], ["APOLO BARUA", 88.0, "ESTACIONAMENTO"], ["ITAU", 71.06, "TARIFA BANCARIAS"], ["JEFERSON NEVES CANTO", 48.0, "ESTACIONAMENTO"], ["ARAMIS DA SILVA NOGUEIRA", 26.0, "ESTACIONAMENTO"]], "MANUTENÃÃO": [["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 7537.08, "MANUTENÃÃO LASER"], ["ENDO REPAROS", 6150.0, "MAN. EQUIP_RIG"], ["ENDO REPAROS", 3750.0, "MAN. EQUIP_FLEX"]], "USO/CONSUMO": [["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 9061.29, "COMPRA EQUIPAMENTO"]], "COMPRA DE INSTRUMENTAL": [["AMERICAN SCOLPS - TRANSF LUCAS", 6487.31, "COMPRA DE INSTRUMENTAL"]], "COMPRAS REVENDA": [["MEDHCIR", 2992.5, "MATERIAL P/ REVENDA"], ["ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC", 2040.0, "MATERIAL P/ REVENDA"]], "SALARIO": [["FVEGA REPRESENTACOES", 1941.6, "REPRESENTANTE (PJ)"], ["EDUARDO MACHADO DA SILVEIRA", 376.3, "ALIMENTAÃÃO"], ["JEFERSON NEVES CANTO", 43.0, "ALIMENTAÃÃO"]]}, "SP": {"OPERACIONAL": [["SQUADRA TRANSPORTE", 6348.13, "PRESTADORES DE SERVIÃO"], ["AGENCIA HEFESTO", 5000.0, "MKT"], ["LUCAS PRAETORIUS", 4254.34, "EVENTO"], ["PH LOGISTICA", 1795.48, "FRETE"], ["RODOLPHO FALCIANO FILHO", 1217.46, "COMBUSTIVEL"], ["RENATO", 1000.0, "COMBUSTIVEL"], ["RODOLPHO FALCIANO FILHO", 590.5, "ESTACIONAMENTO"], ["B.I. INPART SERVICOS", 508.93, "PRESTADORES DE SERVIÃO"], ["RENATO", 278.49, "FRETE"], ["RODOLPHO FALCIANO FILHO", 178.97, "UBER"], ["FREE- ADRIANA MARIA", 150.0, "FREELANCER CIRURGIA"], ["BB", 14.35, "TARIFA BANCARIAS"]], "SALARIO": [["RODOLPHO FALCIANO FILHO", 13150.0, "REPRESENTANTE (PJ)"], ["RODOLPHO FALCIANO FILHO", 563.72, "ALIMENTAÃÃO"]], "IMPOSTO": [["RODOLPHO FALCIANO FILHO", 3273.97, "IMPOSTO"]]}, "SC": {"OPERACIONAL": [["LUCAS PRAETORIUS", 9193.81, "EVENTO"], ["LUCAS PRAETORIUS", 1566.65, "HOSPEDAGEM"], ["AZUL LINHAS AEREAS", 1465.35, "FRETE"], ["EXPRESSO SAO MIGUEL LTDA", 1239.0, "FRETE"], ["MARCOS ROGERIO VERDURA", 356.0, "HOSPEDAGEM"], ["LUCAS PRAETORIUS", 291.18, "COMBUSTIVEL"], ["MARCOS ROGERIO VERDURA", 164.0, "ESTACIONAMENTO"], ["LUCAS PRAETORIUS", 65.0, "ESTACIONAMENTO"], ["ITAU", 41.18, "TARIFA BANCARIAS"]], "SALARIO": [["EVANDRO- BIOVITAL OESTE LOGISTICA", 4922.0, "REPRESENTANTE (PJ)"], ["MARCOS ROGERIO VERDURA", 4137.83, "REPRESENTANTE (PJ)"], ["LUCAS PRAETORIUS", 1651.36, "ALIMENTAÃÃO"]]}, "PR": {"SALARIO": [["KAMILA DE CASTILHO", 12448.17, "REPRESENTANTE (PJ)"], ["KAMILA DE CASTILHO", 332.9, "ALIMENTAÃÃO"]], "OPERACIONAL": [["LUCAS PRAETORIUS", 2807.39, "EVENTO"], ["AZUL LINHAS AEREAS", 2682.8, "FRETE"], ["KAMILA DE CASTILHO", 1313.82, "COMBUSTIVEL"], ["KAMILA DE CASTILHO", 1135.44, "HOSPEDAGEM"], ["FREE FRETE- GUILHERME FERNANDES MICOS", 644.0, "FRETE"], ["SANTANDER", 310.12, "TARIFA BANCARIAS"], ["KAMILA DE CASTILHO", 86.0, "ESTACIONAMENTO"]]}, "BA": {"SALARIO": [["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 8150.0, "REPRESENTANTE (PJ)"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 1622.35, "ALIMENTAÃÃO"]], "OPERACIONAL": [["LUCAS PRAETORIUS", 2807.39, "EVENTO"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 960.71, "ESTACIONAMENTO"], ["OGUNJA SELF STORAGE", 532.25, "PRESTADORES DE SERVIÃO"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 455.82, "COMBUSTIVEL"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 315.7, "HOSPEDAGEM"], ["DIEGO DE JESUS DOS SANTOS", 200.0, "FREELANCER CIRURGIA"], ["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 8.5, "MATERIAL DE ESCRITOR"]], "COMPRAS ATIVO": [["NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS", 647.5, "COMPRA ATIVO"]]}}};
 const FAT_CL=[{"c": "UNIMED POA", "val": 3558157, "items": [{"conv": "UNIMED POA", "med": "LIVIA SILVA SMIDT", "prod": "MATRIZ DERMICA 20X30CM NEVELIA", "val": "211.500,00", "uni": "RS"}, {"conv": "UNIMED POA", "med": "GABRIEL VEBER MOISES DA SILVA", "prod": "PROTESE PENIANA INFLAVEL TITAN 20CM", "val": "160.566,62", "uni": "RS"}, {"conv": "UNIMED POA", "med": "EDUARDO GASTAL VIEIRA", "prod": "CATETER DUPLO J VORTEK 7.0FR", "val": "124.360,00", "uni": "RS"}, {"conv": "UNIMED POA", "med": "GUSTAVO SCHROEDER", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "108.455,00", "uni": "RS"}]}, {"c": "SANTA CASA - POA", "val": 1667872, "items": [{"conv": "PARTICULAR", "med": "FELIPE PIONER MACHADO", "prod": "SERVICO / LOCACAO", "val": "233.000,00", "uni": "Holep"}, {"conv": "IPERGS", "med": "BRUNO CHAO LISOT", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "113.565,21", "uni": "RS"}, {"conv": "PARTICULAR", "med": "FABIO ANDRE DE AZEVEDO", "prod": "SERVICO / LOCACAO", "val": "88.900,00", "uni": "Holep"}, {"conv": "UNIMED POA", "med": "GUSTAVO SCHROEDER", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "76.800,00", "uni": "RS"}]}, {"c": "HOSPITAL REGINA", "val": 1400388, "items": [{"conv": "BRADESCO SAUDE", "med": "LUIZ RICARDO BOTTON", "prod": "LEVLIFE MR-BC - DOR CRONICA", "val": "494.500,00", "uni": "Traumato"}, {"conv": "BRADESCO SAUDE", "med": "JOEL C. WESTPHAL CORREA", "prod": "LEVLIFE MR-BC - DOR CRONICA", "val": "236.500,00", "uni": "Traumato"}, {"conv": "DOCTOR CLIN", "med": "LUCAS LAMPERT", "prod": "SERVICO / LOCACAO", "val": "93.560,00", "uni": "RS"}, {"conv": "DOCTOR CLIN", "med": "LUCAS LAMPERT", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "88.374,00", "uni": "RS"}]}, {"c": "MOINHOS DE VENTO", "val": 1364202, "items": [{"conv": "CABERGS", "med": "LIVIA SILVA SMIDT", "prod": "MATRIZ DERMICA 20X30CM NEVELIA", "val": "159.800,00", "uni": "RS"}, {"conv": "SAUDE PAS", "med": "LIVIA SILVA SMIDT", "prod": "SISTEMA ENXERTOS RIGENERA", "val": "119.700,00", "uni": "RS"}, {"conv": "CABERGS", "med": "LIVIA SILVA SMIDT", "prod": "SISTEMA ENXERTOS RIGENERA", "val": "110.700,00", "uni": "RS"}, {"conv": "BRADESCO SAUDE", "med": "OTAVIO PEREIRA CADORE", "prod": "BLOCK SAFE 21X120MM", "val": "98.300,00", "uni": "Traumato"}]}, {"c": "UNIMED VS", "val": 1153493, "items": [{"conv": "UNIMED VALE DO SINOS", "med": "MARLON ROBERTO FIORENTINI", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "158.205,00", "uni": "RS"}, {"conv": "UNIMED VALE DO SINOS", "med": "MARLON ROBERTO FIORENTINI", "prod": "SERVICO / LOCACAO", "val": "127.350,00", "uni": "RS"}, {"conv": "UNIMED VALE DO SINOS", "med": "ELTON CARDOSO SANCHOTENE", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "101.490,00", "uni": "RS"}, {"conv": "UNIMED VALE DO SINOS", "med": "ELTON CARDOSO SANCHOTENE", "prod": "SERVICO / LOCACAO", "val": "82.850,00", "uni": "RS"}]}, {"c": "HOSPITAL MOINHOS DE VENTO", "val": 1124950, "items": [{"conv": "BRADESCO SAUDE", "med": "ALESSANDRO J. PADILHA FENSTERSEIFER", "prod": "LEVLIFE MR-BC - DOR CRONICA", "val": "172.000,00", "uni": "Traumato"}, {"conv": "BRADESCO SAUDE", "med": "LEANDRO EMMEL BECKER", "prod": "KIT ACCURE G.BLOCK 120MM X 21G", "val": "71.150,00", "uni": "Traumato"}, {"conv": "CASSI", "med": "JARDEL PEREIRA TESSARI", "prod": "FASTFIT ANCHOR RAZEK 2,5", "val": "69.000,00", "uni": "Traumato"}, {"conv": "BRADESCO SAUDE", "med": "JARDEL PEREIRA TESSARI", "prod": "LEVLIFE MR-BC - DOR CRONICA", "val": "64.500,00", "uni": "Traumato"}]}, {"c": "HOSPITAL MAE DE DEUS", "val": 981990, "items": [{"conv": "IPERGS", "med": "ALESSANDRO J. PADILHA FENSTERSEIFER", "prod": "FASTFIT ANCHOR RAZEK 2,5", "val": "109.200,00", "uni": "Traumato"}, {"conv": "IPERGS", "med": "JOAO LUIZ MAISTER RAFAEL", "prod": "BLOCK SAFE 21X120MM", "val": "89.600,00", "uni": "Traumato"}, {"conv": "PETROBRAS", "med": "OTAVIO PEREIRA CADORE", "prod": "BLOCK SAFE 21X120MM", "val": "75.300,00", "uni": "Traumato"}, {"conv": "BRADESCO SAUDE", "med": "LEANDRO EMMEL BECKER", "prod": "KIT ACCURE G.BLOCK 120MM X 21G", "val": "68.500,00", "uni": "Traumato"}]}, {"c": "UNIMED TORRE II", "val": 851645, "items": [{"conv": "PARTICULAR", "med": "LUCAS LAMPERT", "prod": "SERVICO / LOCACAO", "val": "126.000,00", "uni": "Holep"}, {"conv": "PARTICULAR", "med": "MARLON ROBERTO FIORENTINI", "prod": "SERVICO / LOCACAO", "val": "126.000,00", "uni": "Holep"}, {"conv": "UNIMED INTERCAMBIO", "med": "LUCAS LAMPERT", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "58.705,00", "uni": "RS"}, {"conv": "UNIMED INTERCAMBIO", "med": "MARLON ROBERTO FIORENTINI", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "54.200,00", "uni": "RS"}]}, {"c": "SOC. SULINA DIVINA PROVIDENCIA", "val": 738890, "items": [{"conv": "IPERGS", "med": "PAULO CONSTANTINO ROSSATO", "prod": "BLOCK SAFE 21X120MM", "val": "180.400,00", "uni": "Traumato"}, {"conv": "IPERGS", "med": "JOEL C. WESTPHAL CORREA", "prod": "BLOCK SAFE 21X120MM", "val": "90.400,00", "uni": "Traumato"}, {"conv": "IPERGS", "med": "JOEL C. WESTPHAL CORREA", "prod": "BLOCK SAFE R3A 21X100MM", "val": "68.500,00", "uni": "Traumato"}, {"conv": "IPERGS", "med": "PAULO CONSTANTINO ROSSATO", "prod": "BLOCK SAFE R3A 21X100MM", "val": "51.800,00", "uni": "Traumato"}]}, {"c": "MAE DE DEUS - AESC", "val": 723232, "items": [{"conv": "AMIL PLANOS", "med": "ALESSANDRO ROSSOL", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "58.695,17", "uni": "RS"}, {"conv": "IPERGS", "med": "TIAGO BORTOLINI", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "58.499,29", "uni": "RS"}, {"conv": "IPERGS", "med": "TIAGO BORTOLINI", "prod": "PROTESE PENIANA INFLAVEL TITAN 20CM", "val": "57.697,93", "uni": "RS"}, {"conv": "PARTICULAR", "med": "GABRIEL WEISS", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "52.100,00", "uni": "RS"}]}, {"c": "BLANC POA", "val": 635250, "items": [{"conv": "AMIL PLANOS", "med": "JOEL C. WESTPHAL CORREA", "prod": "BLOCK SAFE 21X120MM", "val": "124.500,00", "uni": "Traumato"}, {"conv": "AMIL PLANOS", "med": "JOEL C. WESTPHAL CORREA", "prod": "BLOCK SAFE 21X100MM", "val": "99.600,00", "uni": "Traumato"}, {"conv": "AMIL PLANOS", "med": "JOEL C. WESTPHAL CORREA", "prod": "BLOCK SAFE R3A 21X100MM", "val": "69.700,00", "uni": "Traumato"}, {"conv": "CASSI", "med": "OTAVIO PEREIRA CADORE", "prod": "BLOCK SAFE 21X120MM", "val": "52.500,00", "uni": "Traumato"}]}, {"c": "HOSPITAL DE CLINICAS", "val": 382190, "items": [{"conv": "PARTICULAR", "med": "MAURO GHEDINI COSTA", "prod": "SERVICO / LOCACAO", "val": "68.800,00", "uni": "RS"}, {"conv": "IPE ADMINSTRATIVO", "med": "GABRIEL WEISS", "prod": "PROTESE INFLAVEL TITAN ESCROTAL 18CM", "val": "57.476,74", "uni": "RS"}, {"conv": "PARTICULAR", "med": "EDUARDO SCORTEGAGNA", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "51.454,89", "uni": "RS"}, {"conv": "CASSI", "med": "GABRIEL WEISS", "prod": "PROTESE PENIANA INFLAVEL TITAN 18CM", "val": "49.200,00", "uni": "RS"}]}, {"c": "CENTRO CLINICO GAUCHO", "val": 373824, "items": [{"conv": "CENTRO CLINICO GAUCHO", "med": "CLEITON BICCA MESPAQUE", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "63.688,00", "uni": "RS"}, {"conv": "CENTRO CLINICO GAUCHO", "med": "RAFAEL CARVALHO IPE DA SILVA", "prod": "EXTRATOR DORMIA NO-TIP 1.5FR", "val": "51.143,00", "uni": "RS"}, {"conv": "CENTRO CLINICO GAUCHO", "med": "CLEITON BICCA MESPAQUE", "prod": "BAINHA ACESSO URETERAL 10/12FR", "val": "43.860,00", "uni": "RS"}, {"conv": "CENTRO CLINICO GAUCHO", "med": "CLEITON BICCA MESPAQUE", "prod": "FIBRA LASER REUTILIZAVEL 270", "val": "42.750,00", "uni": "RS"}]}, {"c": "HOSPITAL TACCHINI", "val": 302500, "items": [{"conv": "PARTICULAR", "med": "NURY JAFAR ABBOUT FILHO", "prod": "SERVICO / LOCACAO", "val": "122.500,00", "uni": "Holep"}, {"conv": "IPERGS", "med": "NURY JAFAR ABBOUT FILHO", "prod": "SERVICO / LOCACAO", "val": "70.000,00", "uni": "Holep"}, {"conv": "PARTICULAR", "med": "ORESTES BLANCO NETTO", "prod": "SERVICO / LOCACAO", "val": "43.750,00", "uni": "Holep"}, {"conv": "SULAMERICA", "med": "NURY JAFAR ABBOUT FILHO", "prod": "FIBRA LASER 200UM SINGLE USE", "val": "66.250,00", "uni": "Holep"}]}];
 const CIR_TI=[["PROTESE PENIANA INFLAVEL", 150405, 2], ["BLOQUEIO", 110300, 6], ["FLEXIVEL", 89419, 32], ["ARTROSCOPIA", 72271.2, 2], ["VORTEK", 71025, 4], ["SPEEDICATH", 106218, 25], ["UROLIFT", 55700, 4], ["ASP-ELEFANT", 39910, 7], ["HOLEP", 31050, 12], ["PROTESE PENIANA MALEAVEL", 30320, 9], ["OUTROS", 25556, 6], ["ANASTOMAT", 23000, 9], ["PERICARDIO", 13900, 1], ["RIGIDA", 11470, 5], ["COLOCACAO DE DUPLO J", 4918, 5], ["SONDAS", 8400, 2], ["SONDA", 3000, 1], ["FLEX+PERC", 4315, 1], ["AGULHA BONEE", 3846, 8], ["RTU", 1500, 1], ["CISTOLITO", 825, 1], ["URETROTOMIA", 65, 1]];
-const CIR_HO=[["MOINHOS DE VENTO", 206006], ["MAE DE DEUS - AESC", 79025], ["HOSPITAL MORIAH", 65000], ["SOC. SULINA DIVINA PROVIDENCIA", 34084], ["UAC UNIMED", 32040], ["UNIMED TORRE II", 30093], ["HOSPITAL HUMANIZA", 29519], ["UNIMED RIBEIRAO PRETO", 28000], ["SANTA CASA - POA", 26167], ["HOSPITAL TACCHINI", 21800], ["HC PORTO ALEGRE", 19898], ["CAMPINAS DAY HOSPITAL", 16000], ["NÃÂÃÂO INFORMADO", 14130], ["OUTROS", 172394]];
+const CIR_HO=[["MOINHOS DE VENTO", 206006], ["MAE DE DEUS - AESC", 79025], ["HOSPITAL MORIAH", 65000], ["SOC. SULINA DIVINA PROVIDENCIA", 34084], ["UAC UNIMED", 32040], ["UNIMED TORRE II", 30093], ["HOSPITAL HUMANIZA", 29519], ["UNIMED RIBEIRAO PRETO", 28000], ["SANTA CASA - POA", 26167], ["HOSPITAL TACCHINI", 21800], ["HC PORTO ALEGRE", 19898], ["CAMPINAS DAY HOSPITAL", 16000], ["NÃO INFORMADO", 14130], ["OUTROS", 172394]];
 const CIR_CO=[["PARTICULAR", 166775], ["UNIMED POA", 135408], ["BRADESCO SAUDE", 96628], ["BACEN", 63300], ["UNIMED", 38160], ["CASSI", 35150], ["CENTRO CLINICO GAUCHO", 29519], ["UNIMED VALE DO SINOS", 23706], ["IPERGS", 16481], ["TACCHIMED", 10900], ["UNIMED INTERCAMBIO", 10721], ["BRADESCO", 9000], ["OUTROS", 138409]];
 const CIR_UN=[{"un": "RS", "val": 860696, "qtd": 155, "tipos": [["PROTESE PENIANA INFLAVEL", 409605, 5], ["FLEXIVEL", 210443, 67], ["RIGIDA", 62450, 21], ["OUTROS", 45701, 21], ["PROTESE PENIANA MALEAVEL", 27500, 3], ["HOLEP", 24550, 16], ["MATRIZ DERMICA", 20870, 1], ["OUTROS TIPOS", 59577, 20]]}, {"un": "Traumato", "val": 474792, "qtd": 20, "tipos": [["BLOQUEIO", 305900, 13], ["ARTROSCOPIA", 103489, 3], ["CRYO", 28500, 1], ["DISCECTOMIA", 24900, 1], ["LCA - LIGAMENTO CRUZADO ANTERIOR", 11110, 1], ["OUTROS", 892, 1]]}, {"un": "PR", "val": 388906, "qtd": 14, "tipos": [["PROTESE PENIANA INFLAVEL", 240306, 3], ["PROTESE PENIANA INFLAVEL + PERICARDIO", 70000, 1], ["PROTESE PENIANA MALEAVEL", 48600, 5], ["UROLIFT", 20000, 1], ["ANASTOMAT", 10000, 4]]}, {"un": "SP", "val": 272468, "qtd": 25, "tipos": [["PROTESE PENIANA INFLAVEL", 135000, 2], ["OUTROS", 63968, 10], ["UROLIFT", 40000, 2], ["PROTESE PENIANA MALEAVEL", 18500, 2], ["ANASTOMAT", 15000, 6]]}, {"un": "SC", "val": 181100, "qtd": 13, "tipos": [["PROTESE PENIANA INFLAVEL", 93600, 1], ["UROLIFT", 54600, 4], ["ANASTOMAT", 17800, 5], ["OUTROS", 10200, 2], ["ASP-ELEFANT", 4900, 1]]}, {"un": "Holep", "val": 141900, "qtd": 28, "tipos": [["HOLEP", 141900, 28]]}, {"un": "BA", "val": 78800, "qtd": 5, "tipos": [["PROTESE PENIANA INFLAVEL", 40000, 1], ["PERICARDIO", 27800, 2], ["PROTESE PENIANA MALEAVEL", 11000, 1], ["ANASTOMAT DOACAO", 0, 1]]}];
 const FAT_EVOL = {"2023": [1011411, 715638, 1112228, 965169, 840928, 695651, 893185, 941595, 1165759, 785090, 1050677, 1103647], "2024": [950754, 844576, 1416027, 1504918, 889837, 1143892, 1410437, 1642347, 1316600, 1603626, 1583010, 1209414], "2025": [1614871, 1199783, 1558333, 2042439, 1940688, 2179188, 2013382, 2499096, 2466728, 2001449, 2144927, 2089765], "2026": [2161944, 2109384, 2311749, 2600547, 3087631, 1325495, 0, 0, 0, 0, 0, 0]};
-const SALDO_BANC={"ref": "11/06/2026", "total_cc": 1164125.09, "total_invest": 2809560.71, "total_geral": 3973685.8, "obs": "Exclui saldo fabricante (R$ 139.627,25 custÃÂÃÂ³dia XP) e conta PR (Santander 130071322 sem extrato)", "contas": [{"nome": "ItaÃÂÃÂº Porto Alegre", "conta": "99670-3", "banco": "ItaÃÂÃÂº Ag. 0280", "data_ref": "08/06/2026", "un": "RS", "cc": 224158.77, "invest": 61293.47, "total": 285452.24, "invest_det": [{"desc": "Mapfre Confianza RF DI", "val": 61293.47}]}, {"nome": "ItaÃÂÃÂº Holep", "conta": "99305-6", "banco": "ItaÃÂÃÂº Ag. 0280", "data_ref": "07/06/2026", "un": "Holep", "cc": 344190.72, "invest": 858397.8, "total": 1202588.52, "invest_det": [{"desc": "ItaÃÂÃÂº Trust DI", "val": 257833.9}, {"desc": "ItaÃÂÃÂº CB Empresas RF", "val": 257808.42}, {"desc": "ItaÃÂÃÂº CB RF CP", "val": 253541.4}, {"desc": "CDB-DI 96% (venc. 05/08/2030)", "val": 89214.08}]}, {"nome": "ItaÃÂÃÂº Santa Catarina", "conta": "99228-0", "banco": "ItaÃÂÃÂº Ag. 0280", "data_ref": "07/06/2026", "un": "SC", "cc": 80817.36, "invest": 124735.66, "total": 205553.02, "invest_det": [{"desc": "ItaÃÂÃÂº CB Empresas RF", "val": 124735.66}]}, {"nome": "ItaÃÂÃÂº Traumato", "conta": "99688-5", "banco": "ItaÃÂÃÂº Ag. 0280", "data_ref": "07/06/2026", "un": "Traumato", "cc": 365237.85, "invest": 1034133.96, "total": 1399371.81, "invest_det": [{"desc": "ItaÃÂÃÂº CB RF CP", "val": 208542.89}, {"desc": "ItaÃÂÃÂº Trust DI", "val": 208522.62}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 204485.39}, {"desc": "Global DinÃÂÃÂ¢mico FIF RF CP", "val": 204116.71}, {"desc": "Selic EMP FIF RF", "val": 104266.14}, {"desc": "CDB-DI 98% (venc. 13/01/2031)", "val": 104200.21}]}, {"nome": "ItaÃÂÃÂº Bahia", "conta": "99487-7", "banco": "ItaÃÂÃÂº Ag. 8841", "data_ref": "07/06/2026", "un": "BA", "cc": 16686.97, "invest": 83951.48, "total": 100638.45, "invest_det": [{"desc": "Aplic. Aut. Mais (CDB)", "val": 83951.48}]}, {"nome": "BB SÃÂÃÂ£o Paulo", "conta": "16918-8", "banco": "Banco do Brasil Ag. 3535-1", "data_ref": "08/06/2026", "un": "SP", "cc": 133033.42, "invest": 196600.02, "total": 329633.44, "invest_det": [{"desc": "CDB DI 95% (venc. 29/11/2030)", "val": 166000.0}, {"desc": "Fundo RF Ref DI Plus ÃÂÃÂgil", "val": 10.76}, {"desc": "Fundo RF Ref DI 90 Mil", "val": 24945.26}]}, {"nome": "XP Investimentos", "conta": "9313357", "banco": "XP Investimentos", "data_ref": "11/06/2026", "un": "ÃÂ¢ÃÂÃÂ", "cc": 0.0, "invest": 450448.32, "total": 450448.32, "invest_det": [{"desc": "Compromissadas", "val": 38135.25}, {"desc": "Iridium Apollo FIF RF CP LP RL", "val": 29215.02}, {"desc": "Tivio Institucional RF CP FIF RL", "val": 20382.27}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 124630.97}, {"desc": "SulAmÃÂÃÂ©rica Premium Plus FIRF DI CP", "val": 238084.81}]}]};
+const SALDO_BANC={"ref": "11/06/2026", "total_cc": 1164125.09, "total_invest": 2809560.71, "total_geral": 3973685.8, "obs": "Exclui saldo fabricante (R$ 139.627,25 custÃ³dia XP) e conta PR (Santander 130071322 sem extrato)", "contas": [{"nome": "ItaÃº Porto Alegre", "conta": "99670-3", "banco": "ItaÃº Ag. 0280", "data_ref": "08/06/2026", "un": "RS", "cc": 224158.77, "invest": 61293.47, "total": 285452.24, "invest_det": [{"desc": "Mapfre Confianza RF DI", "val": 61293.47}]}, {"nome": "ItaÃº Holep", "conta": "99305-6", "banco": "ItaÃº Ag. 0280", "data_ref": "07/06/2026", "un": "Holep", "cc": 344190.72, "invest": 858397.8, "total": 1202588.52, "invest_det": [{"desc": "ItaÃº Trust DI", "val": 257833.9}, {"desc": "ItaÃº CB Empresas RF", "val": 257808.42}, {"desc": "ItaÃº CB RF CP", "val": 253541.4}, {"desc": "CDB-DI 96% (venc. 05/08/2030)", "val": 89214.08}]}, {"nome": "ItaÃº Santa Catarina", "conta": "99228-0", "banco": "ItaÃº Ag. 0280", "data_ref": "07/06/2026", "un": "SC", "cc": 80817.36, "invest": 124735.66, "total": 205553.02, "invest_det": [{"desc": "ItaÃº CB Empresas RF", "val": 124735.66}]}, {"nome": "ItaÃº Traumato", "conta": "99688-5", "banco": "ItaÃº Ag. 0280", "data_ref": "07/06/2026", "un": "Traumato", "cc": 365237.85, "invest": 1034133.96, "total": 1399371.81, "invest_det": [{"desc": "ItaÃº CB RF CP", "val": 208542.89}, {"desc": "ItaÃº Trust DI", "val": 208522.62}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 204485.39}, {"desc": "Global DinÃ¢mico FIF RF CP", "val": 204116.71}, {"desc": "Selic EMP FIF RF", "val": 104266.14}, {"desc": "CDB-DI 98% (venc. 13/01/2031)", "val": 104200.21}]}, {"nome": "ItaÃº Bahia", "conta": "99487-7", "banco": "ItaÃº Ag. 8841", "data_ref": "07/06/2026", "un": "BA", "cc": 16686.97, "invest": 83951.48, "total": 100638.45, "invest_det": [{"desc": "Aplic. Aut. Mais (CDB)", "val": 83951.48}]}, {"nome": "BB SÃ£o Paulo", "conta": "16918-8", "banco": "Banco do Brasil Ag. 3535-1", "data_ref": "08/06/2026", "un": "SP", "cc": 133033.42, "invest": 196600.02, "total": 329633.44, "invest_det": [{"desc": "CDB DI 95% (venc. 29/11/2030)", "val": 166000.0}, {"desc": "Fundo RF Ref DI Plus Ãgil", "val": 10.76}, {"desc": "Fundo RF Ref DI 90 Mil", "val": 24945.26}]}, {"nome": "XP Investimentos", "conta": "9313357", "banco": "XP Investimentos", "data_ref": "11/06/2026", "un": "â", "cc": 0.0, "invest": 450448.32, "total": 450448.32, "invest_det": [{"desc": "Compromissadas", "val": 38135.25}, {"desc": "Iridium Apollo FIF RF CP LP RL", "val": 29215.02}, {"desc": "Tivio Institucional RF CP FIF RL", "val": 20382.27}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 124630.97}, {"desc": "SulAmÃ©rica Premium Plus FIRF DI CP", "val": 238084.81}]}]};
 const FLUXO={"a_receber": 698693.16, "a_pagar": 480254.34, "pagas": 0.0, "recebidas": 0.0, "periodo": "Mai/26"};
 const FAT_PEND={"RS": {"pendente": 525323.19, "processos": 367}, "SP": {"pendente": 156776.0, "processos": 28}, "Traumato": {"pendente": 110300.0, "processos": 24}, "Holep": {"pendente": 63900.0, "processos": 21}, "BA": {"pendente": 38300.0, "processos": 5}, "SC": {"pendente": 1960.0, "processos": 9}, "PR": {"pendente": 1350.0, "processos": 3}, "total": 1205000};
 
@@ -797,10 +797,10 @@ document.querySelectorAll('.det-toggle').forEach(function(t){
 function toggleExp(id){
   var el=document.getElementById(id);var ic=document.getElementById('icon-'+id);
   if(!el)return;
-  if(el.style.display==='table-row'){el.style.display='none';if(ic)ic.textContent='ÃÂ¢ÃÂÃÂ¶';}
-  else{el.style.display='table-row';if(ic)ic.textContent='ÃÂ¢ÃÂÃÂ¼';}
+  if(el.style.display==='table-row'){el.style.display='none';if(ic)ic.textContent='â¶';}
+  else{el.style.display='table-row';if(ic)ic.textContent='â¼';}
 }
-// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Seletor dinÃÂÃÂ¢mico de perÃÂÃÂ­odos ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+// ââ Seletor dinÃ¢mico de perÃ­odos ââââââââââââââââââââââ
 function renderPeriodBar(){
   var cont=document.getElementById('period-chips-container');
   if(!cont)return;
@@ -812,7 +812,7 @@ function renderPeriodBar(){
     sel.className='period-hist-select';
     var defOpt=document.createElement('option');
     defOpt.value='';
-    defOpt.textContent='ÃÂ°ÃÂÃÂÃÂ HistÃÂÃÂ³rico';
+    defOpt.textContent='ð HistÃ³rico';
     sel.appendChild(defOpt);
     historic.forEach(function(p){
       var opt=document.createElement('option');
@@ -853,7 +853,7 @@ function _keyToLabel(key){
   return (m[pfx]||pfx.charAt(0).toUpperCase()+pfx.slice(1))+'/'+yr;
 }
 function setActivePeriod(key){
-  // Sempre atualiza botÃÂÃÂ£o ativo
+  // Sempre atualiza botÃ£o ativo
   document.querySelectorAll('.period-chip').forEach(function(c){c.classList.remove('active');});
   var chip=document.querySelector('[data-key="'+key+'"]');
   if(chip)chip.classList.add('active');
@@ -862,18 +862,18 @@ function setActivePeriod(key){
   document.getElementById('periodLabel').textContent=lbl;
   if(!FAT_PER[key]){
     // Sem dados: limpar cards e mostrar aviso
-    document.getElementById('kpiFatValue').textContent='ÃÂ¢ÃÂÃÂ';
-    document.getElementById('kpiFatSub').textContent=lbl+' ÃÂÃÂ· sem dados offline';
-    document.getElementById('kpiDespValue').textContent='ÃÂ¢ÃÂÃÂ';
-    document.getElementById('kpiDespSub').textContent=lbl+' ÃÂÃÂ· sem dados offline';
-    document.getElementById('fatSecSub').textContent=lbl+' ÃÂ¢ÃÂÃÂ dados nÃÂÃÂ£o carregados offline';
-    document.getElementById('cirSecSub').textContent=lbl+' ÃÂ¢ÃÂÃÂ dados nÃÂÃÂ£o carregados offline';
-    document.getElementById('dexpSecSub').textContent=lbl+' ÃÂ¢ÃÂÃÂ dados nÃÂÃÂ£o carregados offline';
+    document.getElementById('kpiFatValue').textContent='â';
+    document.getElementById('kpiFatSub').textContent=lbl+' Â· sem dados offline';
+    document.getElementById('kpiDespValue').textContent='â';
+    document.getElementById('kpiDespSub').textContent=lbl+' Â· sem dados offline';
+    document.getElementById('fatSecSub').textContent=lbl+' â dados nÃ£o carregados offline';
+    document.getElementById('cirSecSub').textContent=lbl+' â dados nÃ£o carregados offline';
+    document.getElementById('dexpSecSub').textContent=lbl+' â dados nÃ£o carregados offline';
     var msg=document.getElementById('_nodata_toast');
     if(!msg){msg=document.createElement('div');msg.id='_nodata_toast';
       msg.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);background:#1a3066;color:#fff;padding:14px 28px;border-radius:10px;font-size:14px;font-weight:700;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,.3);';
       document.body.appendChild(msg);}
-    msg.textContent='ÃÂ°ÃÂÃÂÃÂ '+lbl+' ÃÂ¢ÃÂÃÂ histÃÂÃÂ³rico nÃÂÃÂ£o carregado. Os dados do BI sÃÂÃÂ£o coletados mensalmente.';
+    msg.textContent='ð '+lbl+' â histÃ³rico nÃ£o carregado. Os dados do BI sÃ£o coletados mensalmente.';
     msg.style.display='block';
     setTimeout(function(){msg.style.display='none';},4000);
     return;
@@ -883,27 +883,27 @@ function setActivePeriod(key){
 }
 
 // =============================================
-// SET PERIOD ÃÂ¢ÃÂÃÂ rebuilds EVERYTHING
+// SET PERIOD â rebuilds EVERYTHING
 // =============================================
 function setPeriod(key){
   CUR=key;
   var fp=FAT_PER[key];
-  var dp=DESP_PER[key]||{total:0,label:fp?fp.label:'ÃÂ¢ÃÂÃÂ',byUN:[['ÃÂ¢ÃÂÃÂ',0]],byAd:[]};
+  var dp=DESP_PER[key]||{total:0,label:fp?fp.label:'â',byUN:[['â',0]],byAd:[]};
   // Badge
   document.getElementById('periodLabel').textContent=fp.label;
   // KPIs
   document.getElementById('kpiFatValue').textContent='R$ '+fmtN(fp.total);
-  document.getElementById('kpiFatSub').textContent=fp.nf_count+' NFs ÃÂÃÂ· '+fp.label;
+  document.getElementById('kpiFatSub').textContent=fp.nf_count+' NFs Â· '+fp.label;
   document.getElementById('kpiDespValue').textContent='R$ '+fmtN(dp.total);
-  document.getElementById('kpiDespSub').textContent=dp.label+' ÃÂÃÂ· todas categorias';
+  document.getElementById('kpiDespSub').textContent=dp.label+' Â· todas categorias';
   // Section headers
-  document.getElementById('fatSecSub').textContent=fp.label+' ÃÂ¢ÃÂÃÂ '+fp.nf_count+' notas fiscais emitidas';
-  document.getElementById('cirSecSub').textContent=fp.label+' ÃÂ¢ÃÂÃÂ por tipo, hospital, convenio e unidade';
-  document.getElementById('dexpSecSub').textContent=dp.label+' ÃÂ¢ÃÂÃÂ todas as categorias';
-  document.getElementById('inadSecSub').textContent='Titulos com vencimento em '+fp.label+' ÃÂ¢ÃÂÃÂ ordenados por atraso';
+  document.getElementById('fatSecSub').textContent=fp.label+' â '+fp.nf_count+' notas fiscais emitidas';
+  document.getElementById('cirSecSub').textContent=fp.label+' â por tipo, hospital, convenio e unidade';
+  document.getElementById('dexpSecSub').textContent=dp.label+' â todas as categorias';
+  document.getElementById('inadSecSub').textContent='Titulos com vencimento em '+fp.label+' â ordenados por atraso';
   // Section totals
   document.getElementById('fatTotalVal').textContent='R$ '+fmtN(fp.total);
-  document.getElementById('fatPrazoVal').textContent=fp.prazo+' dias ÃÂÃÂ· '+fp.nf_count+' NFs';
+  document.getElementById('fatPrazoVal').textContent=fp.prazo+' dias Â· '+fp.nf_count+' NFs';
   document.getElementById('dexpTotalVal').textContent='R$ '+fmtN(dp.total);
   document.getElementById('cirTotalVal').textContent='R$ '+fmtN(fp.total);
   document.getElementById('fatPrazoBig').textContent=fp.prazo;
@@ -914,7 +914,7 @@ function setPeriod(key){
   buildCirInsights();
   try{buildFatCharts();}catch(e){console.warn('buildFatCharts',e);}
   try{buildDespCharts();}catch(e){console.warn('buildDespCharts',e);}
-  // buildEvol e buildPreviews apÃÂÃÂ³s layout completo
+  // buildEvol e buildPreviews apÃ³s layout completo
   var _doEvol=function(){
     try{buildEvol();}catch(e){console.warn('buildEvol',e);}
     try{buildPreviews();}catch(e){console.warn('buildPreviews',e);}
@@ -968,7 +968,7 @@ function buildInad(){
     var rid='ig'+i;
     var days=g.earliest?diffDays(g.earliest,TODAY):0;
     html+='<tr class="data-row togrow" data-exp="'+rid+'" onclick="toggleExp(this.dataset.exp)">'+
-      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--red);margin-right:4px">ÃÂ¢ÃÂÃÂ¶</span>'+(i+1)+'</td>'+
+      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--red);margin-right:4px">â¶</span>'+(i+1)+'</td>'+
       '<td><strong>'+g.hosp+'</strong></td>'+
       '<td class="ctr"><span class="bdg bdg-un">'+g.unit+'</span></td>'+
       '<td class="val" style="color:var(--red)">'+fmtN(g.total)+'</td>'+
@@ -1000,13 +1000,13 @@ function buildInad(){
   var maxUN='',maxVal=0;
   Object.keys(INAD_UN).forEach(function(k){if(INAD_UN[k].total>maxVal){maxVal=INAD_UN[k].total;maxUN=k;}});
   document.getElementById('inadInsightCards').innerHTML=
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ´</div><div class="insight-val">'+fmtN(maxVal)+'</div>'+
-    '<div class="insight-label">'+maxUN+' ÃÂ¢ÃÂÃÂ maior inadimplencia</div><div class="insight-note">'+INAD_UN[maxUN].count+' titulos</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ¥</div><div class="insight-val">'+groups.length+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð´</div><div class="insight-val">'+fmtN(maxVal)+'</div>'+
+    '<div class="insight-label">'+maxUN+' â maior inadimplencia</div><div class="insight-note">'+INAD_UN[maxUN].count+' titulos</div></div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¥</div><div class="insight-val">'+groups.length+'</div>'+
     '<div class="insight-label">Clientes inadimplentes</div><div class="insight-note">'+(activeUnit?'Filtro: '+activeUnit:'Todas as unidades')+'</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ°</div><div class="insight-val">R$ 1.190.453,52</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð°</div><div class="insight-val">R$ 1.190.453,52</div>'+
     '<div class="insight-label">Total inadimplente (BI)</div><div class="insight-note">Todos titulos em aberto</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ</div><div class="insight-val">'+filtered.length+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð</div><div class="insight-val">'+filtered.length+'</div>'+
     '<div class="insight-label">Titulos em aberto</div><div class="insight-note">'+(activeUnit?'Filtro: '+activeUnit:'Todas as unidades')+'</div></div>';
   document.getElementById('inadUnidGrid').querySelectorAll('.unid-pill').forEach(function(pill){
     pill.addEventListener('click',function(){
@@ -1029,8 +1029,8 @@ document.getElementById('inadClearFilter').addEventListener('click',function(){
 function buildDesp(){
   var dp=DESP_PER[CUR];
   if(!dp||!dp.byAd||dp.byAd.length===0||!dp.byUN||dp.byUN.length===0){
-    document.getElementById('dexpTblTotal').textContent='ÃÂ¢ÃÂÃÂ';
-    document.getElementById('bodyTblDesp').innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--muted);padding:24px">Sem dados de despesas para este perÃÂÃÂ­odo.</td></tr>';
+    document.getElementById('dexpTblTotal').textContent='â';
+    document.getElementById('bodyTblDesp').innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--muted);padding:24px">Sem dados de despesas para este perÃ­odo.</td></tr>';
     document.getElementById('dexpInsightCards').innerHTML='';
     return;
   }
@@ -1044,14 +1044,14 @@ function buildDesp(){
     d.top.forEach(function(t){var s=t[2]||'Outros';if(!subs[s])subs[s]={val:0,nomes:[]};subs[s].val+=t[1];subs[s].nomes.push([t[0],t[1]]);} );
     var sk=Object.keys(subs);
     html+='<tr class="data-row togrow" data-exp="'+rowId+'" onclick="toggleExp(this.dataset.exp)">'+
-      '<td><span id="icon-'+rowId+'" style="font-size:11px;color:var(--teal);margin-right:4px">ÃÂ¢ÃÂÃÂ¶</span><strong style="color:var(--navy)">'+d.ad+'</strong></td>'+
+      '<td><span id="icon-'+rowId+'" style="font-size:11px;color:var(--teal);margin-right:4px">â¶</span><strong style="color:var(--navy)">'+d.ad+'</strong></td>'+
       '<td class="val">'+fmtN(d.val)+'</td><td>'+bar(d.val,total,'var(--teal)')+'</td>'+
       '<td class="ctr"><span class="bdg bdg-t">'+sk.length+' sub</span></td></tr>';
     var inner='';
     sk.forEach(function(s,si){
       var sub=subs[s];var sid='dsub'+i+'_'+si;
       inner+='<tr class="togrow" data-exp="'+sid+'" onclick="toggleExp(this.dataset.exp)" style="background:#F0F4FA">'+
-        '<td style="padding:6px 10px 6px 28px"><span id="icon-'+sid+'" style="font-size:10px;color:var(--blue);margin-right:4px">ÃÂ¢ÃÂÃÂ¶</span><em style="color:var(--blue)">'+s+'</em></td>'+
+        '<td style="padding:6px 10px 6px 28px"><span id="icon-'+sid+'" style="font-size:10px;color:var(--blue);margin-right:4px">â¶</span><em style="color:var(--blue)">'+s+'</em></td>'+
         '<td class="val" style="font-size:12px">'+fmtN(sub.val)+'</td>'+
         '<td>'+bar(sub.val,total,'var(--blue)')+'</td>'+
         '<td class="ctr"><span class="bdg bdg-b">'+sub.nomes.length+' nomes</span></td></tr>'+
@@ -1064,18 +1064,18 @@ function buildDesp(){
       '<table class="dtbl" style="font-size:12px">'+inner+'</table></div></td></tr>';
   });
   document.getElementById('bodyTblDesp').innerHTML=html;
-  // Por Unidade tab ÃÂ¢ÃÂÃÂ accordion with byAd breakdown per unit
+  // Por Unidade tab â accordion with byAd breakdown per unit
   buildDespUnidAccordion(dp);
   // Insights
   var tc=byAd[0];var tu=dp.byUN[0];
   document.getElementById('dexpInsightCards').innerHTML=
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ</div><div class="insight-val">'+pct(tc.val,total)+'%</div>'+
-    '<div class="insight-label">'+tc.ad+'</div><div class="insight-note">R$ '+fmtN(tc.val)+' ÃÂ¢ÃÂÃÂ maior cat.</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ¢</div><div class="insight-val">'+tu[0]+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð</div><div class="insight-val">'+pct(tc.val,total)+'%</div>'+
+    '<div class="insight-label">'+tc.ad+'</div><div class="insight-note">R$ '+fmtN(tc.val)+' â maior cat.</div></div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¢</div><div class="insight-val">'+tu[0]+'</div>'+
     '<div class="insight-label">Maior unidade</div><div class="insight-note">R$ '+fmtN(tu[1])+' ('+pct(tu[1],total)+'%)</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ¦</div><div class="insight-val">'+byAd.length+' categ.</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¦</div><div class="insight-val">'+byAd.length+' categ.</div>'+
     '<div class="insight-label">Tipos de despesa</div><div class="insight-note">'+dp.label+'</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂµ</div><div class="insight-val">R$ '+fmtN(total)+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ðµ</div><div class="insight-val">R$ '+fmtN(total)+'</div>'+
     '<div class="insight-label">Total do periodo</div><div class="insight-note">'+dp.label+'</div></div>';
 }
 
@@ -1098,17 +1098,17 @@ function buildFat(){
     return '<tr><td>'+(i+1)+'</td><td><strong>'+d[0]+'</strong></td>'+
       '<td class="val">'+fmtN(d[1])+'</td><td>'+bar(d[1],total,'var(--green)')+'</td></tr>';
   }).join('');
-  // Por Grupo ÃÂ¢ÃÂÃÂ real per-period data
+  // Por Grupo â real per-period data
   var html='';
   byGrupo.forEach(function(g,i){
     var rid='fgr'+i;
     html+='<tr class="data-row togrow" data-exp="'+rid+'" onclick="toggleExp(this.dataset.exp)">'+
-      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--green);margin-right:4px">ÃÂ¢ÃÂÃÂ¶</span><strong>'+g.g+'</strong></td>'+
+      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--green);margin-right:4px">â¶</span><strong>'+g.g+'</strong></td>'+
       '<td class="val">'+fmtN(g.val)+'</td><td>'+bar(g.val,total,'var(--green)')+'</td>'+
       '<td class="ctr">'+g.cnt+'</td><td class="ctr"><span class="bdg bdg-g">'+g.prods.length+' prods</span></td></tr>';
     var prodsHtml=g.prods.length>0
       ? g.prods.map(function(p){return '<tr><td>'+p[0]+'</td><td class="val">'+fmtN(p[1])+'</td></tr>';}).join('')
-      : '<tr><td colspan="2" style="color:var(--muted);font-style:italic;padding:6px 10px">Detalhes nao disponÃÂÃÂ­veis</td></tr>';
+      : '<tr><td colspan="2" style="color:var(--muted);font-style:italic;padding:6px 10px">Detalhes nao disponÃ­veis</td></tr>';
     html+='<tr id="'+rid+'" class="exp-row"><td colspan="5"><div class="exp-inner">'+
       '<table class="sub-tbl"><thead><tr><th>Produto</th><th class="val">Valor (R$)</th></tr></thead><tbody>'+
       prodsHtml+'</tbody></table></div></td></tr>';
@@ -1119,7 +1119,7 @@ function buildFat(){
   FAT_CL.forEach(function(c,i){
     var rid='fcl'+i;
     hc+='<tr class="data-row togrow" data-exp="'+rid+'" onclick="toggleExp(this.dataset.exp)">'+
-      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--green);margin-right:4px">ÃÂ¢ÃÂÃÂ¶</span>'+(i+1)+'</td>'+
+      '<td><span id="icon-'+rid+'" style="font-size:11px;color:var(--green);margin-right:4px">â¶</span>'+(i+1)+'</td>'+
       '<td><strong>'+c.c+'</strong></td><td class="val">'+fmtN(c.val)+'</td>'+
       '<td>'+bar(c.val,total,'var(--green)')+'</td><td class="ctr"><span class="bdg bdg-g">'+c.items.length+' itens</span></td></tr>'+
       '<tr id="'+rid+'" class="exp-row"><td colspan="5"><div class="exp-inner">'+
@@ -1134,15 +1134,15 @@ function buildFat(){
   setupSearch('srcFatCli','bodyTblFatCli');
   // Insights
   var tu=byUN[0];
-  var topGrupo=byGrupo.length>0?byGrupo[0]:{g:'ÃÂ¢ÃÂÃÂ',val:0};
+  var topGrupo=byGrupo.length>0?byGrupo[0]:{g:'â',val:0};
   document.getElementById('fatInsightCards').innerHTML=
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ¢</div><div class="insight-val">'+tu[0]+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¢</div><div class="insight-val">'+tu[0]+'</div>'+
     '<div class="insight-label">Maior unidade</div><div class="insight-note">R$ '+fmtN(tu[1])+' ('+pct(tu[1],total)+'%)</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ</div><div class="insight-val">'+topGrupo.g+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð</div><div class="insight-val">'+topGrupo.g+'</div>'+
     '<div class="insight-label">Maior grupo</div><div class="insight-note">R$ '+fmtN(topGrupo.val)+' ('+pct(topGrupo.val,total)+'%)</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ</div><div class="insight-val">'+fp.nf_count+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð</div><div class="insight-val">'+fp.nf_count+'</div>'+
     '<div class="insight-label">Notas fiscais</div><div class="insight-note">'+fp.label+'</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ¢ÃÂÃÂ±ÃÂ¯ÃÂ¸ÃÂ</div><div class="insight-val">'+fp.prazo+' dias</div>'+
+    '<div class="insight-card"><div class="insight-icon">â±ï¸</div><div class="insight-val">'+fp.prazo+' dias</div>'+
     '<div class="insight-label">Prazo Cirug./NF</div><div class="insight-note">Media '+fp.label+'</div></div>';
 }
 
@@ -1152,13 +1152,13 @@ function buildFat(){
 function buildCirInsights(){
   var fp=FAT_PER[CUR];
   document.getElementById('cirInsightCards').innerHTML=
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂ¥ÃÂ</div><div class="insight-val">Protese Inflavel</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¥</div><div class="insight-val">Protese Inflavel</div>'+
     '<div class="insight-label">Maior valor</div><div class="insight-note">'+fp.label+'</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ</div><div class="insight-val">Flexivel</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð</div><div class="insight-val">Flexivel</div>'+
     '<div class="insight-label">Mais frequente</div><div class="insight-note">~59 procedimentos</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ¦</div><div class="insight-val">PARTICULAR</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð¦</div><div class="insight-val">PARTICULAR</div>'+
     '<div class="insight-label">Top convenio</div><div class="insight-note">~29% do total</div></div>'+
-    '<div class="insight-card"><div class="insight-icon">ÃÂ°ÃÂÃÂÃÂ°</div><div class="insight-val">R$ '+fmtN(fp.total)+'</div>'+
+    '<div class="insight-card"><div class="insight-icon">ð°</div><div class="insight-val">R$ '+fmtN(fp.total)+'</div>'+
     '<div class="insight-label">Faturamento '+fp.label+'</div><div class="insight-note">Total do periodo</div></div>';
 }
 
@@ -1188,7 +1188,7 @@ function buildCir(){
     uHtml+='<div style="margin-bottom:8px;border:1px solid var(--border);border-radius:8px;overflow:hidden">'+
       '<div onclick="toggleCirUn('+i+')" style="padding:12px 18px;background:var(--bg);display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none">'+
         '<div style="display:flex;align-items:center;gap:10px">'+
-          '<span id="cunIco'+i+'" style="color:var(--blue);font-size:13px">ÃÂ¢ÃÂÃÂ¶</span>'+
+          '<span id="cunIco'+i+'" style="color:var(--blue);font-size:13px">â¶</span>'+
           '<strong style="font-size:15px;color:var(--navy)">'+un.un+'</strong>'+
           '<span class="bdg bdg-b">'+un.tipos.reduce(function(s,t){return s+t[2];},0)+' cirurgias</span>'+
           '<span class="bdg bdg-t" style="font-size:10px">'+un.tipos.length+' tipos</span>'+
@@ -1221,7 +1221,7 @@ function buildCir(){
     vHtml+='<div style="margin-bottom:8px;border:1px solid var(--border);border-radius:8px;overflow:hidden">'+
       '<div onclick="toggleCirVend('+i+')" style="padding:12px 18px;background:var(--bg);display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none">'+
         '<div style="display:flex;align-items:center;gap:10px">'+
-          '<span id="cvIco'+i+'" style="color:var(--green);font-size:13px">ÃÂ¢ÃÂÃÂ¶</span>'+
+          '<span id="cvIco'+i+'" style="color:var(--green);font-size:13px">â¶</span>'+
           '<strong style="color:var(--navy)">'+med+'</strong>'+
           '<span class="bdg bdg-g">'+vm.itens.length+' vendas</span>'+
         '</div>'+
@@ -1241,8 +1241,8 @@ function buildCir(){
   });
   document.getElementById('cirVendAccordion').innerHTML=vHtml;
 }
-function toggleCirUn(i){var b=document.getElementById('cunBody'+i);var ic=document.getElementById('cunIco'+i);if(!b)return;if(b.style.display==='block'){b.style.display='none';ic.textContent='ÃÂ¢ÃÂÃÂ¶';}else{b.style.display='block';ic.textContent='ÃÂ¢ÃÂÃÂ¼';}}
-function toggleCirVend(i){var b=document.getElementById('cvBody'+i);var ic=document.getElementById('cvIco'+i);if(!b)return;if(b.style.display==='block'){b.style.display='none';ic.textContent='ÃÂ¢ÃÂÃÂ¶';}else{b.style.display='block';ic.textContent='ÃÂ¢ÃÂÃÂ¼';}}
+function toggleCirUn(i){var b=document.getElementById('cunBody'+i);var ic=document.getElementById('cunIco'+i);if(!b)return;if(b.style.display==='block'){b.style.display='none';ic.textContent='â¶';}else{b.style.display='block';ic.textContent='â¼';}}
+function toggleCirVend(i){var b=document.getElementById('cvBody'+i);var ic=document.getElementById('cvIco'+i);if(!b)return;if(b.style.display==='block'){b.style.display='none';ic.textContent='â¶';}else{b.style.display='block';ic.textContent='â¼';}}
 
 // =============================================
 // CHARTS
@@ -1267,7 +1267,7 @@ function buildFatCharts(){if(typeof Chart==='undefined')return;
   mkChart('chDiasNF',{type:'bar',
     data:{labels:['0-7d','8-14d','15-21d','22-30d','31-45d','46-60d','61-90d','91+d'],
       datasets:[{label:'Qtd NFs',data:[18,42,65,95,130,88,42,20],backgroundColor:'#00CCCCCC',borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},title:{display:true,text:'Distribuicao por faixa ÃÂ¢ÃÂÃÂ '+fp.label}}}
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},title:{display:true,text:'Distribuicao por faixa â '+fp.label}}}
   });
 }
 
@@ -1289,7 +1289,7 @@ function buildDespCharts(){if(typeof Chart==='undefined')return;
 }
 
 // =============================================
-// DESPESAS ÃÂ¢ÃÂÃÂ POR UNIDADE ACCORDION
+// DESPESAS â POR UNIDADE ACCORDION
 // =============================================
 function buildDespUnidAccordion(dp){
   if(!dp||!dp.byUN||dp.byUN.length===0)return;
@@ -1323,18 +1323,18 @@ function buildDespUnidAccordion(dp){
 function toggleDespUN(i){
   var b=document.getElementById('duBody'+i);var ic=document.getElementById('duIco'+i);
   if(!b)return;
-  if(b.style.display==='block'){b.style.display='none';ic.textContent='ÃÂ¢ÃÂÃÂ¶';}
-  else{b.style.display='block';ic.textContent='ÃÂ¢ÃÂÃÂ¼';}
+  if(b.style.display==='block'){b.style.display='none';ic.textContent='â¶';}
+  else{b.style.display='block';ic.textContent='â¼';}
 }
 function toggleDespAd(id){
   var b=document.getElementById(id);var ic=document.getElementById('ico_'+id);
   if(!b)return;
-  if(b.style.display==='block'){b.style.display='none';if(ic)ic.textContent='ÃÂ¢ÃÂÃÂ¶';}
-  else{b.style.display='block';if(ic)ic.textContent='ÃÂ¢ÃÂÃÂ¼';}
+  if(b.style.display==='block'){b.style.display='none';if(ic)ic.textContent='â¶';}
+  else{b.style.display='block';if(ic)ic.textContent='â¼';}
 }
 
 // =============================================
-// OVERVIEW ÃÂ¢ÃÂÃÂ sempre visivel
+// OVERVIEW â sempre visivel
 // =============================================
 function buildEvol(){
   var months=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
@@ -1349,15 +1349,15 @@ function buildEvol(){
     scales:{y:{ticks:{callback:function(v){return 'R$ '+(v/1000000).toFixed(1)+'M';},font:{size:11}},grid:{color:'rgba(0,0,0,.06)'}},
              x:{ticks:{font:{size:11}}}}}};
   mkChart('chFatEvol',cfg);
-  // ForÃÂÃÂ§ar redraw se canvas estava oculto
+  // ForÃ§ar redraw se canvas estava oculto
   setTimeout(function(){
     if(charts['chFatEvol'])charts['chFatEvol'].resize();
   },100);
 
-  // Receita ÃÂÃÂ Despesa ÃÂÃÂ Recebida ÃÂ¢ÃÂÃÂ por mÃÂÃÂªs (valores de FAT_PERIODS/DESP_PERIODS_RAW)
+  // Receita Ã Despesa Ã Recebida â por mÃªs (valores de FAT_PERIODS/DESP_PERIODS_RAW)
   var fatVals=[2311749, 2600547.05, 3087631.28, 1325494.96];
-  var recVals=[2992980.59, 2261912.91, 2457910.74, 1249236.09];  // Receita recebida real (BI ÃÂ¢ÃÂÃÂ dashboard/51)
-  var despVals=[2025489.86, 2395797.02, 2096914.47, 810987.11]; // Despesa paga real (BI ÃÂ¢ÃÂÃÂ analise/43)
+  var recVals=[2992980.59, 2261912.91, 2457910.74, 1249236.09];  // Receita recebida real (BI â dashboard/51)
+  var despVals=[2025489.86, 2395797.02, 2096914.47, 810987.11]; // Despesa paga real (BI â analise/43)
   var saldoVals=recVals.map(function(r,i){return r-despVals[i];});
   var cfg2={type:'bar',data:{labels:["Mar/26", "Abr/26", "Mai/26", "Jun/26"],datasets:[
     {label:'Faturamento (emitido)',data:fatVals,backgroundColor:'rgba(79,196,84,0.7)',borderColor:'#4FC454',borderWidth:1,borderRadius:4},
@@ -1376,7 +1376,7 @@ function buildEvol(){
           if(ctx.dataset.label.includes('Despesas')){
             var fat=fatVals[ctx.dataIndex];
             var mgm=((fat-ctx.raw)/fat*100).toFixed(1);
-            val+=' ÃÂ¢ÃÂÃÂ margem '+mgm+'%';
+            val+=' â margem '+mgm+'%';
           }
           return ctx.dataset.label+': '+val;
         },
@@ -1414,7 +1414,7 @@ function buildEvol(){
 }
 
 function buildFluxo(){
-  // ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ HISTÃÂÃÂRICO: Entradas ÃÂÃÂ SaÃÂÃÂ­das por mÃÂÃÂªs ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+  // ââ HISTÃRICO: Entradas Ã SaÃ­das por mÃªs ââââââââââââââââââââââââââââââââ
   var meses=['Jan','Fev','Mar','Abr','Mai'];
   var fat2026=[2161944,2109384,2311749,2600547,3087631];
   var desp2026=[2058113,1882286,2025490,2395797,2096914];
@@ -1426,11 +1426,11 @@ function buildFluxo(){
     var mg=((p[1]-p[2])/p[1]*100).toFixed(1);
     var ok=parseFloat(mg)>0;
     histKpiHtml+='<div class="fluxo-kpi '+(ok?'green-b':'red-b')+'">'+
-      '<div class="fluxo-kpi-icon">'+(ok?'ÃÂ°ÃÂÃÂÃÂ':'ÃÂ°ÃÂÃÂÃÂ')+'</div>'+
+      '<div class="fluxo-kpi-icon">'+(ok?'ð':'ð')+'</div>'+
       '<div><div class="fluxo-kpi-val">'+p[0]+'</div>'+
       '<div style="font-size:13px;font-weight:700;color:'+(ok?'var(--green)':'var(--red)')+'">'+
         (ok?'+'  :'')+mg+'% margem</div>'+
-      '<div class="fluxo-kpi-lbl">Fat R$ '+fmtN(p[1])+' ÃÂÃÂ· Desp R$ '+fmtN(p[2])+'</div>'+
+      '<div class="fluxo-kpi-lbl">Fat R$ '+fmtN(p[1])+' Â· Desp R$ '+fmtN(p[2])+'</div>'+
       '</div></div>';
   });
   document.getElementById('fluxoHistKpis').innerHTML=histKpiHtml;
@@ -1438,7 +1438,7 @@ function buildFluxo(){
   mkChart('chFluxoHist',{type:'bar',
     data:{labels:meses,datasets:[
       {label:'Entradas (Fat.)',data:fat2026,backgroundColor:'rgba(79,196,84,0.75)',borderColor:'#4FC454',borderWidth:1},
-      {label:'SaÃÂÃÂ­das (Desp.)',data:desp2026,backgroundColor:'rgba(232,175,27,0.75)',borderColor:'#E8AF1B',borderWidth:1},
+      {label:'SaÃ­das (Desp.)',data:desp2026,backgroundColor:'rgba(232,175,27,0.75)',borderColor:'#E8AF1B',borderWidth:1},
       {label:'Saldo',data:saldoMes,type:'line',borderColor:'#153066',borderWidth:2,
         pointBackgroundColor:'#153066',tension:0.3,fill:false,yAxisID:'y'}
     ]},
@@ -1464,44 +1464,44 @@ function buildFluxo(){
       '<div style="font-weight:800;color:var(--navy);margin-bottom:6px">'+p[0]+'</div>'+
       '<div style="display:flex;gap:8px;flex-wrap:wrap">'+
         '<span class="prev-badge '+(ok?'badge-green':'badge-red')+'">Margem Operac.: '+(ok?'+':'')+mgOp+'%</span>'+
-        '<span class="prev-badge badge-teal">Rec. LÃÂÃÂ­q. Est.: '+mgRec+'%</span>'+
+        '<span class="prev-badge badge-teal">Rec. LÃ­q. Est.: '+mgRec+'%</span>'+
         '<span class="prev-badge badge-blue">Desp/Fat: '+(desp/fat*100).toFixed(1)+'%</span>'+
       '</div>'+
     '</div>';
   });
   document.getElementById('fluxoMargemList').innerHTML=mgHtml;
 
-  // ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ PENDENTE / FUTURO ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
+  // ââ PENDENTE / FUTURO âââââââââââââââââââââââââââââââââââââââââââââââââââ
   var receber=FLUXO.a_receber, pagar=FLUXO.a_pagar;
   var saldo=receber-pagar;
   document.getElementById('fluxoSaldoLiq').textContent=(saldo<0?'- ':'')+'R$ '+fmtN(Math.abs(saldo));
   document.getElementById('fluxoSaldoLiq').style.color=saldo>=0?'var(--green)':'var(--red)';
-  document.getElementById('fluxoSecSub').textContent='Entradas ÃÂÃÂ SaÃÂÃÂ­das histÃÂÃÂ³ricas + posiÃÂÃÂ§ÃÂÃÂ£o pendente '+FLUXO.periodo;
+  document.getElementById('fluxoSecSub').textContent='Entradas Ã SaÃ­das histÃ³ricas + posiÃ§Ã£o pendente '+FLUXO.periodo;
 
   document.getElementById('fluxoKpis').innerHTML=
-    '<div class="fluxo-kpi green-b"><div class="fluxo-kpi-icon">ÃÂ°ÃÂÃÂÃÂ¥</div>'+
+    '<div class="fluxo-kpi green-b"><div class="fluxo-kpi-icon">ð¥</div>'+
     '<div><div class="fluxo-kpi-val">R$ '+fmtN(receber)+'</div>'+
     '<div class="fluxo-kpi-lbl">A Receber (pendente)</div>'+
-    '<div style="font-size:11px;color:var(--muted)">TÃÂÃÂ­tulos em aberto a vencer</div></div></div>'+
-    '<div class="fluxo-kpi red-b"><div class="fluxo-kpi-icon">ÃÂ°ÃÂÃÂÃÂ¤</div>'+
+    '<div style="font-size:11px;color:var(--muted)">TÃ­tulos em aberto a vencer</div></div></div>'+
+    '<div class="fluxo-kpi red-b"><div class="fluxo-kpi-icon">ð¤</div>'+
     '<div><div class="fluxo-kpi-val">R$ '+fmtN(pagar)+'</div>'+
     '<div class="fluxo-kpi-lbl">A Pagar (pendente)</div>'+
-    '<div style="font-size:11px;color:var(--muted)">ObrigaÃÂÃÂ§ÃÂÃÂµes a vencer</div></div></div>'+
-    '<div class="fluxo-kpi '+(saldo>=0?'green-b':'red-b')+'"><div class="fluxo-kpi-icon">'+(saldo>=0?'ÃÂ¢ÃÂÃÂ':'ÃÂ¢ÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ')+'</div>'+
+    '<div style="font-size:11px;color:var(--muted)">ObrigaÃ§Ãµes a vencer</div></div></div>'+
+    '<div class="fluxo-kpi '+(saldo>=0?'green-b':'red-b')+'"><div class="fluxo-kpi-icon">'+(saldo>=0?'â':'â ï¸')+'</div>'+
     '<div><div class="fluxo-kpi-val" style="color:'+(saldo>=0?'var(--green)':'var(--red)')+'">'+(saldo<0?'- ':'')+'R$ '+fmtN(Math.abs(saldo))+'</div>'+
-    '<div class="fluxo-kpi-lbl">Saldo LÃÂÃÂ­quido Projetado</div>'+
-    '<div style="font-size:11px;color:var(--muted)">'+(saldo>=0?'PosiÃÂÃÂ§ÃÂÃÂ£o favorÃÂÃÂ¡vel':'Monitorar obrigaÃÂÃÂ§ÃÂÃÂµes')+'</div></div></div>'+
-    '<div class="fluxo-kpi yellow-b"><div class="fluxo-kpi-icon">ÃÂ°ÃÂÃÂÃÂ</div>'+
+    '<div class="fluxo-kpi-lbl">Saldo LÃ­quido Projetado</div>'+
+    '<div style="font-size:11px;color:var(--muted)">'+(saldo>=0?'PosiÃ§Ã£o favorÃ¡vel':'Monitorar obrigaÃ§Ãµes')+'</div></div></div>'+
+    '<div class="fluxo-kpi yellow-b"><div class="fluxo-kpi-icon">ð</div>'+
     '<div><div class="fluxo-kpi-val">R$ '+fmtN(FAT_PEND.total)+'</div>'+
     '<div class="fluxo-kpi-lbl">Fat. Pendente de Recebimento</div>'+
     '<div style="font-size:11px;color:var(--muted)">Cirurgias aguardando faturamento</div></div></div>';
 
   var cobertura=pagar>0?(receber/pagar*100).toFixed(0):0;
   document.getElementById('fluxoAnalise').innerHTML=
-    'ÃÂ°ÃÂÃÂÃÂ <strong>Cobertura de obrigaÃÂÃÂ§ÃÂÃÂµes:</strong> As contas a receber (R$ '+fmtN(receber)+') cobrem '+cobertura+'% das contas a pagar (R$ '+fmtN(pagar)+'). '+(cobertura>=100?'PosiÃÂÃÂ§ÃÂÃÂ£o confortÃÂÃÂ¡vel.':'AtenÃÂÃÂ§ÃÂÃÂ£o: insuficiente para cobrir todas as obrigaÃÂÃÂ§ÃÂÃÂµes.')+'<br><br>'+
-    'ÃÂ°ÃÂÃÂÃÂ <strong>Saldo projetado '+FLUXO.periodo+':</strong> '+(saldo>=0?'Positivo de R$ '+fmtN(saldo)+', empresa com capacidade de honrar compromissos.':'DÃÂÃÂ©ficit projetado de R$ '+fmtN(Math.abs(saldo))+' ÃÂ¢ÃÂÃÂ acionar receitas pendentes ou renegociar prazos.')+'<br><br>'+
-    'ÃÂ°ÃÂÃÂÃÂ <strong>PendÃÂÃÂªncias de faturamento:</strong> R$ '+fmtN(FAT_PEND.total)+' em cirurgias realizadas aguardando emissÃÂÃÂ£o de NF. RS lidera com R$ '+fmtN(FAT_PEND["RS"].pendente)+' ('+FAT_PEND["RS"].processos+' IDs).<br><br>'+
-    'ÃÂ°ÃÂÃÂÃÂ <strong>ReferÃÂÃÂªncia:</strong> Acesse <a href="https://bi.emultec.com.br/dashboard/95" target="_blank" style="color:var(--blue)">dashboard/95</a> e <a href="https://bi.emultec.com.br/dashboard/92" target="_blank" style="color:var(--blue)">dashboard/92</a> para dados em tempo real.';
+    'ð <strong>Cobertura de obrigaÃ§Ãµes:</strong> As contas a receber (R$ '+fmtN(receber)+') cobrem '+cobertura+'% das contas a pagar (R$ '+fmtN(pagar)+'). '+(cobertura>=100?'PosiÃ§Ã£o confortÃ¡vel.':'AtenÃ§Ã£o: insuficiente para cobrir todas as obrigaÃ§Ãµes.')+'<br><br>'+
+    'ð <strong>Saldo projetado '+FLUXO.periodo+':</strong> '+(saldo>=0?'Positivo de R$ '+fmtN(saldo)+', empresa com capacidade de honrar compromissos.':'DÃ©ficit projetado de R$ '+fmtN(Math.abs(saldo))+' â acionar receitas pendentes ou renegociar prazos.')+'<br><br>'+
+    'ð <strong>PendÃªncias de faturamento:</strong> R$ '+fmtN(FAT_PEND.total)+' em cirurgias realizadas aguardando emissÃ£o de NF. RS lidera com R$ '+fmtN(FAT_PEND["RS"].pendente)+' ('+FAT_PEND["RS"].processos+' IDs).<br><br>'+
+    'ð <strong>ReferÃªncia:</strong> Acesse <a href="https://bi.emultec.com.br/dashboard/95" target="_blank" style="color:var(--blue)">dashboard/95</a> e <a href="https://bi.emultec.com.br/dashboard/92" target="_blank" style="color:var(--blue)">dashboard/92</a> para dados em tempo real.';
 
   var html='', tot=FAT_PEND.total;
   ['RS','Traumato','SP','SC','Holep','BA','PR'].forEach(function(un){
@@ -1521,22 +1521,22 @@ function buildOverview(){
   var topFatUN=fp.byUN[0];
   document.getElementById('ovKpis').innerHTML=
     '<div class="ov-kpi">'+
-      '<div class="ov-kpi-icon">ÃÂ°ÃÂÃÂÃÂ</div>'+
+      '<div class="ov-kpi-icon">ð</div>'+
       '<div><div class="ov-kpi-val" style="color:var(--green)">R$ '+fmtN(fp.total)+'</div>'+
       '<div class="ov-kpi-lbl">Faturamento '+fp.label+'</div>'+
       '<div class="ov-kpi-note">'+fp.nf_count+' NFs &middot; Prazo '+fp.prazo+' dias</div></div></div>'+
     '<div class="ov-kpi">'+
-      '<div class="ov-kpi-icon">ÃÂ°ÃÂÃÂÃÂ¸</div>'+
+      '<div class="ov-kpi-icon">ð¸</div>'+
       '<div><div class="ov-kpi-val" style="color:var(--yellow)">R$ '+fmtN(dp.total)+'</div>'+
       '<div class="ov-kpi-lbl">Despesas '+dp.label+'</div>'+
-      '<div class="ov-kpi-note">Compras/Revenda ÃÂ¢ÃÂÃÂ maior categ.</div></div></div>'+
+      '<div class="ov-kpi-note">Compras/Revenda â maior categ.</div></div></div>'+
     '<div class="ov-kpi">'+
-      '<div class="ov-kpi-icon">ÃÂ¢ÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ</div>'+
+      '<div class="ov-kpi-icon">â ï¸</div>'+
       '<div><div class="ov-kpi-val" style="color:var(--red)">R$ 1.190.453,52</div>'+
       '<div class="ov-kpi-lbl">Inadimplencia Acumulada</div>'+
       '<div class="ov-kpi-note">'+topInad+' lidera &middot; R$ '+fmtN(INAD_UN[topInad].total)+'</div></div></div>'+
     '<div class="ov-kpi">'+
-      '<div class="ov-kpi-icon">ÃÂ°ÃÂÃÂÃÂ</div>'+
+      '<div class="ov-kpi-icon">ð</div>'+
       '<div><div class="ov-kpi-val" style="color:var(--teal)">'+topFatUN[0]+'</div>'+
       '<div class="ov-kpi-lbl">Top Unidade '+fp.label+'</div>'+
       '<div class="ov-kpi-note">R$ '+fmtN(topFatUN[1])+' faturado</div></div></div>';
@@ -1570,7 +1570,7 @@ function buildStaticCharts(){
   });
   var cirSorted=CIR_TI.slice().sort(function(a,b){return b[2]-a[2];});
   mkChart('chCirTipo',{type:'bar',
-    data:{labels:cirSorted.map(function(r){return r[0].length>28?r[0].substring(0,26)+'ÃÂ¢ÃÂÃÂ¦':r[0];}),datasets:[{label:'Cirurgias',data:cirSorted.map(function(r){return r[2];}),backgroundColor:COLORS.map(function(c,i){return COLORS[i%COLORS.length]+'CC';}),borderRadius:5}]},
+    data:{labels:cirSorted.map(function(r){return r[0].length>28?r[0].substring(0,26)+'â¦':r[0];}),datasets:[{label:'Cirurgias',data:cirSorted.map(function(r){return r[2];}),backgroundColor:COLORS.map(function(c,i){return COLORS[i%COLORS.length]+'CC';}),borderRadius:5}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{stepSize:1,callback:function(v){return Number.isInteger(v)?v:'';}}}}}
   });
   mkChart('chCirConv',{type:'doughnut',
@@ -1585,10 +1585,10 @@ function buildStaticCharts(){
 }
 
 // =============================================
-// PREVIEW STRIPS ÃÂ¢ÃÂÃÂ always visible KPIs
+// PREVIEW STRIPS â always visible KPIs
 // =============================================
 function buildPreviews(){
-  var fp=FAT_PER[CUR],dp=DESP_PER[CUR]||{total:0,label:fp?fp.label:'ÃÂ¢ÃÂÃÂ'};
+  var fp=FAT_PER[CUR],dp=DESP_PER[CUR]||{total:0,label:fp?fp.label:'â'};
   if(!fp)return;
   var fat=fp.total,desp=dp.total||0;
   var margOp=fat>0?((fat-desp)/fat*100):0;
@@ -1600,10 +1600,10 @@ function buildPreviews(){
   var recTaxaFmt=recTaxa.toFixed(1)+'%';
   var inadTaxaFmt=inadRate.toFixed(1)+'%';
 
-  // AnÃÂÃÂ¡lise preview ÃÂ¢ÃÂÃÂ dinÃÂÃÂ¢mico por ano do perÃÂÃÂ­odo selecionado
+  // AnÃ¡lise preview â dinÃ¢mico por ano do perÃ­odo selecionado
   var curYear=CUR.length>=5?'20'+CUR.slice(3,5):'2026';
   var fatYear=FAT_EVOL[curYear]||[];
-  // Contar apenas meses com dados (mesmo perÃÂÃÂ­odo)
+  // Contar apenas meses com dados (mesmo perÃ­odo)
   var nMeses=fatYear.reduce(function(acc,v,i){return v>0?i+1:acc;},0)||6;
   var sumYear=fatYear.slice(0,nMeses).reduce(function(a,b){return a+b;},0);
   var fatPrevYear=FAT_EVOL[String(parseInt(curYear)-1)]||[];
@@ -1615,19 +1615,19 @@ function buildPreviews(){
   document.getElementById('prevAnaliseCrescimento').className='prev-badge '+(parseFloat(cresc)>0?'badge-green':'badge-red');
   document.getElementById('prevAnaliseMargem').textContent=(parseFloat(margFat)>0?'+':'')+margFat+'% '+fp.label;
   document.getElementById('prevAnaliseMargem').className='prev-badge '+(parseFloat(margFat)>0?'badge-teal':'badge-red');
-  // Atualizar widget do header da seÃÂÃÂ§ÃÂÃÂ£o
+  // Atualizar widget do header da seÃ§Ã£o
   var ytdLbl=document.getElementById('analFatYtdLbl');
   var ytdVal=document.getElementById('analFatYtdVal');
   if(ytdLbl)ytdLbl.textContent='Faturamento '+curYear;
   if(ytdVal)ytdVal.textContent='R$ '+fmtN(sumYear);
 
-  // InadimplÃÂÃÂªncia preview
+  // InadimplÃªncia preview
   var topUN='Traumato';var topVal=0;
   Object.entries(INAD_UN).forEach(function(e){if(e[1].total>topVal){topVal=e[1].total;topUN=e[0];}});
   var totalCount=Object.values(INAD_UN).reduce(function(s,v){return s+v.count;},0);
   document.getElementById('prevInadTotal').textContent='R$ '+fmtN(inadTotal);
-  document.getElementById('prevInadTopUN').textContent=topUN+' ÃÂÃÂ· R$ '+fmtN(topVal);
-  document.getElementById('prevInadCount').textContent=totalCount+' tÃÂÃÂ­tulos';
+  document.getElementById('prevInadTopUN').textContent=topUN+' Â· R$ '+fmtN(topVal);
+  document.getElementById('prevInadCount').textContent=totalCount+' tÃ­tulos';
   document.getElementById('prevInadTaxa').textContent=inadTaxaFmt+' do fat.';
 
   // Despesas preview
@@ -1638,7 +1638,7 @@ function buildPreviews(){
   document.getElementById('prevDespMargem').textContent=(margOp>0?'+':'')+margOp.toFixed(1)+'% margem';
   document.getElementById('prevDespMargem').className='prev-badge '+(margOp>10?'badge-green':margOp>0?'badge-yellow':'badge-red');
   // Calcular pior margem por UN
-  var worstUN='ÃÂ¢ÃÂÃÂ',worstMarg=100;
+  var worstUN='â',worstMarg=100;
   if(dp.byUN&&fp.byUN){
     dp.byUN.forEach(function(du){
       var fu=fp.byUN.find(function(ff){return ff[0]===du[0];});
@@ -1646,23 +1646,23 @@ function buildPreviews(){
     });
   }
   var mStr=(worstMarg<100?(worstMarg>0?'+':'')+worstMarg.toFixed(1)+'%':'');
-  document.getElementById('prevDespTopUN').textContent=worstUN+(mStr?' ÃÂÃÂ· '+mStr:'');
+  document.getElementById('prevDespTopUN').textContent=worstUN+(mStr?' Â· '+mStr:'');
   document.getElementById('prevDespTopUN').style.color=worstMarg<0?'var(--red)':'var(--navy)';
 
   // Faturamento preview
-  document.getElementById('prevFatTopUN').textContent=fp.byUN[0][0]+' ÃÂÃÂ· R$ '+fmtN(fp.byUN[0][1]);
-  document.getElementById('prevFatTop2').textContent=fp.byUN[1][0]+' ÃÂÃÂ· R$ '+fmtN(fp.byUN[1][1]);
+  document.getElementById('prevFatTopUN').textContent=fp.byUN[0][0]+' Â· R$ '+fmtN(fp.byUN[0][1]);
+  document.getElementById('prevFatTop2').textContent=fp.byUN[1][0]+' Â· R$ '+fmtN(fp.byUN[1][1]);
   document.getElementById('prevFatMargem').textContent=(margOp>0?'+':'')+margOp.toFixed(1)+'% margem';
   document.getElementById('prevFatMargem').className='prev-badge '+(margOp>10?'badge-green':margOp>0?'badge-yellow':'badge-red');
 
   // Cirurgias preview
   var cirTotalQtd=CIR_TI.reduce(function(s,r){return s+r[2];},0); document.getElementById('prevCirTotal').innerHTML='<span style="font-size:15px;font-weight:900">'+cirTotalQtd+'</span><span style="font-size:12px;color:var(--muted)"> cirurgias</span><br><span style="font-size:10px;color:var(--muted)">ref: '+fp.label+'</span>';
-  var topTipo=CIR_TI.length>0?CIR_TI.slice().sort(function(a,b){return b[2]-a[2];})[0][0]:'ÃÂ¢ÃÂÃÂ';
+  var topTipo=CIR_TI.length>0?CIR_TI.slice().sort(function(a,b){return b[2]-a[2];})[0][0]:'â';
   document.getElementById('prevCirTopTipo').textContent=topTipo;
-  document.getElementById('prevCirTopConv').textContent=CIR_CO.length>0?CIR_CO[0][0]:'ÃÂ¢ÃÂÃÂ';
-  document.getElementById('prevCirTopUN').textContent=CIR_UN.length>0?CIR_UN[0].un:'ÃÂ¢ÃÂÃÂ';
+  document.getElementById('prevCirTopConv').textContent=CIR_CO.length>0?CIR_CO[0][0]:'â';
+  document.getElementById('prevCirTopUN').textContent=CIR_UN.length>0?CIR_UN[0].un:'â';
 
-  // Saldo bancÃÂÃÂ¡rio preview
+  // Saldo bancÃ¡rio preview
   document.getElementById('prevSaldoCC').textContent='R$ '+fmtN(SALDO_BANC.total_cc);
   document.getElementById('prevSaldoInvest').textContent='R$ '+fmtN(SALDO_BANC.total_invest);
   document.getElementById('prevSaldoTotal').textContent='R$ '+fmtN(SALDO_BANC.total_geral);
@@ -1717,33 +1717,33 @@ function buildMiniCharts(){if(typeof Chart==='undefined')return;
   var fp=FAT_PER[CUR]; var dp=DESP_PER[CUR];
   if(!dp||!dp.byAd||dp.byAd.length===0||!dp.byUN||dp.byUN.length===0)return;
 
-  // ÃÂ¢ÃÂÃÂ Mini Faturamento por Unidade
+  // â Mini Faturamento por Unidade
   var fatLabels=fp.byUN.map(function(u){return u[0];});
   var fatVals=fp.byUN.map(function(u){return u[1];});
   mkChart('chMiniFat', miniBarCfg(fatLabels,fatVals,'#4FC454'));
 
-  // ÃÂ¢ÃÂÃÂ Mini InadimplÃÂÃÂªncia por Unidade
-  // chMiniInad: usa INAD_UN (mesma fonte do grÃÂÃÂ¡fico principal e KPI)
+  // â Mini InadimplÃªncia por Unidade
+  // chMiniInad: usa INAD_UN (mesma fonte do grÃ¡fico principal e KPI)
   var inadArr=Object.entries(INAD_UN).sort(function(a,b){return b[1].total-a[1].total;}).slice(0,6);
   mkChart('chMiniInad', miniBarCfg(inadArr.map(function(u){return u[0];}),inadArr.map(function(u){return u[1].total;}),'#D44444'));
 
-  // ÃÂ¢ÃÂÃÂ Mini Despesas top categorias (horizontal)
+  // â Mini Despesas top categorias (horizontal)
   var adTop=dp.byAd.slice().sort(function(a,b){return b.val-a.val;}).slice(0,6);
   mkChart('chMiniDesp', miniHBarCfg(
-    adTop.map(function(a){return a.ad.length>22?a.ad.slice(0,22)+'ÃÂ¢ÃÂÃÂ¦':a.ad;}),
+    adTop.map(function(a){return a.ad.length>22?a.ad.slice(0,22)+'â¦':a.ad;}),
     adTop.map(function(a){return a.val;}),
     '#E8AF1B'
   ));
 
-  // ÃÂ¢ÃÂÃÂ Mini Cirurgias top tipos por quantidade
+  // â Mini Cirurgias top tipos por quantidade
   var cirTop5=CIR_TI.slice().sort(function(a,b){return b[2]-a[2];}).slice(0,5);
   mkChart('chMiniCir', miniHBarCfg(
-    cirTop5.map(function(r){return r[0].length>22?r[0].slice(0,22)+'ÃÂ¢ÃÂÃÂ¦':r[0];}),
+    cirTop5.map(function(r){return r[0].length>22?r[0].slice(0,22)+'â¦':r[0];}),
     cirTop5.map(function(r){return r[2];}),
     '#476AAE'
   ));
 
-  // ÃÂ¢ÃÂÃÂ Mini Fluxo: Faturamento ÃÂÃÂ Despesas mensal 2026
+  // â Mini Fluxo: Faturamento Ã Despesas mensal 2026
   var fat26=[2161944,2109384,2311749,2600547,3087631];
   var desp26=[2058113,1882286,2025490,2395797,2096914];
   var lbl26=['Jan','Fev','Mar','Abr','Mai'];
@@ -1752,10 +1752,10 @@ function buildMiniCharts(){if(typeof Chart==='undefined')return;
     {label:'Despesas',data:desp26,backgroundColor:'#E8AF1B55',borderColor:'#E8AF1B',borderWidth:2,borderRadius:4}
   ]));
 
-  // ÃÂ¢ÃÂÃÂ Mini Saldo: CC ÃÂÃÂ Investimentos por banco
+  // â Mini Saldo: CC Ã Investimentos por banco
   var sb=SALDO_BANC;
   var bLabels=sb.contas.map(function(c){
-    return c.nome.replace('ItaÃÂÃÂº ','').replace(' Investimentos','');
+    return c.nome.replace('ItaÃº ','').replace(' Investimentos','');
   });
   var bCC=sb.contas.map(function(c){return c.cc;});
   var bInv=sb.contas.map(function(c){return c.invest;});
@@ -1766,7 +1766,7 @@ function buildMiniCharts(){if(typeof Chart==='undefined')return;
 }
 
 // =============================================
-// SALDO BANCÃÂÃÂRIO
+// SALDO BANCÃRIO
 // =============================================
 function buildSaldo(){
   var sb=SALDO_BANC;
@@ -1774,24 +1774,24 @@ function buildSaldo(){
   // Update header values
   document.getElementById('saldoTotalVal').textContent='R$ '+fmtN(sb.total_geral);
   document.getElementById('saldoCCVal').textContent='R$ '+fmtN(sb.total_cc);
-  document.getElementById('saldoSecSub').textContent='PosiÃÂÃÂ§ÃÂÃÂ£o '+ref+' ÃÂ¢ÃÂÃÂ CC + Investimentos por conta';
+  document.getElementById('saldoSecSub').textContent='PosiÃ§Ã£o '+ref+' â CC + Investimentos por conta';
   document.getElementById('saldoRefNote').textContent=ref;
   // Preview strip
   document.getElementById('prevSaldoInvest').textContent='R$ '+fmtN(sb.total_invest);
   document.getElementById('prevSaldoTotal').textContent='R$ '+fmtN(sb.total_geral);
   document.getElementById('prevSaldoRef').textContent='Ref: '+ref;
-  // KPI cards ÃÂ¢ÃÂÃÂ one per conta
-  var bankColors={'ItaÃÂÃÂº Porto Alegre':'#003580','ItaÃÂÃÂº Holep':'#009999','ItaÃÂÃÂº Santa Catarina':'#476AAE',
-    'ItaÃÂÃÂº Traumato':'#4FC454','ItaÃÂÃÂº Bahia':'#E8AF1B','BB SÃÂÃÂ£o Paulo':'#FFD700','XP Investimentos':'#FF6600'};
+  // KPI cards â one per conta
+  var bankColors={'ItaÃº Porto Alegre':'#003580','ItaÃº Holep':'#009999','ItaÃº Santa Catarina':'#476AAE',
+    'ItaÃº Traumato':'#4FC454','ItaÃº Bahia':'#E8AF1B','BB SÃ£o Paulo':'#FFD700','XP Investimentos':'#FF6600'};
   var cardHtml=sb.contas.map(function(c){
     var bcolor=bankColors[c.nome]||'var(--navy)';
     var ccPct=c.total>0?(c.cc/c.total*100).toFixed(0):0;
     return '<div class="insight-card" style="border-left:4px solid '+bcolor+';min-width:160px">'+
       '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'+
-        '<span style="font-size:20px">ÃÂ°ÃÂÃÂÃÂ¦</span>'+
+        '<span style="font-size:20px">ð¦</span>'+
         '<div>'+
           '<div style="font-size:13px;font-weight:800;color:var(--navy)">'+c.nome+'</div>'+
-          '<div style="font-size:11px;color:var(--muted)">Conta '+c.conta+'</div>'+'<div style="font-size:10px;color:var(--muted);margin-top:1px">ÃÂ¢ÃÂÃÂ± Conciliado: '+(c.data_ref||sb.ref)+'</div>'+
+          '<div style="font-size:11px;color:var(--muted)">Conta '+c.conta+'</div>'+'<div style="font-size:10px;color:var(--muted);margin-top:1px">â± Conciliado: '+(c.data_ref||sb.ref)+'</div>'+
         '</div>'+
       '</div>'+
       '<div style="font-size:18px;font-weight:900;color:'+bcolor+';font-family:monospace">R$ '+fmtN(c.total)+'</div>'+
@@ -1810,19 +1810,19 @@ function buildSaldo(){
   var accHtml=sb.contas.map(function(c,i){
     var bcolor=bankColors[c.nome]||'var(--navy)';
     var detRows=c.invest_det.map(function(d){
-      return '<tr><td style="padding:6px 16px;font-size:12px;color:var(--muted)">ÃÂ¢ÃÂÃÂ³ '+d.desc+'</td>'+
+      return '<tr><td style="padding:6px 16px;font-size:12px;color:var(--muted)">â³ '+d.desc+'</td>'+
         '<td class="val" style="font-size:12px;padding:6px 12px">'+fmtN(d.val)+'</td>'+
         '<td>'+bar(d.val,c.invest,'#476AAE')+'</td></tr>';
     }).join('');
     return '<div style="margin-bottom:8px;border:1px solid var(--border);border-radius:10px;overflow:hidden">'+
       '<div onclick="toggleSaldoConta('+i+')" style="padding:14px 18px;background:var(--bg);display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none">'+
         '<div style="display:flex;align-items:center;gap:12px">'+
-          '<span id="scIco'+i+'" style="font-size:13px;color:'+bcolor+'">ÃÂ¢ÃÂÃÂ¶</span>'+
+          '<span id="scIco'+i+'" style="font-size:13px;color:'+bcolor+'">â¶</span>'+
           '<div>'+
             '<div style="font-weight:800;font-size:15px;color:var(--navy)">'+c.nome+'</div>'+
             '<div style="font-size:11px;color:var(--muted)">'+c.banco+' &middot; CC '+c.conta+' &middot; UN: '+c.un+'</div>'+
           '</div>'+
-          '<span class="bdg bdg-b" style="font-size:11px">'+c.invest_det.length+' aplicaÃÂÃÂ§ÃÂÃÂµes</span>'+
+          '<span class="bdg bdg-b" style="font-size:11px">'+c.invest_det.length+' aplicaÃ§Ãµes</span>'+
         '</div>'+
         '<div style="text-align:right">'+
           '<div style="font-weight:900;font-family:monospace;font-size:17px;color:'+bcolor+'">R$ '+fmtN(c.total)+'</div>'+
@@ -1831,9 +1831,9 @@ function buildSaldo(){
       '</div>'+
       '<div id="scBody'+i+'" style="display:none">'+
         '<table class="dtbl" style="font-size:13px">'+
-        '<thead><tr><th>AplicaÃÂÃÂ§ÃÂÃÂ£o / Fundo</th><th class="r">Saldo (R$)</th><th class="r">% do invest.</th></tr></thead>'+
+        '<thead><tr><th>AplicaÃ§Ã£o / Fundo</th><th class="r">Saldo (R$)</th><th class="r">% do invest.</th></tr></thead>'+
         '<tbody>'+
-          (c.cc>0?'<tr><td style="padding:8px 12px;font-weight:700">ÃÂ°ÃÂÃÂÃÂ³ Conta Corrente (saldo final)</td>'+
+          (c.cc>0?'<tr><td style="padding:8px 12px;font-weight:700">ð³ Conta Corrente (saldo final)</td>'+
             '<td class="val" style="color:var(--green)">'+fmtN(c.cc)+'</td>'+
             '<td>'+bar(c.cc,c.total,'var(--green)')+'</td></tr>':'')+ 
           detRows+
@@ -1857,8 +1857,8 @@ function buildSaldo(){
 function toggleSaldoConta(i){
   var b=document.getElementById('scBody'+i);var ic=document.getElementById('scIco'+i);
   if(!b)return;
-  if(b.style.display==='block'){b.style.display='none';ic.textContent='ÃÂ¢ÃÂÃÂ¶';}
-  else{b.style.display='block';ic.textContent='ÃÂ¢ÃÂÃÂ¼';}
+  if(b.style.display==='block'){b.style.display='none';ic.textContent='â¶';}
+  else{b.style.display='block';ic.textContent='â¼';}
 }
 
 // INIT
