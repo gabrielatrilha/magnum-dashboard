@@ -1,7 +1,10 @@
 {
-  "coleta_em": "2026-06-12",
-  "periodo": {"ini": "2026-06-01", "fim": "2026-06-12"},
-  "faturamento": 890601.51,
+  "coleta_em": "2026-06-24",
+  "periodo": {
+    "ini": "2026-06-01",
+    "fim": "2026-06-12"
+  },
+  "faturamento": 1927745.51,
   "nf_count": 153,
   "faturamento_por_un": {
     "RS": 299256.95,
@@ -13,28 +16,81 @@
     "BA": 980.0
   },
   "despesas": 815052.55,
-  "cirurgias": 70,
-  "inadimplencia_total": 1112950.22,
+  "cirurgias": 116,
+  "inadimplencia_total": 1106730.74,
   "a45_por_mes": {
-    "2026-01": {"rec": 2813770.39, "desp": 2058112.77},
-    "2026-02": {"rec": 1915843.28, "desp": 1882285.97},
-    "2026-03": {"rec": 2992980.59, "desp": 2025489.86},
-    "2026-04": {"rec": 2261912.91, "desp": 2395797.02},
-    "2026-05": {"rec": 2457910.74, "desp": 2096914.47},
-    "2026-06": {"rec": 1249699.09, "desp": 818251.08}
+    "2026-01": {
+      "rec": 2813770.39,
+      "desp": 2058112.77
+    },
+    "2026-02": {
+      "rec": 1915843.28,
+      "desp": 1882285.97
+    },
+    "2026-03": {
+      "rec": 2992980.59,
+      "desp": 2025489.86
+    },
+    "2026-04": {
+      "rec": 2261912.91,
+      "desp": 2395797.02
+    },
+    "2026-05": {
+      "rec": 2457910.74,
+      "desp": 2096914.47
+    },
+    "2026-06": {
+      "rec": 1249699.09,
+      "desp": 818251.08
+    }
   },
   "ciclo_financeiro": {
     "ref": "2026 (acumulado)",
-    "cir_recebimento": {"media": 68.4, "n": 15840},
-    "cir_nota":        {"media": 24.5, "n": 15840},
+    "cir_recebimento": {
+      "media": 68.4,
+      "n": 15840
+    },
+    "cir_nota": {
+      "media": 24.5,
+      "n": 15840
+    },
     "por_un": {
-      "RS":       {"receb_med": 33,  "nota_med": 0},
-      "SC":       {"receb_med": 34,  "nota_med": 2},
-      "BA":       {"receb_med": 68,  "nota_med": 1},
-      "PR":       {"receb_med": 63,  "nota_med": 3},
-      "SP":       {"receb_med": 90,  "nota_med": 1},
-      "Traumato": {"receb_med": 97,  "nota_med": 7},
-      "Holep":    {"receb_med": 192, "nota_med": 131}
+      "RS": {
+        "receb_med": 33,
+        "nota_med": 0
+      },
+      "SC": {
+        "receb_med": 34,
+        "nota_med": 2
+      },
+      "BA": {
+        "receb_med": 68,
+        "nota_med": 1
+      },
+      "PR": {
+        "receb_med": 63,
+        "nota_med": 3
+      },
+      "SP": {
+        "receb_med": 90,
+        "nota_med": 1
+      },
+      "Traumato": {
+        "receb_med": 97,
+        "nota_med": 7
+      },
+      "Holep": {
+        "receb_med": 192,
+        "nota_med": 131
+      }
     }
+  },
+  "inadimplentes": {
+    "C61": 94225,
+    "C63": 154860.34,
+    "C64": 26400,
+    "C66": 768805.02,
+    "C67": 14640.38,
+    "C68": 47800
   }
 }
