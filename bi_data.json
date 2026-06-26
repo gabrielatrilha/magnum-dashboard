@@ -1,42 +1,81 @@
 {
-  "coleta_em": "2026-06-25 12:30",
+  "coleta_em": "2026-06-26",
   "periodo_mes": {
     "ini": "2026-06-01",
     "fim": "2026-06-25"
   },
-  "faturamento": 2042382.51,
+  "faturamento": 2057698.51,
   "nf_count": 364,
   "faturamento_por_un": {
     "RS": 780618.95,
-    "SP": 350234,
-    "PR": 28900,
-    "Holep": 211000,
+    "SP": 350234.0,
+    "PR": 28900.0,
+    "Holep": 211000.0,
     "Traumato": 519710.56,
-    "SC": 140439,
-    "BA": 11480
+    "SC": 140439.0,
+    "BA": 11480.0
   },
   "fat_por_grupo": {
     "TRAUMATOLOGIA": 491210.56,
-    "SAUDE DO HOMEM": 453010,
-    "SERVICO": 311930,
+    "SAUDE DO HOMEM": 453010.0,
+    "SERVICO": 311930.0,
     "ENDOUROLOGIA": 224252.95,
-    "UROLOGIA GERAL": 223942,
-    "SPEEDICATH": 132318,
-    "UROLIFT": 79500,
-    "MATRIZ DERMICA": 39900,
-    "CRIOANALGESIA": 28500,
-    "RTU": 22978,
-    "FIBRAS LASER - CONSUMO": 22241
+    "UROLOGIA GERAL": 223942.0,
+    "SPEEDICATH": 132318.0,
+    "UROLIFT": 79500.0,
+    "MATRIZ DERMICA": 39900.0,
+    "CRIOANALGESIA": 28500.0,
+    "RTU": 22978.0,
+    "FIBRAS LASER - CONSUMO": 22241.0
+  },
+  "fat_por_hospital": {
+    "MOINHOS DE VENTO": 699697.31,
+    "HOSPITAL MORIAH": 99500.0,
+    "MAE DE DEUS - AESC": 89480.0,
+    "UNIMED NORDESTE": 87000.0,
+    "HOSPITAL BLANC": 86474.0,
+    "SANTA CASA - POA": 79596.0,
+    "UNIMED TORRE II": 77468.0,
+    "ULISSES ACASSIO REYNOL": 75000.0,
+    "HOSPITAL IOSC": 75000.0,
+    "REGINA": 63095.0,
+    "HOSPITAL HUMANIZA": 51796.0,
+    "UAC UNIMED": 43560.0,
+    "SOCIEDADE SULINA DIVINA PROVIDENCIA": 40144.2,
+    "UNIMED POA CACHOEIRINHA": 36000.0,
+    "BP PAULISTA": 32500.0,
+    "BP MIRANTE": 32500.0,
+    "PUC": 28048.0,
+    "UNIMED RIBEIRAO PRETO": 28000.0,
+    "NÃO INFORMADO": 24210.0,
+    "HOSPITAL TACCHINI": 21800.0
+  },
+  "fat_por_convenio": {
+    "PARTICULAR": 442168.0,
+    "UNIMED POA": 355805.0,
+    "BRADESCO SAUDE": 342819.26,
+    "VENDA_DIRETA": 317072.0,
+    "CASSI": 122110.0,
+    "BACEN": 63300.0,
+    "UNIMED": 56598.0,
+    "CENTRO CLINICO GAUCHO": 48961.0,
+    "UNIMED VALE DO SINOS": 44864.0,
+    "OMINT SERVICOS DE SAUDE LTDA": 39000.0,
+    "AMIL PLANOS": 24900.0,
+    "SULAMERICA": 22160.0,
+    "UNIMED INTERCAMBIO": 16216.0,
+    "CAIXA ECONOMICA FEDERAL": 16000.0,
+    "IPERGS": 13381.2
   },
   "fat_by_un_mensal": {
     "2026-06": {
       "RS": 780618.95,
-      "SP": 350234,
-      "PR": 28900,
-      "Holep": 211000,
+      "SP": 350234.0,
+      "PR": 28900.0,
+      "Holep": 211000.0,
       "Traumato": 519710.56,
-      "SC": 140439,
-      "BA": 11480
+      "SC": 140439.0,
+      "BA": 11480.0
     }
   },
   "despesas": 1840620.4,
@@ -49,7 +88,58 @@
     "SC": 29045.11,
     "BA": 28276.23
   },
-  "cirurgias": 196,
+  "desp_por_subsetor": {
+    "MATERIAL P/  REVENDA": 725007.12,
+    "CONTA HOSPITALAR": 409950.0,
+    "PRESTADORES DE SERVIÇO": 87335.27,
+    "REPRESENTANTE (PJ)": 78477.6,
+    "EVENTO": 58724.02,
+    "IMPORTAÇÃO": 56979.88,
+    "FINANCIAMENTO": 42633.04,
+    "COMPRA EQUIPAMENTO": 29562.75,
+    "INSS": 26273.07,
+    "PLANO DE SAUDE": 24453.97,
+    "FRETE": 24278.94,
+    "MKT": 22072.15,
+    "COMPRA LASER": 21040.0,
+    "ALIMENTAÇÃO": 20041.81,
+    "RETIRADA": 17500.0,
+    "FREELANCER CIRURGIA": 14402.39,
+    "COMPRA DE INSTRUMENTAL": 11865.3,
+    "HOSPEDAGEM": 11664.14,
+    "COMBUSTIVEL": 11575.0,
+    "PASSAGEM": 11228.78
+  },
+  "desp_por_setor": {
+    "ETQ": 725007.12,
+    "DIR": 502120.19,
+    "LOG": 286065.41,
+    "ADM": 196852.83,
+    "COM": 124901.17
+  },
+  "desp_por_plano": {
+    "2.4": 409950.0,
+    "5.1.28.1": 67049.6,
+    "5.2.28.1.5": 44600.41,
+    "7.35": 42633.04,
+    "8.9": 33867.93,
+    "7.15": 26273.07,
+    "5.2.32": 24278.94,
+    "5.2.30.9": 23785.5,
+    "7.27.2": 19260.0,
+    "7.17": 17953.03,
+    "8.3": 17500.0,
+    "5.2.28.2.5": 16380.64,
+    "7.27.90": 16070.48,
+    "5.2.29": 14402.39,
+    "5.1.11": 14032.83,
+    "5.2.11": 11244.96,
+    "8.5": 11144.85,
+    "7.34": 10044.24,
+    "5.1.27.90": 9990.0,
+    "5.1.10": 9380.0
+  },
+  "cirurgias": 118,
   "cir_fat": 1515326.25,
   "cir_por_un": [
     [
@@ -64,39 +154,39 @@
     ],
     [
       "SP",
-      295050,
+      295050.0,
       21
     ],
     [
       "SC",
-      140439,
+      140439.0,
       15
     ],
     [
       "Holep",
-      130900,
+      130900.0,
       25
     ],
     [
       "BA",
-      9500,
+      9500.0,
       1
     ],
     [
       "PR",
-      5000,
+      5000.0,
       3
     ]
   ],
   "cir_por_tipo": [
     [
       "PROTESE PENIANA INFLAVEL",
-      310810,
+      310810.0,
       4
     ],
     [
       "BLOQUEIO",
-      251980,
+      251980.0,
       8
     ],
     [
@@ -106,22 +196,22 @@
     ],
     [
       "HOLEP",
-      151428,
+      151428.0,
       37
     ],
     [
       "ASP-ELEFANT",
-      131680,
+      131680.0,
       16
     ],
     [
       "UROLIFT",
-      79500,
+      79500.0,
       5
     ],
     [
       "PROTESE PENIANA MALEAVEL",
-      74570,
+      74570.0,
       10
     ],
     [
@@ -131,67 +221,67 @@
     ],
     [
       "VORTEK",
-      71025,
+      71025.0,
       4
     ],
     [
       "ARTROPLASTIA",
-      63000,
+      63000.0,
       1
     ],
     [
       "ANASTOMAT",
-      36500,
+      36500.0,
       14
     ],
     [
       "PERICARDIO",
-      27800,
+      27800.0,
       2
     ],
     [
       "OUTROS",
-      25556,
+      25556.0,
       6
     ],
     [
       "RIGIDA",
-      20539,
+      20539.0,
       8
     ],
     [
       "COLOCACAO DE DUPLO J",
-      15290,
+      15290.0,
       12
     ],
     [
       "RTU",
-      8378,
+      8378.0,
       5
     ],
     [
       "FLEX+PERC",
-      4315,
+      4315.0,
       1
     ],
     [
       "SONDA",
-      3000,
+      3000.0,
       1
     ],
     [
       "URETROTOMIA",
-      1077,
+      1077.0,
       7
     ],
     [
       "CISTOLITO",
-      825,
+      825.0,
       1
     ],
     [
-      "ANASTOMAT DOACAO",
-      0,
+      "ANASTOMAT DOAÇÃO",
+      0.0,
       1
     ]
   ],
@@ -203,139 +293,139 @@
     ],
     [
       "MAE DE DEUS - AESC",
-      167717,
+      167717.0,
       13
     ],
     [
       "UNIMED TORRE II",
-      90634,
+      90634.0,
       37
     ],
     [
       "HOSPITAL IOSC",
-      75000,
+      75000.0,
       1
     ],
     [
       "HOSPITAL MORIAH",
-      65000,
+      65000.0,
       1
     ],
     [
       "SANTA CASA - POA",
-      62178,
+      62178.0,
       15
     ],
     [
       "HOSPITAL BLANC",
-      44699,
+      44699.0,
       5
     ],
     [
       "HOSPITAL HUMANIZA",
-      43898,
+      43898.0,
       14
     ],
     [
-      "SSDP",
+      "SOCIEDADE SULINA DIVINA PROVIDENCIA",
       34084.2,
       2
     ],
     [
       "REGINA",
-      30200,
+      30200.0,
       5
     ],
     [
       "UNIMED RIBEIRAO PRETO",
-      28000,
+      28000.0,
       1
     ],
     [
       "HOSPITAL ALEMAO OSWALDO CRUZ",
-      27750,
+      27750.0,
       3
     ],
     [
       "HOSPITAL TACCHINI",
-      21800,
+      21800.0,
       4
     ],
     [
       "UROSAS CLINICA SANTANNA",
-      19500,
+      19500.0,
       2
     ],
     [
       "UNIMED NORDESTE",
-      19500,
+      19500.0,
       9
     ],
     [
-      "HOSPITAL DE CLINICAS DE POA",
-      19300,
+      "HOSPITAL DE CLINICAS DE PORTO ALEGRE",
+      19300.0,
       1
     ],
     [
       "PUC",
-      17520,
+      17520.0,
       2
     ],
     [
       "CAMPINAS DAY HOSPITAL",
-      16000,
+      16000.0,
       1
     ],
     [
       "UNIMED PA-SL",
-      14683,
+      14683.0,
       7
     ],
     [
       "HOSPITAL SAO LUIZ JABAQUARA",
-      13900,
+      13900.0,
       1
     ],
     [
       "HOSPITAL SANTA IZABEL SALVADOR",
-      9500,
+      9500.0,
       1
     ],
     [
       "HOSPITAL RIBEIRAO PIRES",
-      9000,
+      9000.0,
       1
     ],
     [
       "HOSPITAL VIRVI RAMOS",
-      6000,
+      6000.0,
       1
     ],
     [
       "CLINICA UOMO",
-      5000,
+      5000.0,
       2
     ],
     [
       "UROCENTRO - JARAGUA DO SUL",
-      5000,
+      5000.0,
       2
     ]
   ],
   "cir_por_convenio": [
     [
       "PARTICULAR",
-      357965,
+      357965.0,
       53
     ],
     [
       "UNIMED POA",
-      289936,
+      289936.0,
       28
     ],
     [
       "BRADESCO SAUDE",
-      194508,
+      194508.0,
       6
     ],
     [
@@ -345,42 +435,42 @@
     ],
     [
       "BACEN",
-      63300,
+      63300.0,
       1
     ],
     [
       "PETROBRAS",
-      63000,
+      63000.0,
       1
     ],
     [
       "UNIMED VALE DO SINOS",
-      51225,
+      51225.0,
       23
     ],
     [
       "CENTRO CLINICO GAUCHO",
-      41063,
+      41063.0,
       13
     ],
     [
       "UNIMED INTERCAMBIO",
-      31474,
+      31474.0,
       12
     ],
     [
       "AMIL PLANOS",
-      24900,
+      24900.0,
       1
     ],
     [
       "CARE PLUS",
-      18900,
+      18900.0,
       1
     ],
     [
       "SULAMERICA",
-      18250,
+      18250.0,
       2
     ],
     [
@@ -390,37 +480,37 @@
     ],
     [
       "CAIXA ECONOMICA FEDERAL",
-      16000,
+      16000.0,
       1
     ],
     [
       "UNIMED",
-      13890,
+      13890.0,
       3
     ],
     [
       "PORTO SEGURO",
-      12500,
+      12500.0,
       2
     ],
     [
       "TACCHIMED",
-      10900,
+      10900.0,
       2
     ],
     [
       "BRADESCO",
-      9000,
+      9000.0,
       1
     ],
     [
       "IPASEM",
-      8750,
+      8750.0,
       5
     ],
     [
       "UNIMED VTRP",
-      8000,
+      8000.0,
       1
     ]
   ],
@@ -430,55 +520,55 @@
       "fat": 1515326.25
     }
   },
-  "inadimplencia_total": 1228080.92,
+  "inadimplencia_total": 1156309.45,
   "inad_titulos": 94,
   "inad_por_hospital": {
     "SOCIEDADE SULINA DIVINA PROVIDENCIA": 674460.1,
-    "HOSPITAL NOSSA SENHORA DAS GRACAS": 95406,
-    "HOSPITAL BLANC": 89558,
-    "MOINHOS DE VENTO": 87281,
+    "HOSPITAL NOSSA SENHORA DAS GRACAS": 95406.0,
+    "HOSPITAL BLANC": 89558.0,
+    "MOINHOS DE VENTO": 87281.0,
     "HOSPITAL LIFEPLUS": 85639.82,
-    "DAY HOSPITAL SAO PIETRO": 27400,
-    "CAMPINAS DAY HOSPITAL": 16000,
-    "UNIMED TORRE II": 14539,
-    "HOSPITAL 9 JULHO": 13900,
-    "HOSPITAL ALIANCA": 13900,
-    "UOPECCAN FILIAL UMUARAMA": 13900,
-    "HOSPITAL DE CARIDADE DE FLORIANOPOLIS": 10000,
-    "BENEFICIENCIA PORTUGUESA DE SAO PAULO": 5355,
-    "HOSPITAL BLANC SP": 4500,
-    "UAC UNIMED": 4320,
-    "UNIMED PELOTAS": 4320,
-    "SANTA CASA - POA": 3750,
-    "HOSPITAL VILA NOVA STAR": 3500,
-    "UNIMED PA-SL": 3218,
-    "HOSPITAL NORTE PARANAENSE": 2500
+    "DAY HOSPITAL SAO PIETRO": 27400.0,
+    "CAMPINAS DAY HOSPITAL": 16000.0,
+    "UNIMED TORRE II": 14539.0,
+    "HOSPITAL 9 JULHO": 13900.0,
+    "HOSPITAL ALIANÇA": 13900.0,
+    "UOPECCAN FILIAL UMUARAMA": 13900.0,
+    "HOSPITAL DE CARIDADE DE FLORIANOPOLIS": 10000.0,
+    "BENEFICIENCIA PORTUGUESA DE SAO PAULO": 5355.0,
+    "HOSPITAL BLANC SP": 4500.0,
+    "UAC UNIMED": 4320.0,
+    "UNIMED PELOTAS": 4320.0,
+    "SANTA CASA - POA": 3750.0,
+    "HOSPITAL VILA NOVA STAR": 3500.0,
+    "UNIMED PA-SL": 3218.0,
+    "HOSPITAL NORTE PARANAENSE": 2500.0
   },
   "inad_por_convenio": {
     "IPERGS": 515551.52,
-    "UNIMED CURITIBA": 95406,
-    "UNIMED VTRP": 85405,
-    "IPE ADM": 73300,
+    "UNIMED CURITIBA": 95406.0,
+    "UNIMED VTRP": 85405.0,
+    "IPE ADM": 73300.0,
     "ISSEG": 60912.4,
-    "AMIL PLANOS": 49800,
-    "CASSI": 48900,
-    "SAUDE PAS": 41486,
-    "CABERGS": 35900,
-    "GEAP": 33600,
-    "PARTICULAR": 32000,
-    "POSTAL SAUDE": 27400,
-    "UNIMED": 18220,
-    "PETROBRAS": 13900,
-    "UNIMED VS": 7000
+    "AMIL PLANOS": 49800.0,
+    "CASSI": 48900.0,
+    "SAUDE PAS": 41486.0,
+    "CABERGS": 35900.0,
+    "GEAP": 33600.0,
+    "PARTICULAR": 32000.0,
+    "POSTAL SAUDE": 27400.0,
+    "UNIMED": 18220.0,
+    "PETROBRAS": 13900.0,
+    "UNIMED VS": 7000.0
   },
   "inad_por_un": {
     "Traumato": 876307.92,
-    "RS": 116060,
-    "PR": 111806,
-    "SP": 58127,
-    "BA": 47800,
-    "SC": 10980,
-    "Holep": 7000
+    "RS": 116060.0,
+    "PR": 111806.0,
+    "SP": 58127.0,
+    "BA": 47800.0,
+    "SC": 10980.0,
+    "Holep": 7000.0
   },
   "inadimplentes_titulos": [],
   "fat_pendente": {
@@ -492,32 +582,32 @@
       },
       {
         "un": "Traumato",
-        "pendente": 191600,
+        "pendente": 191600.0,
         "cirurgias": 5
       },
       {
         "un": "SP",
-        "pendente": 148826,
+        "pendente": 148826.0,
         "cirurgias": 13
       },
       {
         "un": "Holep",
-        "pendente": 143800,
+        "pendente": 143800.0,
         "cirurgias": 17
       },
       {
         "un": "BA",
-        "pendente": 37300,
+        "pendente": 37300.0,
         "cirurgias": 3
       },
       {
         "un": "SC",
-        "pendente": 1960,
+        "pendente": 1960.0,
         "cirurgias": 2
       },
       {
         "un": "PR",
-        "pendente": 1350,
+        "pendente": 1350.0,
         "cirurgias": 1
       }
     ],
@@ -570,12 +660,12 @@
       {
         "fundo": "COF1",
         "data": "11/06/2026",
-        "saldo_final": 860
+        "saldo_final": 860.0
       },
       {
         "fundo": "SAN130071322",
         "data": "18/06/2026",
-        "saldo_final": 0
+        "saldo_final": 0.0
       }
     ]
   },
@@ -587,7 +677,7 @@
       1125722.63,
       1525872.98,
       1176281.14,
-      882390,
+      882390.0,
       852891.81,
       894076.09,
       828792.13,
@@ -707,7 +797,7 @@
       "desp": 1054387.67
     },
     "2023-07": {
-      "rec": 882390,
+      "rec": 882390.0,
       "desp": 1054367.72
     },
     "2023-08": {
@@ -850,5 +940,30 @@
       "rec": 2248417.91,
       "desp": 1843818.93
     }
+  },
+  "inadimplentes": {
+    "C61": 168113,
+    "C63": 125590.23,
+    "C64": 26400,
+    "C65": 10000,
+    "C66": 781326.22,
+    "C67": 10980,
+    "C68": 33900
+  },
+  "investimentos": {
+    "data_ref": "22/06/2026",
+    "data_emissao": "23/06/2026",
+    "banco": "Itaú Unibanco",
+    "cnpj": "11.462.374/0001-45",
+    "total_bruto": 465176.97,
+    "total_liquido": 460797.84,
+    "total_principal": 438500.88,
+    "total_rendimento": 26676.09,
+    "ativos": [
+      {"conta": "99688-5", "ativo": "Kinea Andes Renda Fixa CP LP", "tipo": "Fundo", "taxa": null, "inicio": null, "fim": null, "principal": 199297.18, "rendimento": 6598.79, "bruto": 205895.97, "liquido": 205127.60},
+      {"conta": "99688-5", "ativo": "CDB-DI 98% do DI", "tipo": "CDB", "taxa": "98% DI", "inicio": "14/01/2026", "fim": "13/01/2031", "principal": 100000.00, "rendimento": 5859.97, "bruto": 105859.97, "liquido": 104541.48},
+      {"conta": "99305-6", "ativo": "CDB-DI 96% do DI", "tipo": "CDB", "taxa": "96% DI", "inicio": "05/08/2025", "fim": "05/08/2030", "principal": 81522.00, "rendimento": 9988.01, "bruto": 91510.01, "liquido": 89512.41},
+      {"conta": "99670-3", "ativo": "Mapfre Confianza Renda Fixa Ref. DI", "tipo": "Fundo", "taxa": null, "inicio": null, "fim": null, "principal": 57681.70, "rendimento": 4229.32, "bruto": 61911.02, "liquido": 61616.35}
+    ]
   }
 }

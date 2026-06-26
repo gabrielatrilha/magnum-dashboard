@@ -633,6 +633,32 @@ body{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--te
   </div>
 </div>
 
+<div class="section-card">
+  <div class="sec-head" data-target="bodyInvest">
+    <div class="sec-title">
+      <div class="sec-icon b">💰</div>
+      <div><div class="sec-h2">Investimentos</div>
+           <div class="sec-sub">Olivia e Sabrina — Itaú Unibanco &middot; Ref. <span id="investRef">—</span></div></div>
+    </div>
+    <div class="sec-totals">
+      <div class="sec-total-item"><div class="sec-total-label">Saldo Líquido</div>
+        <div class="sec-total-value b" id="investLiqVal">—</div></div>
+      <div class="sec-total-item"><div class="sec-total-label">Rendimento</div>
+        <div class="sec-total-value g" id="investRendVal">—</div></div>
+    </div>
+    <div class="expand-btn">▼</div>
+  </div>
+  <div class="sec-preview" id="prevInvest">
+    <div class="prev-item"><div class="prev-lbl">Principal</div><div class="prev-val" id="prevInvestPrinc">—</div></div>
+    <div class="prev-item"><div class="prev-lbl">Rendimento</div><div class="prev-val" id="prevInvestRend">—</div></div>
+    <div class="prev-item"><div class="prev-lbl">Saldo Líquido</div><div class="prev-val"><span class="prev-badge badge-blue" id="prevInvestLiq">—</span></div></div>
+    <div class="prev-item"><div class="prev-lbl">Referência</div><div class="prev-val" style="font-size:13px;font-weight:600;color:var(--muted)" id="prevInvestRef">—</div></div>
+  </div>
+  <div class="sec-body" id="bodyInvest">
+    <div id="investAtivoCards" class="insights-row"></div>
+  </div>
+</div>
+
 
 </div>
 <div class="footer">Dashboard Executivo Magnum Import &middot; bi.emultec.com.br &middot; 26/06/2026</div>
@@ -653,6 +679,7 @@ const CIR_UN=[{"un": "RS", "val": 547186.05, "qtd": 120, "tipos": []}, {"un": "T
 const FAT_EVOL = {"2023": [1062146.79, 1097339.63, 1044290.74, 1125722.63, 1525872.98, 1176281.14, 882390.0, 852891.81, 894076.09, 828792.13, 1282395.96, 870671.16], "2024": [1283593.85, 844655.88, 1131468.86, 1224560.72, 1190992.33, 1022268.7, 1474743.03, 1451637.82, 1426516.93, 1638047.15, 1604318.7, 1166750.24], "2025": [2251859.99, 1533795.97, 1547185.95, 1957887.72, 2182130.14, 1949709.3, 2058985.72, 2107238.05, 2712408.77, 2092330.05, 2112774.44, 1886457.41], "2026": [2813770.39, 1915843.28, 2992980.59, 2259412.91, 2457910.74, 2248417.91, 0, 0, 0, 0, 0, 0]};
 const SALDO_BANC={"ref": "23/06/2026", "total_cc": 1609370.74, "total_invest": 2809560.71, "total_geral": 1286284.93, "obs": "Exclui saldo fabricante (R$ 139.627,25 custódia XP) e conta PR (Santander 130071322 sem extrato)", "contas": [{"nome": "Itaú Porto Alegre", "conta": "99670-3", "banco": "Itaú Ag. 0280", "un": "RS", "cc": 358126.73, "invest": 61293.47, "total": 419420.2, "invest_det": [{"desc": "Mapfre Confianza RF DI", "val": 61293.47}]}, {"nome": "Itaú Holep", "conta": "99305-6", "banco": "Itaú Ag. 0280", "un": "Holep", "cc": 462554.83, "invest": 858397.8, "total": 1320952.63, "invest_det": [{"desc": "Itaú Trust DI", "val": 257833.9}, {"desc": "Itaú CB Empresas RF", "val": 257808.42}, {"desc": "Itaú CB RF CP", "val": 253541.4}, {"desc": "CDB-DI 96% (venc. 05/08/2030)", "val": 89214.08}]}, {"nome": "Itaú Santa Catarina", "conta": "99228-0", "banco": "Itaú Ag. 0280", "un": "SC", "cc": 80817.36, "invest": 124735.66, "total": 205553.02, "invest_det": [{"desc": "Itaú CB Empresas RF", "val": 124735.66}]}, {"nome": "Itaú Traumato", "conta": "99688-5", "banco": "Itaú Ag. 0280", "un": "Traumato", "cc": 490885.92, "invest": 1034133.96, "total": 1525019.88, "invest_det": [{"desc": "Itaú CB RF CP", "val": 208542.89}, {"desc": "Itaú Trust DI", "val": 208522.62}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 204485.39}, {"desc": "Global Dinâmico FIF RF CP", "val": 204116.71}, {"desc": "Selic EMP FIF RF", "val": 104266.14}, {"desc": "CDB-DI 98% (venc. 13/01/2031)", "val": 104200.21}]}, {"nome": "Itaú Bahia", "conta": "99487-7", "banco": "Itaú Ag. 8841", "un": "BA", "cc": 83952.48, "invest": 83951.48, "total": 167903.96, "invest_det": [{"desc": "Aplic. Aut. Mais (CDB)", "val": 83951.48}]}, {"nome": "BB São Paulo", "conta": "16918-8", "banco": "Banco do Brasil Ag. 3535-1", "un": "SP", "cc": 133033.42, "invest": 196600.02, "total": 329633.44, "invest_det": [{"desc": "CDB DI 95% (venc. 29/11/2030)", "val": 166000.0}, {"desc": "Fundo RF Ref DI Plus Ágil", "val": 10.76}, {"desc": "Fundo RF Ref DI 90 Mil", "val": 24945.26}]}, {"nome": "XP Investimentos", "conta": "9313357", "banco": "XP Investimentos", "un": "—", "cc": 0.0, "invest": 450448.32, "total": 450448.32, "invest_det": [{"desc": "Compromissadas", "val": 38135.25}, {"desc": "Iridium Apollo FIF RF CP LP RL", "val": 29215.02}, {"desc": "Tivio Institucional RF CP FIF RL", "val": 20382.27}, {"desc": "Kinea Andes FIF CIC RF CP LP RL", "val": 124630.97}, {"desc": "SulAmérica Premium Plus FIRF DI CP", "val": 238084.81}]}], "contas_bi": [{"fundo": "ITA993056", "data": "23/06/2026", "saldo_final": 475667.66}, {"fundo": "ITA996703", "data": "23/06/2026", "saldo_final": 248179.97}, {"fundo": "ITA996885", "data": "23/06/2026", "saldo_final": 232455.56}, {"fundo": "ITA99228", "data": "18/06/2026", "saldo_final": 166298.57}, {"fundo": "BB_169188", "data": "18/06/2026", "saldo_final": 102633.07}, {"fundo": "BB_001813", "data": "31/05/2026", "saldo_final": 30818.4}, {"fundo": "ITA994877", "data": "23/06/2026", "saldo_final": 14942.37}, {"fundo": "COFRE", "data": "11/06/2026", "saldo_final": 14429.33}, {"fundo": "COF1", "data": "11/06/2026", "saldo_final": 860.0}, {"fundo": "SAN130071322", "data": "18/06/2026", "saldo_final": 0.0}]};
 const FAT_PEND={"total": 1029275.19, "total_cirurgias": 277, "por_un": [{"un": "RS", "pendente": 504439.19, "cirurgias": 236}, {"un": "Traumato", "pendente": 191600.0, "cirurgias": 5}, {"un": "SP", "pendente": 148826.0, "cirurgias": 13}, {"un": "Holep", "pendente": 143800.0, "cirurgias": 17}, {"un": "BA", "pendente": 37300.0, "cirurgias": 3}, {"un": "SC", "pendente": 1960.0, "cirurgias": 2}, {"un": "PR", "pendente": 1350.0, "cirurgias": 1}], "titulos": []};
+const INVEST={"data_ref": "22/06/2026", "data_emissao": "23/06/2026", "banco": "Itaú Unibanco", "cnpj": "11.462.374/0001-45", "total_bruto": 465176.97, "total_liquido": 460797.84, "total_principal": 438500.88, "total_rendimento": 26676.09, "ativos": [{"conta": "99688-5", "ativo": "Kinea Andes Renda Fixa CP LP", "tipo": "Fundo", "taxa": null, "inicio": null, "fim": null, "principal": 199297.18, "rendimento": 6598.79, "bruto": 205895.97, "liquido": 205127.6}, {"conta": "99688-5", "ativo": "CDB-DI 98% do DI", "tipo": "CDB", "taxa": "98% DI", "inicio": "14/01/2026", "fim": "13/01/2031", "principal": 100000.0, "rendimento": 5859.97, "bruto": 105859.97, "liquido": 104541.48}, {"conta": "99305-6", "ativo": "CDB-DI 96% do DI", "tipo": "CDB", "taxa": "96% DI", "inicio": "05/08/2025", "fim": "05/08/2030", "principal": 81522.0, "rendimento": 9988.01, "bruto": 91510.01, "liquido": 89512.41}, {"conta": "99670-3", "ativo": "Mapfre Confianza Renda Fixa Ref. DI", "tipo": "Fundo", "taxa": null, "inicio": null, "fim": null, "principal": 57681.7, "rendimento": 4229.32, "bruto": 61911.02, "liquido": 61616.35}]};
 
 var PERIODOS_MENSAIS=[{"key":"mar26","label":"Mar/26"},{"key":"abr26","label":"Abr/26"},{"key":"mai26","label":"Mai/26"},{"key":"jun26","label":"Jun/26"}];
 var PERIODOS_TRIM=[{"key":"1t26","label":"1T/26"}];
@@ -1754,6 +1781,63 @@ function toggleSaldoConta(i){
   else{b.style.display='block';ic.textContent='▼';}
 }
 
+// =============================================
+// INVESTIMENTOS
+// =============================================
+function buildInvestimentos(){
+  var inv=INVEST;
+  if(!inv||!inv.total_liquido)return;
+  document.getElementById('investRef').textContent=inv.data_ref||'—';
+  document.getElementById('investLiqVal').textContent='R$ '+fmtN(inv.total_liquido);
+  document.getElementById('investRendVal').textContent='R$ '+fmtN(inv.total_rendimento);
+  document.getElementById('prevInvestPrinc').textContent='R$ '+fmtN(inv.total_principal);
+  document.getElementById('prevInvestRend').textContent='R$ '+fmtN(inv.total_rendimento);
+  document.getElementById('prevInvestLiq').textContent='R$ '+fmtN(inv.total_liquido);
+  document.getElementById('prevInvestRef').textContent='Ref: '+(inv.data_ref||'—');
+  var ativos=inv.ativos||[];
+  var rendPct=inv.total_principal>0?(inv.total_rendimento/inv.total_principal*100).toFixed(2):0;
+  var cardHtml=ativos.map(function(a){
+    var rPct=a.principal>0?(a.rendimento/a.principal*100).toFixed(2):0;
+    var barW=inv.total_bruto>0?(a.bruto/inv.total_bruto*100).toFixed(1):0;
+    var isFundo=a.tipo==='Fundo';
+    var color=isFundo?'#476AAE':'#00CCCC';
+    var prazo=(a.inicio&&a.fim)?'Venc: '+a.fim:'Fundo Aberto';
+    return '<div class="insight-card" style="border-left:4px solid '+color+';min-width:170px">'+
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'+
+        '<span style="font-size:18px">'+(isFundo?'📊':'🏷️')+'</span>'+
+        '<div>'+
+          '<div style="font-size:12px;font-weight:800;color:var(--navy)">'+a.ativo+'</div>'+
+          '<div style="font-size:10px;color:var(--muted)">Conta '+a.conta+' &middot; '+(a.taxa||a.tipo)+'</div>'+
+        '</div>'+
+      '</div>'+
+      '<div style="font-size:17px;font-weight:900;color:'+color+';font-family:monospace">R$ '+fmtN(a.liquido)+'</div>'+
+      '<div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">'+
+        '<span class="prev-badge badge-teal" style="font-size:10px">Principal R$ '+fmtN(a.principal)+'</span>'+
+        '<span class="prev-badge badge-blue" style="font-size:10px">Rend. +'+rPct+'%</span>'+
+      '</div>'+
+      '<div style="margin-top:6px;background:#e8edf5;border-radius:3px;height:4px;overflow:hidden">'+
+        '<div style="background:'+color+';height:4px;width:'+barW+'%"></div>'+
+      '</div>'+
+      '<div style="font-size:10px;color:var(--muted);margin-top:3px">'+barW+'% do total &middot; '+prazo+'</div>'+
+    '</div>';
+  }).join('');
+  // Prepend summary card
+  cardHtml='<div class="insight-card" style="border-left:4px solid #9B59B6;min-width:170px">'+
+    '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">'+
+      '<span style="font-size:20px">💰</span>'+
+      '<div><div style="font-size:13px;font-weight:800;color:var(--navy)">Total Consolidado</div>'+
+           '<div style="font-size:10px;color:var(--muted)">Itaú Unibanco &middot; '+(inv.data_ref||'')+'</div></div>'+
+    '</div>'+
+    '<div style="font-size:18px;font-weight:900;color:#9B59B6;font-family:monospace">R$ '+fmtN(inv.total_liquido)+'</div>'+
+    '<div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">'+
+      '<span class="prev-badge badge-teal" style="font-size:10px">Principal R$ '+fmtN(inv.total_principal)+'</span>'+
+      '<span class="prev-badge" style="font-size:10px;background:#9B59B622;color:#9B59B6">+'+rendPct+'% rendimento</span>'+
+    '</div>'+
+    '<div style="font-size:10px;color:var(--muted);margin-top:6px">'+ativos.length+' ativos &middot; Bruto R$ '+fmtN(inv.total_bruto)+'</div>'+
+  '</div>'+cardHtml;
+  document.getElementById('investAtivoCards').innerHTML=cardHtml;
+}
+
 // INIT
 function _initDash(){
   if(window._dashInited)return;window._dashInited=true;
@@ -1762,6 +1846,7 @@ function _initDash(){
   buildEvol();
   buildFatPend();
   buildSaldo();
+  buildInvestimentos();
   // Period bar rendered server-side by Python
   // renderPeriodBar() called by setActivePeriod on click
   setPeriod(CUR);
