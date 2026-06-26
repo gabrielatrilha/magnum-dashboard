@@ -140,11 +140,11 @@
     "5.1.10": 9380.0
   },
   "cirurgias": 118,
-  "cir_fat": 1515326.25,
+  "cir_fat": 1714929.83,
   "cir_por_un": [
     [
       "RS",
-      547186.05,
+      728989.63,
       120
     ],
     [
@@ -154,12 +154,12 @@
     ],
     [
       "SP",
-      295050.0,
+      303050.0,
       21
     ],
     [
       "SC",
-      140439.0,
+      150239.0,
       15
     ],
     [
@@ -520,8 +520,8 @@
       "fat": 1515326.25
     }
   },
-  "inadimplencia_total": 1156309.45,
-  "inad_titulos": 94,
+  "inadimplencia_total": 1052470.15,
+  "inad_titulos": 77,
   "inad_por_hospital": {
     "SOCIEDADE SULINA DIVINA PROVIDENCIA": 674460.1,
     "HOSPITAL NOSSA SENHORA DAS GRACAS": 95406.0,
@@ -562,13 +562,13 @@
     "UNIMED VS": 7000.0
   },
   "inad_por_un": {
-    "Traumato": 876307.92,
-    "RS": 116060.0,
-    "PR": 111806.0,
-    "SP": 58127.0,
-    "BA": 47800.0,
+    "RS": 34400.0,
+    "SP": 125590.23,
+    "PR": 26400.0,
+    "Holep": 10000.0,
+    "Traumato": 811199.92,
     "SC": 10980.0,
-    "Holep": 7000.0
+    "BA": 33900.0
   },
   "inadimplentes_titulos": [],
   "fat_pendente": {
@@ -1009,5 +1009,23 @@
         "liquido": 61616.35
       }
     ]
+  },
+  "desp_by_adicional_mensal": {
+    "2026-06": {
+      "COMPRAS REVENDA": 729346.69,
+      "OPERACIONAL": 766143.12,
+      "IMPORTACAO": 56979.88,
+      "SALARIO": 163084.91,
+      "IMPOSTO": 29801.56,
+      "PRO LABORE": 17500.0,
+      "USO/CONSUMO": 53452.75,
+      "MANUTENÇÃO": 18937.08,
+      "NAO INDICADO": 5673.68,
+      "COMPRAS ATIVO": 10725.51,
+      "COMPRA DE INSTRUMENTAL": 11865.3,
+      "PREDIAL": 6787.08,
+      "SPEED ATIVA": 767.65,
+      "RETIRADA": 0.0
+    }
   }
 }
