@@ -1063,6 +1063,26 @@ if _bi.get("faturamento"):
 fat_per_js   = json.dumps(FAT_PERIODS,    ensure_ascii=False)
 desp_per_js  = json.dumps(DESP_PERIODS,   ensure_ascii=False)
 fat_cl_js    = json.dumps(FAT_CLIENTES,   ensure_ascii=False)
+# ── Auto-atualizar CIR_TIPO/HOSPITAL/CONVENIO/UNIDADE de bi_data.json ──────
+if _bi.get("cir_por_tipo"):
+    CIR_TIPO[:] = [[r[0], round(r[1],2), r[2]] for r in _bi["cir_por_tipo"]]
+    CIR_TIPO.sort(key=lambda x: -x[1])
+    print(f"[AUTO] CIR_TIPO atualizado: {len(CIR_TIPO)} tipos, top={CIR_TIPO[0][0]} R${CIR_TIPO[0][1]:,.0f}")
+if _bi.get("cir_por_hospital"):
+    CIR_HOSPITAL[:] = [[r[0], round(r[1],2)] for r in _bi["cir_por_hospital"]]
+    print(f"[AUTO] CIR_HOSPITAL atualizado: {len(CIR_HOSPITAL)} hospitais")
+if _bi.get("cir_por_convenio"):
+    CIR_CONVENIO[:] = [[r[0], round(r[1],2)] for r in _bi["cir_por_convenio"]]
+    print(f"[AUTO] CIR_CONVENIO atualizado: {len(CIR_CONVENIO)} convênios")
+if _bi.get("cir_por_un") and _bi.get("cir_tipos_por_un"):
+    _cir_tipos_un = _bi["cir_tipos_por_un"]
+    CIR_UNIDADE[:] = [
+        {"un": r[0], "val": round(r[1],2), "qtd": r[2],
+         "tipos": sorted([[t[0], round(t[1],2), t[2]] for t in _cir_tipos_un.get(r[0],[])], key=lambda x: -x[1])}
+        for r in sorted(_bi["cir_por_un"], key=lambda x: -x[1])
+    ]
+    print(f"[AUTO] CIR_UNIDADE atualizado: {len(CIR_UNIDADE)} unidades")
+
 cir_tipo_js  = json.dumps(CIR_TIPO,       ensure_ascii=False)
 cir_hosp_js  = json.dumps(CIR_HOSPITAL,   ensure_ascii=False)
 cir_conv_js  = json.dumps(CIR_CONVENIO,   ensure_ascii=False)
