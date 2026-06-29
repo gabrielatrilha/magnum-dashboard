@@ -1023,6 +1023,9 @@ if _bi.get("faturamento"):
             if _desp_ad:
                 DESP_AD_VALS[_cur_key] = {k: round(v, 2) for k, v in _desp_ad.items() if v > 0}
                 print(f"[AUTO] DESP_AD_VALS[{_cur_key}] atualizado de bi_data.json")
+                if _cur_key in DESP_PERIODS:
+                    DESP_PERIODS[_cur_key]["byAd"] = get_desp_ad_period(_cur_key)
+                    print(f"[AUTO] DESP_PERIODS[{_cur_key}].byAd recalculado")
         # Auto-atualizar FAT_EVOL com os totais mensais de FAT_PERIODS
         _MES_IDX = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"]
         for _fk, _fp in FAT_PERIODS.items():
