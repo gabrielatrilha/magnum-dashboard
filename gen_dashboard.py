@@ -565,6 +565,7 @@ def get_desp_ad_period(period):
         for t in d["top"]:
             nd["top"].append([t[0], round(t[1] * factor, 2), t[2]])
         result.append(nd)
+    result.sort(key=lambda x: -x["val"])
     return result
 
 # Per-period faturamento — real byUN and byGrupo from BI
@@ -886,14 +887,14 @@ SALDO_BANCARIO = {
     "obs": "Exclui saldo fabricante (R$ 139.627,25 custódia XP) e conta PR (Santander 130071322 sem extrato)",
     "contas": [
         {
-            "nome": "Itaú Porto Alegre", "conta": "99670-3", "banco": "Itaú Ag. 0280",
+            "nome": "Itaú Porto Alegre", "fundo": "ITA996703", "conta": "99670-3", "banco": "Itaú Ag. 0280",
             "un": "RS", "cc": 358126.73, "invest": 61293.47, "total": 419420.20,
             "invest_det": [
                 {"desc": "Mapfre Confianza RF DI", "val": 61293.47}
             ]
         },
         {
-            "nome": "Itaú Holep", "conta": "99305-6", "banco": "Itaú Ag. 0280",
+            "nome": "Itaú Holep", "fundo": "ITA993056", "conta": "99305-6", "banco": "Itaú Ag. 0280",
             "un": "Holep", "cc": 462554.83, "invest": 858397.80, "total": 1320952.63,
             "invest_det": [
                 {"desc": "Itaú Trust DI", "val": 257833.90},
@@ -903,14 +904,14 @@ SALDO_BANCARIO = {
             ]
         },
         {
-            "nome": "Itaú Santa Catarina", "conta": "99228-0", "banco": "Itaú Ag. 0280",
+            "nome": "Itaú Santa Catarina", "fundo": "ITA99228", "conta": "99228-0", "banco": "Itaú Ag. 0280",
             "un": "SC", "cc": 80817.36, "invest": 124735.66, "total": 205553.02,
             "invest_det": [
                 {"desc": "Itaú CB Empresas RF", "val": 124735.66}
             ]
         },
         {
-            "nome": "Itaú Traumato", "conta": "99688-5", "banco": "Itaú Ag. 0280",
+            "nome": "Itaú Traumato", "fundo": "ITA996885", "conta": "99688-5", "banco": "Itaú Ag. 0280",
             "un": "Traumato", "cc": 490885.92, "invest": 1034133.96, "total": 1525019.88,
             "invest_det": [
                 {"desc": "Itaú CB RF CP", "val": 208542.89},
@@ -922,14 +923,14 @@ SALDO_BANCARIO = {
             ]
         },
         {
-            "nome": "Itaú Bahia", "conta": "99487-7", "banco": "Itaú Ag. 8841",
+            "nome": "Itaú Bahia", "fundo": "ITA994877", "conta": "99487-7", "banco": "Itaú Ag. 8841",
             "un": "BA", "cc": 83952.48, "invest": 83951.48, "total": 167903.96,
             "invest_det": [
                 {"desc": "Aplic. Aut. Mais (CDB)", "val": 83951.48}
             ]
         },
         {
-            "nome": "BB São Paulo", "conta": "16918-8", "banco": "Banco do Brasil Ag. 3535-1",
+            "nome": "BB São Paulo", "fundo": "BB_169188", "conta": "16918-8", "banco": "Banco do Brasil Ag. 3535-1",
             "un": "SP", "cc": 133033.42, "invest": 196600.02, "total": 329633.44,
             "invest_det": [
                 {"desc": "CDB DI 95% (venc. 29/11/2030)", "val": 166000.0},
@@ -938,7 +939,7 @@ SALDO_BANCARIO = {
             ]
         },
         {
-            "nome": "XP Investimentos", "conta": "9313357", "banco": "XP Investimentos",
+            "nome": "XP Investimentos", "fundo": "COFRE", "conta": "9313357", "banco": "XP Investimentos",
             "un": "—", "cc": 0.0, "invest": 450448.32, "total": 450448.32,
             "invest_det": [
                 {"desc": "Compromissadas", "val": 38135.25},
@@ -953,6 +954,20 @@ SALDO_BANCARIO = {
 
 inad_js      = json.dumps(INADIMPLENTES,  ensure_ascii=False)
 inad_unid_js = json.dumps(INAD_UNIDADE,   ensure_ascii=False)
+
+# Auto-atualizar SALDO_BANCARIO: ref e datas de conciliação por conta
+if _bi.get("saldo_bancario"):
+    _sb_bi = _bi["saldo_bancario"]
+    if _sb_bi.get("data_ref"):
+        SALDO_BANCARIO["ref"] = _sb_bi["data_ref"]
+        _ref_novo = _sb_bi['data_ref']
+        print(f"[AUTO] SALDO_BANCARIO.ref atualizado: {_ref_novo}")
+    _fundo_date = {c["fundo"]: c["data"] for c in _sb_bi.get("contas", []) if c.get("fundo") and c.get("data")}
+    for _sc in SALDO_BANCARIO["contas"]:
+        _f = _sc.get("fundo", "")
+        if _f in _fundo_date:
+            _sc["data_concil"] = _fundo_date[_f]
+
 # Auto-atualizar mês atual se bi_data.json tiver faturamento mais recente
 if _bi.get("faturamento"):
     # Derivar período de 'coleta_em' se 'periodo' não existir
@@ -981,7 +996,7 @@ if _bi.get("faturamento"):
                 "prazo": 30,
                 "parcial": True,
                 "byUN": [[k,int(v)] for k,v in _by_un],
-                "byGrupo": []
+                "byGrupo": sorted([{"g": k, "val": round(v,2), "cnt": 0, "prods": []} for k, v in _bi.get("fat_por_grupo",{}).items() if v > 0], key=lambda x: -x["val"]) if _bi.get("fat_por_grupo") else []
             }
             print(f"[AUTO] Novo mês {{_cur_key}} adicionado ao FAT_PERIODS: R${{_bi['faturamento']:,.2f}}")
         else:
@@ -993,11 +1008,21 @@ if _bi.get("faturamento"):
             if _bi.get("faturamento_por_un"):
                 _by_un = sorted(_bi["faturamento_por_un"].items(), key=lambda x:-x[1])
                 FAT_PERIODS[_cur_key]["byUN"] = [[k,int(v)] for k,v in _by_un]
+            if _bi.get("fat_por_grupo"):
+                _grupos = sorted(_bi["fat_por_grupo"].items(), key=lambda x: -x[1])
+                FAT_PERIODS[_cur_key]["byGrupo"] = [{"g": k, "val": round(v,2), "cnt": 0, "prods": []} for k, v in _grupos if v > 0]
+                print(f"[AUTO] byGrupo {_cur_key} atualizado: {len(_grupos)} grupos")
             print(f"[AUTO] {_cur_key} atualizado: R${_bi['faturamento']:,.2f}")
             # Auto-atualizar despesas do mês atual
             if _bi.get("despesas") and _cur_key in DESP_PERIODS:
                 DESP_PERIODS[_cur_key]["total"] = round(_bi["despesas"], 2)
                 print(f"[AUTO] Despesas {_cur_key} atualizadas: R${_bi['despesas']:,.2f}")
+            # Auto-atualizar DESP_AD_VALS do mês atual
+            _chave_iso = f"20{_yr}-{_mo:02d}"
+            _desp_ad = _bi.get("desp_by_adicional_mensal", {}).get(_chave_iso)
+            if _desp_ad:
+                DESP_AD_VALS[_cur_key] = {k: round(v, 2) for k, v in _desp_ad.items() if v > 0}
+                print(f"[AUTO] DESP_AD_VALS[{_cur_key}] atualizado de bi_data.json")
         # Auto-atualizar FAT_EVOL com os totais mensais de FAT_PERIODS
         _MES_IDX = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"]
         for _fk, _fp in FAT_PERIODS.items():
@@ -2885,6 +2910,7 @@ function buildSaldo(){{
         '<div style="background:'+bcolor+';height:4px;width:'+(c.total/sb.total_geral*100).toFixed(1)+'%"></div>'+
       '</div>'+
       '<div style="font-size:10px;color:var(--muted);margin-top:3px">'+(c.total/sb.total_geral*100).toFixed(1)+'% do total &middot; CC '+ccPct+'%</div>'+
+      (c.data_concil?'<div style="font-size:10px;color:var(--muted);margin-top:3px">Concil.: '+c.data_concil+'</div>':'')+
     '</div>';
   }}).join('');
   document.getElementById('saldoContaCards').innerHTML=cardHtml;
