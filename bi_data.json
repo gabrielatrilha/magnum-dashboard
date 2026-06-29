@@ -1,183 +1,133 @@
 {
-  "coleta_em": "2026-06-26 21:05",
+  "coleta_em": "2026-06-29 08:11",
   "periodo_mes": {
     "ini": "2026-06-01",
-    "fim": "2026-06-26"
+    "fim": "2026-06-29"
   },
   "faturamento": 2120425.51,
   "nf_count": 395,
   "faturamento_por_un": {
     "RS": 813961.95,
-    "SP": 292234,
-    "PR": 32900,
-    "Holep": 218000,
+    "SP": 292234.0,
+    "PR": 32900.0,
+    "Holep": 218000.0,
     "Traumato": 601610.56,
-    "SC": 150239,
-    "BA": 11480
+    "SC": 150239.0,
+    "BA": 11480.0
   },
   "fat_por_grupo": {
-    "TRAUMATOLOGIA": 491210.56,
-    "SAUDE DO HOMEM": 453010.0,
-    "SERVICO": 311930.0,
-    "ENDOUROLOGIA": 224252.95,
-    "UROLOGIA GERAL": 223942.0,
-    "SPEEDICATH": 132318.0,
+    "TRAUMATOLOGIA": 569814.56,
+    "SAUDE DO HOMEM": 462010.0,
+    "SERVICO": 247380.0,
+    "ENDOUROLOGIA": 244565.95,
+    "UROLOGIA GERAL": 243742.0,
+    "SPEEDICATH": 141048.0,
     "UROLIFT": 79500.0,
     "MATRIZ DERMICA": 39900.0,
     "CRIOANALGESIA": 28500.0,
-    "RTU": 22978.0,
-    "FIBRAS LASER - CONSUMO": 22241.0
+    "RTU": 25828.0,
+    "FIBRAS LASER - CONSUMO": 22241.0,
+    "": 12600.0,
+    "CIMENTOS/MISTURADORES": 3296.0
   },
   "fat_por_hospital": {
-    "MOINHOS DE VENTO": 699697.31,
-    "HOSPITAL MORIAH": 99500.0,
-    "MAE DE DEUS - AESC": 89480.0,
-    "UNIMED NORDESTE": 87000.0,
-    "HOSPITAL BLANC": 86474.0,
-    "SANTA CASA - POA": 79596.0,
-    "UNIMED TORRE II": 77468.0,
-    "ULISSES ACASSIO REYNOL": 75000.0,
+    "MOINHOS DE VENTO": 391403.95,
+    "MAE DE DEUS - AESC": 147614.0,
     "HOSPITAL IOSC": 75000.0,
-    "REGINA": 63095.0,
-    "HOSPITAL HUMANIZA": 51796.0,
-    "UAC UNIMED": 43560.0,
-    "SOCIEDADE SULINA DIVINA PROVIDENCIA": 40144.2,
-    "UNIMED POA CACHOEIRINHA": 36000.0,
-    "BP PAULISTA": 32500.0,
+    "UNIMED NORDESTE": 75000.0,
+    "SANTA CASA - POA": 69228.0,
+    "HOSPITAL MORIAH": 54907.2,
+    "UNIMED TORRE II": 51830.0,
+    "HOSPITAL BLANC": 48662.0,
+    "HOSPITAL HUMANIZA": 36528.0,
+    "UAC UNIMED": 33480.0,
     "BP MIRANTE": 32500.0,
-    "PUC": 28048.0,
+    "BP PAULISTA": 32500.0,
     "UNIMED RIBEIRAO PRETO": 28000.0,
-    "NÃO INFORMADO": 24210.0,
-    "HOSPITAL TACCHINI": 21800.0
+    "UROSAS CLINICA SANTANNA": 19500.0,
+    "NÃO INFORMADO": 18450.0,
+    "REGINA": 16355.0,
+    "CAMPINAS DAY HOSPITAL": 16000.0,
+    "HOSPITAL DO CORACAO": 16000.0,
+    "FRANCO VASCONCELLOS E SOUZA": 14000.0,
+    "MASTER CLINICA CASCAVEL": 13900.0
   },
   "fat_por_convenio": {
-    "PARTICULAR": 442168.0,
-    "UNIMED POA": 355805.0,
-    "BRADESCO SAUDE": 342819.26,
-    "VENDA_DIRETA": 317072.0,
-    "CASSI": 122110.0,
-    "BACEN": 63300.0,
-    "UNIMED": 56598.0,
-    "CENTRO CLINICO GAUCHO": 48961.0,
-    "UNIMED VALE DO SINOS": 44864.0,
+    "PARTICULAR": 350337.2,
+    "BRADESCO SAUDE": 207496.9,
+    "VENDA_DIRETA": 194592.0,
+    "UNIMED POA": 177885.05,
+    "PETROBRAS": 63000.0,
+    "BACEN": 62050.0,
+    "UNIMED": 59785.0,
     "OMINT SERVICOS DE SAUDE LTDA": 39000.0,
+    "CENTRO CLINICO GAUCHO": 33253.0,
     "AMIL PLANOS": 24900.0,
-    "SULAMERICA": 22160.0,
-    "UNIMED INTERCAMBIO": 16216.0,
-    "CAIXA ECONOMICA FEDERAL": 16000.0,
-    "IPERGS": 13381.2
+    "SULAMERICA": 20560.0,
+    "UNIMED VALE DO SINOS": 20018.0,
+    "CASSI": 20010.0,
+    "UNIMED - CNU - SP": 12600.0,
+    "IPERGS": 12499.2
   },
-  "fat_by_un_mensal": {
-    "2026-06": {
-      "RS": 780618.95,
-      "SP": 350234.0,
-      "PR": 28900.0,
-      "Holep": 211000.0,
-      "Traumato": 519710.56,
-      "SC": 140439.0,
-      "BA": 11480.0
-    }
-  },
-  "despesas": 1919052.05,
-  "despesas_por_un": {
-    "RS": 1141875.57,
-    "SP": 51871.21,
+  "despesas": 1827022.33,
+  "desp_por_un": {
+    "BA": 28276.23,
+    "Holep": 59631.42,
     "PR": 29191.15,
-    "Holep": 66645.56,
-    "Traumato": 572147.22,
+    "RS": 1063926.57,
     "SC": 29045.11,
-    "BA": 28276.23
+    "SP": 51871.21,
+    "Traumato": 565080.64
   },
-  "desp_por_subsetor": {
-    "MATERIAL P/  REVENDA": 725007.12,
-    "CONTA HOSPITALAR": 409950.0,
-    "PRESTADORES DE SERVIÇO": 87335.27,
-    "REPRESENTANTE (PJ)": 78477.6,
-    "EVENTO": 58724.02,
-    "IMPORTAÇÃO": 56979.88,
-    "FINANCIAMENTO": 42633.04,
-    "COMPRA EQUIPAMENTO": 29562.75,
-    "INSS": 26273.07,
-    "PLANO DE SAUDE": 24453.97,
-    "FRETE": 24278.94,
-    "MKT": 22072.15,
-    "COMPRA LASER": 21040.0,
-    "ALIMENTAÇÃO": 20041.81,
-    "RETIRADA": 17500.0,
-    "FREELANCER CIRURGIA": 14402.39,
+  "desp_por_adicional": {
+    "OPERACIONAL": 754504.98,
+    "COMPRAS REVENDA": 652547.71,
+    "SALARIO": 163084.91,
+    "IMPOSTO": 74195.8,
+    "IMPORTACAO": 56979.88,
+    "USO/CONSUMO": 53452.75,
+    "MANUTENÇÃO": 18937.08,
+    "PRO LABORE": 17500.0,
     "COMPRA DE INSTRUMENTAL": 11865.3,
-    "HOSPEDAGEM": 11664.14,
-    "COMBUSTIVEL": 11575.0,
-    "PASSAGEM": 11228.78
+    "COMPRAS ATIVO": 10725.51,
+    "PREDIAL": 6787.08,
+    "NAO INDICADO": 5673.68,
+    "SPEED ATIVA": 767.65
   },
-  "desp_por_setor": {
-    "ETQ": 725007.12,
-    "DIR": 502120.19,
-    "LOG": 286065.41,
-    "ADM": 196852.83,
-    "COM": 124901.17
+  "desp_por_fornecedor": {
+    "COLOPLAST": 440801.2,
+    "LUCAS PRAETORIUS": 397274.4,
+    "COLOPLAST NAVEGANTES": 81506.2,
+    "ACK ACCESS": 56877.0,
+    "SYNAPSE MARKETING": 47450.0,
+    "IMPOSTOS - COFINS": 36488.36,
+    "FINANCIAMENTO FINAME": 35618.9,
+    "MIGUEL": 28207.94,
+    "IMPOSTOS - INSS": 26273.07,
+    "INACIO MONCKS": 24933.01,
+    "SANDRO DE OLIVEIRA VIANA": 22591.37,
+    "ENDO INDUSTRIA": 22309.33,
+    "RAZEK LTDA": 22088.85,
+    "DEUTSCHLINE MEDICAL LTDA": 21040.0,
+    "NEXTIMPLANTES RIO DE JANEIRO": 20473.41,
+    "FLASH APP": 19907.6,
+    "RODOLPHO FALCIANO FILHO": 18974.62,
+    "ENDOTECH COMERCIO, IMPORTACAO, EXPORTACAO E SERVIC": 18638.37,
+    "BRADESCO SAUDE": 17953.03,
+    "LEVMEDICAL": 15554.85,
+    "KAMILA DE CASTILHO": 15316.33,
+    "LABCOR": 14438.94,
+    "SINERGYMED": 13722.5,
+    "ENDO REPAROS": 12219.99,
+    "NS ASSESSORIA TECNICA EM CIRURGIA DE PRODUTOS MEDICOS": 12160.58,
+    "FVEGA REPRESENTACOES": 11091.6,
+    "RAFAEL -  RFS FREITAS LTDA": 10681.62,
+    "GABRIELA TRILHA": 10534.99,
+    "ANVISA": 9928.24,
+    "NEXXMED EQUIPAMENTOS": 9587.15
   },
-  "desp_por_plano": {
-    "2.4": 409950.0,
-    "5.1.28.1": 67049.6,
-    "5.2.28.1.5": 44600.41,
-    "7.35": 42633.04,
-    "8.9": 33867.93,
-    "7.15": 26273.07,
-    "5.2.32": 24278.94,
-    "5.2.30.9": 23785.5,
-    "7.27.2": 19260.0,
-    "7.17": 17953.03,
-    "8.3": 17500.0,
-    "5.2.28.2.5": 16380.64,
-    "7.27.90": 16070.48,
-    "5.2.29": 14402.39,
-    "5.1.11": 14032.83,
-    "5.2.11": 11244.96,
-    "8.5": 11144.85,
-    "7.34": 10044.24,
-    "5.1.27.90": 9990.0,
-    "5.1.10": 9380.0
-  },
-  "cirurgias": 39,
-  "cir_fat": 1584554.33,
-  "cir_por_un": [
-    [
-      "RS",
-      598614.13,
-      17
-    ],
-    [
-      "SP",
-      303050,
-      8
-    ],
-    [
-      "PR",
-      5000,
-      2
-    ],
-    [
-      "Holep",
-      130900,
-      1
-    ],
-    [
-      "Traumato",
-      387251.2,
-      3
-    ],
-    [
-      "SC",
-      150239,
-      7
-    ],
-    [
-      "BA",
-      9500,
-      1
-    ]
-  ],
+  "cirurgias": 214,
+  "cir_faturamento": 1585654.33,
   "cir_por_tipo": [
     [
       "PROTESE PENIANA INFLAVEL",
@@ -191,18 +141,18 @@
     ],
     [
       "FLEXIVEL",
-      165782.05,
-      51
+      188460.55,
+      57
     ],
     [
       "HOLEP",
       151428.0,
-      37
+      38
     ],
     [
       "ASP-ELEFANT",
-      131680.0,
-      16
+      150460.0,
+      20
     ],
     [
       "UROLIFT",
@@ -237,12 +187,17 @@
     [
       "PERICARDIO",
       27800.0,
-      2
+      4
     ],
     [
       "OUTROS",
       25556.0,
       6
+    ],
+    [
+      "MATRIZ DERMICA",
+      20869.58,
+      1
     ],
     [
       "RIGIDA",
@@ -251,13 +206,13 @@
     ],
     [
       "COLOCACAO DE DUPLO J",
-      15290.0,
-      12
+      19990.0,
+      15
     ],
     [
       "RTU",
-      8378.0,
-      5
+      11678.0,
+      6
     ],
     [
       "FLEX+PERC",
@@ -288,53 +243,58 @@
   "cir_por_hospital": [
     [
       "MOINHOS DE VENTO",
-      466358.05,
-      29
+      461332.05,
+      59
+    ],
+    [
+      "",
+      190516.0,
+      24
     ],
     [
       "MAE DE DEUS - AESC",
-      167717.0,
-      13
+      164407.0,
+      48
+    ],
+    [
+      "SANTA CASA - POA",
+      89367.58,
+      40
     ],
     [
       "UNIMED TORRE II",
-      90634.0,
-      37
+      86404.0,
+      130
     ],
     [
       "HOSPITAL IOSC",
       75000.0,
-      1
+      3
     ],
     [
       "HOSPITAL MORIAH",
       65000.0,
-      1
-    ],
-    [
-      "SANTA CASA - POA",
-      62178.0,
-      15
+      4
     ],
     [
       "HOSPITAL BLANC",
-      44699.0,
-      5
+      43704.0,
+      20
     ],
     [
       "HOSPITAL HUMANIZA",
-      43898.0,
-      14
+      40136.0,
+      56
+    ],
+    [
+      "REGINA",
+      36527.0,
+      18
     ],
     [
       "SOCIEDADE SULINA DIVINA PROVIDENCIA",
       34084.2,
-      2
-    ],
-    [
-      "REGINA",
-      30200.0,
-      5
+      10
     ],
     [
       "UNIMED RIBEIRAO PRETO",
@@ -349,12 +309,7 @@
     [
       "HOSPITAL TACCHINI",
       21800.0,
-      4
-    ],
-    [
-      "UROSAS CLINICA SANTANNA",
-      19500.0,
-      2
+      6
     ],
     [
       "UNIMED NORDESTE",
@@ -362,9 +317,19 @@
       9
     ],
     [
+      "UROSAS CLINICA SANTANNA",
+      19500.0,
+      2
+    ],
+    [
       "HOSPITAL DE CLINICAS DE PORTO ALEGRE",
       19300.0,
-      1
+      3
+    ],
+    [
+      "UNIMED PA-SL",
+      17580.0,
+      29
     ],
     [
       "PUC",
@@ -377,14 +342,9 @@
       1
     ],
     [
-      "UNIMED PA-SL",
-      14683.0,
-      7
-    ],
-    [
       "HOSPITAL SAO LUIZ JABAQUARA",
       13900.0,
-      1
+      2
     ],
     [
       "HOSPITAL SANTA IZABEL SALVADOR",
@@ -405,63 +365,63 @@
       "CLINICA UOMO",
       5000.0,
       2
-    ],
-    [
-      "UROCENTRO - JARAGUA DO SUL",
-      5000.0,
-      2
     ]
   ],
   "cir_por_convenio": [
     [
       "PARTICULAR",
-      357965.0,
-      53
+      354070.0,
+      88
     ],
     [
       "UNIMED POA",
-      289936.0,
-      28
+      286411.0,
+      78
     ],
     [
       "BRADESCO SAUDE",
-      194508.0,
-      6
+      206170.0,
+      27
+    ],
+    [
+      "",
+      190516.0,
+      24
     ],
     [
       "CASSI",
-      69010.05,
-      8
+      67444.05,
+      13
     ],
     [
       "BACEN",
       63300.0,
-      1
+      8
     ],
     [
       "PETROBRAS",
       63000.0,
-      1
+      8
     ],
     [
       "UNIMED VALE DO SINOS",
-      51225.0,
-      23
-    ],
-    [
-      "CENTRO CLINICO GAUCHO",
-      41063.0,
-      13
-    ],
-    [
-      "UNIMED INTERCAMBIO",
-      31474.0,
-      12
+      49813.0,
+      68
     ],
     [
       "AMIL PLANOS",
-      24900.0,
-      1
+      45769.58,
+      3
+    ],
+    [
+      "CENTRO CLINICO GAUCHO",
+      37301.0,
+      52
+    ],
+    [
+      "UNIMED INTERCAMBIO",
+      27687.0,
+      55
     ],
     [
       "CARE PLUS",
@@ -476,7 +436,7 @@
     [
       "IPERGS",
       16231.2,
-      3
+      13
     ],
     [
       "CAIXA ECONOMICA FEDERAL",
@@ -485,8 +445,8 @@
     ],
     [
       "UNIMED",
-      13890.0,
-      3
+      12910.0,
+      9
     ],
     [
       "PORTO SEGURO",
@@ -496,281 +456,1869 @@
     [
       "TACCHIMED",
       10900.0,
-      2
+      3
+    ],
+    [
+      "IPASEM",
+      9250.0,
+      15
     ],
     [
       "BRADESCO",
       9000.0,
       1
-    ],
-    [
-      "IPASEM",
-      8750.0,
-      5
-    ],
-    [
-      "UNIMED VTRP",
-      8000.0,
-      1
     ]
   ],
-  "cir_evol": {
-    "2026-06": {
-      "cont": 196,
-      "fat": 1515326.25
-    }
+  "cir_por_un": [
+    [
+      "RS",
+      599714.13,
+      132
+    ],
+    [
+      "Traumato",
+      387251.2,
+      11
+    ],
+    [
+      "SP",
+      303050.0,
+      24
+    ],
+    [
+      "SC",
+      150239.0,
+      17
+    ],
+    [
+      "Holep",
+      130900.0,
+      26
+    ],
+    [
+      "BA",
+      9500.0,
+      1
+    ],
+    [
+      "PR",
+      5000.0,
+      3
+    ]
+  ],
+  "cir_tipos_por_un": {
+    "RS": [
+      [
+        "PROTESE PENIANA INFLAVEL",
+        170810.0,
+        6
+      ],
+      [
+        "FLEXIVEL",
+        166753.05,
+        251
+      ],
+      [
+        "VORTEK",
+        57025.0,
+        8
+      ],
+      [
+        "PROTESE PENIANA MALEAVEL",
+        28320.0,
+        4
+      ],
+      [
+        "MATRIZ DERMICA",
+        20869.58,
+        1
+      ],
+      [
+        "HOLEP",
+        19078.0,
+        17
+      ],
+      [
+        "RIGIDA",
+        17599.0,
+        34
+      ],
+      [
+        "UROLIFT",
+        16000.0,
+        1
+      ],
+      [
+        "PERICARDIO",
+        13900.0,
+        1
+      ],
+      [
+        "COLOCACAO DE DUPLO J",
+        13136.0,
+        23
+      ],
+      [
+        "RTU",
+        11678.0,
+        7
+      ],
+      [
+        "OUTROS",
+        11656.0,
+        6
+      ],
+      [
+        "ASP-ELEFANT",
+        6520.0,
+        6
+      ],
+      [
+        "ANASTOMAT",
+        6000.0,
+        2
+      ],
+      [
+        "FLEX+PERC",
+        4315.0,
+        9
+      ],
+      [
+        "CISTOLITO",
+        825.0,
+        1
+      ],
+      [
+        "URETROTOMIA",
+        812.0,
+        7
+      ]
+    ],
+    "SP": [
+      [
+        "ASP-ELEFANT",
+        116500.0,
+        8
+      ],
+      [
+        "PROTESE PENIANA INFLAVEL",
+        65000.0,
+        4
+      ],
+      [
+        "UROLIFT",
+        44000.0,
+        2
+      ],
+      [
+        "PROTESE PENIANA MALEAVEL",
+        36750.0,
+        4
+      ],
+      [
+        "OUTROS",
+        13900.0,
+        1
+      ],
+      [
+        "PERICARDIO",
+        13900.0,
+        3
+      ],
+      [
+        "ANASTOMAT",
+        10000.0,
+        4
+      ],
+      [
+        "SONDA",
+        3000.0,
+        1
+      ]
+    ],
+    "PR": [
+      [
+        "ANASTOMAT",
+        5000.0,
+        2
+      ],
+      [
+        "PROTESE PENIANA MALEAVEL",
+        0.0,
+        1
+      ]
+    ],
+    "Holep": [
+      [
+        "HOLEP",
+        130900.0,
+        26
+      ]
+    ],
+    "Traumato": [
+      [
+        "BLOQUEIO",
+        251980.0,
+        17
+      ],
+      [
+        "ARTROSCOPIA",
+        72271.2,
+        15
+      ],
+      [
+        "ARTROPLASTIA",
+        63000.0,
+        8
+      ]
+    ],
+    "SC": [
+      [
+        "PROTESE PENIANA INFLAVEL",
+        75000.0,
+        3
+      ],
+      [
+        "ASP-ELEFANT",
+        27440.0,
+        6
+      ],
+      [
+        "UROLIFT",
+        19500.0,
+        2
+      ],
+      [
+        "VORTEK",
+        14000.0,
+        1
+      ],
+      [
+        "ANASTOMAT",
+        13000.0,
+        5
+      ],
+      [
+        "COLOCACAO DE DUPLO J",
+        1299.0,
+        1
+      ],
+      [
+        "ANASTOMAT DOAÇÃO",
+        0.0,
+        1
+      ]
+    ],
+    "BA": [
+      [
+        "PROTESE PENIANA MALEAVEL",
+        9500.0,
+        1
+      ]
+    ]
   },
-  "inadimplencia_total": 994946.45,
-  "inad_titulos": 7,
+  "inadimplencia_total": 1377993.45,
+  "inad_por_un": {
+    "BA": 33900.0,
+    "Holep": 18750.0,
+    "PR": 18400.0,
+    "RS": 272167.0,
+    "SC": 10980.0,
+    "SP": 173490.23,
+    "Traumato": 850306.22
+  },
   "inad_por_hospital": {
     "SOCIEDADE SULINA DIVINA PROVIDENCIA": 674460.1,
-    "HOSPITAL NOSSA SENHORA DAS GRACAS": 95406.0,
-    "HOSPITAL BLANC": 89558.0,
-    "MOINHOS DE VENTO": 87281.0,
-    "HOSPITAL LIFEPLUS": 85639.82,
+    "MOINHOS DE VENTO": 117726.0,
+    "HOSPITAL BLANC": 96406.0,
+    "": 82614.0,
+    "HOSPITAL PAULISTANO": 78531.23,
+    "UNIMED TORRE II": 51094.0,
+    "SANTA CASA - POA": 44178.0,
+    "HOSPITAL LIFEPLUS": 38866.12,
+    "HOSPITAL ALEMAO OSWALDO CRUZ": 38000.0,
     "DAY HOSPITAL SAO PIETRO": 27400.0,
-    "CAMPINAS DAY HOSPITAL": 16000.0,
-    "UNIMED TORRE II": 14539.0,
-    "HOSPITAL 9 JULHO": 13900.0,
-    "HOSPITAL ALIANÇA": 13900.0,
+    "BENEFICIENCIA PORTUGUESA DE SAO PAULO": 27255.0,
+    "MAE DE DEUS - AESC": 20640.0,
     "UOPECCAN FILIAL UMUARAMA": 13900.0,
+    "HOSPITAL 9 JULHO": 13900.0,
+    "MAE DE DEUS CENTER": 11000.0,
+    "HOSPITAL TACCHINI": 10900.0,
     "HOSPITAL DE CARIDADE DE FLORIANOPOLIS": 10000.0,
-    "BENEFICIENCIA PORTUGUESA DE SAO PAULO": 5355.0,
-    "HOSPITAL BLANC SP": 4500.0,
-    "UAC UNIMED": 4320.0,
-    "UNIMED PELOTAS": 4320.0,
-    "SANTA CASA - POA": 3750.0,
-    "HOSPITAL VILA NOVA STAR": 3500.0,
-    "UNIMED PA-SL": 3218.0,
-    "HOSPITAL NORTE PARANAENSE": 2500.0
+    "CAMPINAS DAY HOSPITAL": 8000.0,
+    "UNIMED PA-SL": 7179.0,
+    "HOSPITAL NORTE PARANAENSE": 2500.0,
+    "HOSPITAL SAO VICENTE DE PAULO - URUGUAI": 1614.0,
+    "SOS CARDIO": 980.0,
+    "BENEFICENCIA DE SAO PAULO": 850.0
   },
-  "inad_por_convenio": {
-    "IPERGS": 515551.52,
-    "UNIMED CURITIBA": 95406.0,
-    "UNIMED VTRP": 85405.0,
-    "IPE ADM": 73300.0,
-    "ISSEG": 60912.4,
-    "AMIL PLANOS": 49800.0,
-    "CASSI": 48900.0,
-    "SAUDE PAS": 41486.0,
-    "CABERGS": 35900.0,
-    "GEAP": 33600.0,
-    "PARTICULAR": 32000.0,
-    "POSTAL SAUDE": 27400.0,
-    "UNIMED": 18220.0,
-    "PETROBRAS": 13900.0,
-    "UNIMED VS": 7000.0
+  "inad_atraso": {
+    "": 70,
+    "BENEFICENCIA DE SAO PAULO": 26,
+    "BENEFICIENCIA PORTUGUESA DE SAO PAULO": 31,
+    "CAMPINAS DAY HOSPITAL": 2,
+    "DAY HOSPITAL SAO PIETRO": 113,
+    "HOSPITAL 9 JULHO": 18,
+    "HOSPITAL ALEMAO OSWALDO CRUZ": 4,
+    "HOSPITAL BLANC": 40,
+    "HOSPITAL DE CARIDADE DE FLORIANOPOLIS": 45,
+    "HOSPITAL LIFEPLUS": 365,
+    "HOSPITAL NORTE PARANAENSE": 9,
+    "HOSPITAL PAULISTANO": 4,
+    "HOSPITAL SAO VICENTE DE PAULO - URUGUAI": 1,
+    "HOSPITAL TACCHINI": 3,
+    "MAE DE DEUS - AESC": 3,
+    "MAE DE DEUS CENTER": 3,
+    "MOINHOS DE VENTO": 5,
+    "SANTA CASA - POA": 35,
+    "SOCIEDADE SULINA DIVINA PROVIDENCIA": 249,
+    "SOS CARDIO": 5,
+    "UNIMED PA-SL": 3,
+    "UNIMED TORRE II": 4,
+    "UOPECCAN FILIAL UMUARAMA": 4
   },
-  "inad_por_un": {
-    "RS": 33650,
-    "SP": 125590.23,
-    "PR": 16400,
-    "Holep": 10000,
-    "Traumato": 764426.22,
-    "SC": 10980,
-    "BA": 33900
-  },
-  "inadimplentes_titulos": [],
-  "fat_pendente": {
-    "total": 1029275.19,
-    "total_cirurgias": 277,
-    "por_un": [
-      {
-        "un": "RS",
-        "pendente": 504439.19,
-        "cirurgias": 236
-      },
-      {
-        "un": "Traumato",
-        "pendente": 191600.0,
-        "cirurgias": 5
-      },
-      {
-        "un": "SP",
-        "pendente": 148826.0,
-        "cirurgias": 13
-      },
-      {
-        "un": "Holep",
-        "pendente": 143800.0,
-        "cirurgias": 17
-      },
-      {
-        "un": "BA",
-        "pendente": 37300.0,
-        "cirurgias": 3
-      },
-      {
-        "un": "SC",
-        "pendente": 1960.0,
-        "cirurgias": 2
-      },
-      {
-        "un": "PR",
-        "pendente": 1350.0,
-        "cirurgias": 1
-      }
-    ],
-    "titulos": []
-  },
-  "saldo_bancario": {
-    "total": 1286284.93,
-    "data_ref": "23/06/2026",
-    "contas": [
-      {
-        "fundo": "ITA993056",
-        "data": "23/06/2026",
-        "saldo_final": 475667.66
-      },
-      {
-        "fundo": "ITA996703",
-        "data": "23/06/2026",
-        "saldo_final": 248179.97
-      },
-      {
-        "fundo": "ITA996885",
-        "data": "23/06/2026",
-        "saldo_final": 232455.56
-      },
-      {
-        "fundo": "ITA99228",
-        "data": "18/06/2026",
-        "saldo_final": 166298.57
-      },
-      {
-        "fundo": "BB_169188",
-        "data": "18/06/2026",
-        "saldo_final": 102633.07
-      },
-      {
-        "fundo": "BB_001813",
-        "data": "31/05/2026",
-        "saldo_final": 30818.4
-      },
-      {
-        "fundo": "ITA994877",
-        "data": "23/06/2026",
-        "saldo_final": 14942.37
-      },
-      {
-        "fundo": "COFRE",
-        "data": "11/06/2026",
-        "saldo_final": 14429.33
-      },
-      {
-        "fundo": "COF1",
-        "data": "11/06/2026",
-        "saldo_final": 860.0
-      },
-      {
-        "fundo": "SAN130071322",
-        "data": "18/06/2026",
-        "saldo_final": 0.0
-      }
-    ]
-  },
-  "fat_evol": {
-    "2023": [
-      1011410.82,
-      715638.37,
-      1112228.34,
-      965168.94,
-      840928.08,
-      695650.9,
-      893185.04,
-      941594.68,
-      1165758.75,
-      785089.66,
-      1050676.51,
-      1103646.51
-    ],
-    "2024": [
-      950754.31,
-      844576.29,
-      1416027.17,
-      1504917.85,
-      889837.28,
-      1143892.0,
-      1410436.53,
-      1642347.28,
-      1316599.51,
-      1603625.97,
-      1583010.25,
-      1209413.81
-    ],
-    "2025": [
-      1614870.81,
-      1199782.67,
-      1558332.51,
-      2042439.42,
-      1940687.51,
-      2179187.56,
-      2013382.45,
-      2499095.96,
-      2466727.91,
-      2001449.34,
-      2144926.92,
-      2089764.66
-    ],
-    "2026": [
-      2161944.03,
-      2109383.8,
-      2311749.43,
-      2600547.05,
-      3087631.28,
-      2120425.51,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ]
-  },
-  "desp_evol": {
-    "2023-01": 849789.89,
-    "2023-02": 677889.87,
-    "2023-03": 621568.66,
-    "2023-04": 668187.16,
-    "2023-05": 770256.97,
-    "2023-06": 1054387.67,
-    "2023-07": 1054457.72,
-    "2023-08": 1159930.01,
-    "2023-09": 924078.68,
-    "2023-10": 1754862.15,
-    "2023-11": 865601.92,
-    "2023-12": 978710.85,
-    "2024-01": 1192632.08,
-    "2024-02": 958576.67,
-    "2024-03": 725202.01,
-    "2024-04": 1124056.22,
-    "2024-05": 860329.01,
-    "2024-06": 875996.69,
-    "2024-07": 1413238.73,
-    "2024-08": 1361437.81,
-    "2024-09": 1295582.01,
-    "2024-10": 1299983.89,
-    "2024-11": 1762155.14,
-    "2024-12": 2307971.42,
-    "2025-01": 1394165.6,
-    "2025-02": 982380.76,
-    "2025-03": 1296579.06,
-    "2025-04": 1342480.13,
-    "2025-05": 1472863.65,
-    "2025-06": 1606739.22,
-    "2025-07": 1923146.5,
-    "2025-08": 1843903.15,
-    "2025-09": 1951771.1,
-    "2025-10": 3106008.62,
-    "2025-11": 1920385.79,
-    "2025-12": 1807295.25,
-    "2026-01": 2054742.99,
-    "2026-02": 1878841.31,
-    "2026-03": 2022278.37,
-    "2026-04": 2392602.27,
-    "2026-05": 2093795.58,
-    "2026-06": 1919052.05
-  },
+  "inadimplentes_titulos": [
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ELISABETE MARIA REOLON XAVIER",
+      "data_venc": "13/11/2025",
+      "valor": 3000.0,
+      "nota": "354.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "ISSEG",
+      "paciente": "VALDO LUIZ DORNELES RAYA",
+      "data_venc": "25/11/2025",
+      "valor": 24921.2,
+      "nota": "403.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ZELIA MARIA NEUMANN",
+      "data_venc": "26/11/2025",
+      "valor": 8956.2,
+      "nota": "411.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPE ADM",
+      "paciente": "ROSILEILA APARECIDA MERG JARDIM",
+      "data_venc": "26/11/2025",
+      "valor": 25200.0,
+      "nota": "413.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ARAMCIBIO MENEZES TRINDADE",
+      "data_venc": "22/01/2026",
+      "valor": 22900.0,
+      "nota": "603.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "MARIA LENIR DOS SANTOS SARMENTO",
+      "data_venc": "23/01/2026",
+      "valor": 10873.7,
+      "nota": "612.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOS CARDIO",
+      "unidade": "SC",
+      "convenio": "TEMPOMED",
+      "paciente": "FABIO AUGUSTO ZAUER",
+      "data_venc": "24/06/2026",
+      "valor": 980.0,
+      "nota": "424.0",
+      "vendedor": "MARCOS ROGÉRIO VERDURA"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "GERTRUDES MORETTY FORTES GARCIA",
+      "data_venc": "27/02/2026",
+      "valor": 21900.0,
+      "nota": "720.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "SAUDE PAS",
+      "paciente": "ADELIA MARIA LUFT MATIVI",
+      "data_venc": "17/06/2026",
+      "valor": 41486.0,
+      "nota": "1032.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "JOSE LUIS DE BARROS GARCIA",
+      "data_venc": "24/06/2026",
+      "valor": 5121.2,
+      "nota": "1060.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "LUCIA WOBETO",
+      "data_venc": "23/10/2025",
+      "valor": 15324.92,
+      "nota": "285.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "HOSPITAL TACCHINI",
+      "unidade": "Holep",
+      "convenio": "PARTICULAR",
+      "paciente": "SERGIO SALVATI",
+      "data_venc": "26/06/2026",
+      "valor": 8750.0,
+      "nota": "nan",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "IPERGS",
+      "paciente": "DALVA DA SILVA ADAMI",
+      "data_venc": "25/05/2026",
+      "valor": 650.0,
+      "nota": "26555.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "LINDOLFO BRENO PINTO",
+      "data_venc": "25/06/2026",
+      "valor": 400.0,
+      "nota": "26831.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "CANOAS PREV",
+      "paciente": "ERONITA SILVA CARDOSO",
+      "data_venc": "10/06/2026",
+      "valor": 1200.0,
+      "nota": "26891.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "IPERGS",
+      "paciente": "ROSANE KRUG PERES",
+      "data_venc": "25/06/2026",
+      "valor": 400.0,
+      "nota": "27011.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "WILSON MACHADO PEREIRA",
+      "data_venc": "25/06/2026",
+      "valor": 23500.0,
+      "nota": "27095.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "27/06/2026",
+      "valor": 5740.0,
+      "nota": "27422.0",
+      "vendedor": "WILSON SANTOS"
+    },
+    {
+      "hospital": "MAE DE DEUS - AESC",
+      "unidade": "RS",
+      "convenio": "PARTICULAR",
+      "paciente": "RODRIGO SOARES SEVERINO",
+      "data_venc": "27/06/2026",
+      "valor": 2220.0,
+      "nota": "27425.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "GILBERTO COLLING",
+      "data_venc": "26/06/2026",
+      "valor": 2257.0,
+      "nota": "27683.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "MANOELA CORREIA DA LUZ",
+      "data_venc": "26/06/2026",
+      "valor": 692.0,
+      "nota": "27695.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "CLAUDIA BAPTISTA EBOLI",
+      "data_venc": "26/06/2026",
+      "valor": 12900.0,
+      "nota": "27707.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "MARJARA DOS SANTOS",
+      "data_venc": "26/06/2026",
+      "valor": 2977.0,
+      "nota": "27712.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ROGER LUIZ DOS SANTOS",
+      "data_venc": "26/06/2026",
+      "valor": 1518.0,
+      "nota": "27718.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "GILSON AMBLETO JUSTI",
+      "data_venc": "27/06/2026",
+      "valor": 85405.0,
+      "nota": "27750.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "PARTICULAR",
+      "paciente": "FLAVIO GILBERTO BARBOSA DA SILVA",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "27760.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "ALESSANDRO CARLOS LEFFA",
+      "data_venc": "27/06/2026",
+      "valor": 598.0,
+      "nota": "27778.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "CARVENEA SCHUBERT CASSOLI",
+      "data_venc": "25/12/2025",
+      "valor": 24700.0,
+      "nota": "497.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "MARLENE IVONE BRANDEBURSKI PIRES",
+      "data_venc": "10/01/2026",
+      "valor": 21900.0,
+      "nota": "561.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "JOSIANE FRAGA DA ROSA",
+      "data_venc": "10/01/2026",
+      "valor": 21900.0,
+      "nota": "564.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "VANDERLEI MONTEIRO",
+      "data_venc": "27/12/2025",
+      "valor": 3271.2,
+      "nota": "502.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "Traumato",
+      "convenio": "CASSI",
+      "paciente": "SANDRA APARECIDA CARDOSO DOS SANTOS",
+      "data_venc": "27/06/2026",
+      "valor": 18000.0,
+      "nota": "1312.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "MAE DE DEUS - AESC",
+      "unidade": "Traumato",
+      "convenio": "SULAMERICA",
+      "paciente": "JERONIMO LUIZ NUNES DE OLIVEIRA",
+      "data_venc": "28/06/2026",
+      "valor": 15200.0,
+      "nota": "1388.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "HOSPITAL NORTE PARANAENSE",
+      "unidade": "PR",
+      "convenio": "PARTICULAR",
+      "paciente": "TALES SEPEDES",
+      "data_venc": "20/06/2026",
+      "valor": 2500.0,
+      "nota": "659.0",
+      "vendedor": "KAMILA CASTILHO"
+    },
+    {
+      "hospital": "",
+      "unidade": "PR",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "26/06/2026",
+      "valor": 2000.0,
+      "nota": "676.0",
+      "vendedor": "KAMILA CASTILHO"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "27/06/2026",
+      "valor": 25200.0,
+      "nota": "27043.0",
+      "vendedor": "MAGNUM IMPORT COMERCIO DE MATERIAIS MEDICOS LTDA"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "WILLIAM DE FREITAS WELTER",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27687.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "TIELLE MEURER MARIANI",
+      "data_venc": "26/06/2026",
+      "valor": 2567.0,
+      "nota": "27697.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ROGER LUIZ DOS SANTOS",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27719.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "PARTICULAR",
+      "paciente": "FLAVIO GILBERTO BARBOSA DA SILVA",
+      "data_venc": "27/06/2026",
+      "valor": 2800.0,
+      "nota": "27759.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "JEFERSON GOULART SPOLAVORI",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "27770.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "TAMARA BARROS MACHADO",
+      "data_venc": "27/06/2026",
+      "valor": 700.0,
+      "nota": "27773.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ROMALDO FRITSCH",
+      "data_venc": "28/06/2026",
+      "valor": 700.0,
+      "nota": "27805.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "",
+      "unidade": "SP",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "29/05/2026",
+      "valor": 218.0,
+      "nota": "827.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPE ADM",
+      "paciente": "ELISETE DA SILVA MARTINS",
+      "data_venc": "12/11/2025",
+      "valor": 25200.0,
+      "nota": "351.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "WOLFGANG VON WEIDEBACH",
+      "data_venc": "12/12/2025",
+      "valor": 10873.7,
+      "nota": "450.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ANGELA REGINA MARTINI MONTEIRO",
+      "data_venc": "16/12/2025",
+      "valor": 12791.2,
+      "nota": "460.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "LUIZ CARLOS MELLO DA LUZ",
+      "data_venc": "26/12/2025",
+      "valor": 21900.0,
+      "nota": "500.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ROSANE DE ALMEIDA CASALI",
+      "data_venc": "03/01/2026",
+      "valor": 8652.64,
+      "nota": "530.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ELIZABETE BORGES GIL",
+      "data_venc": "23/01/2026",
+      "valor": 8956.2,
+      "nota": "611.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "VALQUIRIA RIVAROLLA SOARES",
+      "data_venc": "28/01/2026",
+      "valor": 21900.0,
+      "nota": "635.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "CARMEN CHISEOLAR",
+      "data_venc": "05/02/2026",
+      "valor": 21900.0,
+      "nota": "663.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "THIAGO FERNANDES GONZAGA",
+      "data_venc": "06/02/2026",
+      "valor": 4371.2,
+      "nota": "668.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ZENIZAURA DA SILVA COSTA",
+      "data_venc": "07/02/2026",
+      "valor": 3671.2,
+      "nota": "669.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "DAY HOSPITAL SAO PIETRO",
+      "unidade": "Traumato",
+      "convenio": "POSTAL SAUDE",
+      "paciente": "NERY MARTINS DE MOURA FILHO",
+      "data_venc": "08/03/2026",
+      "valor": 27400.0,
+      "nota": "879.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "JOSE LUIS DE BARROS GARCIA",
+      "data_venc": "24/06/2026",
+      "valor": 16800.0,
+      "nota": "1061.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "Traumato",
+      "convenio": "BRADESCO SAUDE",
+      "paciente": "KAROLINE FAUTH GIL",
+      "data_venc": "25/06/2026",
+      "valor": 23700.0,
+      "nota": "1301.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "Holep",
+      "convenio": "UNIMED POA",
+      "paciente": "HORACIO ANTONIO VIELMO",
+      "data_venc": "25/06/2026",
+      "valor": 10000.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "JOAO VERNER JUENEMANN",
+      "data_venc": "24/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "HORACIO ANTONIO VIELMO",
+      "data_venc": "25/06/2026",
+      "valor": 400.0,
+      "nota": "26829.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED ESTADUAL",
+      "paciente": "GAEL FRASSETTO PEGORATO",
+      "data_venc": "25/06/2026",
+      "valor": 160.0,
+      "nota": "26956.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MAE DE DEUS - AESC",
+      "unidade": "RS",
+      "convenio": "PARTICULAR",
+      "paciente": "CRISTINA ROGGEN E SILVA",
+      "data_venc": "26/06/2026",
+      "valor": 3220.0,
+      "nota": "27382.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "MAE DE DEUS CENTER",
+      "unidade": "RS",
+      "convenio": "PARTICULAR",
+      "paciente": "CARLOS AUGUSTO THIVES",
+      "data_venc": "26/06/2026",
+      "valor": 11000.0,
+      "nota": "27389.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "BRUNA DE OLIVEIRA",
+      "data_venc": "25/06/2026",
+      "valor": 750.0,
+      "nota": "27487.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "DAIANA TERESINHA DA FONSECA ALVES",
+      "data_venc": "25/06/2026",
+      "valor": 1640.0,
+      "nota": "27659.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "EVELIN VITORIA AGUIRRE DA VEIGA",
+      "data_venc": "26/06/2026",
+      "valor": 1658.0,
+      "nota": "27680.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "WILLIAM DE FREITAS WELTER",
+      "data_venc": "26/06/2026",
+      "valor": 1658.0,
+      "nota": "27686.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "MARCELO MULLER DA COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 1658.0,
+      "nota": "27689.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "ARLEI WEIDE MORAES",
+      "data_venc": "26/06/2026",
+      "valor": 2287.0,
+      "nota": "27696.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "PAULO EDUARDO PASTRO",
+      "data_venc": "26/06/2026",
+      "valor": 1850.0,
+      "nota": "27702.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "FERNANDA BASTOS BILHALVA SEVERO",
+      "data_venc": "26/06/2026",
+      "valor": 1816.0,
+      "nota": "27716.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "SHEILA PASSOS DA COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 750.0,
+      "nota": "27715.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "PAULO EDUARDO COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 750.0,
+      "nota": "27729.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "EUGENIO PRETTO CORREA",
+      "data_venc": "27/06/2026",
+      "valor": 1050.0,
+      "nota": "27779.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "ALICE GIRARDI CANESSO",
+      "data_venc": "27/06/2026",
+      "valor": 1056.0,
+      "nota": "27785.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ELISANDRO DE MELLO",
+      "data_venc": "28/06/2026",
+      "valor": 1658.0,
+      "nota": "27796.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "BENEFICIENCIA PORTUGUESA DE SAO PAULO",
+      "unidade": "SP",
+      "convenio": "SULAMERICA",
+      "paciente": "FLORISBERTO SOARES CAVALCANTE",
+      "data_venc": "28/06/2026",
+      "valor": 21900.0,
+      "nota": "985.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "FANI DOS SANTOS DAMASCENO",
+      "data_venc": "10/12/2025",
+      "valor": 25900.0,
+      "nota": "445.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPE ADM",
+      "paciente": "LUIZ ANTONIO ALVES DE ALVES",
+      "data_venc": "25/12/2025",
+      "valor": 22900.0,
+      "nota": "498.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "NELIA ELENAR MACHADO",
+      "data_venc": "14/01/2026",
+      "valor": 7038.7,
+      "nota": "578.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "SONIA MARA PIRES",
+      "data_venc": "19/02/2026",
+      "valor": 3671.2,
+      "nota": "695.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "UOPECCAN FILIAL UMUARAMA",
+      "unidade": "PR",
+      "convenio": "UNIMED",
+      "paciente": "LUIZ APARECIDO CUSTODIO",
+      "data_venc": "25/06/2026",
+      "valor": 13900.0,
+      "nota": "626.0",
+      "vendedor": "KAMILA CASTILHO"
+    },
+    {
+      "hospital": "HOSPITAL SAO VICENTE DE PAULO - URUGUAI",
+      "unidade": "RS",
+      "convenio": "CASSI",
+      "paciente": "NISAEL TAVARES",
+      "data_venc": "28/06/2026",
+      "valor": 1614.0,
+      "nota": "26495.0",
+      "vendedor": "CLÁUDIO GILBERTO BORSATTO"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "RENAN ALVES MELLO",
+      "data_venc": "20/05/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "27/06/2026",
+      "valor": 2160.0,
+      "nota": "27061.0",
+      "vendedor": "MAGNUM IMPORT COMERCIO DE MATERIAIS MEDICOS LTDA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "GILBERTO COLLING",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27684.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "KARINE GARCEZ RODRIGUES",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27693.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "26/06/2026",
+      "valor": 900.0,
+      "nota": "27705.0",
+      "vendedor": "MAGNUM IMPORT COMERCIO DE MATERIAIS MEDICOS LTDA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "SHEILA PASSOS DA COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 1687.0,
+      "nota": "27714.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "VALDIR LEANDRO SPRENGER",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "27767.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "DECIO ALOISIO ROOBE",
+      "data_venc": "27/06/2026",
+      "valor": 176.0,
+      "nota": "27775.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "DEBORA ESPINDOLA MARQUES",
+      "data_venc": "27/06/2026",
+      "valor": 1931.0,
+      "nota": "27777.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "PATRICIA GROSS JACOBY",
+      "data_venc": "27/06/2026",
+      "valor": 598.0,
+      "nota": "27782.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "GILMAR LUIS LAVARDA CANTERLE JUNIOR",
+      "data_venc": "27/06/2026",
+      "valor": 2811.0,
+      "nota": "27783.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "KELEN LEMOS GENECCO RAMOS",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "BENEFICIENCIA PORTUGUESA DE SAO PAULO",
+      "unidade": "SP",
+      "convenio": "UNIMED - CNU - SP",
+      "paciente": "ANA CLARISSE SALES DE MACEDO",
+      "data_venc": "29/05/2026",
+      "valor": 5355.0,
+      "nota": "828.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "BENEFICENCIA DE SAO PAULO",
+      "unidade": "SP",
+      "convenio": "ASSOCIADOS",
+      "paciente": "MARIA VICTORIA FORTES GIULIANO",
+      "data_venc": "03/06/2026",
+      "valor": 850.0,
+      "nota": "832.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "HOSPITAL PAULISTANO",
+      "unidade": "SP",
+      "convenio": "AMIL",
+      "paciente": "SEBASTIAO BISPO DA SILVA",
+      "data_venc": "25/06/2026",
+      "valor": 78531.23,
+      "nota": "887.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "HOSPITAL 9 JULHO",
+      "unidade": "SP",
+      "convenio": "CASSI",
+      "paciente": "ANIVALDO PASSOS SOBRINHO",
+      "data_venc": "11/06/2026",
+      "valor": 13900.0,
+      "nota": "975.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+      "unidade": "SP",
+      "convenio": "PARTICULAR",
+      "paciente": "ROGER RECCO BERTOLINI",
+      "data_venc": "25/06/2026",
+      "valor": 20000.0,
+      "nota": "1007.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+      "unidade": "SP",
+      "convenio": "PARTICULAR",
+      "paciente": "JOSE CARLOS CAMPORA",
+      "data_venc": "27/06/2026",
+      "valor": 9000.0,
+      "nota": "1009.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "",
+      "unidade": "BA",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "20/04/2026",
+      "valor": 9600.0,
+      "nota": "28.0",
+      "vendedor": "NADJANE"
+    },
+    {
+      "hospital": "HOSPITAL LIFEPLUS",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "NELI SILVA DOS REIS",
+      "data_venc": "29/06/2025",
+      "valor": 26774.92,
+      "nota": "246.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "JOSE CARLOS FERRUGEM",
+      "data_venc": "09/12/2025",
+      "valor": 12791.2,
+      "nota": "436.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "CLAUDIO FERNANDO BRAYER PEREIRA",
+      "data_venc": "28/01/2026",
+      "valor": 8956.2,
+      "nota": "634.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "GEAP",
+      "paciente": "GUSTAVO DE MATOS SANTOS",
+      "data_venc": "28/05/2026",
+      "valor": 33600.0,
+      "nota": "958.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "ISSEG",
+      "paciente": "GABRIEL SOUZA FAGUNDES",
+      "data_venc": "29/05/2026",
+      "valor": 35991.2,
+      "nota": "967.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "Traumato",
+      "convenio": "BRADESCO SAUDE",
+      "paciente": "FERNANDA FREITAS RAMOS",
+      "data_venc": "27/06/2026",
+      "valor": 21500.0,
+      "nota": "1309.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "MARLENE BEATRIZ MACHADO",
+      "data_venc": "24/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "28/06/2026",
+      "valor": 3960.0,
+      "nota": "27281.0",
+      "vendedor": "MAGNUM IMPORT COMERCIO DE MATERIAIS MEDICOS LTDA"
+    },
+    {
+      "hospital": "UNIMED PA-SL",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "EVELIN VITORIA AGUIRRE DA VEIGA",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27681.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "DELCIO ANTONIO WEISS",
+      "data_venc": "26/06/2026",
+      "valor": 1500.0,
+      "nota": "27700.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "MARA REGINA NUNES",
+      "data_venc": "26/06/2026",
+      "valor": 2427.0,
+      "nota": "27722.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "PAULO EDUARDO COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 1687.0,
+      "nota": "27727.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ROBERTO KIELING",
+      "data_venc": "26/06/2026",
+      "valor": 350.0,
+      "nota": "27733.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "LEONARDO DIONISIO DINIZ",
+      "data_venc": "27/06/2026",
+      "valor": 1658.0,
+      "nota": "27762.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "LEONARDO DIONISIO DINIZ",
+      "data_venc": "27/06/2026",
+      "valor": 700.0,
+      "nota": "27763.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "VALDIR LEANDRO SPRENGER",
+      "data_venc": "27/06/2026",
+      "valor": 2567.0,
+      "nota": "27766.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "DEBORA ESPINDOLA MARQUES",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "GILMAR LUIS LAVARDA CANTERLE JUNIOR",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ELISANDRO DE MELLO",
+      "data_venc": "28/06/2026",
+      "valor": 700.0,
+      "nota": "27800.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "ROMALDO FRITSCH",
+      "data_venc": "28/06/2026",
+      "valor": 2694.0,
+      "nota": "27804.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "",
+      "unidade": "SP",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "03/06/2026",
+      "valor": 6300.0,
+      "nota": "833.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "",
+      "unidade": "SP",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "03/06/2026",
+      "valor": 218.0,
+      "nota": "834.0",
+      "vendedor": "NAO INFORMADO"
+    },
+    {
+      "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+      "unidade": "SP",
+      "convenio": "PARTICULAR",
+      "paciente": "DENIS JOSE SONCINI",
+      "data_venc": "27/06/2026",
+      "valor": 9000.0,
+      "nota": "1010.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "CAMPINAS DAY HOSPITAL",
+      "unidade": "SP",
+      "convenio": "PARTICULAR",
+      "paciente": "LUIZ ALBERTO TEIXEIRA",
+      "data_venc": "27/06/2026",
+      "valor": 8000.0,
+      "nota": "1041.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    },
+    {
+      "hospital": "",
+      "unidade": "BA",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "20/04/2026",
+      "valor": 24300.0,
+      "nota": "27.0",
+      "vendedor": "NADJANE"
+    },
+    {
+      "hospital": "HOSPITAL LIFEPLUS",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "ADENICE V R GOULART",
+      "data_venc": "29/06/2025",
+      "valor": 12091.2,
+      "nota": "245.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "IVY AHRONS VIANNA",
+      "data_venc": "24/10/2025",
+      "valor": 26337.46,
+      "nota": "292.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "MARIA HELENA MACHADO DE BRITO",
+      "data_venc": "24/10/2025",
+      "valor": 26774.92,
+      "nota": "293.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "JOICE POERSCH CANAL",
+      "data_venc": "28/10/2025",
+      "valor": 26337.46,
+      "nota": "302.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "HOSPITAL DE CARIDADE DE FLORIANOPOLIS",
+      "unidade": "SC",
+      "convenio": "PARTICULAR",
+      "paciente": "AMARILDO DOS SANTOS",
+      "data_venc": "15/05/2026",
+      "valor": 10000.0,
+      "nota": "363.0",
+      "vendedor": "MARCOS ROGÉRIO VERDURA"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "HELENITA CRISTINA FONSECA DUTRA",
+      "data_venc": "16/01/2026",
+      "valor": 12791.2,
+      "nota": "586.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "SOCIEDADE SULINA DIVINA PROVIDENCIA",
+      "unidade": "Traumato",
+      "convenio": "IPERGS",
+      "paciente": "MARIA DE LOURDES ASSUNCAO DOS SANTOS",
+      "data_venc": "16/01/2026",
+      "valor": 22900.0,
+      "nota": "587.0",
+      "vendedor": "ALEXANDRE RODRIGO DA SILVA BERNARDES"
+    },
+    {
+      "hospital": "MOINHOS DE VENTO",
+      "unidade": "Traumato",
+      "convenio": "BRADESCO SAUDE",
+      "paciente": "BRUNO VARGAS ZACCOLO",
+      "data_venc": "27/06/2026",
+      "valor": 31180.0,
+      "nota": "1310.0",
+      "vendedor": "MIGUEL GROISMAN"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "MIRIAM MARGARET MENTZ DA SILVA TELES",
+      "data_venc": "25/05/2026",
+      "valor": 1500.0,
+      "nota": "26669.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "LUIZ CARLOS BARBOSA",
+      "data_venc": "25/05/2026",
+      "valor": 400.0,
+      "nota": "26673.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "ADENIR MATOS DOS SANTOS",
+      "data_venc": "25/06/2026",
+      "valor": 400.0,
+      "nota": "26830.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "",
+      "unidade": "RS",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "27/06/2026",
+      "valor": 1800.0,
+      "nota": "27406.0",
+      "vendedor": "MAGNUM IMPORT COMERCIO DE MATERIAIS MEDICOS LTDA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "MARCELO MULLER DA COSTA",
+      "data_venc": "26/06/2026",
+      "valor": 700.0,
+      "nota": "27690.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "KARINE GARCEZ RODRIGUES",
+      "data_venc": "26/06/2026",
+      "valor": 2518.0,
+      "nota": "27692.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "TIELLE MEURER MARIANI",
+      "data_venc": "26/06/2026",
+      "valor": 750.0,
+      "nota": "27698.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "JEFERSON LUIS DA SILVA",
+      "data_venc": "26/06/2026",
+      "valor": 3545.0,
+      "nota": "27709.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "FERNANDA BASTOS BILHALVA SEVERO",
+      "data_venc": "26/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "MARA REGINA NUNES",
+      "data_venc": "26/06/2026",
+      "valor": 750.0,
+      "nota": "27724.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL TACCHINI",
+      "unidade": "RS",
+      "convenio": "TACCHIMED",
+      "paciente": "SERGIO SALVATI",
+      "data_venc": "26/06/2026",
+      "valor": 2150.0,
+      "nota": "27734.0",
+      "vendedor": "RAFAEL FREITAS DA SILVA"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "DERMIR PEREIRA DIAS",
+      "data_venc": "27/06/2026",
+      "valor": 400.0,
+      "nota": "27758.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED INTERCAMBIO",
+      "paciente": "JEFERSON GOULART SPOLAVORI",
+      "data_venc": "27/06/2026",
+      "valor": 1687.0,
+      "nota": "27769.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "UNIMED TORRE II",
+      "unidade": "RS",
+      "convenio": "UNIMED VALE DO SINOS",
+      "paciente": "TAMARA BARROS MACHADO",
+      "data_venc": "27/06/2026",
+      "valor": 2342.0,
+      "nota": "27772.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "SILVIO RICARDO OLIVEIRA PALMA",
+      "data_venc": "27/06/2026",
+      "valor": 995.0,
+      "nota": "27781.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "SILVIO RICARDO OLIVEIRA PALMA",
+      "data_venc": "27/06/2026",
+      "valor": 750.0,
+      "nota": "nan",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "SANTA CASA - POA",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "KELEN LEMOS GENECCO RAMOS",
+      "data_venc": "27/06/2026",
+      "valor": 2075.0,
+      "nota": "27784.0",
+      "vendedor": "LUIS INACIO MONCKS"
+    },
+    {
+      "hospital": "HOSPITAL BLANC",
+      "unidade": "RS",
+      "convenio": "UNIMED POA",
+      "paciente": "ELIETE ALVES MILHAO",
+      "data_venc": "27/06/2026",
+      "valor": 2500.0,
+      "nota": "27787.0",
+      "vendedor": "FERNANDO CESAR VEGA"
+    },
+    {
+      "hospital": "",
+      "unidade": "SP",
+      "convenio": "",
+      "paciente": "",
+      "data_venc": "03/06/2026",
+      "valor": 218.0,
+      "nota": "831.0",
+      "vendedor": "RODOLPHO FALCIANO FILHO"
+    }
+  ],
   "a45_por_mes": {
     "2023-01": {
       "rec": 1062146.79,
@@ -937,79 +2485,2023 @@
       "desp": 2096914.47
     },
     "2026-06": {
-      "rec": 2248417.91,
-      "desp": 1843818.93
+      "rec": 2447084.83,
+      "desp": 1922250.58
     }
   },
-  "inadimplentes": {
-    "C61": 168113,
-    "C63": 125590.23,
-    "C64": 26400,
-    "C65": 10000,
-    "C66": 781326.22,
-    "C67": 10980,
-    "C68": 33900
-  },
-  "investimentos": {
-    "data_ref": "22/06/2026",
-    "data_emissao": "23/06/2026",
-    "banco": "Itaú Unibanco",
-    "cnpj": "11.462.374/0001-45",
-    "total_bruto": 465176.97,
-    "total_liquido": 460797.84,
-    "total_principal": 438500.88,
-    "total_rendimento": 26676.09,
-    "ativos": [
+  "saldo_bancario": {
+    "total": 1286284.93,
+    "data_ref": "24/06/2026",
+    "contas": [
       {
-        "conta": "99688-5",
-        "ativo": "Kinea Andes Renda Fixa CP LP",
-        "tipo": "Fundo",
-        "taxa": null,
-        "inicio": null,
-        "fim": null,
-        "principal": 199297.18,
-        "rendimento": 6598.79,
-        "bruto": 205895.97,
-        "liquido": 205127.6
+        "fundo": "ITA993056",
+        "data": "23/06/2026",
+        "saldo_final": 475667.66
       },
       {
-        "conta": "99688-5",
-        "ativo": "CDB-DI 98% do DI",
-        "tipo": "CDB",
-        "taxa": "98% DI",
-        "inicio": "14/01/2026",
-        "fim": "13/01/2031",
-        "principal": 100000.0,
-        "rendimento": 5859.97,
-        "bruto": 105859.97,
-        "liquido": 104541.48
+        "fundo": "ITA996703",
+        "data": "23/06/2026",
+        "saldo_final": 248179.97
       },
       {
-        "conta": "99305-6",
-        "ativo": "CDB-DI 96% do DI",
-        "tipo": "CDB",
-        "taxa": "96% DI",
-        "inicio": "05/08/2025",
-        "fim": "05/08/2030",
-        "principal": 81522.0,
-        "rendimento": 9988.01,
-        "bruto": 91510.01,
-        "liquido": 89512.41
+        "fundo": "ITA996885",
+        "data": "23/06/2026",
+        "saldo_final": 232455.56
       },
       {
-        "conta": "99670-3",
-        "ativo": "Mapfre Confianza Renda Fixa Ref. DI",
-        "tipo": "Fundo",
-        "taxa": null,
-        "inicio": null,
-        "fim": null,
-        "principal": 57681.7,
-        "rendimento": 4229.32,
-        "bruto": 61911.02,
-        "liquido": 61616.35
+        "fundo": "ITA99228",
+        "data": "18/06/2026",
+        "saldo_final": 166298.57
+      },
+      {
+        "fundo": "BB_169188",
+        "data": "18/06/2026",
+        "saldo_final": 102633.07
+      },
+      {
+        "fundo": "BB_001813",
+        "data": "31/05/2026",
+        "saldo_final": 30818.4
+      },
+      {
+        "fundo": "ITA994877",
+        "data": "23/06/2026",
+        "saldo_final": 14942.37
+      },
+      {
+        "fundo": "COFRE",
+        "data": "11/06/2026",
+        "saldo_final": 14429.33
+      },
+      {
+        "fundo": "COF1",
+        "data": "11/06/2026",
+        "saldo_final": 860.0
+      },
+      {
+        "fundo": "SAN130071322",
+        "data": "24/06/2026",
+        "saldo_final": 0.0
       }
     ]
   },
+  "fat_pendente": {
+    "total": 959892.27,
+    "total_cirurgias": 269,
+    "por_un": [
+      {
+        "un": "RS",
+        "pendente": 532956.27,
+        "cirurgias": 232
+      },
+      {
+        "un": "SP",
+        "pendente": 139826.0,
+        "cirurgias": 12
+      },
+      {
+        "un": "Holep",
+        "pendente": 136800.0,
+        "cirurgias": 16
+      },
+      {
+        "un": "Traumato",
+        "pendente": 109700.0,
+        "cirurgias": 3
+      },
+      {
+        "un": "BA",
+        "pendente": 37300.0,
+        "cirurgias": 3
+      },
+      {
+        "un": "SC",
+        "pendente": 1960.0,
+        "cirurgias": 2
+      },
+      {
+        "un": "PR",
+        "pendente": 1350.0,
+        "cirurgias": 1
+      }
+    ],
+    "titulos": [
+      {
+        "un": "Traumato",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "FABIO DOS SANTOS FRANCO",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "BLOQUEIO",
+        "data_cir": "12/06/2026",
+        "saldo": 43000.0
+      },
+      {
+        "un": "Traumato",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "INES HERBE NUNES",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "BLOQUEIO",
+        "data_cir": "06/06/2026",
+        "saldo": 43000.0
+      },
+      {
+        "un": "Traumato",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ONNEZIMO DOS SANTOS BARBOSA",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "BLOQUEIO",
+        "data_cir": "15/06/2026",
+        "saldo": 23700.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "WILTON DE MATTOS SALGADO",
+        "convenio": "UNIMED POA",
+        "tipo": "MATRIZ DERMICA",
+        "data_cir": "20/03/2026",
+        "saldo": 23500.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL RIBEIRAO PIRES",
+        "paciente": "EDEMIR MARQUES DE OLIVEIRA",
+        "convenio": "BRADESCO",
+        "tipo": "PROTESE PENIANA MALEAVEL + PERICARDIO",
+        "data_cir": "09/04/2026",
+        "saldo": 21800.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "GUSTAVO DE AMORIN NITSCHE",
+        "convenio": "AMIL PLANOS",
+        "tipo": "MATRIZ DERMICA",
+        "data_cir": "23/06/2026",
+        "saldo": 20869.58
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DE CLINICAS DE PORTO ALEGRE",
+        "paciente": "RICARDO GIACOMEL",
+        "convenio": "PARTICULAR",
+        "tipo": "VORTEK",
+        "data_cir": "08/06/2026",
+        "saldo": 19300.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL VILA NOVA STAR",
+        "paciente": "ANTONOALDO TRANCOSO DAS NEVES",
+        "convenio": "PARTICULAR",
+        "tipo": "UROLIFT",
+        "data_cir": "11/05/2026",
+        "saldo": 16000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "JAIME KOPSTEIN",
+        "convenio": "SULAMERICA",
+        "tipo": "VORTEK",
+        "data_cir": "27/02/2026",
+        "saldo": 14456.0
+      },
+      {
+        "un": "BA",
+        "hospital": "HOSPITAL AEROPORTO",
+        "paciente": "CARLOS BENEVIDES ABREU MOREIRA",
+        "convenio": "CASSI",
+        "tipo": "PERICARDIO",
+        "data_cir": "20/05/2026",
+        "saldo": 13900.0
+      },
+      {
+        "un": "BA",
+        "hospital": "HOSPITAL AEROPORTO",
+        "paciente": "RICARDO ALEXANDRE ALVES SOUZA",
+        "convenio": "CASSI",
+        "tipo": "PERICARDIO",
+        "data_cir": "20/05/2026",
+        "saldo": 13900.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL SAO LUIZ JABAQUARA",
+        "paciente": "MOISES DO NASCIMENTO LIMA",
+        "convenio": "CASSI",
+        "tipo": "PERICARDIO",
+        "data_cir": "17/06/2026",
+        "saldo": 13900.0
+      },
+      {
+        "un": "SP",
+        "hospital": "SOC.BRAS. JAPONESA BEN.SANTA CRUZ",
+        "paciente": "GUILHERME ALVES SANTOS LIMA",
+        "convenio": "BRADESCO",
+        "tipo": "PERICARDIO",
+        "data_cir": "25/05/2026",
+        "saldo": 12876.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "REGINA",
+        "paciente": "RENATO SENO JOHANN",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "HOLEP",
+        "data_cir": "08/05/2026",
+        "saldo": 11900.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "RODRIGO MIGLIAVACCA",
+        "convenio": "CASSI",
+        "tipo": "HOLEP",
+        "data_cir": "15/06/2026",
+        "saldo": 11900.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "RICARDO LUIZ ENGEL MARKUS",
+        "convenio": "UNIMED POA",
+        "tipo": "HOLEP",
+        "data_cir": "20/06/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL RIBEIRAO PIRES",
+        "paciente": "ODILON SARBOS DA SILVA",
+        "convenio": "UNIMED",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "03/07/2025",
+        "saldo": 10000.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+        "paciente": "FLAVIO DA SILVA INFANTE",
+        "convenio": "PORTO SEGURO",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "15/06/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "NERY JOAO DOS PASSOS",
+        "convenio": "UNIMED POA",
+        "tipo": "HOLEP",
+        "data_cir": "10/03/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "CELSO MACHADO MARTINS",
+        "convenio": "UNIMED POA",
+        "tipo": "HOLEP",
+        "data_cir": "12/06/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL BRASIL MAUA",
+        "paciente": "JOSE CARLOS PEREIRA DOS SANTOS",
+        "convenio": "SULAMERICA",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "29/05/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "CARLOS ROBERTO GOMES DA SILVA",
+        "convenio": "POSTAL SAUDE",
+        "tipo": "HOLEP",
+        "data_cir": "25/04/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "HUMBERTO ALENCAR DE OLIVEIRA FREIRE",
+        "convenio": "IPERGS",
+        "tipo": "HOLEP",
+        "data_cir": "09/05/2026",
+        "saldo": 10000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "DANIEL KRUGER",
+        "convenio": "SULAMERICA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "27/06/2025",
+        "saldo": 9875.0
+      },
+      {
+        "un": "BA",
+        "hospital": "HOSPITAL SANTA IZABEL SALVADOR",
+        "paciente": "BENICIO UANDERSON GOMES DA SILVA",
+        "convenio": "SULAMERICA",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "13/06/2026",
+        "saldo": 9500.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL LUZ VILA MARIANA",
+        "paciente": "SIDNEI DE CARIA",
+        "convenio": "AMIL",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "21/05/2026",
+        "saldo": 9500.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL LUZ VILA MARIANA",
+        "paciente": "LUIS CARLOS DO NASCIMENTO",
+        "convenio": "AMIL",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "09/04/2026",
+        "saldo": 9000.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL LUZ VILA MARIANA",
+        "paciente": "JUSCELINO REIS",
+        "convenio": "AMIL",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "26/03/2026",
+        "saldo": 9000.0
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+        "paciente": "GEORGES HENRY HADDAD",
+        "convenio": "BRADESCO",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "08/06/2026",
+        "saldo": 9000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "RAFAEL VARGAS",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "FLEXIVEL",
+        "data_cir": "31/05/2026",
+        "saldo": 8909.49
+      },
+      {
+        "un": "SP",
+        "hospital": "HOSPITAL ALEMAO OSWALDO CRUZ",
+        "paciente": "ANDERSON ALVES MARTINS",
+        "convenio": "SULAMERICA",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "17/06/2026",
+        "saldo": 8750.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "PAULO ROBERTO MONTEIRO",
+        "convenio": "UNIMED POA",
+        "tipo": "PROTESE PENIANA MALEAVEL",
+        "data_cir": "02/04/2025",
+        "saldo": 8000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ROBERTA ZIOLKOWSKI DOS REIS",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEX+PERC",
+        "data_cir": "11/05/2026",
+        "saldo": 7865.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "TATIANA SOUTO DA SILVA",
+        "convenio": "INSTITUTO DE PESQUISA",
+        "tipo": "FLEX+PERC",
+        "data_cir": "02/02/2026",
+        "saldo": 7579.05
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "JOAO FABIO BRAUN PEREIRA",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "FLEXIVEL",
+        "data_cir": "23/06/2026",
+        "saldo": 7022.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "AYMORE DE SOUZA COSTA",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "04/06/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "ANTONIO MERCIO DE ANDRADE",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "13/06/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "NILTON FERNANDO DA SILVA",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "28/05/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "ARIOVALDO ZMOZINSKI",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "06/06/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "FERNANDO VILLARINHO",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "22/06/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "ORIVAM BOFF",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "16/05/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "REGINA",
+        "paciente": "ALTAIR JOSE MAUSA",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "15/04/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "LUIS CARLOS MOREIRA DA SILVA",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "13/06/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "Holep",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "FERNANDO JOSE KOTHE",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "24/03/2026",
+        "saldo": 7000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "SHEILA AFONSO DE MELO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "24/06/2025",
+        "saldo": 6440.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "TERESINHA ELAINE FONTANA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "03/04/2024",
+        "saldo": 6440.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "RUYMAR SOUZA DE SOUZA",
+        "convenio": "AFPERGS",
+        "tipo": "HOLEP",
+        "data_cir": "04/10/2025",
+        "saldo": 6100.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ELTON JACKSON GOTTLIEB",
+        "convenio": "SULAMERICA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "30/05/2026",
+        "saldo": 5450.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "PAULO ALVICIO LOTTERMANN",
+        "convenio": "GEAP",
+        "tipo": "FLEXIVEL",
+        "data_cir": "21/05/2026",
+        "saldo": 5450.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "MARISA FRATINI",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "FLEXIVEL",
+        "data_cir": "25/06/2026",
+        "saldo": 4640.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "MAICON MABILIA",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "04/05/2026",
+        "saldo": 4630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "LUIS GUSTAVO BREDOW NUNES",
+        "convenio": "PARTICULAR",
+        "tipo": "ANASTOMAT",
+        "data_cir": "06/03/2026",
+        "saldo": 4500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "RIAN ALMEIDA NETTO",
+        "convenio": "PARTICULAR",
+        "tipo": "ANASTOMAT",
+        "data_cir": "22/05/2026",
+        "saldo": 4500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ELLEN GRAF D ALBUQUERQUE",
+        "convenio": "CASSI",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/05/2026",
+        "saldo": 4350.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "JENNIFER DE SOUZA SILVEIRA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/06/2026",
+        "saldo": 4321.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "GILBERTO ROSSATO DE MEDEIROS",
+        "convenio": "CASSI",
+        "tipo": "FLEXIVEL",
+        "data_cir": "21/06/2026",
+        "saldo": 3932.05
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "THYELLE SERRES DURGANTE",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "15/06/2026",
+        "saldo": 3737.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "JESSICA GIACOMIN",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "05/06/2026",
+        "saldo": 3737.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL HUMANIZA",
+        "paciente": "TAYNA MACIEL OLIVEIRA CARVALHO",
+        "convenio": "CENTRO CLINICO GAUCHO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "25/06/2026",
+        "saldo": 3701.5
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "FREDI JACOB MOSER",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "21/03/2026",
+        "saldo": 3625.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "RAFAEL GILBERTO HORN MACHADO",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "30/04/2026",
+        "saldo": 3610.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "LUIZ GERMANO SILVA MARQUES",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "31/03/2026",
+        "saldo": 3561.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "LUIZ GERMANO SILVA MARQUES",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/03/2026",
+        "saldo": 3561.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "HELTON ANTONIO RODRIGUES DE MORAES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "03/06/2025",
+        "saldo": 3550.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "JONATAS BASSANI",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/06/2026",
+        "saldo": 3517.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "MARCELO WALBER",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "14/05/2026",
+        "saldo": 3500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "GERSON PETEFFI",
+        "convenio": "IPASEM",
+        "tipo": "FLEXIVEL",
+        "data_cir": "19/06/2026",
+        "saldo": 3500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "LAURO ADAO STIEHL",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/05/2026",
+        "saldo": 3492.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ALINE ERMEL",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/06/2026",
+        "saldo": 3410.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "JOSE ALFREDO MACHADO DE OLIVEIRA",
+        "convenio": "PARTICULAR",
+        "tipo": "FLEXIVEL",
+        "data_cir": "08/05/2026",
+        "saldo": 3380.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "MATHEUS SILVA LESSING",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "03/06/2026",
+        "saldo": 3317.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "ROGERIO MORARI",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "10/06/2026",
+        "saldo": 3317.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "ALCEU BATISTA PARIS",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "03/06/2026",
+        "saldo": 3268.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "LUIS CARLOS MOREIRA DA SILVA",
+        "convenio": "PARTICULAR",
+        "tipo": "HOLEP",
+        "data_cir": "13/06/2026",
+        "saldo": 3250.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "CLEITON BASSETTO PINHEIRO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "23/06/2026",
+        "saldo": 3218.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "HILDO JACOB COLLING",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "15/06/2026",
+        "saldo": 3218.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "CRISTIANE LEAL ABADE",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/05/2026",
+        "saldo": 3117.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "VANIA ELIZABETH KNAACK",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "25/06/2026",
+        "saldo": 3117.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "VAGNER MARQUES ALVES",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/05/2026",
+        "saldo": 3117.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "LILIANE RESENES DA COSTA",
+        "convenio": "SULAMERICA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "04/06/2025",
+        "saldo": 3100.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "SILVIO CRISTIANO DOS SANTOS",
+        "convenio": "UNIMED CENTRAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "02/06/2026",
+        "saldo": 3065.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "RODRIGO ROCHA BERGAMO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/06/2026",
+        "saldo": 3047.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "DANIEL BATTAGLIA",
+        "convenio": "UNIMED SERRA GAUCHA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "08/07/2025",
+        "saldo": 3045.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ISADORA PATUZZI SANTOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/02/2023",
+        "saldo": 3001.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MAIARA MOLARINHO FERREIRA",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/11/2022",
+        "saldo": 3001.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "CARLOS ALBERTO PRESTES IBALDO",
+        "convenio": "UNIMED POA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "25/04/2025",
+        "saldo": 3000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "EUCLYDES BONDAN",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "RTU",
+        "data_cir": "23/06/2026",
+        "saldo": 3000.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "ANDERSON FAUSTINO DOS SANTOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/06/2026",
+        "saldo": 2977.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "FRANCO MESSIAS GIUDICE",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/06/2026",
+        "saldo": 2841.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "RODRIGO MIGLIAVACCA",
+        "convenio": "CASSI",
+        "tipo": "HOLEP",
+        "data_cir": "15/06/2026",
+        "saldo": 2778.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "CINTHIANA MARTINI KLEINHAUS",
+        "convenio": "UNIMED POA",
+        "tipo": "OUTROS",
+        "data_cir": "28/11/2022",
+        "saldo": 2750.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "CLEVERSON MOREIRA",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "RIGIDA",
+        "data_cir": "07/05/2026",
+        "saldo": 2740.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "RENATO OLIVEIRA DE AZEVEDO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/06/2024",
+        "saldo": 2670.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "JULIA ALBANO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/10/2025",
+        "saldo": 2670.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "RITALI MACHADO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "26/08/2025",
+        "saldo": 2670.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "LAURO SIDMAR BANDEIRA FERREIRA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "12/08/2025",
+        "saldo": 2670.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "TERESINHA DA SILVA ROHRIG",
+        "convenio": "UNIMED",
+        "tipo": "FLEXIVEL",
+        "data_cir": "05/12/2023",
+        "saldo": 2670.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "EMANUEL BERGAMANN AMARAL",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "09/06/2026",
+        "saldo": 2600.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL SAO VICENTE DE PAULO - URUGUAI",
+        "paciente": "MAURA CHAVES PIRES",
+        "convenio": "PARTICULAR",
+        "tipo": "COLOCACAO DE DUPLO J",
+        "data_cir": "25/06/2026",
+        "saldo": 2600.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "ILDOIR BENKE",
+        "convenio": "PARTICULAR",
+        "tipo": "FLEXIVEL",
+        "data_cir": "10/06/2026",
+        "saldo": 2600.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "KATIA FERNANDA BACK",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "29/05/2026",
+        "saldo": 2590.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ALINE ERMEL",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "RIGIDA",
+        "data_cir": "27/05/2026",
+        "saldo": 2590.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL BLANC",
+        "paciente": "LUIS HENRIQUE COIMBRA DOS SANTOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "19/11/2025",
+        "saldo": 2562.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "WAGNER OLIVEIRA ROSA",
+        "convenio": "PARTICULAR",
+        "tipo": "ANASTOMAT",
+        "data_cir": "05/06/2026",
+        "saldo": 2500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ANDRE LEMES DA SILVA",
+        "convenio": "PARTICULAR",
+        "tipo": "ANASTOMAT",
+        "data_cir": "22/06/2026",
+        "saldo": 2500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL SANTA CRUZ",
+        "paciente": "JOAO CARLOS KAUFFMANN",
+        "convenio": "UNIMED",
+        "tipo": "FLEXIVEL",
+        "data_cir": "19/06/2026",
+        "saldo": 2445.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL SANTA CRUZ",
+        "paciente": "LEONI PEREIRA",
+        "convenio": "UNIMED",
+        "tipo": "FLEXIVEL",
+        "data_cir": "23/06/2026",
+        "saldo": 2445.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "GABRIEL DA SILVA PAIM",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "RIGIDA",
+        "data_cir": "16/06/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "EDUARDA TUROSSI VIANNA",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/05/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "MOACIR JOAO DA CRUZ",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "RIGIDA",
+        "data_cir": "15/06/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "ELISANDRA OLIVEIRA",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "02/06/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "LUIZ CARLOS TAVARES",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "RIGIDA",
+        "data_cir": "12/05/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "ROGERIO MORARI",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/05/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "ROBERT LISBOA DE LIMA",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "24/06/2026",
+        "saldo": 2437.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "LUIS FELIPE CARVALHO DE OLIVEIRA",
+        "convenio": "UNIMED FRONT NOROESTE",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/05/2026",
+        "saldo": 2395.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "GERSON LUIZ GRAVOSKI",
+        "convenio": "DOCTOR CLIN",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/05/2026",
+        "saldo": 2390.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ODONE QUADROS DIAS JUNIOR",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "20/08/2023",
+        "saldo": 2386.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "DARIO DE BITTENCOURT NETO",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "RTU",
+        "data_cir": "16/06/2026",
+        "saldo": 2378.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARIA DE QUADROS DA ROSA",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "21/07/2025",
+        "saldo": 2370.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "FERNANDA DA SILVA LINCK",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "RIGIDA",
+        "data_cir": "16/02/2023",
+        "saldo": 2370.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "RODRIGO ROCHA BERGAMO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "09/06/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "FABIO PERONI",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "03/06/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "TIAGO SANTOS DE PAULA",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/05/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "SUMAYA GUEDES SOUTO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "RIGIDA",
+        "data_cir": "31/05/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "DOUGLAS RAFAEL ORTACIO MARQUES",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "RIGIDA",
+        "data_cir": "31/05/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "VICTORIO POLTOZI LUZ DE ARAUJO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "14/05/2026",
+        "saldo": 2358.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "LUCIA ASTARILA HENKEL",
+        "convenio": "UNIMED ENCOSTA DA SERRA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "14/05/2026",
+        "saldo": 2245.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "EDUARDA TUROSSI VIANNA",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "27/05/2026",
+        "saldo": 2237.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "DAIANA CAROLINA DUMMER",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/05/2026",
+        "saldo": 2237.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "ROBSON MARTINS VIAUX",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "14/05/2026",
+        "saldo": 2218.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-NH",
+        "paciente": "AFONSO LICORIO FROHLICH",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "21/05/2026",
+        "saldo": 2218.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "LIVIA AZEVEDO AVILA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/03/2026",
+        "saldo": 2097.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "LUCIMERI DOS SANTOS TEIXEIRA",
+        "convenio": "UNIMED POA",
+        "tipo": "COLOCACAO DE DUPLO J",
+        "data_cir": "13/06/2026",
+        "saldo": 2012.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "GABRIELLE POTHIN DOS REIS",
+        "convenio": "UNIMED FEDERAÇÃO POA",
+        "tipo": "RIGIDA",
+        "data_cir": "17/08/2025",
+        "saldo": 1970.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MOACIR FURLAN",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/06/2025",
+        "saldo": 1905.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "REMI JOAO DA SILVA",
+        "convenio": "IPASEM",
+        "tipo": "RTU",
+        "data_cir": "23/06/2026",
+        "saldo": 1800.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "EDSON DE FRAGA SILVEIRA",
+        "convenio": "UNIMED",
+        "tipo": "FLEXIVEL",
+        "data_cir": "27/11/2023",
+        "saldo": 1790.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "VILMAR MRAS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "08/08/2025",
+        "saldo": 1790.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "MARLENE DOS SANTOS MAGALHAES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/11/2025",
+        "saldo": 1790.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "CRISTIANE KNEWITZ MACHADO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "24/04/2026",
+        "saldo": 1755.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "DANIEL CONZATTI",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/08/2023",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARLENE GALDINO PIRES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "05/05/2026",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARI LUCE SEVERO PIRES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "29/12/2025",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "STEFANE DUARTE LEAL",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "04/07/2024",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "CARLOS ALBERTO SARMENTO CAVALCANTI DE GUSMAO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "07/05/2026",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "TANIA MARIA GONCALVES BRUM",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEX+PERC",
+        "data_cir": "19/09/2024",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "GIANA MACHADO PEIXOTO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "30/04/2025",
+        "saldo": 1745.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL SANTA CRUZ",
+        "paciente": "ADRIANO GAZIN",
+        "convenio": "UNIMED",
+        "tipo": "SEM ACOMPANHAMENTO",
+        "data_cir": "10/12/2025",
+        "saldo": 1731.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARLENE BEATRIZ MACHADO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "12/03/2026",
+        "saldo": 1686.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "ALISON HENRIQUE DIAS LOPES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "30/07/2025",
+        "saldo": 1660.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "PEDRO UBATAN CAMARGO NEVES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/06/2025",
+        "saldo": 1640.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL BLANC",
+        "paciente": "FABIO KERBER ROMERO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "27/05/2026",
+        "saldo": 1630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL BLANC",
+        "paciente": "CRISTIANO DOS SANTOS SILVA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "28/02/2026",
+        "saldo": 1630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "JOE EDUARDO SALDIVIA",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "16/04/2026",
+        "saldo": 1630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL BLANC",
+        "paciente": "ROBERTO BORBA PEIXOTO",
+        "convenio": "UNIMED INTERCAMBIO NACIONAL",
+        "tipo": "FLEXIVEL",
+        "data_cir": "10/06/2026",
+        "saldo": 1630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "VALDECI DA ROSA RAUPP",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "25/02/2025",
+        "saldo": 1630.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "NATALIA SILVEIRA SCHULTS",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "12/07/2025",
+        "saldo": 1614.6
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "ANA JULIA DE ASSIS MARINS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "11/07/2025",
+        "saldo": 1565.0
+      },
+      {
+        "un": "RS",
+        "hospital": "PUC",
+        "paciente": "RONALDO EBERHARDT MENGER",
+        "convenio": "UNIMED POA",
+        "tipo": "COLOCACAO DE DUPLO J",
+        "data_cir": "22/06/2026",
+        "saldo": 1520.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ALEXANDRE BRITO PEREIRA DE MELO",
+        "convenio": "UNIMED VTRP",
+        "tipo": "FLEXIVEL",
+        "data_cir": "16/04/2026",
+        "saldo": 1520.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "PRISCILA PORTO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/03/2026",
+        "saldo": 1520.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARCEL NOZAKI ULHARUZO",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "26/12/2022",
+        "saldo": 1510.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL BLANC",
+        "paciente": "JULIANA FERNANDES RODRIGUES SCHAUER",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "24/07/2025",
+        "saldo": 1510.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "GIOVANNA FUCHS LANES",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "16/02/2026",
+        "saldo": 1510.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "MARCO ANTONIO RENZ DA MOTTA",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "RTU",
+        "data_cir": "24/06/2026",
+        "saldo": 1500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "SERGIO GILBERTO BOTTINI",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "01/09/2023",
+        "saldo": 1500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "JOSE ALBERTO SPOHR PLENTZ",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "RTU",
+        "data_cir": "22/06/2026",
+        "saldo": 1500.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "FABIO PERONI",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "10/06/2026",
+        "saldo": 1487.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "KELLY DOS SANTOS NUNES",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "COLOCACAO DE DUPLO J",
+        "data_cir": "15/06/2026",
+        "saldo": 1487.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "MATHEUS TERABE ENGELKE",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "COLOCACAO DE DUPLO J",
+        "data_cir": "23/06/2026",
+        "saldo": 1487.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "DAIANA CAROLINA DUMMER",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "10/06/2026",
+        "saldo": 1487.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED PA-SL",
+        "paciente": "JONATAS WEIRICH",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/06/2026",
+        "saldo": 1487.0
+      },
+      {
+        "un": "PR",
+        "hospital": "HOSPITAL NOSSA SENHORA DAS GRACAS",
+        "paciente": "MARA RUBIA BENTES JACINTO TONELLO",
+        "convenio": "UNIMED CURITIBA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "01/11/2025",
+        "saldo": 1350.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "EDITE VANDERLEIA DOS SANTOS",
+        "convenio": "FUSEX",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/05/2026",
+        "saldo": 1200.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ROBERTO VITTOLA",
+        "convenio": "UNIMED POA",
+        "tipo": "RTU",
+        "data_cir": "28/11/2024",
+        "saldo": 1200.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "MARLENE PADILHA DE ALMEIDA DE AGUIAR",
+        "convenio": "PARTICULAR",
+        "tipo": "FLEXIVEL",
+        "data_cir": "17/06/2026",
+        "saldo": 1200.0
+      },
+      {
+        "un": "RS",
+        "hospital": "REGINA",
+        "paciente": "ROSALIA DE SOUZA",
+        "convenio": "PARTICULAR",
+        "tipo": "FLEXIVEL",
+        "data_cir": "15/06/2026",
+        "saldo": 1200.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "ANDERSON FAUSTINO DOS SANTOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "12/06/2026",
+        "saldo": 1112.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "SERGIO LUIZ ROSSETO",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "19/12/2025",
+        "saldo": 1102.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "DIEGO NUNES DOS SANTOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "07/04/2025",
+        "saldo": 1070.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "LAURI ROMARIO SILVA",
+        "convenio": "UNIMED SERRA GAUCHA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "26/05/2026",
+        "saldo": 1040.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS CENTER",
+        "paciente": "IZAURA CARDOSO DE OLIVEIRA DA COSTA",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "22/04/2025",
+        "saldo": 1040.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "FERDINAND CHRISTOFOOR KUCKARTZ",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "15/03/2025",
+        "saldo": 1040.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "GUSTAVO AIRTON SCHAAN",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "04/07/2025",
+        "saldo": 1040.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MAE DE DEUS - AESC",
+        "paciente": "ANA CAROLINA ALVES OLMES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "27/06/2025",
+        "saldo": 1040.0
+      },
+      {
+        "un": "RS",
+        "hospital": "UNIMED TORRE II",
+        "paciente": "CARLOS HENRIQUE BALON PACHECO",
+        "convenio": "UNIMED VALE DO SINOS",
+        "tipo": "FLEXIVEL",
+        "data_cir": "25/06/2026",
+        "saldo": 1011.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "KARINA BESSA CORREA",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "OUTROS",
+        "data_cir": "01/03/2026",
+        "saldo": 995.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "AUDREI LEMMERTZ",
+        "convenio": "UNIMED POA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "22/05/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "ANTONIO CARLOS OLIVEIRA RAUCH",
+        "convenio": "UNIMED POA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "05/06/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "SC",
+        "hospital": "SOS CARDIO",
+        "paciente": "ELISABETE HEIL DE BRITO",
+        "convenio": "UNIMED",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "28/05/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "NADIA ROSANA ALMEIDA DE MATOS",
+        "convenio": "UNIMED POA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "10/06/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "SC",
+        "hospital": "SOS CARDIO",
+        "paciente": "MARCOS HENRIQUE XAVIER FARACO",
+        "convenio": "UNIMED",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "18/02/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "EDUARDO RAMOS BRUM",
+        "convenio": "UNIMED POA",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "21/11/2025",
+        "saldo": 980.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "IGOR SANTANA HASEGAWA",
+        "convenio": "UNIMED INTERCAMBIO",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "15/06/2026",
+        "saldo": 980.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "MARIZA DA CAMARA ROSSI",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "20/11/2025",
+        "saldo": 950.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "CESAR GERMANO JULIANI REGINA",
+        "convenio": "POSTAL SAUDE",
+        "tipo": "ASP-ELEFANT",
+        "data_cir": "11/07/2025",
+        "saldo": 950.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "DEBORA BARBOSA SOARES DE ALCANTARA",
+        "convenio": "BRADESCO SAUDE",
+        "tipo": "OUTROS",
+        "data_cir": "29/12/2025",
+        "saldo": 927.0
+      },
+      {
+        "un": "RS",
+        "hospital": "MOINHOS DE VENTO",
+        "paciente": "GUILHERME DAL BEN KOSLOWSKI",
+        "convenio": "UNIMED POA",
+        "tipo": "RIGIDA",
+        "data_cir": "17/04/2026",
+        "saldo": 926.0
+      },
+      {
+        "un": "RS",
+        "hospital": "HOSPITAL DOM JOAO BECKER",
+        "paciente": "THAIS FAVARIN FERNANDES",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "18/03/2025",
+        "saldo": 926.0
+      },
+      {
+        "un": "RS",
+        "hospital": "SANTA CASA - POA",
+        "paciente": "KELEN LEMOS GENECCO RAMOS",
+        "convenio": "UNIMED POA",
+        "tipo": "FLEXIVEL",
+        "data_cir": "13/05/2026",
+        "saldo": 926.0
+      }
+    ]
+  },
+  "fat_evol": {
+    "2023": [
+      1062146.79,
+      1097339.63,
+      1044290.74,
+      1125722.63,
+      1525872.98,
+      1176281.14,
+      882390.0,
+      852891.81,
+      894076.09,
+      828792.13,
+      1282395.96,
+      870671.16
+    ],
+    "2024": [
+      1283593.85,
+      844655.88,
+      1131468.86,
+      1224560.72,
+      1190992.33,
+      1022268.7,
+      1474743.03,
+      1451637.82,
+      1426516.93,
+      1638047.15,
+      1604318.7,
+      1166750.24
+    ],
+    "2025": [
+      2251859.99,
+      1533795.97,
+      1547185.95,
+      1957887.72,
+      2182130.14,
+      1949709.3,
+      2058985.72,
+      2107238.05,
+      2712408.77,
+      2092330.05,
+      2112774.44,
+      1886457.41
+    ],
+    "2026": [
+      2813770.39,
+      1915843.28,
+      2992980.59,
+      2259412.91,
+      2457910.74,
+      2447084.83,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fat_by_un_mensal": {
+    "2026-06": {
+      "RS": 813961.95,
+      "SP": 292234.0,
+      "PR": 32900.0,
+      "Holep": 218000.0,
+      "Traumato": 601610.56,
+      "SC": 150239.0,
+      "BA": 11480.0
+    }
+  },
+  "desp_evol": {
+    "2023-01": 849789.89,
+    "2023-02": 677889.87,
+    "2023-03": 621568.66,
+    "2023-04": 668187.16,
+    "2023-05": 770256.97,
+    "2023-06": 1054387.67,
+    "2023-07": 1054367.72,
+    "2023-08": 1159930.01,
+    "2023-09": 924078.68,
+    "2023-10": 1754862.15,
+    "2023-11": 865601.92,
+    "2023-12": 978710.85,
+    "2024-01": 1192632.08,
+    "2024-02": 958576.67,
+    "2024-03": 725202.01,
+    "2024-04": 1124056.22,
+    "2024-05": 860329.01,
+    "2024-06": 875996.69,
+    "2024-07": 1384238.73,
+    "2024-08": 1361437.81,
+    "2024-09": 1295582.01,
+    "2024-10": 1299983.89,
+    "2024-11": 1762155.14,
+    "2024-12": 2307971.42,
+    "2025-01": 1394165.6,
+    "2025-02": 982380.76,
+    "2025-03": 1296579.06,
+    "2025-04": 1342480.13,
+    "2025-05": 1472863.65,
+    "2025-06": 1606739.22,
+    "2025-07": 1924521.5,
+    "2025-08": 1844246.9,
+    "2025-09": 1947014.85,
+    "2025-10": 3106008.62,
+    "2025-11": 1920385.79,
+    "2025-12": 1828339.74,
+    "2026-01": 2058112.77,
+    "2026-02": 1882285.97,
+    "2026-03": 2025489.86,
+    "2026-04": 2395797.02,
+    "2026-05": 2096914.47,
+    "2026-06": 1922250.58
+  },
+  "desp_by_un_mensal": {},
   "desp_by_adicional_mensal": {
     "2026-06": {
       "COMPRAS REVENDA": 729346.69,
@@ -1026,6 +4518,12 @@
       "PREDIAL": 6787.08,
       "SPEED ATIVA": 767.65,
       "RETIRADA": 0.0
+    }
+  },
+  "cir_evol": {
+    "2026-06": {
+      "cont": 214,
+      "fat": 1585654.33
     }
   }
 }
