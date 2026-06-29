@@ -119,16 +119,37 @@ INAD_UNIDADE = {
     "Holep":    {"total": 7500.00,   "count": 1}
 }
 
-# Override com dados frescos do bi_data.json
-if _bi.get("inadimplentes"):
-    for _un, _val in _bi["inadimplentes"].items():
+# Override com dados frescos do bi_data.json (campo correto: inad_por_un)
+if _bi.get("inad_por_un"):
+    for _un, _val in _bi["inad_por_un"].items():
         _key = UNIT_MAP.get(str(_un).upper(), _un)
         if _key in INAD_UNIDADE:
             INAD_UNIDADE[_key]["total"] = round(_val, 2)
         else:
             INAD_UNIDADE[_key] = {"total": round(_val, 2), "count": 1}
-    _inad_total_new = sum(v['total'] for v in INAD_UNIDADE.values())
-    print(f"[AUTO] INAD atualizado do bi_data.json — total: R${_inad_total_new:,.2f}")
+    _inad_total_new = sum(v["total"] for v in INAD_UNIDADE.values())
+    print(f"[AUTO] INAD_UNIDADE atualizado de inad_por_un — total: R${_inad_total_new:,.2f}")
+
+# Atualizar contagem de títulos por unidade
+if _bi.get("inadimplentes_titulos"):
+    _titulos_bi = _bi["inadimplentes_titulos"]
+    _count_per_un = {}
+    for _t in _titulos_bi:
+        _un_t = UNIT_MAP.get(str(_t.get("unidade","")).upper(), _t.get("unidade",""))
+        _count_per_un[_un_t] = _count_per_un.get(_un_t, 0) + 1
+    for _un_k, _cnt in _count_per_un.items():
+        if _un_k in INAD_UNIDADE:
+            INAD_UNIDADE[_un_k]["count"] = _cnt
+        else:
+            INAD_UNIDADE[_un_k] = {"total": 0, "count": _cnt}
+    # Substituir lista INADIMPLENTES com dados reais do BI
+    # Estrutura: [hospital, unidade, valor, data_venc, convenio]
+    INADIMPLENTES[:] = [
+        [_t.get("hospital",""), UNIT_MAP.get(str(_t.get("unidade","")).upper(), _t.get("unidade","")),
+         _t.get("valor", 0), _t.get("data_venc",""), _t.get("convenio","")]
+        for _t in _titulos_bi
+    ]
+    print(f"[AUTO] INADIMPLENTES atualizado: {len(INADIMPLENTES)} títulos de bi_data.json")
 
 INAD_GRAND_TOTAL = sum(v["total"] for v in INAD_UNIDADE.values())
 
