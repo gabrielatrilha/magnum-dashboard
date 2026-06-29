@@ -1026,6 +1026,10 @@ if _bi.get("faturamento"):
                 if _cur_key in DESP_PERIODS:
                     DESP_PERIODS[_cur_key]["byAd"] = get_desp_ad_period(_cur_key)
                     print(f"[AUTO] DESP_PERIODS[{_cur_key}].byAd recalculado")
+            if _bi.get("despesas_por_un") and _cur_key in DESP_PERIODS:
+                _by_desp_un = sorted(_bi["despesas_por_un"].items(), key=lambda x: -x[1])
+                DESP_PERIODS[_cur_key]["byUN"] = [[k, int(v)] for k, v in _by_desp_un]
+                print(f"[AUTO] DESP_PERIODS[{_cur_key}].byUN atualizado de despesas_por_un")
         # Auto-atualizar FAT_EVOL com os totais mensais de FAT_PERIODS
         _MES_IDX = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"]
         for _fk, _fp in FAT_PERIODS.items():
@@ -1067,6 +1071,25 @@ _def_prazo_sub = f"Media {_def_fp['label']}"
 
 import datetime as _datetime_mod
 _today_str = _datetime_mod.date.today().strftime("%d/%m/%Y")
+
+# ── Gerar fat26/desp26/lbl26 dinamicamente ────────────────────────
+_fat_evol_2026 = _bi.get("fat_evol", {}).get("2026", []) if _bi else []
+_desp_evol_all = _bi.get("desp_evol", {}) if _bi else {}
+_fat26_list, _desp26_list, _lbl26_list = [], [], []
+_MES_ABBR_PT = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]
+for _mi in range(12):
+    _fat_v = _fat_evol_2026[_mi] if _mi < len(_fat_evol_2026) else 0
+    _desp_k2 = f"2026-{_mi+1:02d}"
+    _desp_v = _desp_evol_all.get(_desp_k2, 0)
+    if _fat_v > 0 or _desp_v > 0:
+        _fat26_list.append(int(_fat_v))
+        _desp26_list.append(int(_desp_v))
+        _lbl26_list.append(_MES_ABBR_PT[_mi])
+    else:
+        break
+_fat26_js = json.dumps(_fat26_list)
+_desp26_js = json.dumps(_desp26_list)
+_lbl26_js  = json.dumps(_lbl26_list)
 # --- Gerar listas
 _periodos_mensais_js = []
 _periodos_trim_js = []
@@ -2249,11 +2272,11 @@ function buildCirInsights(){{
 function buildCir(){{
   var totalVal=CIR_TI.reduce(function(s,r){{return s+r[1];}},0);
   var totalQtd=CIR_TI.reduce(function(s,r){{return s+r[2];}},0);
-  var sorted=CIR_TI.slice().sort(function(a,b){{return b[2]-a[2];}});
+  var sorted=CIR_TI.slice().sort(function(a,b){{return b[1]-a[1];}});
   document.getElementById('bodyTblCirTipo').innerHTML=sorted.map(function(r){{
     return '<tr class="data-row"><td>'+r[0]+'</td>'+
       '<td class="ctr"><span class="bdg bdg-b" style="min-width:32px;text-align:center">'+r[2]+'</span></td>'+
-      '<td>'+bar(r[2],totalQtd,'var(--blue)')+'</td>'+
+      '<td>'+bar(r[1],totalVal,'var(--blue)')+'</td>'+
       '<td class="val" style="font-size:12px;color:var(--muted)">'+fmtN(r[1])+'</td></tr>';
   }}).join('');
   document.getElementById('cirTipoTotal').textContent=totalQtd+' cirurgias';
@@ -2849,14 +2872,14 @@ function buildMiniCharts(){{if(typeof Chart==='undefined')return;
   var cirTop5=CIR_TI.slice(0,5);
   mkChart('chMiniCir', miniHBarCfg(
     cirTop5.map(function(r){{return r[0].length>22?r[0].slice(0,22)+'…':r[0];}}),
-    cirTop5.map(function(r){{return r[2];}}),
+    cirTop5.map(function(r){{return r[1];}}),
     '#476AAE'
   ));
 
   // — Mini Fluxo: Faturamento × Despesas mensal 2026
-  var fat26=[2161944,2109384,2311749,2601247,2724225];
-  var desp26=[0,0,2039221,2404916,1639300];
-  var lbl26=['Jan','Fev','Mar','Abr','Mai'];
+  var fat26={_fat26_js};
+  var desp26={_desp26_js};
+  var lbl26={_lbl26_js};
   mkChart('chMiniFluxo', miniGroupedCfg(lbl26,[
     {{label:'Faturamento',data:fat26,backgroundColor:'#4FC45455',borderColor:'#4FC454',borderWidth:2,borderRadius:4}},
     {{label:'Despesas',data:desp26,backgroundColor:'#E8AF1B55',borderColor:'#E8AF1B',borderWidth:2,borderRadius:4}}
