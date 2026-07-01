@@ -1,12 +1,17 @@
 {
-  "coleta_em": "2026-07-01 13:06",
+  "coleta_em": "2026-07-01 18:06",
   "periodo_mes": {
     "ini": "2026-07-01",
     "fim": "2026-07-01"
   },
-  "faturamento": 0,
-  "nf_count": 0,
-  "faturamento_por_un": {},
+  "faturamento": 51177,
+  "nf_count": 14,
+  "faturamento_por_un": {
+    "RS": 17777,
+    "Holep": 7000,
+    "Traumato": 21500,
+    "SC": 4900
+  },
   "fat_por_grupo": {
     "TRAUMATOLOGIA": 569814.56,
     "SAUDE DO HOMEM": 462010.0,
@@ -673,13 +678,13 @@
       ]
     ]
   },
-  "inadimplencia_total": 1179787.33,
+  "inadimplencia_total": 1054827.33,
   "inad_por_un": {
     "RS": 34647,
     "SP": 221640.23,
     "PR": 2500,
     "Holep": 52000,
-    "Traumato": 842020.1,
+    "Traumato": 717060.1,
     "SC": 26980
   },
   "inad_por_hospital": {
@@ -4393,7 +4398,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      0,
+      51177,
       0,
       0,
       0,
