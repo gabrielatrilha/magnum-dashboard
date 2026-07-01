@@ -1,20 +1,12 @@
 {
-  "coleta_em": "2026-06-30 18:06",
+  "coleta_em": "2026-07-01 13:06",
   "periodo_mes": {
-    "ini": "2026-06-01",
-    "fim": "2026-06-30"
+    "ini": "2026-07-01",
+    "fim": "2026-07-01"
   },
-  "faturamento": 2193787.51,
-  "nf_count": 423,
-  "faturamento_por_un": {
-    "RS": 834823.95,
-    "SP": 292234,
-    "PR": 37900,
-    "Holep": 249500,
-    "Traumato": 601610.56,
-    "SC": 166239,
-    "BA": 11480
-  },
+  "faturamento": 0,
+  "nf_count": 0,
+  "faturamento_por_un": {},
   "fat_por_grupo": {
     "TRAUMATOLOGIA": 569814.56,
     "SAUDE DO HOMEM": 462010.0,
@@ -69,7 +61,7 @@
     "UNIMED - CNU - SP": 12600.0,
     "IPERGS": 12499.2
   },
-  "despesas": 2050928.05,
+  "despesas": 0,
   "desp_por_un": {
     "BA": 28276.23,
     "Holep": 59631.42,
@@ -126,7 +118,7 @@
     "ANVISA": 9928.24,
     "NEXXMED EQUIPAMENTOS": 9587.15
   },
-  "cirurgias": 41,
+  "cirurgias": 0,
   "cir_faturamento": 1585654.33,
   "cir_por_tipo": [
     [
@@ -469,43 +461,7 @@
       1
     ]
   ],
-  "cir_por_un": [
-    [
-      "RS",
-      636830.28,
-      17
-    ],
-    [
-      "SP",
-      330850,
-      8
-    ],
-    [
-      "PR",
-      10000,
-      2
-    ],
-    [
-      "Holep",
-      155900,
-      1
-    ],
-    [
-      "Traumato",
-      419451.2,
-      3
-    ],
-    [
-      "SC",
-      190239,
-      8
-    ],
-    [
-      "BA",
-      9500,
-      2
-    ]
-  ],
+  "cir_por_un": [],
   "cir_tipos_por_un": {
     "RS": [
       [
@@ -717,15 +673,14 @@
       ]
     ]
   },
-  "inadimplencia_total": 1094617.33,
+  "inadimplencia_total": 1179787.33,
   "inad_por_un": {
-    "RS": 37607,
-    "SP": 127490.23,
+    "RS": 34647,
+    "SP": 221640.23,
     "PR": 2500,
     "Holep": 52000,
-    "Traumato": 830140.1,
-    "SC": 10980,
-    "BA": 33900
+    "Traumato": 842020.1,
+    "SC": 26980
   },
   "inad_por_hospital": {
     "SOCIEDADE SULINA DIVINA PROVIDENCIA": 674460.1,
@@ -4499,7 +4454,8 @@
     "2026-03": 2025489.86,
     "2026-04": 2395797.02,
     "2026-05": 2096914.47,
-    "2026-06": 2050928.05
+    "2026-06": 2050928.05,
+    "2026-07": 0
   },
   "desp_by_un_mensal": {},
   "desp_by_adicional_mensal": {
@@ -4526,15 +4482,7 @@
       "fat": 1585654.33
     }
   },
-  "cir_fat": 1752770.48,
-  "inad_titulos": 7,
-  "despesas_por_un": {
-    "RS": 1181573.62,
-    "SP": 70602.58,
-    "PR": 32336.18,
-    "Holep": 102585.47,
-    "Traumato": 601719.2,
-    "SC": 33834.77,
-    "BA": 28276.23
-  }
+  "cir_fat": 0,
+  "inad_titulos": 6,
+  "despesas_por_un": {}
 }
