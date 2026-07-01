@@ -4489,5 +4489,9 @@
   },
   "cir_fat": 0,
   "inad_titulos": 6,
-  "despesas_por_un": {}
+  "despesas_por_un": {},
+  "periodo": {
+    "ini": "2026-07-01",
+    "fim": "2026-07-01"
+  }
 }
