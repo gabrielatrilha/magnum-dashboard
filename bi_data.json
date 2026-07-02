@@ -1,16 +1,16 @@
 {
-  "coleta_em": "2026-07-01 18:06",
+  "coleta_em": "2026-07-02 07:57",
   "periodo_mes": {
     "ini": "2026-07-01",
-    "fim": "2026-07-01"
+    "fim": "2026-07-02"
   },
-  "faturamento": 51177,
-  "nf_count": 14,
+  "faturamento": 93333,
+  "nf_count": 26,
   "faturamento_por_un": {
-    "RS": 17777,
+    "RS": 35933,
     "Holep": 7000,
     "Traumato": 21500,
-    "SC": 4900
+    "SC": 28900
   },
   "fat_por_grupo": {
     "TRAUMATOLOGIA": 569814.56,
@@ -678,14 +678,14 @@
       ]
     ]
   },
-  "inadimplencia_total": 1054827.33,
+  "inadimplencia_total": 1059772.33,
   "inad_por_un": {
-    "RS": 34647,
-    "SP": 221640.23,
+    "RS": 18724,
+    "SP": 235608.23,
     "PR": 2500,
     "Holep": 52000,
-    "Traumato": 717060.1,
-    "SC": 26980
+    "Traumato": 739960.1,
+    "SC": 10980
   },
   "inad_por_hospital": {
     "SOCIEDADE SULINA DIVINA PROVIDENCIA": 674460.1,
@@ -4398,7 +4398,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      51177,
+      93333,
       0,
       0,
       0,
