@@ -1,13 +1,13 @@
 {
-  "coleta_em": "2026-07-02 07:57",
+  "coleta_em": "2026-07-02 10:05",
   "periodo_mes": {
     "ini": "2026-07-01",
     "fim": "2026-07-02"
   },
-  "faturamento": 93333,
-  "nf_count": 26,
+  "faturamento": 94828,
+  "nf_count": 27,
   "faturamento_por_un": {
-    "RS": 35933,
+    "RS": 37428,
     "Holep": 7000,
     "Traumato": 21500,
     "SC": 28900
@@ -66,7 +66,7 @@
     "UNIMED - CNU - SP": 12600.0,
     "IPERGS": 12499.2
   },
-  "despesas": 0,
+  "despesas": 2546.79,
   "desp_por_un": {
     "BA": 28276.23,
     "Holep": 59631.42,
@@ -678,9 +678,9 @@
       ]
     ]
   },
-  "inadimplencia_total": 1059772.33,
+  "inadimplencia_total": 1052028.33,
   "inad_por_un": {
-    "RS": 18724,
+    "RS": 10980,
     "SP": 235608.23,
     "PR": 2500,
     "Holep": 52000,
@@ -4398,7 +4398,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      93333,
+      94828,
       0,
       0,
       0,
@@ -4460,7 +4460,7 @@
     "2026-04": 2395797.02,
     "2026-05": 2096914.47,
     "2026-06": 2050928.05,
-    "2026-07": 0
+    "2026-07": 2546.79
   },
   "desp_by_un_mensal": {},
   "desp_by_adicional_mensal": {
@@ -4489,7 +4489,9 @@
   },
   "cir_fat": 0,
   "inad_titulos": 6,
-  "despesas_por_un": {},
+  "despesas_por_un": {
+    "RS": 2546.79
+  },
   "periodo": {
     "ini": "2026-07-01",
     "fim": "2026-07-01"
