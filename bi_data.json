@@ -1,16 +1,16 @@
 {
-  "coleta_em": "2026-07-02 15:05",
+  "coleta_em": "2026-07-02 18:05",
   "periodo_mes": {
     "ini": "2026-07-01",
     "fim": "2026-07-02"
   },
-  "faturamento": 131274,
-  "nf_count": 53,
+  "faturamento": 190591,
+  "nf_count": 70,
   "faturamento_por_un": {
-    "RS": 67374,
+    "RS": 92191,
     "PR": 6500,
-    "Holep": 7000,
-    "Traumato": 21500,
+    "Holep": 24000,
+    "Traumato": 39000,
     "SC": 28900
   },
   "fat_por_grupo": {
@@ -4399,7 +4399,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      131274,
+      190591,
       0,
       0,
       0,
