@@ -121,12 +121,10 @@ INAD_UNIDADE = {
 
 # Override com dados frescos do bi_data.json (campo correto: inad_por_un)
 if _bi.get("inad_por_un"):
+    INAD_UNIDADE.clear()  # limpa valores antigos para evitar acumulo de UNs removidas
     for _un, _val in _bi["inad_por_un"].items():
         _key = UNIT_MAP.get(str(_un).upper(), _un)
-        if _key in INAD_UNIDADE:
-            INAD_UNIDADE[_key]["total"] = round(_val, 2)
-        else:
-            INAD_UNIDADE[_key] = {"total": round(_val, 2), "count": 1}
+        INAD_UNIDADE[_key] = {"total": round(_val, 2), "count": 0}
     _inad_total_new = sum(v["total"] for v in INAD_UNIDADE.values())
     print(f"[AUTO] INAD_UNIDADE atualizado de inad_por_un — total: R${_inad_total_new:,.2f}")
 
@@ -1019,7 +1017,7 @@ if _bi.get("faturamento"):
                 "byUN": [[k,int(v)] for k,v in _by_un],
                 "byGrupo": sorted([{"g": k, "val": round(v,2), "cnt": 0, "prods": []} for k, v in _bi.get("fat_por_grupo",{}).items() if v > 0], key=lambda x: -x["val"]) if _bi.get("fat_por_grupo") else []
             }
-            print(f"[AUTO] Novo mês {{_cur_key}} adicionado ao FAT_PERIODS: R${{_bi['faturamento']:,.2f}}")
+            print(f"[AUTO] Novo mês {_cur_key} adicionado ao FAT_PERIODS: R${_bi['faturamento']:,.2f}")
         else:
             # Mês existente → atualizar valores
             FAT_PERIODS[_cur_key]["total"] = round(_bi["faturamento"], 2)
@@ -1059,6 +1057,41 @@ if _bi.get("faturamento"):
                 _mi = _MES_IDX.index(_fk[:3])
                 if _yr_str in FAT_EVOL and _mi < len(FAT_EVOL[_yr_str]):
                     FAT_EVOL[_yr_str][_mi] = round(_fp["total"])
+
+# ── Atualizar totais de meses anteriores via fat_evol / fat_by_un_mensal ─────
+_MES_IDX_UPD = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"]
+for _evol_yr, _evol_arr in _bi.get("fat_evol", {}).items():
+    for _mi_e, _val_e in enumerate(_evol_arr):
+        if _val_e and _val_e > 0:
+            _fk_e = _MES_IDX_UPD[_mi_e] + _evol_yr[2:]
+            if _fk_e in FAT_PERIODS and _fk_e != _cur_key:
+                FAT_PERIODS[_fk_e]["total"] = round(_val_e, 2)
+for _miso_f, _byun_f in _bi.get("fat_by_un_mensal", {}).items():
+    _mo_f = int(_miso_f[5:7])
+    _yr_f = _miso_f[:4]
+    _fk_f = _MES_IDX_UPD[_mo_f-1] + _yr_f[2:]
+    if _fk_f in FAT_PERIODS and _byun_f:
+        FAT_PERIODS[_fk_f]["byUN"] = sorted([[k,int(v)] for k,v in _byun_f.items()], key=lambda x:-x[1])
+        print(f"[AUTO] FAT byUN {_fk_f} atualizado de fat_by_un_mensal")
+for _miso_d2, _dadv2 in _bi.get("desp_by_adicional_mensal", {}).items():
+    _mo_d2 = int(_miso_d2[5:7])
+    _yr_d2 = _miso_d2[:4]
+    _fk_d2 = _MES_IDX_UPD[_mo_d2-1] + _yr_d2[2:]
+    if _fk_d2 in DESP_PERIODS and _fk_d2 != _cur_key and _dadv2:
+        DESP_AD_VALS[_fk_d2] = {k: round(v, 2) for k, v in _dadv2.items() if v > 0}
+        DESP_PERIODS[_fk_d2]["byAd"] = get_desp_ad_period(_fk_d2)
+        print(f"[AUTO] DESP_AD_VALS[{_fk_d2}] atualizado de meses anteriores")
+# Criar DESP_PERIODS para novo mês se não existir
+if _cur_key not in DESP_PERIODS:
+    _desp_ad_new = _bi.get("desp_by_adicional_mensal", {}).get(f"20{_yr}-{_mo:02d}", {})
+    DESP_PERIODS[_cur_key] = {
+        "label": _cur_lbl, "total": round(_bi.get("despesas", 0), 2), "byAd": [],
+        "byUN": sorted([[k, int(v)] for k, v in _bi.get("despesas_por_un", {}).items()], key=lambda x:-x[1])
+    }
+    if _desp_ad_new:
+        DESP_AD_VALS[_cur_key] = {k: round(v,2) for k,v in _desp_ad_new.items() if v>0}
+        DESP_PERIODS[_cur_key]["byAd"] = get_desp_ad_period(_cur_key)
+    print(f"[AUTO] DESP_PERIODS[{_cur_key}] criado: R${_bi.get('despesas',0):,.2f}")
 
 fat_per_js   = json.dumps(FAT_PERIODS,    ensure_ascii=False)
 desp_per_js  = json.dumps(DESP_PERIODS,   ensure_ascii=False)
@@ -1208,6 +1241,13 @@ def _a45key(k):
     return "20" + k[3:] + "-" + _mn.get(k[:3],"00")
 _chart_rec_js  = json.dumps([_A45.get(_a45key(k),{}).get("rec",  0) for k in _chart_ks])
 _chart_desp_js = json.dumps([_A45.get(_a45key(k),{}).get("desp", 0) for k in _chart_ks])
+# rec26: recebimento real mensal 2026 (de analise/45) — usado no mini chart
+_rec26_list = [int(_A45.get(f"2026-{_mi3+1:02d}", {}).get("rec", 0) or 0) for _mi3 in range(len(_lbl26_list))]
+_rec26_js = json.dumps(_rec26_list)
+# Recebimento do período atual para KPI
+_rec_cur_key = _a45key(_DEF_PERIOD)
+_rec_atual = _A45.get(_rec_cur_key, {}).get("rec", 0) or 0
+_rec_atual_str = f"R${_rec_atual:,.2f}".replace(",","X").replace(".",",").replace("X",".")
 
 html = f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -1503,12 +1543,13 @@ body{{background:var(--bg);font-family:'Segoe UI',Arial,sans-serif;color:var(--t
     <div class="chrow">
       <div class="chbox"><h3>Inadimplencia por Unidade (R$)</h3>
         <div class="chw"><canvas id="chInadUnid"></canvas></div></div>
-      <div class="chbox" style="flex:1.3"><h3>Distribuicao por UN</h3>
+      <div class="chbox" style="flex:1.3"><h3>Top Clientes Inadimplentes</h3>
         <div class="filter-bar" id="inadFilterBar" style="display:none">
           Filtro ativo: <strong id="inadFilterLabel"></strong>
           <button class="btn-clear" id="inadClearFilter">Limpar</button>
         </div>
-        <div class="unid-grid" id="inadUnidGrid"></div>
+        <div class="chw" style="height:200px"><canvas id="chTopClientesInad"></canvas></div>
+        <div class="unid-grid" id="inadUnidGrid" style="margin-top:8px"></div>
       </div>
     </div>
     <div class="det-toggle" data-panel="detInad">Ver clientes inadimplentes <span class="det-arrow">▼</span></div>
@@ -2156,6 +2197,21 @@ function buildInad(){{
     '<div class="insight-label">Total inadimplente (BI)</div><div class="insight-note">Todos titulos em aberto</div></div>'+
     '<div class="insight-card"><div class="insight-icon">📋</div><div class="insight-val">'+filtered.length+'</div>'+
     '<div class="insight-label">Titulos em aberto</div><div class="insight-note">'+(activeUnit?'Filtro: '+activeUnit:'Todas as unidades')+'</div></div>';
+  // ── Top Clientes chart ──────────────────────────────────────────────────────
+  var topCli=Object.values(grp).sort(function(a,b){{return b.total-a.total;}}).slice(0,8);
+  var cliLabels=topCli.map(function(g){{return g.hosp.length>30?g.hosp.substring(0,28)+'…':g.hosp;}});
+  var cliVals=topCli.map(function(g){{return Math.round(g.total);}});
+  var cliColors=['#D44444CC','#E07020CC','#E8AF1BCC','#476AAECC','#153066CC','#9B59B6CC','#1ABC9CCC','#E74C3CCC'];
+  mkChart('chTopClientesInad',{{type:'bar',
+    data:{{labels:cliLabels,datasets:[{{label:'Inadimplência',data:cliVals,
+      backgroundColor:cliColors.slice(0,cliVals.length),borderRadius:4}}]}},
+    options:{{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{{legend:{{display:false}},tooltip:{{callbacks:{{label:function(c){{return 'R$ '+fmtN(c.raw);}}}}}}}},
+      scales:{{x:{{ticks:{{callback:function(v){{return 'R$'+(v/1000).toFixed(0)+'k';}},font:{{size:10}}}}}},
+               y:{{ticks:{{font:{{size:10}}}}}}}}
+    }}
+  }});
+  // ── Pills por unidade (filtros) ─────────────────────────────────────────
   document.getElementById('inadUnidGrid').querySelectorAll('.unid-pill').forEach(function(pill){{
     pill.addEventListener('click',function(){{
       var un=pill.dataset.un;activeUnit=(activeUnit===un)?null:un;
@@ -2825,7 +2881,8 @@ function buildPreviews(){{
   document.getElementById('prevFatTop2').textContent=fp.byUN[1][0]+' · R$ '+fmtN(fp.byUN[1][1]);
   document.getElementById('prevFatMargem').textContent=(margOp>0?'+':'')+margOp.toFixed(1)+'% margem';
   document.getElementById('prevFatMargem').className='prev-badge '+(margOp>10?'badge-green':margOp>0?'badge-yellow':'badge-red');
-  document.getElementById('prevFatRec').textContent=recTaxaFmt+' recebimento estimado';
+  var recAtual={_rec_atual};
+  document.getElementById('prevFatRec').textContent=(recAtual>0?'R$ '+fmtN(recAtual):recTaxaFmt+' recebimento');
   document.getElementById('prevFatPrazo').textContent=fp.prazo+' dias NF';
 
   // Cirurgias preview
@@ -2920,11 +2977,23 @@ function buildMiniCharts(){{if(typeof Chart==='undefined')return;
   // — Mini Fluxo: Faturamento × Despesas mensal 2026
   var fat26={_fat26_js};
   var desp26={_desp26_js};
+  var rec26={_rec26_js};
   var lbl26={_lbl26_js};
-  mkChart('chMiniFluxo', miniGroupedCfg(lbl26,[
-    {{label:'Faturamento',data:fat26,backgroundColor:'#4FC45455',borderColor:'#4FC454',borderWidth:2,borderRadius:4}},
-    {{label:'Despesas',data:desp26,backgroundColor:'#E8AF1B55',borderColor:'#E8AF1B',borderWidth:2,borderRadius:4}}
-  ]));
+  mkChart('chMiniFluxo', {{
+    type:'bar',
+    data:{{labels:lbl26,datasets:[
+      {{label:'Faturamento',data:fat26,backgroundColor:'#4FC45455',borderColor:'#4FC454',borderWidth:2,borderRadius:4}},
+      {{label:'Recebimento',data:rec26,backgroundColor:'#00CCCC55',borderColor:'#00CCCC',borderWidth:2,borderRadius:4}},
+      {{label:'Despesas',data:desp26,backgroundColor:'#E8AF1B55',borderColor:'#E8AF1B',borderWidth:2,borderRadius:4}}
+    ]}},
+    options:{{responsive:true,maintainAspectRatio:false,
+      plugins:{{legend:{{position:'bottom',labels:{{boxWidth:9,font:{{size:9}},padding:6}}}}}},
+      scales:{{
+        y:{{ticks:{{callback:function(v){{return 'R$'+(v/1000000).toFixed(1)+'M';}},font:{{size:9}}}}}},
+        x:{{ticks:{{font:{{size:9}}}}}}
+      }}
+    }}
+  }});
 
   // — Mini Saldo: CC × Investimentos por banco
   var sb=SALDO_BANC;
