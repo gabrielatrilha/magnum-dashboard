@@ -1,16 +1,16 @@
 {
-  "coleta_em": "2026-07-03 15:05",
+  "coleta_em": "2026-07-06 07:07",
   "periodo_mes": {
     "ini": "2026-07-01",
-    "fim": "2026-07-03"
+    "fim": "2026-07-06"
   },
-  "faturamento": 215047,
-  "nf_count": 80,
+  "faturamento": 301100,
+  "nf_count": 93,
   "faturamento_por_un": {
-    "RS": 114147,
+    "RS": 150900,
     "PR": 9000,
-    "Holep": 24000,
-    "Traumato": 39000,
+    "Holep": 31000,
+    "Traumato": 81300,
     "SC": 28900
   },
   "fat_por_grupo": {
@@ -679,13 +679,13 @@
       ]
     ]
   },
-  "inadimplencia_total": 1027868.33,
+  "inadimplencia_total": 1187657.33,
   "inad_por_un": {
-    "RS": 8020,
-    "SP": 235608.23,
-    "PR": 2500,
-    "Holep": 46000,
-    "Traumato": 724760.1,
+    "RS": 61109,
+    "SP": 256508.23,
+    "PR": 5000,
+    "Holep": 53000,
+    "Traumato": 801060.1,
     "SC": 10980
   },
   "inad_por_hospital": {
@@ -4399,7 +4399,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      215047,
+      301100,
       0,
       0,
       0,
