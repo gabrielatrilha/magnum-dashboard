@@ -1,17 +1,18 @@
 {
-  "coleta_em": "2026-07-06 07:07",
+  "coleta_em": "2026-07-08 07:39",
   "periodo_mes": {
     "ini": "2026-07-01",
-    "fim": "2026-07-06"
+    "fim": "2026-07-08"
   },
-  "faturamento": 301100,
-  "nf_count": 93,
+  "faturamento": 461752,
+  "nf_count": 135,
   "faturamento_por_un": {
-    "RS": 150900,
-    "PR": 9000,
+    "RS": 188272,
+    "SP": 31000,
+    "PR": 71500,
     "Holep": 31000,
-    "Traumato": 81300,
-    "SC": 28900
+    "Traumato": 93300,
+    "SC": 46680
   },
   "fat_por_grupo": {
     "TRAUMATOLOGIA": 569814.56,
@@ -67,7 +68,7 @@
     "UNIMED - CNU - SP": 12600.0,
     "IPERGS": 12499.2
   },
-  "despesas": 204746.59,
+  "despesas": 362500.08,
   "desp_por_un": {
     "BA": 28276.23,
     "Holep": 59631.42,
@@ -124,7 +125,7 @@
     "ANVISA": 9928.24,
     "NEXXMED EQUIPAMENTOS": 9587.15
   },
-  "cirurgias": 0,
+  "cirurgias": 19,
   "cir_faturamento": 1585654.33,
   "cir_por_tipo": [
     [
@@ -467,7 +468,38 @@
       1
     ]
   ],
-  "cir_por_un": [],
+  "cir_por_un": [
+    [
+      "RS",
+      67618,
+      8
+    ],
+    [
+      "SP",
+      21500,
+      2
+    ],
+    [
+      "PR",
+      142500,
+      3
+    ],
+    [
+      "Traumato",
+      73899,
+      2
+    ],
+    [
+      "SC",
+      21880,
+      3
+    ],
+    [
+      "BA",
+      0,
+      1
+    ]
+  ],
   "cir_tipos_por_un": {
     "RS": [
       [
@@ -679,13 +711,12 @@
       ]
     ]
   },
-  "inadimplencia_total": 1187657.33,
+  "inadimplencia_total": 1162913.33,
   "inad_por_un": {
-    "RS": 61109,
-    "SP": 256508.23,
-    "PR": 5000,
-    "Holep": 53000,
-    "Traumato": 801060.1,
+    "RS": 105165,
+    "SP": 270008.23,
+    "Holep": 52000,
+    "Traumato": 724760.1,
     "SC": 10980
   },
   "inad_por_hospital": {
@@ -4399,7 +4430,7 @@
       2259412.91,
       2457910.74,
       2193787.51,
-      301100,
+      461752,
       0,
       0,
       0,
@@ -4461,7 +4492,7 @@
     "2026-04": 2395797.02,
     "2026-05": 2096914.47,
     "2026-06": 2050928.05,
-    "2026-07": 204746.59
+    "2026-07": 362500.08
   },
   "desp_by_un_mensal": {},
   "desp_by_adicional_mensal": {
@@ -4488,13 +4519,15 @@
       "fat": 1585654.33
     }
   },
-  "cir_fat": 0,
-  "inad_titulos": 6,
+  "cir_fat": 327397,
+  "inad_titulos": 5,
   "despesas_por_un": {
-    "RS": 96791.44,
-    "Holep": 6.88,
-    "Traumato": 107400,
-    "SC": 16.02,
+    "RS": 161626.28,
+    "SP": 6431.9,
+    "PR": 15883.35,
+    "Holep": 35608.28,
+    "Traumato": 141694.12,
+    "SC": 723.9,
     "BA": 532.25
   },
   "periodo": {
