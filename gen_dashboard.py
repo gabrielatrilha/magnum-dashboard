@@ -907,14 +907,14 @@ SALDO_BANCARIO = {
     "contas": [
         {
             "nome": "Itaú Porto Alegre", "fundo": "ITA996703", "conta": "99670-3", "banco": "Itaú Ag. 0280",
-            "un": "RS", "cc": 358126.73, "invest": 61293.47, "total": 419420.20,
+            "un": "RS", "cc": 358126.73, "invest": 61996.91, "total": 419420.20,
             "invest_det": [
                 {"desc": "Mapfre Confianza RF DI", "val": 61293.47}
             ]
         },
         {
             "nome": "Itaú Holep", "fundo": "ITA993056", "conta": "99305-6", "banco": "Itaú Ag. 0280",
-            "un": "Holep", "cc": 462554.83, "invest": 858397.80, "total": 1320952.63,
+            "un": "Holep", "cc": 462554.83, "invest": 1016420.27, "total": 1320952.63,
             "invest_det": [
                 {"desc": "Itaú Trust DI", "val": 257833.90},
                 {"desc": "Itaú CB Empresas RF", "val": 257808.42},
@@ -924,14 +924,14 @@ SALDO_BANCARIO = {
         },
         {
             "nome": "Itaú Santa Catarina", "fundo": "ITA99228", "conta": "99228-0", "banco": "Itaú Ag. 0280",
-            "un": "SC", "cc": 80817.36, "invest": 124735.66, "total": 205553.02,
+            "un": "SC", "cc": 80817.36, "invest": 125881.7, "total": 205553.02,
             "invest_det": [
                 {"desc": "Itaú CB Empresas RF", "val": 124735.66}
             ]
         },
         {
             "nome": "Itaú Traumato", "fundo": "ITA996885", "conta": "99688-5", "banco": "Itaú Ag. 0280",
-            "un": "Traumato", "cc": 490885.92, "invest": 1034133.96, "total": 1525019.88,
+            "un": "Traumato", "cc": 490885.92, "invest": 1044255.32, "total": 1525019.88,
             "invest_det": [
                 {"desc": "Itaú CB RF CP", "val": 208542.89},
                 {"desc": "Itaú Trust DI", "val": 208522.62},
